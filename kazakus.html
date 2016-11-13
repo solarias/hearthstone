@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--모바일 화면 맞추기 : 필요하면 사용
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
+		* 세로로 화면 고정
+        <link rel="manifest" href="../function/tool/manifest_portrait.json">
+
+		* 가로로 화면 고정
+        <link rel="manifest" href="../function/tool/manifest_landscape.json">
+		-->
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+
+		<link rel="stylesheet" type="text/css" href="./css/kazakus.css" />
+
+		<title>카자쿠스 시뮬레이터</title>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>카자쿠스 시뮬레이터</h1>
+			<div id="frame">
+				<div id="card1" class="card">
+					<div class="table_container">
+						<p id="text1" class="text"></p>
+					</div>
+				</div>
+				<div id="card2" class="card kazakus">
+					<div class="table_container">
+						<p id="text2" class="text"></p>
+					</div>
+				</div>
+				<div id="card3" class="card">
+					<div class="table_container">
+						<p id="text3" class="text"></p>
+					</div>
+				</div>
+			</div>
+			<button id="start" disabled>주문 생성하기</button>
+		</div>
+
+		<div id="imagePreloader">
+			<img src="./images/kazakus/cost1.png" />
+			<img src="./images/kazakus/cost2.png" />
+			<img src="./images/kazakus/cost3.png" />
+			<img src="./images/kazakus/material1.png" />
+			<img src="./images/kazakus/material2.png" />
+			<img src="./images/kazakus/material3.png" />
+			<img src="./images/kazakus/result1.png" />
+			<img src="./images/kazakus/result2.png" />
+			<img src="./images/kazakus/result3.png" />
+		</div>
+
+
+
+		<!--외부 보조 라이브러리-->
+		<script src="../function/tool/howler.min.js"></script>
+		<!--외부 보조 라이브러리-->
+
+		<script type="text/javascript" src="./js/kazakus.js"></script>
+
+
+	</body>
+</html>
