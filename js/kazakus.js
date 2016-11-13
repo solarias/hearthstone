@@ -1,5 +1,10 @@
 
 var i;
+var costText = [
+    "비용이 1인 주문을<br/>만듭니다.<br/><br/>",
+    "비용이 5인 주문을<br/>만듭니다.<br/><br/>",
+    "비용이 10인 주문을<br/>만듭니다.<br/><br/>"
+];
 var material = {
     cost1:[
         "카드를 1장 뽑습니다.",
@@ -53,6 +58,7 @@ function setCard(cmd, num) {
                 void card.offsetWidth;
                 card.classList.add("visible");
                 card.style.backgroundImage = "url('./images/kazakus/cost" + i.toString() + ".png')";
+                $("#text" + i.toString()).innerHTML = costText[i-1];
                 (function(i) {
                     card.onclick = function() {
                         //효과 준비

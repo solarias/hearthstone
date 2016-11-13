@@ -58,7 +58,7 @@ h1 {
     }
         .card.kazakus {
             transform:scale(1);
-            background:url('../images/kazakus/kazakus.png');
+            background-image:url('../images/kazakus/kazakus.jpg');
         }
         .card.visible {
     		-webkit-animation:scale_up 0.15s linear forwards;
@@ -88,10 +88,10 @@ h1 {
     }
     .table_container {
         position:absolute;
-            left:30px;
-            bottom:25px;
-        width:145px;
-        height:70px;
+            left:27px;
+            bottom:22px;
+        width:147px;
+        height:75px;
 
         display:table;
     }
