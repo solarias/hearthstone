@@ -147,6 +147,7 @@ function init() {
 
 window.onload = function() {
     $("#start").disabled = false;
+    $("#start").innerHTML = "주문 생성하기";
     $("#start").onclick = function() {
         init();
     };
