@@ -51,21 +51,23 @@ function setCard(cmd, num) {
     switch (cmd) {
         case "cost":
             for (i = 1; i <= 3; i++) {
-                //이미지
-                var card = $("#card" + i.toString());
-                card.classList.remove("kazakus");
-                card.classList.remove("visible");
-                void card.offsetWidth;
-                card.classList.add("visible");
-                card.style.backgroundImage = "url('./images/kazakus/cost" + i.toString() + ".png')";
-                $("#text" + i.toString()).innerHTML = costText[i-1];
                 (function(i) {
-                    card.onclick = function() {
-                        //효과 준비
-                        remained = deepCopy(material["cost" + i.toString()]);
-                        //효과 클릭 개시
-                        setCard("effect", i);
-                    };
+                    //이미지
+                    var card = $("#card" + i.toString());
+                    card.classList.remove("kazakus");
+                    card.classList.remove("visible","create");
+                    setTimeout(function() {
+                        void card.offsetWidth;
+                        card.classList.add("visible");
+                    },700);
+                    card.style.backgroundImage = "url('./images/kazakus/cost" + i.toString() + ".png')";
+                    $("#text" + i.toString()).innerHTML = costText[i-1];
+                        card.onclick = function() {
+                            //효과 준비
+                            remained = deepCopy(material["cost" + i.toString()]);
+                            //효과 클릭 개시
+                            setCard("effect", i);
+                        };
                 })(i);
             }
 
@@ -106,6 +108,8 @@ function setCard(cmd, num) {
 
             break;
         case "result":
+            //배경 제거
+            $("#myCanvas").className = "disappear";
             //효과 부여
             var txt =  selected[0] + "<br/>" + selected[1];
             for (i = 1; i <= 3; i++) {
@@ -125,7 +129,7 @@ function setCard(cmd, num) {
             card2.classList.remove("visible");
             void card2.offsetWidth;
             setTimeout(function() {
-                card2.classList.add("visible");
+                card2.classList.add("create");
                 //재시작
                 $("#start").style.display = "inline";
                 $("#start").onclick = function() {
@@ -147,6 +151,8 @@ function init() {
     }
     //버튼 감추기
     $("#start").style.display = "none";
+    //배경 등장
+    $("#myCanvas").className = "appear";
     //실행
     setCard("cost");
 }
