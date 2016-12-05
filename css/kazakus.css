@@ -168,8 +168,7 @@ h1 {
         }
 
 #start {
-    margin-top:20px;
-    width:400px;
+    width:500px;
     height:80px;
 
     background: -webkit-linear-gradient(top, #ffffff, #516BFF);
@@ -206,6 +205,10 @@ h1 {
     #start:active {
         background:#3855FF;
     }
+
+#notice {
+    margin-top:20px;
+}
 
 #imagePreloader {
     width:1px;

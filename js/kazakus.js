@@ -9,7 +9,7 @@ var material = {
     cost1:[
         "카드를 1장 뽑습니다.",
         "모든 하수인에게 피해를 2 줍니다.",
-        "이번에 죽은 내 하수인 하나를 무작위로 소환합니다.",
+        "이번 게임에서 죽은 내 하수인 하나를 무작위로 소환합니다.",
         "방어도를 4 얻습니다.",
         "무작위 악마 하나를 내 손으로 가져옵니다.",
         "모든 아군 하수인에게 체력 +2를 부여합니다.",
@@ -20,25 +20,25 @@ var material = {
     cost2:[
         "카드를 2장 뽑습니다.",
         "모든 하수인에게 피해를 4 줍니다.",
-        "이번에 죽은 내 하수인 둘을 무작위로 소환합니다.",
+        "이번 게임에서 죽은 내 하수인 둘을 무작위로 소환합니다.",
         "방어도를 7 얻습니다.",
         "무작위 적 하수인 하나를 1/1 양으로 변신시킵니다.",
         "무작위 악마 둘을 내 손으로 가져옵니다.",
         "모든 아군 하수인에게 체력 +4를 부여합니다.",
         "5/5 악마를 하나 소환합니다.",
-        "피해를 6 줍니다.",
+        "피해를 5 줍니다.",
         "무작위 적 하수인 둘을 빙결시킵니다."
     ],
     cost3:[
         "카드를 3장 뽑습니다.",
         "모든 하수인에게 피해를 6 줍니다.",
-        "이번에 죽은 내 하수인 셋을 무작위로 소환합니다.",
+        "이번 게임에서 죽은 내 하수인 셋을 무작위로 소환합니다.",
         "방어도를 10 얻습니다.",
         "모든 하수인을 1/1 양으로 변신시킵니다.",
         "무작위 악마 셋을 내 손으로 가져옵니다.",
         "모든 아군 하수인에게 체력 +6을 부여합니다.",
         "8/8 악마를 하나 소환합니다.",
-        "피해를 9 줍니다.",
+        "피해를 8 줍니다.",
         "무작위 적 하수인 셋을 빙결시킵니다."
     ]
 };
@@ -95,6 +95,12 @@ function setCard(cmd, num) {
                     card.onclick = function() {
                         //효과 저장
                         selected.push(showing[i-1]);
+                        //선택되지 않은 기존 효과 다시 집어넣기
+                        for (var j = 0; j < showing.length;j++) {
+                            if (showing[j] !== showing[i-1]) {
+                                remained.push(showing[j]);
+                            }
+                        }
                         if (selected.length < 2) {
                             //효과 지정 남음 : 이펙트 재지정
                             setCard("effect", num);
@@ -131,7 +137,7 @@ function setCard(cmd, num) {
             setTimeout(function() {
                 card2.classList.add("create");
                 //재시작
-                $("#start").style.display = "inline";
+                $("#start").style.visibility = "visible";
                 $("#start").onclick = function() {
                     init();
                 };
@@ -150,7 +156,7 @@ function init() {
         $("#text" + i.toString()).classList.remove("result");
     }
     //버튼 감추기
-    $("#start").style.display = "none";
+    $("#start").style.visibility = "hidden";
     //배경 등장
     $("#myCanvas").className = "appear";
     //실행
@@ -159,7 +165,7 @@ function init() {
 
 window.onload = function() {
     $("#start").disabled = false;
-    $("#start").innerHTML = "주문 생성하기";
+    $("#start").innerHTML = "원하는 주문 만들기";
     $("#start").onclick = function() {
         init();
     };
