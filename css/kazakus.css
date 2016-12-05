@@ -44,7 +44,8 @@ h1 {
     height:400px;
 
     background:#FFE7D8;
-    border:1px black solid;
+    border-top:1px black solid;
+    border-bottom:1px black solid;
 }
     #myCanvas {
         position:absolute;
