@@ -4,6 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta charset="utf-8">
 		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 		<script type="text/javascript" src="../function/tool/subtool.js"></script>
 		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
 		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
@@ -16,6 +17,7 @@
 	<body>
 		<div id="wrapper">
 			<h1>나에게 맞는 카드</h1>
+			<h2>닉네임을 입력하면 나에게 맞는 카드가 출력됩니다.</h2>
 			닉네임 : <input id="nickname" type="text" value=""> <button id="click">확인하기</button>
 			<br/>
 			<img id="card">
@@ -24,20 +26,45 @@
 		<script type="text/javascript" src="./js/seedrandom.js"></script>
 		<script type="text/javascript">
 			var info, info2 = [];
-			loadJSON("http://solarias.github.io/hearthstone/js/cardList.json",
-				function() {info = data;},
-				function() {alert("Error");});
-			for (k1 in info) {
-				if (info[k1].img !== undefined) {
-					info2.push(info[k1].img);
-				}
-			}
+			var notype = ["Tavern Brawl"];
+			var typeList = ["Hero","Minion","Spell","Weapon"];
+			loadJSON("https://solarias.github.io/hearthstone/js/cardList.json",
+				function(data) {
+					info = data;
 
-			Math.seedrandom()
-			$("#click").onclick = function() {
-				Math.seedrandom($("#nickname").value);
-				$("#card").src = info2[Math.floor(Math.random() * info2.length)];
-			};
+					for (var k1 in info) {
+						console.log(k1);
+						if (notype.indexOf(k1) < 0) {
+							for (var i = 0;i < info[k1].length;i++) {
+								if (info[k1][i].img && typeList.indexOf(info[k1][i].type) >= 0) {
+									info2.push(info[k1][i]);
+								}
+							}
+						}
+					}
+
+					Math.seedrandom();
+
+					function showCard() {
+						if ($("#nickname").value.length <= 0) {
+							alert("1글자 이상 입력해주세요.");
+							return;
+						}
+						Math.seedrandom($("#nickname").value);
+						var target  = info2[Math.floor(Math.random() * info2.length)];
+						console.log(target);
+						$("#card").src = "";
+						$("#card").src = target.img;
+					};
+
+					$("#click").onclick = function() {
+						showCard();
+					};
+					$("#nickname").onkeypress = function(e) { //출처: http://asm0628.tistory.com/167 [개발창고]
+					     if(e.keyCode == 13) showCard();
+					}
+				},
+				function() {alert("Error");});
 
 		</script>
 

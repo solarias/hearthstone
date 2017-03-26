@@ -23,9 +23,10 @@ html, body {
 
 #wrapper {
     position:relative;
+    overflow:auto;
 
     margin:0px auto;
-    width:900px;
+    width:600px;
     height:100%;
 
     background-color:white;
@@ -36,7 +37,14 @@ html, body {
 h1 {
     font-size:60px;
 }
+h2 {
+    margin-bottom:10px;
+}
 
-input {
-    border
+img {
+    margin-top:20px;
+    width:307px;
+    height:465px;
+    background:url('../images/card_default.png');
+    border:0;
 }
