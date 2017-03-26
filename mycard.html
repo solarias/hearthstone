@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<link rel="stylesheet" type="text/css" href="./css/mycard.css" />
+
+		<title>나에게 맞는 카드</title>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>나에게 맞는 카드</h1>
+			닉네임 : <input id="nickname" type="text" value=""> <button id="click">확인하기</button>
+			<br/>
+			<img id="card">
+		</div>
+
+		<script type="text/javascript" src="./js/seedrandom.js"></script>
+		<script type="text/javascript">
+			var info, info2 = [];
+			loadJSON("http://solarias.github.io/hearthstone/js/cardList.json",
+				function() {info = data;},
+				function() {alert("Error");});
+			for (k1 in info) {
+				if (info[k1].img !== undefined) {
+					info2.push(info[k1].img);
+				}
+			}
+
+			Math.seedrandom()
+			$("#click").onclick = function() {
+				Math.seedrandom($("#nickname").value);
+				$("#card").src = info2[Math.floor(Math.random() * info2.length)];
+			};
+
+		</script>
+
+
+	</body>
+
+</html>
