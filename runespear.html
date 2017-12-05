@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html, body {
+            overflow:hidden;
+
+            height:100%;
+
+            background:#909090;
+        }
+        #wrapper {
+            position: relative;
+
+            margin: 0 auto;
+            padding-top: 50px;
+            width:800px;
+            height:100%;
+
+            background: white;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+        }
+        h1 {
+            position:relative;
+			font-size:50px;
+            text-align:center;
+        }
+        h2 {
+            position:relative;
+            margin:0 0 30px 0;
+            text-align:center;
+        }
+        #spear {
+            position:relative;
+            float:left;
+
+            margin-left:25px;
+            width:180px;
+            height:250px;
+
+            background-image:url(./images/runespear/spear.png);
+            background-repeat:no-repeat;
+            background-size:contain;
+
+            cursor:pointer;
+        }
+            #spear:hover {
+                filter:brightness(1.2);
+            }
+            #spear:active {
+                filter:brightness(2);
+            }
+        .discover {
+            position:relative;
+            float:left;
+
+            margin-left:5px;
+            width:180px;
+            height:250px;
+
+            border:1px black solid;
+            box-sizing: border-box;
+
+            background-repeat:no-repeat;
+			background-position:50% 50%;
+            background-size:0 0;
+			transition:background-size 0.1s linear;
+        }
+			.discover.clickable {
+            	background-size:180px 250px;
+
+				cursor: pointer;
+			}
+            .discover.clickable:hover {
+                filter:brightness(1.2);
+            }
+            .discover.clickable:active {
+                filter:brightness(2);
+            }
+
+        .result {
+            position:relative;
+            float:left;
+
+            margin-top:30px;
+            margin-left:5px;
+            width:180px;
+            height:250px;
+
+			background-repeat:no-repeat;
+			background-position:50% 50%;
+            background-size:0 0;
+            border:1px black solid;
+            box-sizing: border-box;
+			transition:background-size 0.1s linear;
+        }
+			.result.visible {
+            	background-size:180px 250px;
+			}
+            #result {
+                margin-left:25px;
+                clear:both;
+
+				padding:30px 0;
+
+				border:1px white solid;
+
+				font-size:30px;
+                text-align:center;
+            }
+        </style>
+
+		<title></title>
+
+	</head>
+	<body>
+        <div id="wrapper">
+            <h1>룬의 창을 써봅시다.</h1>
+			<h2 id="desc">룬의 창을 클릭하면 주문을 발견합니다.</h2>
+            <div id="spear"></div>
+            <div id="discover1" class="discover">
+            </div>
+            <div id="discover2" class="discover"></div>
+            <div id="discover3" class="discover"></div>
+
+            <div id="result" class="result">결과물<br>→</div>
+            <div id="result1" class="result"></div>
+            <div id="result2" class="result"></div>
+            <div id="result3" class="result"></div>
+        </div>
+
+		<script type="text/javascript">
+			var act = 0;
+            var cardlist = [];
+			var arr = [];
+            for (var i=1;i<=34;i++) cardlist.push(i);
+
+			function show() {
+                arr = shuffle(deepCopy(cardlist));
+				for (var j=0;j<3;j++) {
+					var num = arr[j].toString();
+					$("#discover" + (j+1).toString()).style.backgroundImage = "url(./images/runespear/img" + num + ".jpg)";
+				}
+			}
+
+			function text() {
+				var str = "";
+				switch (act) {
+					case 1:
+						str = "첫번째 발견 카드를 고르세요.";
+						break;
+					case 2:
+						str = "두번째 발견 카드를 고르세요.";
+						break;
+					case 3:
+						str = "세번째 발견 카드를 고르세요.";
+						break;
+					case 4:
+						str = "룬의창을 클릭하면 주문을 다시 발견합니다.";
+						break;
+				}
+				$("#desc").innerHTML = str;
+			}
+
+			function discover() {
+				act += 1;
+				if (act < 4) {
+					for (let i=1;i<=3;i++) {
+						$("#discover" + i.toString()).classList.remove("clickable");
+					}
+					setTimeout(function() {
+						show();
+						text();
+						for (let i=1;i<=3;i++) {
+							$("#discover" + i.toString()).classList.add("clickable");
+							$("#discover" + i.toString()).onclick = function() {
+								$("#result" + act.toString()).classList.add("visible");
+								$("#result" + act.toString()).style.backgroundImage = "url(./images/runespear/img" + arr[i-1].toString() + ".jpg)";
+								discover();
+							}
+						}
+					},100);
+				} else {
+					text();
+					for (let i=1;i<=3;i++) {
+						$("#discover" + i.toString()).classList.remove("clickable");
+						$("#discover" + i.toString()).onclick = "";
+						$("#discover" + i.toString()).style.backgroundImage = "";
+						$("#spear").style.visibility = "visible";
+					}
+				}
+			}
+
+            $("#spear").onclick = function() {
+				act = 0;
+				$("#spear").style.visibility = "hidden";
+				for (let i=1;i<=3;i++) {
+					$("#result" + i.toString()).classList.remove("visible");
+					setTimeout(function() {
+						$("#result" + i.toString()).style.backgroundImage = "";
+					},100);
+				}
+				discover();
+            }
+		</script>
+
+
+	</body>
+</html>
