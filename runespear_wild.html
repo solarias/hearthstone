@@ -124,12 +124,12 @@
             }
         </style>
 
-		<title>룬의창 시뮬레이터(정규전)</title>
+		<title>룬의창 시뮬레이터(야생전)</title>
 
 	</head>
 	<body>
         <div id="wrapper">
-            <h1>룬의 창을 써봅시다.(정규전)</h1>
+            <h1>룬의 창을 써봅시다.(야생전)</h1>
 			<h2 id="desc">룬의 창을 클릭하면 주문을 발견합니다.</h2>
             <div id="spear"></div>
             <div id="discover1" class="discover">
@@ -147,7 +147,7 @@
 			var act = 0;
             var cardlist = [];
 			var arr = [];
-            for (var i=1;i<=34;i++) cardlist.push(i);
+            for (var i=1;i<=42;i++) cardlist.push(i);
 
 			function show() {
                 arr = shuffle(deepCopy(cardlist));
