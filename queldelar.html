@@ -23,7 +23,9 @@
 
             height:100%;
 
-            background:#909090;
+            background-image:url(http://i1-news.softpedia-static.com/images/news2/blizzard-goes-back-to-the-origins-with-hearthstone-kobolds-catacombs-expansion-518376-2.jpg);
+				background-repeat:no-repeat;
+				background-size:cover;
         }
         #wrapper {
             position: relative;
@@ -258,9 +260,11 @@
 					}
 				}
 				$("#tog_text").innerHTML = str;
-				msg = new SpeechSynthesisUtterance(str);
-					msg.rate = 3;
-				voice(msg);
+				try {
+					msg = new SpeechSynthesisUtterance(str);
+						msg.rate = 3;
+					voice(msg);
+				} catch(e){}
 			}
 
 			function voice(txt) {
