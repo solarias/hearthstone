@@ -1,0 +1,461 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+
+    font-family:ariel;
+}
+
+/*공용 스타일*/
+.selectable:hover {
+    cursor: default;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+}
+.clickable:hover {
+    cursor:pointer;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+}
+    .clickable:active {
+        box-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff, 0 0 7px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    }
+.normal {color:black;}
+.rare {color:blue;}
+.epic {color:purple;}
+.legendary {color:red;}
+
+/*공용 - 카드*/
+.card {
+    position:relative;
+    overflow:hidden;
+
+    margin-bottom:5px;
+    width:100%;
+    height:30px;
+
+    background-color:#C0C0C0;
+    border-radius:5px;
+    box-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #000,  0 0 5px #000;
+
+    font-weight:bold;
+}
+.card_cost {
+    float:left;
+
+    width:25px;
+    height:100%;
+
+    background-color:#00008B;
+
+    color:white;
+    font-size:14px;
+        line-height:30px;
+    text-align:center;
+}
+.card_name {
+    overflow:hidden;
+    white-space:nowrap;
+
+    padding-left:5px;
+    width:170px;
+    height:100%;
+
+    box-sizing: border-box;
+
+    font-size:14px;
+        line-height:30px;
+    letter-spacing:-1px;
+    text-overflow: ellipsis;
+}
+.card_quantity {
+    position:absolute;
+    right:0;top:0;
+
+    width:20px;
+    height:30px;
+
+    background-color:black;
+
+    color:gold;
+    line-height:30px;
+    text-align:center;
+}
+    .card_quantity.none {display:none;}
+
+
+html, body {
+    overflow-y:auto;
+
+    height:100%;
+
+    background-color:black;
+    background-image:url(../images/dungeon/wallpaper.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:50% 50%;
+}
+
+#wrapper {
+    position:relative;
+    overflow:hidden;
+
+    margin:0 auto;
+    width:1200px;
+    height:100%;
+
+    background-color:#F3EDDD;
+}
+
+#frame_header {
+    position:relative;
+    width:100%;
+    height:80px;
+
+    border-bottom:1px #855D2A solid;
+}
+    #header_title {
+        position:relative;
+
+        font-size:50px;
+        font-weight:bold;
+        text-align:center;
+        line-height:80px;
+    }
+    #header_author {
+        position:absolute;
+            left:10px;top:0;
+    }
+    #header_youtube {
+        display:block;
+        position:absolute;
+            right:0;top:0;
+
+        width:250px;
+        height:100%;
+    }
+
+#frame_desc {
+    position:relative;
+
+    width:100%;
+    height:30px;
+
+    background-color:#606060;
+
+    animation: blink 2s infinite;
+    color:#c0c0c0;
+    font-size:16px;
+        line-height:30px;
+    text-align:center;
+}
+    @keyframes blink {
+        0% {color:#C0C0C0;}
+        50% {color:#F0F0F0;}
+        100% {color:#C0C0C0;}
+    }
+
+/*하단 프레임 높이*/
+.frame_bottom {
+    height:calc(100% - 111px);
+    background-color:#532818;
+    background-image:url(../images/dungeon/wood.gif);
+}
+    .frame_title {
+        margin-bottom:5px;
+        width:100%;
+
+        color:white;
+        font-size:20px;
+        font-weight:bold;
+        text-align:center;
+    }
+#frame_left {
+    position:relative;
+    float:left;
+
+    width:200px;
+    padding:5px;
+
+    box-sizing: border-box;
+}
+#frame_right {
+    position:relative;
+    float:left;
+
+    width:250px;
+    padding:5px;
+
+    box-sizing: border-box;
+}
+    #dungeon_deck {
+        position:relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        padding:5px;
+        width:100%;
+        height:calc(100% - 100px);
+
+        background-color:#5A4370;
+        border:1px black solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+#frame_main {
+    position:relative;
+    float:left;
+
+    width:calc(100% - 450px);
+
+    box-sizing:border-box;
+}
+    #main_select_frame {
+        overflow-y:scroll;
+
+        width:100%;
+        height:450px;
+
+        background-color:#544A49;
+        border:5px #5F4125 inset;
+        box-sizing: border-box;
+    }
+    .main_select {
+        position:relative;
+        overflow:hidden;
+        white-space:nowrap;
+
+        margin-bottom:5px;
+        width:100%;
+        height:300px;
+        padding:5px;
+
+        background-color:#9F6F3E;
+        border:1px black solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition:filter 0.7s;
+    }
+            .main_select.closed, .main_select.finished {
+                -webkit-filter: brightness(0.5);
+                -o-filter: brightness(0.5);
+                filter: brightness(0.5);
+            }
+        .select_door {
+            position:absolute;
+                left:0;top:0;
+                z-index:2;
+
+            width:100%;
+            height:100%;
+
+            background-image:url(../images/dungeon/door.gif);
+                background-size:720px 540px;
+            transition:transform 0.7s;
+            transform:translateX(100%);
+        }
+            #main_select_1 .select_door {
+                background-image:url(../images/dungeon/door_first.gif);
+            }
+                .main_select.closed .select_door{transform:translateX(0%);}
+        .select_desc {
+            position:relative;
+                z-index:3;
+            margin-bottom:5px;
+            width:100%;
+            height:30px;
+
+
+            border-radius: 10px;
+
+            color:white;
+            font-size:20px;
+                line-height:30px;
+            text-align:center;
+        }
+            .select_desc.boss {background-color:brown;}
+            .select_desc.reward {background-color:#373236;}
+        .select_loot, .select_treasure {
+            position:relative;
+            float:left;
+
+            margin:0 5px;
+            width:225px;
+            height:250px;
+            padding:5px;
+
+            background-color:gold;
+            border:2px orange outset;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+            .select_treasure {
+                background:transparent;
+                border:0;
+            }
+            .select_loot:last-child, .select_treasure:last-child {
+                margin:0;
+            }
+        .treasure_img {
+            display:block;
+
+            margin:0 auto;
+            width:auto;
+            height:190px;
+
+            border:1px gray solid;
+        }
+        .loot_name {
+            margin-top:50px;
+            width:100%;
+            height:35px;
+
+            background-color:#4B3968;
+            border-radius:5px;
+
+            color:#B098F9;
+            font-size:20px;
+                line-height:35px;
+            text-align:center;
+        }
+        .select_take {
+            display:block;
+            position:absolute;
+                left:0;right:0;bottom:10px;
+
+            margin:10px auto 0 auto;
+            width:140px;
+            height:40px;
+
+            background-color:#DBBBA2;
+            border:3px gray outset;
+            border-radius: 10px;
+
+            color:513E20;
+            font-size:26px;
+        }
+            .main_select.closed .select_take, .main_select.finished .select_take {
+                visibility: hidden;
+            }
+            .select_take.selected {
+                visibility: visible;
+                pointer-events: none;
+            }
+    #main_status {
+        position:relative;
+        overflow:hidden;
+
+        width:100%;
+        height:150px;
+
+        background-color:#514946;
+        border:5px #5F4125 inset;
+        box-sizing: border-box;
+    }
+        #status_hero {
+            display:block;
+            float:left;
+
+            margin:-15px 0 0 0;
+            width:150px;
+            height:auto;
+        }
+            #hero_cover {
+                position:absolute;
+                    left:0;top:-15px;
+                    z-index:2;
+
+                width:150px;
+                height:222px;
+
+                background-image:url(../images/dungeon/portrait_cover.gif);
+                border:1px #514946 solid;
+            }
+        #tog {
+            position:absolute;
+                top:420px;left:170px;
+                z-index:10;
+            width:450px;
+			height:160px;
+
+			background-image:url(../images/queldelar/tog.gif);
+                background-size:450px 160px;
+            pointer-events: none;
+				transform: scale(0);
+			transition:transform 0.1s linear;
+        }
+			#tog_text_frame {
+				display:table;
+	            position:absolute;
+					z-index:2;
+				left:140px;
+				top:55px;
+
+				width:300px;
+				height:85px;
+			}
+			#tog_text {
+				display:table-cell;
+				position:relative;
+				width:100%;
+
+				font-size:18px;
+				font-weight:bold;
+
+				vertical-align: middle;
+			}
+        #status_button {
+            display:block;
+            float:right;
+
+            margin:5px;
+            width:110px;
+            height:calc(100% - 10px);
+
+            border:3px gray outset;
+            border-radius:10px;
+            box-sizing: border-box;
+
+            font-size:40px;
+            font-weight:bold;
+        }
+            #status_button.start {
+                background-color:blue;color:white;}
+            #status_button.end {
+                background-color:#D50000;color:white;}
+
+
+
+
+
+/*======================================================================================================*/
+/* ※ 4. 기타 */
+/*======================================================================================================*/
+#imagePreloader {
+	width:1px;
+	height:1px;
+
+	display:none;
+}
+
+/*모바일 스크롤바 가시화*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 17px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 8px;
+}

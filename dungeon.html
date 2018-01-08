@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--[if IE]>
+		<script type="text/javascript" src="../function/tool/no_ie.js"></script>
+		<![endif]-->
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+
+		<link rel="stylesheet" type="text/css" href="./css/dungeon.css" />
+
+		<title>미궁 탐험 덱 짜기</title>
+
+	</head>
+	<body>
+        <div id="wrapper">
+            <div id="frame_header">
+                <div id="header_title">미궁 탐험 덱 짜기</div>
+                <div id="header_author">by 솔라리어스</div>
+                <iframe id="header_youtube" src="https://www.youtube.com/embed/DAbC40LPAbM?autoplay=1&loop=1&playlist=DAbC40LPAbM" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+            <div id="frame_desc">카드 및 업적 위에 마우스를 올리면, 관련 설명을 여기서 확인할 수 있습니다.</div>
+            <div id="frame_left" class="frame_bottom">
+                <div class="frame_title">업적</div>
+            </div>
+            <div id="frame_main" class="frame_bottom">
+				<div id="main_select_frame">
+
+					<div id="main_select_1" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">1층 우두머리</div>
+					</div>
+
+					<div id="main_select_2" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">1층 보물을 선택해주세요!</div>
+
+						<div class="select_loot">
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">25</div>
+								<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+								<div class="card_quantity">★</div>
+							</div>
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">2</div>
+								<div class="card_name epic">파멸의 예언자</div>
+								<div class="card_quantity">9</div>
+							</div>
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">5</div>
+								<div class="card_name legendary">난투</div>
+								<div class="card_quantity none">1</div>
+							</div>
+							<div class="loot_name">한 장 정도</div>
+							<button class="select_take clickable">선택하기</button>
+						</div>
+
+						<div class="select_treasure">
+							<img data-cardid="123" class="treasure_img selectable" src="http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42818.jpg" alt="리치 왕">
+							<button class="select_take clickable">선택하기</button>
+						</div>
+
+						<div class="select_loot">
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">25</div>
+								<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+							</div>
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">2</div>
+								<div class="card_name epic">파멸의 예언자</div>
+							</div>
+							<div data-cardid="123" class="card selectable">
+								<div class="card_cost">5</div>
+								<div class="card_name legendary">난투</div>
+							</div>
+							<div class="loot_name">한 장 정도</div>
+							<button class="select_take clickable">선택하기</button>
+						</div>
+					</div>
+					<div id="main_select_3" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">1층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_4" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">2층 우두머리</div>
+					</div>
+					<div id="main_select_5" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">2층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_6" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">3층 우두머리</div>
+					</div>
+					<div id="main_select_7" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">3층 보물을 선택해주세요!</div>
+					</div>
+					<div id="main_select_8" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">3층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_9" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">4층 우두머리</div>
+					</div>
+					<div id="main_select_10" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">4층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_11" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">5층 우두머리</div>
+					</div>
+					<div id="main_select_12" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">5층 보물을 선택해주세요!</div>
+					</div>
+					<div id="main_select_13" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">5층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_14" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">6층 우두머리</div>
+					</div>
+					<div id="main_select_15" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">6층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_16" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">7층 우두머리</div>
+					</div>
+					<div id="main_select_17" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">7층 보물을 선택해주세요!</div>
+					</div>
+					<div id="main_select_18" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc reward">7층 전리품을 선택해주세요!</div>
+					</div>
+					<div id="main_select_19" class="main_select closed">
+						<div class="select_door"></div>
+						<div class="select_desc boss">8층 우두머리</div>
+					</div>
+
+				</div>
+				<div id="main_status">
+					<img id="status_hero" src="http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/41887.jpg">
+					<img id="hero_cover">
+					<button id="status_button" class="clickable start">탐험<br>시작</button>
+				</div>
+				<div id="tog"><div id="tog_text_frame">
+					<div id="tog_text">리치왕을 선택하면 저주를 받는다고 코볼트 성서에서 전해진다.</div>
+				</div></div>
+            </div>
+
+            <div id="frame_right" class="frame_bottom">
+                <div class="frame_title">미궁 덱</div>
+                <div id="dungeon_deck">
+
+					<div data-cardid="123" class="card selectable">
+						<div class="card_cost">25</div>
+						<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+						<div class="card_quantity none"></div>
+					</div>
+					<div data-cardid="123" class="card selectable">
+						<div class="card_cost">25</div>
+						<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+						<div class="card_quantity">★</div>
+					</div>
+					<div data-cardid="123" class="card selectable">
+						<div class="card_cost">25</div>
+						<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+						<div class="card_quantity">2</div>
+					</div>
+					<div data-cardid="123" class="card selectable">
+						<div class="card_cost">25</div>
+						<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+						<div class="card_quantity">3</div>
+					</div>
+					<div data-cardid="123" class="card selectable">
+						<div class="card_cost">25</div>
+						<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
+						<div class="card_quantity">4</div>
+					</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+		<!--외부 보조 라이브러리-->
+		<script src="../function/tool/sweetalert2/dist/sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="../function/tool/sweetalert2/dist/sweetalert2.css">
+			<!-- for IE support -->
+			<script src="../function/tool/sweetalert2/node_modules/es6-promise-polyfill/promise.min.js"></script>
+		<script src="../function/tool/TweenMax.min.js"></script>
+			<script src="../function/tool/scrollToPlugin.min.js"></script>
+		<!--외부 보조 라이브러리-->
+
+		<script src="./js/dungeon_rewardlist.js"></script>
+		<script src="./js/dungeon.js"></script>
+
+
+	</body>
+</html>
