@@ -1,10 +1,10 @@
 ﻿
 var rewardList = [
 	{
-		"ID":"reward0001",
+		"id":"reward0001",
 		"cost":1,
 		"name_en":"enchanted raven",
-		"name_kr":"마력 깃든 까마귀",
+		"name":"마력 깃든 까마귀",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":39350,
@@ -14,10 +14,10 @@ var rewardList = [
 		"race":"야수"
 	}, 
 	{
-		"ID":"reward0002",
+		"id":"reward0002",
 		"cost":2,
 		"name_en":"power of the wild",
-		"name_kr":"야생의 힘",
+		"name":"야생의 힘",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":503,
@@ -25,10 +25,10 @@ var rewardList = [
 		"text":"선택 - 내 하수인들에게 +1/+1을 부여합니다. 또는 3/2 표범을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0003",
+		"id":"reward0003",
 		"cost":2,
 		"name_en":"tortollan forager",
-		"name_kr":"토르톨란 채집꾼",
+		"name":"토르톨란 채집꾼",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":41252,
@@ -38,10 +38,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력이 5 이상인 무작위 하수인 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0004",
+		"id":"reward0004",
 		"cost":3,
 		"name_en":"shade of naxxramas",
-		"name_kr":"낙스라마스의 망령",
+		"name":"낙스라마스의 망령",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":1784,
@@ -51,10 +51,10 @@ var rewardList = [
 		"text":"은신. 내 턴이 시작될 때, +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0005",
+		"id":"reward0005",
 		"cost":3,
 		"name_en":"mounted raptor",
-		"name_kr":"랩터 탈것",
+		"name":"랩터 탈것",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2922,
@@ -65,10 +65,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 비용이 1인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0006",
+		"id":"reward0006",
 		"cost":3,
 		"name_en":"mulch",
-		"name_kr":"양분 흡수",
+		"name":"양분 흡수",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":2793,
@@ -76,10 +76,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치합니다. 무작위 하수인 하나를 상대편의 손에 추가합니다."
 	}, 
 	{
-		"ID":"reward0007",
+		"id":"reward0007",
 		"cost":4,
 		"name_en":"keeper of the grove",
-		"name_kr":"숲의 수호자",
+		"name":"숲의 수호자",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":601,
@@ -89,10 +89,10 @@ var rewardList = [
 		"text":"선택 - 피해를 2 줍니다. 또는 하수인 하나를 침묵시킵니다."
 	}, 
 	{
-		"ID":"reward0008",
+		"id":"reward0008",
 		"cost":4,
 		"name_en":"swipe",
-		"name_kr":"휘둘러치기",
+		"name":"휘둘러치기",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":64,
@@ -100,10 +100,10 @@ var rewardList = [
 		"text":"선택한 적 하나에게 피해를 4 주고 다른 모든 적에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0009",
+		"id":"reward0009",
 		"cost":4,
 		"name_en":"savage combatant",
-		"name_kr":"흉포한 전투원",
+		"name":"흉포한 전투원",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":2780,
@@ -114,10 +114,10 @@ var rewardList = [
 		"text":"격려: 이번 턴에 내 영웅에게 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0010",
+		"id":"reward0010",
 		"cost":5,
 		"name_en":"druid of the claw",
-		"name_kr":"발톱의 드루이드",
+		"name":"발톱의 드루이드",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":692,
@@ -127,10 +127,10 @@ var rewardList = [
 		"text":"선택 - 4/4 돌진 하수인 또는 4/6 도발 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0011",
+		"id":"reward0011",
 		"cost":0,
 		"name_en":"innervate",
-		"name_kr":"정신 자극",
+		"name":"정신 자극",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":254,
@@ -138,10 +138,10 @@ var rewardList = [
 		"text":"이번 턴에만 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0012",
+		"id":"reward0012",
 		"cost":2,
 		"name_en":"darnassus aspirant",
-		"name_kr":"다르나서스 지원자",
+		"name":"다르나서스 지원자",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":2782,
@@ -151,10 +151,10 @@ var rewardList = [
 		"text":"전투의 함성: 빈 마나 수정을 1개 획득합니다. 죽음의 메아리: 마나 수정을 1개 파괴합니다."
 	}, 
 	{
-		"ID":"reward0013",
+		"id":"reward0013",
 		"cost":2,
 		"name_en":"wild growth",
-		"name_kr":"급속 성장",
+		"name":"급속 성장",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":1124,
@@ -162,10 +162,10 @@ var rewardList = [
 		"text":"빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0014",
+		"id":"reward0014",
 		"cost":3,
 		"name_en":"greedy sprite",
-		"name_kr":"욕심쟁이 요마",
+		"name":"욕심쟁이 요마",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":45945,
@@ -175,10 +175,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0015",
+		"id":"reward0015",
 		"cost":3,
 		"name_en":"grove tender",
-		"name_kr":"숲 뜰지기",
+		"name":"숲 뜰지기",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":2225,
@@ -188,10 +188,10 @@ var rewardList = [
 		"text":"선택 - 각 플레이어가 마나 수정을 1개씩 획득합니다. 또는 각 플레이어가 카드를 1장씩 뽑습니다."
 	}, 
 	{
-		"ID":"reward0016",
+		"id":"reward0016",
 		"cost":3,
 		"name_en":"pilfered power",
-		"name_kr":"가로챈 힘",
+		"name":"가로챈 힘",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":40401,
@@ -199,10 +199,10 @@ var rewardList = [
 		"text":"아군 하수인 하나당 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0017",
+		"id":"reward0017",
 		"cost":4,
 		"name_en":"astral communion",
-		"name_kr":"천공의 교감",
+		"name":"천공의 교감",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":2785,
@@ -210,10 +210,10 @@ var rewardList = [
 		"text":"마나 수정을 10개 획득합니다. 내 손에 있는 카드를 모두 버립니다."
 	}, 
 	{
-		"ID":"reward0018",
+		"id":"reward0018",
 		"cost":4,
 		"name_en":"mire keeper",
-		"name_kr":"수렁의 수호자",
+		"name":"수렁의 수호자",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":38718,
@@ -223,10 +223,10 @@ var rewardList = [
 		"text":"선택 - 2/2 수액괴물을 하나 소환합니다. 또는 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0019",
+		"id":"reward0019",
 		"cost":4,
 		"name_en":"twig of the world tree",
-		"name_kr":"세계수의 가지",
+		"name":"세계수의 가지",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":46107,
@@ -236,10 +236,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 마나 수정을 10개 획득합니다."
 	}, 
 	{
-		"ID":"reward0020",
+		"id":"reward0020",
 		"cost":5,
 		"name_en":"nourish",
-		"name_kr":"육성",
+		"name":"육성",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":95,
@@ -247,10 +247,10 @@ var rewardList = [
 		"text":"선택 - 마나 수정을 2개 획득합니다. 또는 카드를 3장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0021",
+		"id":"reward0021",
 		"cost":2,
 		"name_en":"druid of the saber",
-		"name_kr":"칼날이빨의 드루이드",
+		"name":"칼날이빨의 드루이드",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2783,
@@ -260,10 +260,10 @@ var rewardList = [
 		"text":"선택 - 2/1 돌진 하수인 또는 3/2 은신 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0022",
+		"id":"reward0022",
 		"cost":2,
 		"name_en":"mark of y'shaarj",
-		"name_kr":"이샤라즈의 징표",
+		"name":"이샤라즈의 징표",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":38337,
@@ -271,10 +271,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 대상이 야수면, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0023",
+		"id":"reward0023",
 		"cost":3,
 		"name_en":"vicous fledgling",
-		"name_kr":"흉포한 어린 테러닥스",
+		"name":"흉포한 어린 테러닥스",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41247,
@@ -285,10 +285,10 @@ var rewardList = [
 		"text":"이 하수인은 영웅을 공격한 후에 적응합니다."
 	}, 
 	{
-		"ID":"reward0024",
+		"id":"reward0024",
 		"cost":4,
 		"name_en":"arfus",
-		"name_kr":"멍서스",
+		"name":"멍서스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":45366,
@@ -299,10 +299,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 죽음의 기사 카드 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0025",
+		"id":"reward0025",
 		"cost":5,
 		"name_en":"druid of the fang",
-		"name_kr":"송곳니의 드루이드",
+		"name":"송곳니의 드루이드",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2048,
@@ -312,10 +312,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 야수가 있으면, 7/7 야수로 변신합니다."
 	}, 
 	{
-		"ID":"reward0026",
+		"id":"reward0026",
 		"cost":5,
 		"name_en":"stranglethorn tiger",
-		"name_kr":"가시덤불 호랑이",
+		"name":"가시덤불 호랑이",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":68,
@@ -326,10 +326,10 @@ var rewardList = [
 		"text":"은신"
 	}, 
 	{
-		"ID":"reward0027",
+		"id":"reward0027",
 		"cost":5,
 		"name_en":"verdant longneck",
-		"name_kr":"신록의 긴목공룡",
+		"name":"신록의 긴목공룡",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":40971,
@@ -340,10 +340,10 @@ var rewardList = [
 		"text":"전투의 함성: 적응"
 	}, 
 	{
-		"ID":"reward0028",
+		"id":"reward0028",
 		"cost":5,
 		"name_en":"virmen sensei",
-		"name_kr":"토깽 사부",
+		"name":"토깽 사부",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":40641,
@@ -353,10 +353,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 야수 1마리에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0029",
+		"id":"reward0029",
 		"cost":6,
 		"name_en":"menagerie warden",
-		"name_kr":"박물관 감시자",
+		"name":"박물관 감시자",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":39696,
@@ -366,10 +366,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 야수 1마리를 선택합니다. 그 야수를 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0030",
+		"id":"reward0030",
 		"cost":7,
 		"name_en":"giant anaconda",
-		"name_kr":"거대한 아나콘다",
+		"name":"거대한 아나콘다",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":41262,
@@ -380,10 +380,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 손에 있는 공격력이 5 이상인 하수인 하나를 소환합니다."
 	}, 
 	{
-		"ID":"reward0031",
+		"id":"reward0031",
 		"cost":7,
 		"name_en":"knight of the wild",
-		"name_kr":"야생의 기사",
+		"name":"야생의 기사",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":2788,
@@ -393,10 +393,10 @@ var rewardList = [
 		"text":"내가 야수를 소환할 때마다 이 카드의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0032",
+		"id":"reward0032",
 		"cost":1,
 		"name_en":"barkskin",
-		"name_kr":"나무 껍질",
+		"name":"나무 껍질",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":43282,
@@ -404,10 +404,10 @@ var rewardList = [
 		"text":"하수인 하나에게 생명력을 +3 부여합니다. 방어도를 +3 얻습니다."
 	}, 
 	{
-		"ID":"reward0033",
+		"id":"reward0033",
 		"cost":1,
 		"name_en":"claw",
-		"name_kr":"할퀴기",
+		"name":"할퀴기",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":1050,
@@ -415,10 +415,10 @@ var rewardList = [
 		"text":"방어도를 +2 얻고, 이번 턴에 내 영웅이 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0034",
+		"id":"reward0034",
 		"cost":1,
 		"name_en":"earthen scales",
-		"name_kr":"대지의 비늘",
+		"name":"대지의 비늘",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":41081,
@@ -426,10 +426,10 @@ var rewardList = [
 		"text":"아군 하수인 하나에게 +1/+1을 부여하고, 그 하수인의 공격력만큼 방어도를 얻습니다."
 	}, 
 	{
-		"ID":"reward0035",
+		"id":"reward0035",
 		"cost":1,
 		"name_en":"lesse jasper spellston",
-		"name_kr":"하급 벽옥 주문석",
+		"name":"하급 벽옥 주문석",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":43288,
@@ -437,10 +437,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2 줍니다. (방어도를 +3 얻으면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0036",
+		"id":"reward0036",
 		"cost":2,
 		"name_en":"plated bettle",
-		"name_kr":"단단한 딱정벌레",
+		"name":"단단한 딱정벌레",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45930,
@@ -451,10 +451,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 방어도를 +3 얻습니다."
 	}, 
 	{
-		"ID":"reward0037",
+		"id":"reward0037",
 		"cost":3,
 		"name_en":"feral rage",
-		"name_kr":"야생의 분노",
+		"name":"야생의 분노",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":38334,
@@ -462,10 +462,10 @@ var rewardList = [
 		"text":"선택 - 이번 턴에 내 영웅에게 공격력을 +4 부여합니다. 또는 방어도를 +8 얻습니다."
 	}, 
 	{
-		"ID":"reward0038",
+		"id":"reward0038",
 		"cost":3,
 		"name_en":"gnash",
-		"name_kr":"뾰족니",
+		"name":"뾰족니",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":42748,
@@ -473,10 +473,10 @@ var rewardList = [
 		"text":"방어도를 +3 얻고, 이번 턴에 내 영웅이 공격력을 +3 얻습니다."
 	}, 
 	{
-		"ID":"reward0039",
+		"id":"reward0039",
 		"cost":4,
 		"name_en":"branching paths",
-		"name_kr":"갈림길",
+		"name":"갈림길",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":43294,
@@ -484,10 +484,10 @@ var rewardList = [
 		"text":"두 번 선택 - 카드를 1장 뽑습니다. 또는 내 하수인들에게 공격력을 +1 부여합니다. 또는 방어도를 +6 얻습니다."
 	}, 
 	{
-		"ID":"reward0040",
+		"id":"reward0040",
 		"cost":4,
 		"name_en":"ironwood golem",
-		"name_kr":"강철나무 골렘",
+		"name":"강철나무 골렘",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":43284,
@@ -497,10 +497,10 @@ var rewardList = [
 		"text":"도발, 내 방어도가 3 이상일 때에만 공격할 수 있습니다."
 	}, 
 	{
-		"ID":"reward0041",
+		"id":"reward0041",
 		"cost":4,
 		"name_en":"oaken summons",
-		"name_kr":"참나무 소환술",
+		"name":"참나무 소환술",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":45828,
@@ -508,10 +508,10 @@ var rewardList = [
 		"text":"방어도를 +6 얻고 비용이 (4) 이하인 하수인을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0042",
+		"id":"reward0042",
 		"cost":10,
 		"name_en":"ultimate infestation",
-		"name_kr":"궁극의 역병",
+		"name":"궁극의 역병",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":42759,
@@ -519,10 +519,10 @@ var rewardList = [
 		"text":"피해를 5 주고, 카드를 5장 뽑고, 방어도를 +5 얻고, 5/5 구울을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0043",
+		"id":"reward0043",
 		"cost":1,
 		"name_en":"jade idol",
-		"name_kr":"비취 우상",
+		"name":"비취 우상",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":40372,
@@ -530,10 +530,10 @@ var rewardList = [
 		"text":"선택 - 비취 골렘을 하나 소환합니다. 또는 이 카드를 3장 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0044",
+		"id":"reward0044",
 		"cost":3,
 		"name_en":"jade blossom",
-		"name_kr":"비취꽃",
+		"name":"비취꽃",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":40523,
@@ -541,10 +541,10 @@ var rewardList = [
 		"text":"비취 골렘을 하나 소환합니다. 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0045",
+		"id":"reward0045",
 		"cost":4,
 		"name_en":"jade spirit",
-		"name_kr":"비취 정령",
+		"name":"비취 정령",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":40527,
@@ -555,10 +555,10 @@ var rewardList = [
 		"text":"전투의 함성: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0046",
+		"id":"reward0046",
 		"cost":6,
 		"name_en":"aya blackpaw",
-		"name_kr":"아이야 블랙포우",
+		"name":"아이야 블랙포우",
 		"class":"드루이드,도적,주술사",
 		"rarity":"전설",
 		"cardid":40596,
@@ -568,10 +568,10 @@ var rewardList = [
 		"text":"전투의 함성과 죽음의 메아리: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0047",
+		"id":"reward0047",
 		"cost":6,
 		"name_en":"jade behemoth",
-		"name_kr":"비취 괴수",
+		"name":"비취 괴수",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":40797,
@@ -581,10 +581,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0048",
+		"id":"reward0048",
 		"cost":1,
 		"name_en":"fire fly",
-		"name_kr":"반딧불 정령",
+		"name":"반딧불 정령",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41323,
@@ -595,10 +595,10 @@ var rewardList = [
 		"text":"전투의 함성: 1/2 정령 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0049",
+		"id":"reward0049",
 		"cost":1,
 		"name_en":"living roots",
-		"name_kr":"살아있는 뿌리",
+		"name":"살아있는 뿌리",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2792,
@@ -606,10 +606,10 @@ var rewardList = [
 		"text":"선택 - 피해를 2 줍니다. 또는 1/1 묘목을 둘 소환합니다."
 	}, 
 	{
-		"ID":"reward0050",
+		"id":"reward0050",
 		"cost":1,
 		"name_en":"mark of the lotus",
-		"name_kr":"연꽃의 징표",
+		"name":"연꽃의 징표",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":40397,
@@ -617,10 +617,10 @@ var rewardList = [
 		"text":"내 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0051",
+		"id":"reward0051",
 		"cost":2,
 		"name_en":"druid of the swarm",
-		"name_kr":"무리의 드루이드",
+		"name":"무리의 드루이드",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":42651,
@@ -630,10 +630,10 @@ var rewardList = [
 		"text":"선택 - 1/2 독성 하수인 또는 1/5 도발 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0052",
+		"id":"reward0052",
 		"cost":2,
 		"name_en":"haunted creeper",
-		"name_kr":"유령 들린 거미",
+		"name":"유령 들린 거미",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1781,
@@ -644,10 +644,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 1/1 유령 거미를 2마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0053",
+		"id":"reward0053",
 		"cost":3,
 		"name_en":"crypt lord",
-		"name_kr":"지하군주",
+		"name":"지하군주",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":43025,
@@ -657,10 +657,10 @@ var rewardList = [
 		"text":"도발 내 하수인이 소환된 후에, 생명력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0054",
+		"id":"reward0054",
 		"cost":3,
 		"name_en":"savage roar",
-		"name_kr":"야생의 포효",
+		"name":"야생의 포효",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":742,
@@ -668,10 +668,10 @@ var rewardList = [
 		"text":"이번 턴에 내 캐릭터들에게 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0055",
+		"id":"reward0055",
 		"cost":4,
 		"name_en":"soul of the forest",
-		"name_kr":"숲의 영혼",
+		"name":"숲의 영혼",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":381,
@@ -679,10 +679,10 @@ var rewardList = [
 		"text":"내 하수인들에게 \"죽음의 메아리: 2/2 나무정령 하나 소환\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0056",
+		"id":"reward0056",
 		"cost":5,
 		"name_en":"fatespinner",
-		"name_kr":"운명술사",
+		"name":"운명술사",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":42615,
@@ -692,10 +692,10 @@ var rewardList = [
 		"text":"죽음의 메아리 (비밀) 선택 - 모든 하수인에게 피해를 3 줍니다. 또는 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0057",
+		"id":"reward0057",
 		"cost":5,
 		"name_en":"force of nature",
-		"name_kr":"자연의 군대",
+		"name":"자연의 군대",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":493,
@@ -703,10 +703,10 @@ var rewardList = [
 		"text":"2/2 나무정령을 셋 소환합니다."
 	}, 
 	{
-		"ID":"reward0058",
+		"id":"reward0058",
 		"cost":5,
 		"name_en":"ixlid, fungal lord",
-		"name_kr":"곰팡이 군주 익슬리드",
+		"name":"곰팡이 군주 익슬리드",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":45859,
@@ -717,10 +717,10 @@ var rewardList = [
 		"text":"내가 하수인을 낸 후에, 그 하수인을 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0059",
+		"id":"reward0059",
 		"cost":5,
 		"name_en":"living mana",
-		"name_kr":"살아 움직이는 마나",
+		"name":"살아 움직이는 마나",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":41094,
@@ -728,10 +728,10 @@ var rewardList = [
 		"text":"내 마나 수정들을 2/2 하수인으로 변신시킵니다. 그 하수인들이 죽으면 빈 마나 수정을 획득합니다."
 	}, 
 	{
-		"ID":"reward0060",
+		"id":"reward0060",
 		"cost":1,
 		"name_en":"jungle giants",
-		"name_kr":"밀림의 괴수들",
+		"name":"밀림의 괴수들",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":41099,
@@ -739,10 +739,10 @@ var rewardList = [
 		"text":"퀘스트: 공격력이 5 이상인 하수인을 5회 소환해야 합니다. 보상: 바르나부스"
 	}, 
 	{
-		"ID":"reward0061",
+		"id":"reward0061",
 		"cost":3,
 		"name_en":"celestial dreamer",
-		"name_kr":"천신의 꿈술사",
+		"name":"천신의 꿈술사",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":40404,
@@ -752,10 +752,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 공격력이 5 이상인 하수인이 있으면, +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0062",
+		"id":"reward0062",
 		"cost":3,
 		"name_en":"druid of the flame",
-		"name_kr":"화염의 드루이드",
+		"name":"화염의 드루이드",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2292,
@@ -765,10 +765,10 @@ var rewardList = [
 		"text":"선택 - 5/2 또는 2/5 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0063",
+		"id":"reward0063",
 		"cost":3,
 		"name_en":"elder longneck",
-		"name_kr":"덩치 큰 긴목공룡",
+		"name":"덩치 큰 긴목공룡",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":41086,
@@ -779,10 +779,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 공격력이 5 이상인 하수인이 있으면, 적응합니다."
 	}, 
 	{
-		"ID":"reward0064",
+		"id":"reward0064",
 		"cost":3,
 		"name_en":"king mukla",
-		"name_kr":"밀림의 왕 무클라",
+		"name":"밀림의 왕 무클라",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1693,
@@ -793,10 +793,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편에게 바나나를 2개 줍니다."
 	}, 
 	{
-		"ID":"reward0065",
+		"id":"reward0065",
 		"cost":4,
 		"name_en":"cursed disciple",
-		"name_kr":"저주받은 사도",
+		"name":"저주받은 사도",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":45594,
@@ -806,10 +806,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 5/1 망령을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0066",
+		"id":"reward0066",
 		"cost":4,
 		"name_en":"shellshifter",
-		"name_kr":"껍질술사",
+		"name":"껍질술사",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":40973,
@@ -819,10 +819,10 @@ var rewardList = [
 		"text":"선택 - 5/3 은신 하수인 또는 3/5 도발 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0067",
+		"id":"reward0067",
 		"cost":10,
 		"name_en":"kun the forgotten king",
-		"name_kr":"잊힌 왕 쿤",
+		"name":"잊힌 왕 쿤",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":40416,
@@ -832,10 +832,10 @@ var rewardList = [
 		"text":"선택 - 방어도를 +10 얻습니다. 또는 내 마나 수정을 모두 회복합니다."
 	}, 
 	{
-		"ID":"reward0068",
+		"id":"reward0068",
 		"cost":10,
 		"name_en":"tyrantus",
-		"name_kr":"티란투스",
+		"name":"티란투스",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":41954,
@@ -846,10 +846,10 @@ var rewardList = [
 		"text":"이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
 	}, 
 	{
-		"ID":"reward0069",
+		"id":"reward0069",
 		"cost":2,
 		"name_en":"beckoner of evil",
-		"name_kr":"악의 신도",
+		"name":"악의 신도",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38859,
@@ -859,10 +859,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0070",
+		"id":"reward0070",
 		"cost":3,
 		"name_en":"disciple of c'thun",
-		"name_kr":"크툰의 사도",
+		"name":"크툰의 사도",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38547,
@@ -872,10 +872,10 @@ var rewardList = [
 		"text":"전투의 함성: 피해를 2 줍니다. 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0071",
+		"id":"reward0071",
 		"cost":3,
 		"name_en":"twilight elder",
-		"name_kr":"황혼의 장로",
+		"name":"황혼의 장로",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38868,
@@ -885,10 +885,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0072",
+		"id":"reward0072",
 		"cost":4,
 		"name_en":"c'thun's chosen",
-		"name_kr":"크툰의 추종자",
+		"name":"크툰의 추종자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38863,
@@ -898,10 +898,10 @@ var rewardList = [
 		"text":"천상의 보호막 전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0073",
+		"id":"reward0073",
 		"cost":4,
 		"name_en":"klaxxi amver-weaver",
-		"name_kr":"클락시 호박술사",
+		"name":"클락시 호박술사",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":38621,
@@ -911,10 +911,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 크툰의 공격력이 10 이상이면, 생명력을 +5 얻습니다."
 	}, 
 	{
-		"ID":"reward0074",
+		"id":"reward0074",
 		"cost":5,
 		"name_en":"crazed worshipper",
-		"name_kr":"실성한 신봉자",
+		"name":"실성한 신봉자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":38958,
@@ -924,10 +924,10 @@ var rewardList = [
 		"text":"도발, 이 하수인이 피해를 입을 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0075",
+		"id":"reward0075",
 		"cost":6,
 		"name_en":"dark arakkoa",
-		"name_kr":"어둠에 물든 아라코아",
+		"name":"어둠에 물든 아라코아",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":38882,
@@ -937,10 +937,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 내 크툰에게 +3/+3을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0076",
+		"id":"reward0076",
 		"cost":7,
 		"name_en":"twin emperor vek'lor",
-		"name_kr":"쌍둥이 제왕 베클로어",
+		"name":"쌍둥이 제왕 베클로어",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38488,
@@ -950,10 +950,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 내 크툰의 공격력이 10 이상이면, 다른 쌍둥이 제왕을 소환합니다."
 	}, 
 	{
-		"ID":"reward0077",
+		"id":"reward0077",
 		"cost":8,
 		"name_en":"doomcaller",
-		"name_kr":"파멸의 사절",
+		"name":"파멸의 사절",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38795,
@@ -963,10 +963,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든) 내 크툰이 죽었다면, 크툰을 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0078",
+		"id":"reward0078",
 		"cost":10,
 		"name_en":"c'thun",
-		"name_kr":"크툰",
+		"name":"크툰",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38856,
@@ -976,10 +976,10 @@ var rewardList = [
 		"text":"전투의 함성: 모든 적에게 이 하수인의 공격력만큼의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
-		"ID":"reward0079",
+		"id":"reward0079",
 		"cost":1,
 		"name_en":"raven idol",
-		"name_kr":"까마귀 우상",
+		"name":"까마귀 우상",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":13335,
@@ -987,10 +987,10 @@ var rewardList = [
 		"text":"선택 - 하수인을 하나 발견합니다. 또는 주문을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0080",
+		"id":"reward0080",
 		"cost":2,
 		"name_en":"anodized robo cub",
-		"name_kr":"양극 처리 로봇 새끼곰",
+		"name":"양극 처리 로봇 새끼곰",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":2096,
@@ -1001,10 +1001,10 @@ var rewardList = [
 		"text":"도발, 선택 - 공격력 +1 또는 생명력 +1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0081",
+		"id":"reward0081",
 		"cost":2,
 		"name_en":"wrath",
-		"name_kr":"천벌",
+		"name":"천벌",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":836,
@@ -1012,10 +1012,10 @@ var rewardList = [
 		"text":"선택 - 하수인 하나에게 피해를 3 줍니다. 또는 피해를 1 주고 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0082",
+		"id":"reward0082",
 		"cost":4,
 		"name_en":"fandral staghelm",
-		"name_kr":"판드랄 스태그헬름",
+		"name":"판드랄 스태그헬름",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":38318,
@@ -1025,10 +1025,10 @@ var rewardList = [
 		"text":"내 선택 효과의 두 능력이 모두 발동합니다."
 	}, 
 	{
-		"ID":"reward0083",
+		"id":"reward0083",
 		"cost":6,
 		"name_en":"dark wispers",
-		"name_kr":"어둠의 속삭임",
+		"name":"어둠의 속삭임",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":2009,
@@ -1036,10 +1036,10 @@ var rewardList = [
 		"text":"선택 - 1/1 위습을 5마리를 소환합니다. 또는 하수인 하나에게 +5/+5와 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0084",
+		"id":"reward0084",
 		"cost":7,
 		"name_en":"ancient of war",
-		"name_kr":"전쟁의 고대정령",
+		"name":"전쟁의 고대정령",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":1035,
@@ -1049,10 +1049,10 @@ var rewardList = [
 		"text":"선택 - 공격력 +5 또는 생명력 +5와 도발을 얻습니다."
 	}, 
 	{
-		"ID":"reward0085",
+		"id":"reward0085",
 		"cost":7,
 		"name_en":"wisps of the old gods",
-		"name_kr":"고대 신의 위습",
+		"name":"고대 신의 위습",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":38655,
@@ -1060,10 +1060,10 @@ var rewardList = [
 		"text":"선택 - 1/1 위습을 7마리 소환합니다. 또는 내 하수인들에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0086",
+		"id":"reward0086",
 		"cost":9,
 		"name_en":"cenarius",
-		"name_kr":"세나리우스",
+		"name":"세나리우스",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":36,
@@ -1073,10 +1073,10 @@ var rewardList = [
 		"text":"선택 - 내 다른 하수인들에게 +2/+2를 부여합니다. 또는 도발 능력이 있는 2/2 나무정령을 둘 소환합니다."
 	}, 
 	{
-		"ID":"reward0087",
+		"id":"reward0087",
 		"cost":0,
 		"name_en":"moonfire",
-		"name_kr":"달빛섬광",
+		"name":"달빛섬광",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":467,
@@ -1084,10 +1084,10 @@ var rewardList = [
 		"text":"피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0088",
+		"id":"reward0088",
 		"cost":2,
 		"name_en":"bloodmage thalnos",
-		"name_kr":"혈법사 탈노스",
+		"name":"혈법사 탈노스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":749,
@@ -1097,10 +1097,10 @@ var rewardList = [
 		"text":"주문 공격력 +1 죽음의 메아리: 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0089",
+		"id":"reward0089",
 		"cost":4,
 		"name_en":"poison seeds",
-		"name_kr":"독성 씨앗",
+		"name":"독성 씨앗",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":1802,
@@ -1108,10 +1108,10 @@ var rewardList = [
 		"text":"모든 하수인을 처치하고 2/2 나무정령으로 교체합니다."
 	}, 
 	{
-		"ID":"reward0090",
+		"id":"reward0090",
 		"cost":5,
 		"name_en":"azure drake",
-		"name_kr":"하늘빛 비룡",
+		"name":"하늘빛 비룡",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":825,
@@ -1122,10 +1122,10 @@ var rewardList = [
 		"text":"주문 공격력 +1 전투의 함성: 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0091",
+		"id":"reward0091",
 		"cost":5,
 		"name_en":"starfall",
-		"name_kr":"별똥별",
+		"name":"별똥별",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":86,
@@ -1133,10 +1133,10 @@ var rewardList = [
 		"text":"선택 - 하수인 하나에게 피해를 5 줍니다. 또는 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0092",
+		"id":"reward0092",
 		"cost":6,
 		"name_en":"starfire",
-		"name_kr":"별빛섬광",
+		"name":"별빛섬광",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":823,
@@ -1144,10 +1144,10 @@ var rewardList = [
 		"text":"피해를 5 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0093",
+		"id":"reward0093",
 		"cost":9,
 		"name_en":"malygos",
-		"name_kr":"말리고스",
+		"name":"말리고스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":436,
@@ -1158,10 +1158,10 @@ var rewardList = [
 		"text":"주문 공격력 +5"
 	}, 
 	{
-		"ID":"reward0094",
+		"id":"reward0094",
 		"cost":1,
 		"name_en":"mistress of mixtures",
-		"name_kr":"혼합물 전문가",
+		"name":"혼합물 전문가",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41566,
@@ -1171,10 +1171,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 각 영웅의 생명력을 4씩 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0095",
+		"id":"reward0095",
 		"cost":1,
 		"name_en":"naturalize",
-		"name_kr":"자연화",
+		"name":"자연화",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":233,
@@ -1182,10 +1182,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치합니다. 상대편이 카드를 2장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0096",
+		"id":"reward0096",
 		"cost":3,
 		"name_en":"earthen ring farseer",
-		"name_kr":"대지 고리회 선견자",
+		"name":"대지 고리회 선견자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1651,
@@ -1195,10 +1195,10 @@ var rewardList = [
 		"text":"전투의 함성: 생명력을 3 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0097",
+		"id":"reward0097",
 		"cost":3,
 		"name_en":"healing touch",
-		"name_kr":"치유의 손길",
+		"name":"치유의 손길",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":773,
@@ -1206,10 +1206,10 @@ var rewardList = [
 		"text":"생명력을 8 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0098",
+		"id":"reward0098",
 		"cost":4,
 		"name_en":"refreshment vendor",
-		"name_kr":"투스카르 행상인",
+		"name":"투스카르 행상인",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2704,
@@ -1219,10 +1219,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 영웅의 생명력을 4씩 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0099",
+		"id":"reward0099",
 		"cost":5,
 		"name_en":"antique healbot",
-		"name_kr":"낡은 치유로봇",
+		"name":"낡은 치유로봇",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2037,
@@ -1233,10 +1233,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 영웅의 생명력을 8 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0100",
+		"id":"reward0100",
 		"cost":6,
 		"name_en":"moonglade portal",
-		"name_kr":"달숲 차원문",
+		"name":"달숲 차원문",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":39714,
@@ -1244,10 +1244,10 @@ var rewardList = [
 		"text":"생명력을 6 회복시킵니다. 비용이 6인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0101",
+		"id":"reward0101",
 		"cost":6,
 		"name_en":"recycle",
-		"name_kr":"재활용",
+		"name":"재활용",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":1995,
@@ -1255,10 +1255,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0102",
+		"id":"reward0102",
 		"cost":9,
 		"name_en":"tree of life",
-		"name_kr":"생명의 나무",
+		"name":"생명의 나무",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":2001,
@@ -1266,10 +1266,10 @@ var rewardList = [
 		"text":"모든 캐릭터를 최대 생명력으로 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0103",
+		"id":"reward0103",
 		"cost":3,
 		"name_en":"stonehill defender",
-		"name_kr":"바위언덕 수호병",
+		"name":"바위언덕 수호병",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41243,
@@ -1279,10 +1279,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 도발 하수인을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0104",
+		"id":"reward0104",
 		"cost":4,
 		"name_en":"strongshell scavenger",
-		"name_kr":"튼튼껍질 청소부",
+		"name":"튼튼껍질 청소부",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":43022,
@@ -1292,10 +1292,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 도발 하수인들에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0105",
+		"id":"reward0105",
 		"cost":6,
 		"name_en":"hungry ettin",
-		"name_kr":"굶주린 거인",
+		"name":"굶주린 거인",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":46082,
@@ -1305,10 +1305,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 상대편에게 비용이 2인 하수인 하나를 무작위로 소환해 줍니다."
 	}, 
 	{
-		"ID":"reward0106",
+		"id":"reward0106",
 		"cost":6,
 		"name_en":"spreading plague",
-		"name_kr":"퍼져나가는 역병",
+		"name":"퍼져나가는 역병",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":42656,
@@ -1316,10 +1316,10 @@ var rewardList = [
 		"text":"도발 능력이 있는 1/5 딱정벌레를 하나 소환합니다. 상대편의 하수인이 더 많으면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
-		"ID":"reward0107",
+		"id":"reward0107",
 		"cost":7,
 		"name_en":"malfurion the pestilent",
-		"name_kr":"역병의 드루이드 말퓨리온",
+		"name":"역병의 드루이드 말퓨리온",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":43417,
@@ -1328,10 +1328,10 @@ var rewardList = [
 		"text":"선택 - 독성 능력이 있는 거미를 2마리 소환합니다. 또는 도발 능력이 있는 딱정벌레를 2마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0108",
+		"id":"reward0108",
 		"cost":7,
 		"name_en":"the curator",
-		"name_kr":"전시 관리인",
+		"name":"전시 관리인",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":39225,
@@ -1342,10 +1342,10 @@ var rewardList = [
 		"text":"도발 전투의 함성: 내 덱에서 야수, 용족, 멀록을 하나씩 뽑습니다."
 	}, 
 	{
-		"ID":"reward0109",
+		"id":"reward0109",
 		"cost":8,
 		"name_en":"grizzled guardian",
-		"name_kr":"불곰 수호병",
+		"name":"불곰 수호병",
 		"class":"드루이드",
 		"rarity":"희귀",
 		"cardid":45835,
@@ -1356,10 +1356,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 비용이 (4) 이하인 하수인을 둘 소집합니다."
 	}, 
 	{
-		"ID":"reward0110",
+		"id":"reward0110",
 		"cost":8,
 		"name_en":"ironbark protector",
-		"name_kr":"무쇠껍질 수호정령",
+		"name":"무쇠껍질 수호정령",
 		"class":"드루이드",
 		"rarity":"일반",
 		"cardid":205,
@@ -1369,10 +1369,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0111",
+		"id":"reward0111",
 		"cost":8,
 		"name_en":"primordial drake",
-		"name_kr":"태고의 비룡",
+		"name":"태고의 비룡",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41929,
@@ -1383,10 +1383,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 다른 모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0112",
+		"id":"reward0112",
 		"cost":9,
 		"name_en":"hadronox",
-		"name_kr":"하드로녹스",
+		"name":"하드로녹스",
 		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":43439,
@@ -1397,10 +1397,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이번 게임에서 죽은 내 도발 하수인들을 소환합니다."
 	}, 
 	{
-		"ID":"reward0113",
+		"id":"reward0113",
 		"cost":5,
 		"name_en":"lunar visions",
-		"name_kr":"달의 계시",
+		"name":"달의 계시",
 		"class":"드루이드",
 		"rarity":"영웅",
 		"cardid":40615,
@@ -1408,10 +1408,10 @@ var rewardList = [
 		"text":"카드를 2장 뽑습니다. 하수인이면, 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0114",
+		"id":"reward0114",
 		"cost":8,
 		"name_en":"ragnaros the firelord",
-		"name_kr":"불의 군주 라그나로스",
+		"name":"불의 군주 라그나로스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2318,
@@ -1420,10 +1420,10 @@ var rewardList = [
 		"text":"이 하수인은 적을 공격할 수 없습니다. 내 턴이 끝날 때, 무작위 적 하나에게 피해를 8 줍니다."
 	}, 
 	{
-		"ID":"reward0115",
+		"id":"reward0115",
 		"cost":8,
 		"name_en":"sneed's old shredder",
-		"name_kr":"스니드의 낡은 벌목기",
+		"name":"스니드의 낡은 벌목기",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2082,
@@ -1434,10 +1434,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 전설 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0116",
+		"id":"reward0116",
 		"cost":8,
 		"name_en":"the lich king",
-		"name_kr":"리치 왕",
+		"name":"리치 왕",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":42818,
@@ -1447,10 +1447,10 @@ var rewardList = [
 		"text":"도발 내 턴이 끝날 때, 무작위 죽음의 기사 카드 1장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0117",
+		"id":"reward0117",
 		"cost":9,
 		"name_en":"aviana",
-		"name_kr":"아비아나",
+		"name":"아비아나",
 		"class":"",
 		"rarity":"전설",
 		"cardid":2796,
@@ -1460,10 +1460,10 @@ var rewardList = [
 		"text":"내 하수인들의 비용이 (1)이 됩니다."
 	}, 
 	{
-		"ID":"reward0118",
+		"id":"reward0118",
 		"cost":9,
 		"name_en":"soggoth the slitherer",
-		"name_kr":"음험한 소고스",
+		"name":"음험한 소고스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":39119,
@@ -1473,10 +1473,10 @@ var rewardList = [
 		"text":"도발 이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
 	}, 
 	{
-		"ID":"reward0119",
+		"id":"reward0119",
 		"cost":9,
 		"name_en":"ysera",
-		"name_kr":"이세라",
+		"name":"이세라",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1186,
@@ -1487,10 +1487,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 꿈 카드 1장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0120",
+		"id":"reward0120",
 		"cost":10,
 		"name_en":"deathwing",
-		"name_kr":"데스윙",
+		"name":"데스윙",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":834,
@@ -1501,10 +1501,10 @@ var rewardList = [
 		"text":"전투의 함성: 전장의 다른 모든 하수인을 처치하고 내 손에 있는 카드를 모두 버립니다."
 	}, 
 	{
-		"ID":"reward0121",
+		"id":"reward0121",
 		"cost":10,
 		"name_en":"y'shaarj, rage unbound",
-		"name_kr":"해방된 분노 이샤라즈",
+		"name":"해방된 분노 이샤라즈",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38312,
@@ -1514,10 +1514,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 덱에서 하수인 하나를 뽑아 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0122",
+		"id":"reward0122",
 		"cost":1,
 		"name_en":"stontusk boar",
-		"name_kr":"돌엄니멧돼지",
+		"name":"돌엄니멧돼지",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":648,
@@ -1528,10 +1528,10 @@ var rewardList = [
 		"text":"돌진"
 	}, 
 	{
-		"ID":"reward0123",
+		"id":"reward0123",
 		"cost":1,
 		"name_en":"hunter's mark",
-		"name_kr":"사냥꾼의 징표",
+		"name":"사냥꾼의 징표",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":141,
@@ -1539,10 +1539,10 @@ var rewardList = [
 		"text":"하수인 하나의 생명력을 1로 바꿉니다."
 	}, 
 	{
-		"ID":"reward0124",
+		"id":"reward0124",
 		"cost":2,
 		"name_en":"dire wolf alpha",
-		"name_kr":"광포한 늑대 우두머리",
+		"name":"광포한 늑대 우두머리",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":985,
@@ -1553,10 +1553,10 @@ var rewardList = [
 		"text":"양옆의 하수인들이 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0125",
+		"id":"reward0125",
 		"cost":2,
 		"name_en":"explosive trap",
-		"name_kr":"폭발의 덫",
+		"name":"폭발의 덫",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":585,
@@ -1564,10 +1564,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅이 공격받으면, 모든 적에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0126",
+		"id":"reward0126",
 		"cost":3,
 		"name_en":"unleash the hounds",
-		"name_kr":"개들을 풀어라",
+		"name":"개들을 풀어라",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":1243,
@@ -1575,10 +1575,10 @@ var rewardList = [
 		"text":"적 하수인 하나당 돌진 능력이 있는 1/1 사냥개를 1마리씩 소환합니다."
 	}, 
 	{
-		"ID":"reward0127",
+		"id":"reward0127",
 		"cost":3,
 		"name_en":"eaglehorn bow",
-		"name_kr":"독수리뿔 장궁",
+		"name":"독수리뿔 장궁",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":1662,
@@ -1588,10 +1588,10 @@ var rewardList = [
 		"text":"내 비밀이 밝혀질 때마다 내구도를 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0128",
+		"id":"reward0128",
 		"cost":3,
 		"name_en":"jungle panther",
-		"name_kr":"밀림 표범",
+		"name":"밀림 표범",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":921,
@@ -1602,10 +1602,10 @@ var rewardList = [
 		"text":"은신"
 	}, 
 	{
-		"ID":"reward0129",
+		"id":"reward0129",
 		"cost":3,
 		"name_en":"animal companon",
-		"name_kr":"야생의 벗",
+		"name":"야생의 벗",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":437,
@@ -1613,10 +1613,10 @@ var rewardList = [
 		"text":"무작위 동료 야수 1마리를 소환합니다."
 	}, 
 	{
-		"ID":"reward0130",
+		"id":"reward0130",
 		"cost":3,
 		"name_en":"deadly shot",
-		"name_kr":"치명적인 사격",
+		"name":"치명적인 사격",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":1093,
@@ -1624,10 +1624,10 @@ var rewardList = [
 		"text":"무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0131",
+		"id":"reward0131",
 		"cost":4,
 		"name_en":"oasis snapjaw",
-		"name_kr":"오아시스 무쇠턱거북",
+		"name":"오아시스 무쇠턱거북",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1370,
@@ -1637,10 +1637,10 @@ var rewardList = [
 		"race":"야수"
 	}, 
 	{
-		"ID":"reward0132",
+		"id":"reward0132",
 		"cost":1,
 		"name_en":"alleycat",
-		"name_kr":"길고양이",
+		"name":"길고양이",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":40426,
@@ -1651,10 +1651,10 @@ var rewardList = [
 		"text":"전투의 함성: 1/1 고양이를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0133",
+		"id":"reward0133",
 		"cost":1,
 		"name_en":"fiery bat",
-		"name_kr":"이글거리는 박쥐",
+		"name":"이글거리는 박쥐",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":38584,
@@ -1665,10 +1665,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 적 하나에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0134",
+		"id":"reward0134",
 		"cost":1,
 		"name_en":"timber wolf",
-		"name_kr":"회갈색 늑대",
+		"name":"회갈색 늑대",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":606,
@@ -1679,10 +1679,10 @@ var rewardList = [
 		"text":"내 다른 야수들이 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0135",
+		"id":"reward0135",
 		"cost":2,
 		"name_en":"crackling razormaw",
-		"name_kr":"파지직거리는 무쇠턱 랩터",
+		"name":"파지직거리는 무쇠턱 랩터",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":41358,
@@ -1693,10 +1693,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 야수 1마리를 적응시킵니다."
 	}, 
 	{
-		"ID":"reward0136",
+		"id":"reward0136",
 		"cost":2,
 		"name_en":"huge toad",
-		"name_kr":"왕두꺼비",
+		"name":"왕두꺼비",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2918,
@@ -1707,10 +1707,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 적 하나에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0137",
+		"id":"reward0137",
 		"cost":2,
 		"name_en":"kindly grandmother",
-		"name_kr":"인자한 할머니",
+		"name":"인자한 할머니",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":39481,
@@ -1721,10 +1721,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 3/2 커다란 나쁜 늑대를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0138",
+		"id":"reward0138",
 		"cost":2,
 		"name_en":"stubborn gastropod",
-		"name_kr":"완강한 복족이",
+		"name":"완강한 복족이",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46204,
@@ -1735,10 +1735,10 @@ var rewardList = [
 		"text":"도발, 독성"
 	}, 
 	{
-		"ID":"reward0139",
+		"id":"reward0139",
 		"cost":3,
 		"name_en":"bearshark",
-		"name_kr":"곰상어",
+		"name":"곰상어",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":42711,
@@ -1749,10 +1749,10 @@ var rewardList = [
 		"text":"이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
 	}, 
 	{
-		"ID":"reward0140",
+		"id":"reward0140",
 		"cost":3,
 		"name_en":"cave hydra",
-		"name_kr":"동굴 히드라",
+		"name":"동굴 히드라",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":43358,
@@ -1763,10 +1763,10 @@ var rewardList = [
 		"text":"공격하는 대상 양옆의 하수인들에게도 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0141",
+		"id":"reward0141",
 		"cost":3,
 		"name_en":"rat pack",
-		"name_kr":"쥐 떼",
+		"name":"쥐 떼",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":40428,
@@ -1777,10 +1777,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이 하수인의 공격력만큼 1/1 쥐를 소환합니다."
 	}, 
 	{
-		"ID":"reward0142",
+		"id":"reward0142",
 		"cost":5,
 		"name_en":"bittertide hydra",
-		"name_kr":"거센물결 히드라",
+		"name":"거센물결 히드라",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41263,
@@ -1791,10 +1791,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받을 때마다 내 영웅에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0143",
+		"id":"reward0143",
 		"cost":5,
 		"name_en":"bloodworm",
-		"name_kr":"피구더기",
+		"name":"피구더기",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45329,
@@ -1805,10 +1805,10 @@ var rewardList = [
 		"text":"생명력 흡수"
 	}, 
 	{
-		"ID":"reward0144",
+		"id":"reward0144",
 		"cost":5,
 		"name_en":"nesting roc",
-		"name_kr":"둥지를 튼 로크",
+		"name":"둥지를 튼 로크",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41305,
@@ -1819,10 +1819,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 다른 하수인이 둘 이상 있으면, 도발을 얻습니다."
 	}, 
 	{
-		"ID":"reward0145",
+		"id":"reward0145",
 		"cost":5,
 		"name_en":"stampeding kodo",
-		"name_kr":"날뛰는 코도",
+		"name":"날뛰는 코도",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1371,
@@ -1833,10 +1833,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력이 2 이하인 무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0146",
+		"id":"reward0146",
 		"cost":5,
 		"name_en":"tundra rhino",
-		"name_kr":"툰드라 코뿔소",
+		"name":"툰드라 코뿔소",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":699,
@@ -1847,10 +1847,10 @@ var rewardList = [
 		"text":"내 야수들이 돌진을 얻습니다."
 	}, 
 	{
-		"ID":"reward0147",
+		"id":"reward0147",
 		"cost":6,
 		"name_en":"deathstalker rexxar",
-		"name_kr":"죽음추적자 렉사르",
+		"name":"죽음추적자 렉사르",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":43398,
@@ -1859,10 +1859,10 @@ var rewardList = [
 		"text":"전투의 함성: 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0148",
+		"id":"reward0148",
 		"cost":6,
 		"name_en":"savannah highmane",
-		"name_kr":"사바나 사자",
+		"name":"사바나 사자",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":1261,
@@ -1873,10 +1873,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 2/2 하이에나를 2마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0149",
+		"id":"reward0149",
 		"cost":8,
 		"name_en":"charged devilsaur",
-		"name_kr":"감전된 데빌사우루스",
+		"name":"감전된 데빌사우루스",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41286,
@@ -1887,10 +1887,10 @@ var rewardList = [
 		"text":"돌진, 전투의 함성: 이번 턴에 영웅을 공격할 수 없습니다."
 	}, 
 	{
-		"ID":"reward0150",
+		"id":"reward0150",
 		"cost":8,
 		"name_en":"giant sand worm",
-		"name_kr":"거대한 모래 벌레",
+		"name":"거대한 모래 벌레",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":38909,
@@ -1901,10 +1901,10 @@ var rewardList = [
 		"text":"이 하수인은 공격하여 다른 하수인을 처치할 때마다 다시 공격할 수 있습니다."
 	}, 
 	{
-		"ID":"reward0151",
+		"id":"reward0151",
 		"cost":8,
 		"name_en":"kathrena winterwisp",
-		"name_kr":"카트레나 윈터위습",
+		"name":"카트레나 윈터위습",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":46390,
@@ -1914,10 +1914,10 @@ var rewardList = [
 		"text":"전투의 함성과 죽음의 메아리: 야수를 1마리 소집합니다."
 	}, 
 	{
-		"ID":"reward0152",
+		"id":"reward0152",
 		"cost":1,
 		"name_en":"arcane shot",
-		"name_kr":"신비한 사격",
+		"name":"신비한 사격",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":877,
@@ -1925,10 +1925,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0153",
+		"id":"reward0153",
 		"cost":2,
 		"name_en":"grievous bite",
-		"name_kr":"치명적인 이빨",
+		"name":"치명적인 이빨",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":41350,
@@ -1936,10 +1936,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2 주고 그 양옆의 하수인들에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0154",
+		"id":"reward0154",
 		"cost":2,
 		"name_en":"quick shot",
-		"name_kr":"속사",
+		"name":"속사",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":2260,
@@ -1947,10 +1947,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 내 손에 카드가 없으면, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0155",
+		"id":"reward0155",
 		"cost":2,
 		"name_en":"snipe",
-		"name_kr":"저격",
+		"name":"저격",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":814,
@@ -1958,10 +1958,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인에게 피해를 4 줍니다."
 	}, 
 	{
-		"ID":"reward0156",
+		"id":"reward0156",
 		"cost":2,
 		"name_en":"toxic arrow",
-		"name_kr":"맹독 화살",
+		"name":"맹독 화살",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":42648,
@@ -1969,10 +1969,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2 줍니다. 그 하수인이 생존하면, 독성을 부여합니다."
 	}, 
 	{
-		"ID":"reward0157",
+		"id":"reward0157",
 		"cost":3,
 		"name_en":"powershot",
-		"name_kr":"강화 사격",
+		"name":"강화 사격",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":2638,
@@ -1980,10 +1980,10 @@ var rewardList = [
 		"text":"선택한 하수인과 그 양옆의 하수인들에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0158",
+		"id":"reward0158",
 		"cost":4,
 		"name_en":"flanking strike",
-		"name_kr":"측방 강타",
+		"name":"측방 강타",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":43357,
@@ -1991,10 +1991,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 3 줍니다. 3/3 늑대를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0159",
+		"id":"reward0159",
 		"cost":4,
 		"name_en":"multi-shot",
-		"name_kr":"일제 사격",
+		"name":"일제 사격",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":292,
@@ -2002,10 +2002,10 @@ var rewardList = [
 		"text":"무작위 적 하수인 둘에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0160",
+		"id":"reward0160",
 		"cost":5,
 		"name_en":"cobra shot",
-		"name_kr":"코브라 사격",
+		"name":"코브라 사격",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":2041,
@@ -2013,10 +2013,10 @@ var rewardList = [
 		"text":"하수인 하나와 적 영웅에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0161",
+		"id":"reward0161",
 		"cost":5,
 		"name_en":"explosive shot",
-		"name_kr":"폭발 사격",
+		"name":"폭발 사격",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":394,
@@ -2024,10 +2024,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 5 주고 그 양옆의 하수인들에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0162",
+		"id":"reward0162",
 		"cost":2,
 		"name_en":"scavenging hyena",
-		"name_kr":"청소부 하이에나",
+		"name":"청소부 하이에나",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":1281,
@@ -2038,10 +2038,10 @@ var rewardList = [
 		"text":"아군 야수가 죽을 때마다 +2/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0163",
+		"id":"reward0163",
 		"cost":3,
 		"name_en":"eggnapper",
-		"name_kr":"알서리꾼",
+		"name":"알서리꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41249,
@@ -2051,10 +2051,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 1/1 랩터를 2마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0164",
+		"id":"reward0164",
 		"cost":3,
 		"name_en":"infest",
-		"name_kr":"감염",
+		"name":"감염",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":38329,
@@ -2062,10 +2062,10 @@ var rewardList = [
 		"text":"내 하수인들에게 \"죽음의 메아리: 무작위 야수 카드 1장을 내 손으로 가져옴\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0165",
+		"id":"reward0165",
 		"cost":4,
 		"name_en":"cult master",
-		"name_kr":"이교도 지도자",
+		"name":"이교도 지도자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":811,
@@ -2075,10 +2075,10 @@ var rewardList = [
 		"text":"내 다른 하수인이 죽을 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0166",
+		"id":"reward0166",
 		"cost":4,
 		"name_en":"infested tauren",
-		"name_kr":"감염된 타우렌",
+		"name":"감염된 타우렌",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38784,
@@ -2088,10 +2088,10 @@ var rewardList = [
 		"text":"도발 죽음의 메아리: 2/2 수액괴물을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0167",
+		"id":"reward0167",
 		"cost":6,
 		"name_en":"ball of spiders",
-		"name_kr":"거미떼",
+		"name":"거미떼",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":2483,
@@ -2099,10 +2099,10 @@ var rewardList = [
 		"text":"1/1 그물거미를 3마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0168",
+		"id":"reward0168",
 		"cost":7,
 		"name_en":"corridor creeper",
-		"name_kr":"징그러운 지하 벌레",
+		"name":"징그러운 지하 벌레",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":43515,
@@ -2113,10 +2113,10 @@ var rewardList = [
 		"text":"내 손에 이 카드가 있으면, 하수인이 죽을 때마다 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0169",
+		"id":"reward0169",
 		"cost":9,
 		"name_en":"call of the wild",
-		"name_kr":"야생의 부름",
+		"name":"야생의 부름",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":2991,
@@ -2124,10 +2124,10 @@ var rewardList = [
 		"text":"비용 감소"
 	}, 
 	{
-		"ID":"reward0170",
+		"id":"reward0170",
 		"cost":1,
 		"name_en":"candleshot",
-		"name_kr":"양초 화살",
+		"name":"양초 화살",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":45537,
@@ -2137,10 +2137,10 @@ var rewardList = [
 		"text":"공격할 때 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0171",
+		"id":"reward0171",
 		"cost":1,
 		"name_en":"secretkeeper",
-		"name_kr":"비밀지기",
+		"name":"비밀지기",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":158,
@@ -2150,10 +2150,10 @@ var rewardList = [
 		"text":"각 플레이어가 비밀을 낼 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0172",
+		"id":"reward0172",
 		"cost":2,
 		"name_en":"bear trap",
-		"name_kr":"곰 덫",
+		"name":"곰 덫",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":2641,
@@ -2161,10 +2161,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅이 공격받은 후에 도발 능력이 있는 3/3 곰을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0173",
+		"id":"reward0173",
 		"cost":2,
 		"name_en":"cat trick",
-		"name_kr":"고양이 마술",
+		"name":"고양이 마술",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":39160,
@@ -2172,10 +2172,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 주문을 시전한 후에, 은신 능력이 있는 4/2 표범을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0174",
+		"id":"reward0174",
 		"cost":2,
 		"name_en":"freezing trap",
-		"name_kr":"빙결의 덫",
+		"name":"빙결의 덫",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":519,
@@ -2183,10 +2183,10 @@ var rewardList = [
 		"text":"비밀: 적 하수인이 공격하면, 그 하수인을 주인의 손으로 돌려보내고 비용을 (2) 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0175",
+		"id":"reward0175",
 		"cost":2,
 		"name_en":"mad scientist",
-		"name_kr":"미치광이 과학자",
+		"name":"미치광이 과학자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1783,
@@ -2196,10 +2196,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 덱에 있는 비밀 카드 1장을 사용합니다."
 	}, 
 	{
-		"ID":"reward0176",
+		"id":"reward0176",
 		"cost":2,
 		"name_en":"misdirection",
-		"name_kr":"눈속임",
+		"name":"눈속임",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":1091,
@@ -2207,10 +2207,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅을 공격하는 적이 다른 무작위 캐릭터 하나를 공격하게 됩니다."
 	}, 
 	{
-		"ID":"reward0177",
+		"id":"reward0177",
 		"cost":2,
 		"name_en":"snake trap",
-		"name_kr":"뱀 덫",
+		"name":"뱀 덫",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":455,
@@ -2218,10 +2218,10 @@ var rewardList = [
 		"text":"비밀: 내 하수인이 공격받으면, 1/1 뱀을 3마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0178",
+		"id":"reward0178",
 		"cost":2,
 		"name_en":"venomstrike trap",
-		"name_kr":"독사 덫",
+		"name":"독사 덫",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":42525,
@@ -2229,10 +2229,10 @@ var rewardList = [
 		"text":"비밀: 내 하수인이 공격받으면, 독성 능력이 있는 2/3 코브라를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0179",
+		"id":"reward0179",
 		"cost":2,
 		"name_en":"wandering monster",
-		"name_kr":"떠도는 괴물",
+		"name":"떠도는 괴물",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":43359,
@@ -2240,10 +2240,10 @@ var rewardList = [
 		"text":"비밀: 적이 내 영웅을 공격할 때, 대신 맞아주는 비용이 3인 하수인 하나를 소환합니다."
 	}, 
 	{
-		"ID":"reward0180",
+		"id":"reward0180",
 		"cost":3,
 		"name_en":"cloaked huntress",
-		"name_kr":"망토 두른 여사냥꾼",
+		"name":"망토 두른 여사냥꾼",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":39492,
@@ -2253,10 +2253,10 @@ var rewardList = [
 		"text":"내 비밀의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0181",
+		"id":"reward0181",
 		"cost":4,
 		"name_en":"professor putricide",
-		"name_kr":"교수 퓨트리사이드",
+		"name":"교수 퓨트리사이드",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":46968,
@@ -2264,10 +2264,10 @@ var rewardList = [
 		"health":30
 	}, 
 	{
-		"ID":"reward0182",
+		"id":"reward0182",
 		"cost":5,
 		"name_en":"lesser emerald spellstone",
-		"name_kr":"하급 에메랄드 주문석",
+		"name":"하급 에메랄드 주문석",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":43363,
@@ -2275,10 +2275,10 @@ var rewardList = [
 		"text":"3/3 늑대를 2마리 소환합니다. (비밀 카드를 1회 내면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0183",
+		"id":"reward0183",
 		"cost":1,
 		"name_en":"stampede",
-		"name_kr":"쇄도",
+		"name":"쇄도",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":42232,
@@ -2286,10 +2286,10 @@ var rewardList = [
 		"text":"지옥불 젖소를 2마리 소환합니다. 모든 지옥불 젖소에게 돌진을 부여합니다."
 	}, 
 	{
-		"ID":"reward0184",
+		"id":"reward0184",
 		"cost":2,
 		"name_en":"dinomancy",
-		"name_kr":"공룡술",
+		"name":"공룡술",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":41363,
@@ -2297,10 +2297,10 @@ var rewardList = [
 		"text":"내 영웅 능력이 '야수 1마리에게 +2/+2를 부여합니다.'로 바뀝니다."
 	}, 
 	{
-		"ID":"reward0185",
+		"id":"reward0185",
 		"cost":3,
 		"name_en":"kill command",
-		"name_kr":"살상 명령",
+		"name":"살상 명령",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":296,
@@ -2308,10 +2308,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 내 전장에 야수가 있으면, 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0186",
+		"id":"reward0186",
 		"cost":4,
 		"name_en":"houndmaster",
-		"name_kr":"사냥개조련사",
+		"name":"사냥개조련사",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":1003,
@@ -2321,10 +2321,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 야수 1마리에게 +2/+2와 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0187",
+		"id":"reward0187",
 		"cost":5,
 		"name_en":"ram wrangler",
-		"name_kr":"산양 사육사",
+		"name":"산양 사육사",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":2552,
@@ -2334,10 +2334,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 야수가 있으면, 무작위 야수 1마리를 소환합니다."
 	}, 
 	{
-		"ID":"reward0188",
+		"id":"reward0188",
 		"cost":1,
 		"name_en":"small-time buccaneer",
-		"name_kr":"신참 해적단원",
+		"name":"신참 해적단원",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":40608,
@@ -2348,10 +2348,10 @@ var rewardList = [
 		"text":"내 영웅이 무기를 장착하고 있을 때 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0189",
+		"id":"reward0189",
 		"cost":2,
 		"name_en":"bloodsail raider",
-		"name_kr":"붉은해적단 약탈자",
+		"name":"붉은해적단 약탈자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":999,
@@ -2362,10 +2362,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기의 공격력만큼 공격력을 얻습니다."
 	}, 
 	{
-		"ID":"reward0190",
+		"id":"reward0190",
 		"cost":2,
 		"name_en":"glaivezooka",
-		"name_kr":"수리검포",
+		"name":"수리검포",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":2011,
@@ -2375,10 +2375,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위 아군 하수인 하나에게 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0191",
+		"id":"reward0191",
 		"cost":3,
 		"name_en":"rummaging kobold",
-		"name_kr":"뒤적거리는 코볼트",
+		"name":"뒤적거리는 코볼트",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46088,
@@ -2388,10 +2388,10 @@ var rewardList = [
 		"text":"전투의 함성: 파괴된 내 무기 중 하나를 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0192",
+		"id":"reward0192",
 		"cost":4,
 		"name_en":"ebon dragonsmith",
-		"name_kr":"칠흑의 용 대장장이",
+		"name":"칠흑의 용 대장장이",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":43465,
@@ -2402,10 +2402,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 무기의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0193",
+		"id":"reward0193",
 		"cost":5,
 		"name_en":"blingtron 3000",
-		"name_kr":"블링트론 3000",
+		"name":"블링트론 3000",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2087,
@@ -2416,10 +2416,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 플레이어가 무작위 무기를 하나씩 장착합니다."
 	}, 
 	{
-		"ID":"reward0194",
+		"id":"reward0194",
 		"cost":5,
 		"name_en":"piranha launcher",
-		"name_kr":"피라냐 투척기",
+		"name":"피라냐 투척기",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":40683,
@@ -2429,10 +2429,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에 1/1 피라냐를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0195",
+		"id":"reward0195",
 		"cost":6,
 		"name_en":"furnacefire colossus",
-		"name_kr":"용광로화염 거수",
+		"name":"용광로화염 거수",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":42779,
@@ -2442,10 +2442,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 모든 무기를 버리고 그 무기의 능력치를 얻습니다."
 	}, 
 	{
-		"ID":"reward0196",
+		"id":"reward0196",
 		"cost":7,
 		"name_en":"gladiator's longbow",
-		"name_kr":"검투사의 장궁",
+		"name":"검투사의 장궁",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":311,
@@ -2455,10 +2455,10 @@ var rewardList = [
 		"text":"내 영웅이 공격할 때, 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0197",
+		"id":"reward0197",
 		"cost":1,
 		"name_en":"tracking",
-		"name_kr":"추적",
+		"name":"추적",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":1047,
@@ -2466,10 +2466,10 @@ var rewardList = [
 		"text":"내가 다음에 뽑을 카드 3장을 미리 봅니다. 1장을 선택해 갖고, 나머지는 버립니다."
 	}, 
 	{
-		"ID":"reward0198",
+		"id":"reward0198",
 		"cost":2,
 		"name_en":"explorer's hat",
-		"name_kr":"탐험가의 모자",
+		"name":"탐험가의 모자",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":3001,
@@ -2477,10 +2477,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +1/+1과 \"죽음의 메아리: 탐험가의 모자를 내 손으로 가져옴\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0199",
+		"id":"reward0199",
 		"cost":2,
 		"name_en":"flare",
-		"name_kr":"섬광",
+		"name":"섬광",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":896,
@@ -2488,10 +2488,10 @@ var rewardList = [
 		"text":"모든 하수인이 은신을 잃습니다. 적의 모든 비밀을 없앱니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0200",
+		"id":"reward0200",
 		"cost":2,
 		"name_en":"jeweled scarab",
-		"name_kr":"보석 박힌 딱정벌레",
+		"name":"보석 박힌 딱정벌레",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2901,
@@ -2502,10 +2502,10 @@ var rewardList = [
 		"text":"전투의 함성: 비용이 3인 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0201",
+		"id":"reward0201",
 		"cost":2,
 		"name_en":"king's elekk",
-		"name_kr":"왕의 엘레크",
+		"name":"왕의 엘레크",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":2635,
@@ -2516,10 +2516,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 덱의 하수인 하나를 공개해 내 것의 비용이 더 높으면, 그 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0202",
+		"id":"reward0202",
 		"cost":2,
 		"name_en":"lock and load",
-		"name_kr":"실탄 장전",
+		"name":"실탄 장전",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":2484,
@@ -2527,10 +2527,10 @@ var rewardList = [
 		"text":"이번 턴에 내가 주문을 시전할 때마다 사냥꾼 카드 1장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
-		"ID":"reward0203",
+		"id":"reward0203",
 		"cost":2,
 		"name_en":"loot hoarder",
-		"name_kr":"전리품 수집가",
+		"name":"전리품 수집가",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":251,
@@ -2540,10 +2540,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0204",
+		"id":"reward0204",
 		"cost":3,
 		"name_en":"dreadscale",
-		"name_kr":"공포비늘",
+		"name":"공포비늘",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2634,
@@ -2554,10 +2554,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 다른 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0205",
+		"id":"reward0205",
 		"cost":3,
 		"name_en":"stitched tracker",
-		"name_kr":"기워 붙인 추적자",
+		"name":"기워 붙인 추적자",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":42707,
@@ -2567,10 +2567,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에서 하수인을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0206",
+		"id":"reward0206",
 		"cost":1,
 		"name_en":"play dead",
-		"name_kr":"죽은척!",
+		"name":"죽은척!",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":42652,
@@ -2578,10 +2578,10 @@ var rewardList = [
 		"text":"아군 하수인 하나의 죽음의 메아리 능력을 발동시킵니다."
 	}, 
 	{
-		"ID":"reward0207",
+		"id":"reward0207",
 		"cost":2,
 		"name_en":"feign death",
-		"name_kr":"죽은 척하기",
+		"name":"죽은 척하기",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":1991,
@@ -2589,10 +2589,10 @@ var rewardList = [
 		"text":"내 하수인들의 죽음의 메아리 능력을 모두 발동시킵니다."
 	}, 
 	{
-		"ID":"reward0208",
+		"id":"reward0208",
 		"cost":3,
 		"name_en":"forlorn stalker",
-		"name_kr":"배신당한 사육사",
+		"name":"배신당한 사육사",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":38875,
@@ -2602,10 +2602,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 모든 죽음의 메아리 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0209",
+		"id":"reward0209",
 		"cost":3,
 		"name_en":"terrorscale stalker",
-		"name_kr":"공포비늘 추적자",
+		"name":"공포비늘 추적자",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":41304,
@@ -2615,10 +2615,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나의 죽음의 메아리 능력을 발동시킵니다."
 	}, 
 	{
-		"ID":"reward0210",
+		"id":"reward0210",
 		"cost":4,
 		"name_en":"exploding bloatbat",
-		"name_kr":"폭발하는 팽창박쥐",
+		"name":"폭발하는 팽창박쥐",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":42320,
@@ -2629,10 +2629,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0211",
+		"id":"reward0211",
 		"cost":5,
 		"name_en":"carnivorous cube",
-		"name_kr":"육식 보물상자",
+		"name":"육식 보물상자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":45195,
@@ -2642,10 +2642,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 처치합니다. 죽음의 메아리: 그 하수인을 둘 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0212",
+		"id":"reward0212",
 		"cost":5,
 		"name_en":"corpse widow",
-		"name_kr":"시체 과부거미",
+		"name":"시체 과부거미",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":42822,
@@ -2656,10 +2656,10 @@ var rewardList = [
 		"text":"내 죽음의 메아리 카드의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0213",
+		"id":"reward0213",
 		"cost":5,
 		"name_en":"princess huhuran",
-		"name_kr":"공주 후후란",
+		"name":"공주 후후란",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":38910,
@@ -2670,10 +2670,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나의 죽음의 메아리 능력을 발동시킵니다."
 	}, 
 	{
-		"ID":"reward0214",
+		"id":"reward0214",
 		"cost":6,
 		"name_en":"seeping oozeling",
-		"name_kr":"스며나오는 수액덩어리",
+		"name":"스며나오는 수액덩어리",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":46445,
@@ -2683,10 +2683,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 있는 무작위 하수인의 죽음의 메아리 능력을 얻습니다."
 	}, 
 	{
-		"ID":"reward0215",
+		"id":"reward0215",
 		"cost":6,
 		"name_en":"sylvanas windrunner",
-		"name_kr":"실바나스 윈드러너",
+		"name":"실바나스 윈드러너",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1721,
@@ -2696,10 +2696,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 적 하수인 하나를 가져옵니다."
 	}, 
 	{
-		"ID":"reward0216",
+		"id":"reward0216",
 		"cost":7,
 		"name_en":"abominable bowman",
-		"name_kr":"누더기골렘 궁병",
+		"name":"누더기골렘 궁병",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":43245,
@@ -2709,10 +2709,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이번 게임에서 죽은 무작위 아군 야수 1마리를 소환합니다."
 	}, 
 	{
-		"ID":"reward0217",
+		"id":"reward0217",
 		"cost":10,
 		"name_en":"n'zoth, the corrunpor",
-		"name_kr":"타락자 느조스",
+		"name":"타락자 느조스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38496,
@@ -2722,10 +2722,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 죽은 내 죽음의 메아리 하수인들을 소환합니다."
 	}, 
 	{
-		"ID":"reward0218",
+		"id":"reward0218",
 		"cost":4,
 		"name_en":"barnes",
-		"name_kr":"반즈",
+		"name":"반즈",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":39941,
@@ -2735,10 +2735,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에서 무작위 하수인 하나를 복사하여 1/1 하수인으로 소환합니다."
 	}, 
 	{
-		"ID":"reward0219",
+		"id":"reward0219",
 		"cost":5,
 		"name_en":"leeroy jenkins",
-		"name_kr":"리로이 젠킨스",
+		"name":"리로이 젠킨스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":559,
@@ -2748,10 +2748,10 @@ var rewardList = [
 		"text":"돌진 전투의 함성: 상대편에게 1/1 새끼용을 둘 소환해 줍니다."
 	}, 
 	{
-		"ID":"reward0220",
+		"id":"reward0220",
 		"cost":6,
 		"name_en":"maexxna",
-		"name_kr":"맥스나",
+		"name":"맥스나",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1791,
@@ -2762,10 +2762,10 @@ var rewardList = [
 		"text":"독성"
 	}, 
 	{
-		"ID":"reward0221",
+		"id":"reward0221",
 		"cost":7,
 		"name_en":"dr. boom",
-		"name_kr":"박사 붐",
+		"name":"박사 붐",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2078,
@@ -2775,10 +2775,10 @@ var rewardList = [
 		"text":"전투의 함성: 1/1 폭탄로봇을 둘 소환합니다. 경고: 로봇이 폭발할 수 있음."
 	}, 
 	{
-		"ID":"reward0222",
+		"id":"reward0222",
 		"cost":7,
 		"name_en":"swamp king dred",
-		"name_kr":"랩터왕 서슬발톱",
+		"name":"랩터왕 서슬발톱",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":41366,
@@ -2789,10 +2789,10 @@ var rewardList = [
 		"text":"상대편이 하수인을 낸 후에, 그 하수인을 공격합니다."
 	}, 
 	{
-		"ID":"reward0223",
+		"id":"reward0223",
 		"cost":8,
 		"name_en":"kel'thuzad",
-		"name_kr":"켈투자드",
+		"name":"켈투자드",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1794,
@@ -2802,10 +2802,10 @@ var rewardList = [
 		"text":"각 턴이 끝날 때, 이번 턴에 죽은 모든 아군 하수인을 소환합니다."
 	}, 
 	{
-		"ID":"reward0224",
+		"id":"reward0224",
 		"cost":9,
 		"name_en":"king krush",
-		"name_kr":"왕 크루쉬",
+		"name":"왕 크루쉬",
 		"class":"사냥꾼",
 		"rarity":"전설",
 		"cardid":1144,
@@ -2816,10 +2816,10 @@ var rewardList = [
 		"text":"돌진"
 	}, 
 	{
-		"ID":"reward0225",
+		"id":"reward0225",
 		"cost":2,
 		"name_en":"doomsayer",
-		"name_kr":"파멸의 예언자",
+		"name":"파멸의 예언자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":138,
@@ -2829,10 +2829,10 @@ var rewardList = [
 		"text":"내 턴이 시작될 때, 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0226",
+		"id":"reward0226",
 		"cost":3,
 		"name_en":"deathlord",
-		"name_kr":"죽음의 군주",
+		"name":"죽음의 군주",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1790,
@@ -2842,10 +2842,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 상대편이 덱에서 하수인 하나를 뽑아 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0227",
+		"id":"reward0227",
 		"cost":4,
 		"name_en":"defender of argus",
-		"name_kr":"아르거스의 수호자",
+		"name":"아르거스의 수호자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":763,
@@ -2855,10 +2855,10 @@ var rewardList = [
 		"text":"전투의 함성: 양옆의 하수인들에게 +1/+1과 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0228",
+		"id":"reward0228",
 		"cost":5,
 		"name_en":"sludge belcher",
-		"name_kr":"썩은위액 누더기골렘",
+		"name":"썩은위액 누더기골렘",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1793,
@@ -2868,10 +2868,10 @@ var rewardList = [
 		"text":"도발 죽음의 메아리: 도발 능력이 있는 1/2 수액괴물을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0229",
+		"id":"reward0229",
 		"cost":7,
 		"name_en":"crushing walls",
-		"name_kr":"다가오는 벽",
+		"name":"다가오는 벽",
 		"class":"사냥꾼",
 		"rarity":"영웅",
 		"cardid":46450,
@@ -2879,10 +2879,10 @@ var rewardList = [
 		"text":"상대편의 가장 왼쪽과 오른쪽에 있는 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0230",
+		"id":"reward0230",
 		"cost":1,
 		"name_en":"smuggler's crate",
-		"name_kr":"밀수업자의 상자",
+		"name":"밀수업자의 상자",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":40679,
@@ -2890,10 +2890,10 @@ var rewardList = [
 		"text":"내 손에 있는 무작위 야수 1마리에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0231",
+		"id":"reward0231",
 		"cost":2,
 		"name_en":"hidden cache",
-		"name_kr":"숨겨둔 보관함",
+		"name":"숨겨둔 보관함",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":40339,
@@ -2901,10 +2901,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0232",
+		"id":"reward0232",
 		"cost":2,
 		"name_en":"trogg beastrager",
-		"name_kr":"트로그 야수조련사",
+		"name":"트로그 야수조련사",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":40684,
@@ -2914,10 +2914,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 야수 1마리에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0233",
+		"id":"reward0233",
 		"cost":3,
 		"name_en":"shaky zipgunner",
-		"name_kr":"겁먹은 조직원",
+		"name":"겁먹은 조직원",
 		"class":"사냥꾼",
 		"rarity":"일반",
 		"cardid":40681,
@@ -2927,10 +2927,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0234",
+		"id":"reward0234",
 		"cost":4,
 		"name_en":"dispatch kodo",
-		"name_kr":"습격용 코도",
+		"name":"습격용 코도",
 		"class":"사냥꾼",
 		"rarity":"희귀",
 		"cardid":41126,
@@ -2941,10 +2941,10 @@ var rewardList = [
 		"text":"전투의 함성: 이 하수인의 공격력만큼 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0235",
+		"id":"reward0235",
 		"cost":5,
 		"name_en":"doppelgangster",
-		"name_kr":"분신수",
+		"name":"분신수",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":40953,
@@ -2954,10 +2954,10 @@ var rewardList = [
 		"text":"전투의 함성: 이 하수인을 둘 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0236",
+		"id":"reward0236",
 		"cost":6,
 		"name_en":"emperror thaurissan",
-		"name_kr":"제왕 타우릿산",
+		"name":"제왕 타우릿산",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2262,
@@ -2967,10 +2967,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 손에 있는 카드들의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0237",
+		"id":"reward0237",
 		"cost":7,
 		"name_en":"don han'cho",
-		"name_kr":"두목 한초",
+		"name":"두목 한초",
 		"class":"사냥꾼,성기사,전사",
 		"rarity":"전설",
 		"cardid":40703,
@@ -2980,10 +2980,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 하수인 하나에게 +5/+5를 부여합니다."
 	}, 
 	{
-		"ID":"reward0238",
+		"id":"reward0238",
 		"cost":1,
 		"name_en":"mana wrym",
-		"name_kr":"마나 지룡",
+		"name":"마나 지룡",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":405,
@@ -2993,10 +2993,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0239",
+		"id":"reward0239",
 		"cost":1,
 		"name_en":"arcane missiles",
-		"name_kr":"신비한 화살",
+		"name":"신비한 화살",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":564,
@@ -3004,10 +3004,10 @@ var rewardList = [
 		"text":"모든 적에게 3의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
-		"ID":"reward0240",
+		"id":"reward0240",
 		"cost":2,
 		"name_en":"sorcerer's apprentice",
-		"name_kr":"마술사의 수습생",
+		"name":"마술사의 수습생",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":614,
@@ -3017,10 +3017,10 @@ var rewardList = [
 		"text":"내 주문의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0241",
+		"id":"reward0241",
 		"cost":2,
 		"name_en":"frostbolt",
-		"name_kr":"얼음 화살",
+		"name":"얼음 화살",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":662,
@@ -3028,10 +3028,10 @@ var rewardList = [
 		"text":"캐릭터 하나에게 피해를 3 주고 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0242",
+		"id":"reward0242",
 		"cost":3,
 		"name_en":"ice barrier",
-		"name_kr":"얼음 보호막",
+		"name":"얼음 보호막",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":621,
@@ -3039,10 +3039,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅이 공격받으면, 방어도를 +8 얻습니다."
 	}, 
 	{
-		"ID":"reward0243",
+		"id":"reward0243",
 		"cost":4,
 		"name_en":"chillwind yeti",
-		"name_kr":"서리바람 설인",
+		"name":"서리바람 설인",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":90,
@@ -3051,10 +3051,10 @@ var rewardList = [
 		"health":5
 	}, 
 	{
-		"ID":"reward0244",
+		"id":"reward0244",
 		"cost":4,
 		"name_en":"fireball",
-		"name_kr":"화염구",
+		"name":"화염구",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":315,
@@ -3062,10 +3062,10 @@ var rewardList = [
 		"text":"피해를 6 줍니다."
 	}, 
 	{
-		"ID":"reward0245",
+		"id":"reward0245",
 		"cost":6,
 		"name_en":"blizzard",
-		"name_kr":"눈보라",
+		"name":"눈보라",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":457,
@@ -3073,10 +3073,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 2 주고 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0246",
+		"id":"reward0246",
 		"cost":0,
 		"name_en":"shifting scroll",
-		"name_kr":"변화하는 두루마리",
+		"name":"변화하는 두루마리",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":43420,
@@ -3084,10 +3084,10 @@ var rewardList = [
 		"text":"이 주문은 내 손에 있으면 내 턴이 시작될 때마다 무작위 마법사 주문으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0247",
+		"id":"reward0247",
 		"cost":1,
 		"name_en":"babbling book",
-		"name_kr":"나불대는 책",
+		"name":"나불대는 책",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":39169,
@@ -3097,10 +3097,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위 마법사 주문 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0248",
+		"id":"reward0248",
 		"cost":1,
 		"name_en":"open the waygate",
-		"name_kr":"고대 차원문 개방",
+		"name":"고대 차원문 개방",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":41168,
@@ -3108,10 +3108,10 @@ var rewardList = [
 		"text":"퀘스트: 게임이 시작됐을 때 내 덱에 없던 주문을 6회 시전해야 합니다. 보상: 시간 왜곡"
 	}, 
 	{
-		"ID":"reward0249",
+		"id":"reward0249",
 		"cost":2,
 		"name_en":"primordial glyph",
-		"name_kr":"태고의 문양",
+		"name":"태고의 문양",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":41496,
@@ -3119,10 +3119,10 @@ var rewardList = [
 		"text":"주문을 하나 발견합니다. 그 카드의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0250",
+		"id":"reward0250",
 		"cost":2,
 		"name_en":"unstable portal",
-		"name_kr":"불안정한 차원문",
+		"name":"불안정한 차원문",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":1929,
@@ -3130,10 +3130,10 @@ var rewardList = [
 		"text":"무작위 하수인 하나를 내 손으로 가져옵니다. 그 하수인의 비용이 (3) 감소합니다."
 	}, 
 	{
-		"ID":"reward0251",
+		"id":"reward0251",
 		"cost":3,
 		"name_en":"kabal courier",
-		"name_kr":"비밀결사 급사",
+		"name":"비밀결사 급사",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":40496,
@@ -3143,10 +3143,10 @@ var rewardList = [
 		"text":"전투의 함성: 마법사, 사제, 흑마법사 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0252",
+		"id":"reward0252",
 		"cost":3,
 		"name_en":"mana bind",
-		"name_kr":"마나 결속",
+		"name":"마나 결속",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":41158,
@@ -3154,10 +3154,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 주문을 시전하면, 그 주문을 복사하여 내 손으로 가져옵니다. 그 주문의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0253",
+		"id":"reward0253",
 		"cost":3,
 		"name_en":"spellslinger",
-		"name_kr":"주문사수",
+		"name":"주문사수",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":2571,
@@ -3167,10 +3167,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 플레이어가 무작위 주문을 1장씩 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0254",
+		"id":"reward0254",
 		"cost":4,
 		"name_en":"leyline manipulator",
-		"name_kr":"지맥 조작꾼",
+		"name":"지맥 조작꾼",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":46541,
@@ -3181,10 +3181,10 @@ var rewardList = [
 		"text":"전투의 함성: 게임이 시작됐을 때 내 덱에 없던 카드가 내 손에 있으면, 그 카드들의 비용을 (2) 감소시킵니다."
 	}, 
 	{
-		"ID":"reward0255",
+		"id":"reward0255",
 		"cost":5,
 		"name_en":"cabalist's tome",
-		"name_kr":"신비술사의 고서",
+		"name":"신비술사의 고서",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":38418,
@@ -3192,10 +3192,10 @@ var rewardList = [
 		"text":"무작위 마법사 주문 셋을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0256",
+		"id":"reward0256",
 		"cost":5,
 		"name_en":"ethereal conjurer",
-		"name_kr":"에테리얼 창조술사",
+		"name":"에테리얼 창조술사",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":2875,
@@ -3205,10 +3205,10 @@ var rewardList = [
 		"text":"전투의 함성: 주문을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0257",
+		"id":"reward0257",
 		"cost":2,
 		"name_en":"lesser ruby spellstone",
-		"name_kr":"하급 루비 주문석",
+		"name":"하급 루비 주문석",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":43414,
@@ -3216,10 +3216,10 @@ var rewardList = [
 		"text":"무작위 마법사 주문 하나를 내 손으로 가져옵니다. (정령을 2장 내면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0258",
+		"id":"reward0258",
 		"cost":2,
 		"name_en":"pyros",
-		"name_kr":"불사조 파이로스",
+		"name":"불사조 파이로스",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":41162,
@@ -3230,10 +3230,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이 하수인을 비용이 (6)인 6/6 하수인으로 내 손에 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0259",
+		"id":"reward0259",
 		"cost":2,
 		"name_en":"shimmering tempest",
-		"name_kr":"흐린빛 폭풍정령",
+		"name":"흐린빛 폭풍정령",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":41927,
@@ -3244,10 +3244,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 마법사 주문 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0260",
+		"id":"reward0260",
 		"cost":2,
 		"name_en":"volatile elemental",
-		"name_kr":"불안정한 정령",
+		"name":"불안정한 정령",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41524,
@@ -3258,10 +3258,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 적 하수인 하나에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0261",
+		"id":"reward0261",
 		"cost":4,
 		"name_en":"steam surger",
-		"name_kr":"쇄도하는 증기 정령",
+		"name":"쇄도하는 증기 정령",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":41154,
@@ -3272,10 +3272,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, '화염 분출' 카드 1장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0262",
+		"id":"reward0262",
 		"cost":4,
 		"name_en":"tol'vir stoneshaper",
-		"name_kr":"톨비르 바위세공사",
+		"name":"톨비르 바위세공사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41241,
@@ -3285,10 +3285,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 도발과 천상의 보호막을 얻습니다."
 	}, 
 	{
-		"ID":"reward0263",
+		"id":"reward0263",
 		"cost":4,
 		"name_en":"water elemental",
-		"name_kr":"물의 정령",
+		"name":"물의 정령",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":395,
@@ -3299,10 +3299,10 @@ var rewardList = [
 		"text":"이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0264",
+		"id":"reward0264",
 		"cost":5,
 		"name_en":"servant of kalimos",
-		"name_kr":"칼리모스의 시종",
+		"name":"칼리모스의 시종",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41410,
@@ -3313,10 +3313,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 정령을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0265",
+		"id":"reward0265",
 		"cost":7,
 		"name_en":"baron geddon",
-		"name_kr":"남작 게돈",
+		"name":"남작 게돈",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2328,
@@ -3324,10 +3324,10 @@ var rewardList = [
 		"health":30
 	}, 
 	{
-		"ID":"reward0266",
+		"id":"reward0266",
 		"cost":7,
 		"name_en":"blazecaller",
-		"name_kr":"불길소환사",
+		"name":"불길소환사",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41928,
@@ -3338,10 +3338,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0267",
+		"id":"reward0267",
 		"cost":9,
 		"name_en":"frost lich jaina",
-		"name_kr":"리치 여왕 제이나",
+		"name":"리치 여왕 제이나",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":43419,
@@ -3350,10 +3350,10 @@ var rewardList = [
 		"text":"전투의 함성: 3/6 물의 정령을 하나 소환합니다. 이번 게임에서 내 정령들이 생명력 흡수 능력을 얻습니다."
 	}, 
 	{
-		"ID":"reward0268",
+		"id":"reward0268",
 		"cost":9,
 		"name_en":"ozruk",
-		"name_kr":"오즈룩",
+		"name":"오즈룩",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41294,
@@ -3364,10 +3364,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다."
 	}, 
 	{
-		"ID":"reward0269",
+		"id":"reward0269",
 		"cost":1,
 		"name_en":"arcane blast",
-		"name_kr":"비전 작렬",
+		"name":"비전 작렬",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":2572,
@@ -3375,10 +3375,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2 줍니다. 이 주문은 주문 공격력의 효과를 2배로 받습니다."
 	}, 
 	{
-		"ID":"reward0270",
+		"id":"reward0270",
 		"cost":2,
 		"name_en":"cult sorcerer",
-		"name_kr":"이교도 마법사",
+		"name":"이교도 마법사",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":38900,
@@ -3388,10 +3388,10 @@ var rewardList = [
 		"text":"주문 공격력 +1, 내 주문이 시전된 후에, 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0271",
+		"id":"reward0271",
 		"cost":3,
 		"name_en":"flamewaker",
-		"name_kr":"불꽃꼬리 전사",
+		"name":"불꽃꼬리 전사",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":2275,
@@ -3401,10 +3401,10 @@ var rewardList = [
 		"text":"내 주문이 시전된 후에, 모든 적에게 2의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
-		"ID":"reward0272",
+		"id":"reward0272",
 		"cost":4,
 		"name_en":"violet teacher",
-		"name_kr":"보랏빛 여교사",
+		"name":"보랏빛 여교사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1029,
@@ -3414,10 +3414,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 1/1 보랏빛 수습생을 1명 소환합니다."
 	}, 
 	{
-		"ID":"reward0273",
+		"id":"reward0273",
 		"cost":6,
 		"name_en":"gadgetzan auctioneer",
-		"name_kr":"가젯잔 경매인",
+		"name":"가젯잔 경매인",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":932,
@@ -3427,10 +3427,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0274",
+		"id":"reward0274",
 		"cost":7,
 		"name_en":"archmage antonidas",
-		"name_kr":"대마법사 안토니다스",
+		"name":"대마법사 안토니다스",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":1080,
@@ -3440,10 +3440,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 '화염구' 카드 1장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0275",
+		"id":"reward0275",
 		"cost":1,
 		"name_en":"breath of sindragosa",
-		"name_kr":"신드라고사의 숨결",
+		"name":"신드라고사의 숨결",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":43502,
@@ -3451,10 +3451,10 @@ var rewardList = [
 		"text":"무작위 적 하수인 하나에게 피해를 2 주고 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0276",
+		"id":"reward0276",
 		"cost":1,
 		"name_en":"glacial shard",
-		"name_kr":"빙하의 정령",
+		"name":"빙하의 정령",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41111,
@@ -3465,10 +3465,10 @@ var rewardList = [
 		"text":"전투의 함성: 적 하나를 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0277",
+		"id":"reward0277",
 		"cost":2,
 		"name_en":"shatter",
-		"name_kr":"산산조각",
+		"name":"산산조각",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":38407,
@@ -3476,10 +3476,10 @@ var rewardList = [
 		"text":"빙결 상태인 하수인을 하나 처치합니다."
 	}, 
 	{
-		"ID":"reward0278",
+		"id":"reward0278",
 		"cost":2,
 		"name_en":"snowchugger",
-		"name_kr":"꽁꽁로봇",
+		"name":"꽁꽁로봇",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":1928,
@@ -3490,10 +3490,10 @@ var rewardList = [
 		"text":"이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0279",
+		"id":"reward0279",
 		"cost":3,
 		"name_en":"coldwraith",
-		"name_kr":"서리 망령",
+		"name":"서리 망령",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":42836,
@@ -3503,10 +3503,10 @@ var rewardList = [
 		"text":"전투의 함성: 빙결 상태인 적이 있으면, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0280",
+		"id":"reward0280",
 		"cost":3,
 		"name_en":"frost nova",
-		"name_kr":"얼음 회오리",
+		"name":"얼음 회오리",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":587,
@@ -3514,10 +3514,10 @@ var rewardList = [
 		"text":"모든 적 하수인을 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0281",
+		"id":"reward0281",
 		"cost":4,
 		"name_en":"cone of cold",
-		"name_kr":"냉기 돌풍",
+		"name":"냉기 돌풍",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":430,
@@ -3525,10 +3525,10 @@ var rewardList = [
 		"text":"선택한 하수인과 그 양옆의 하수인들을 빙결 상태로 만들고 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0282",
+		"id":"reward0282",
 		"cost":3,
 		"name_en":"forgotten torch",
-		"name_kr":"잊힌 횃불",
+		"name":"잊힌 횃불",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":2874,
@@ -3536,10 +3536,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 피해를 6 주는 '이글거리는 횃불' 카드 1장을 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0283",
+		"id":"reward0283",
 		"cost":3,
 		"name_en":"volcanic potion",
-		"name_kr":"화산 물약",
+		"name":"화산 물약",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":40297,
@@ -3547,10 +3547,10 @@ var rewardList = [
 		"text":"모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0284",
+		"id":"reward0284",
 		"cost":5,
 		"name_en":"dragon's fury",
-		"name_kr":"용의 분노",
+		"name":"용의 분노",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":2866,
@@ -3558,10 +3558,10 @@ var rewardList = [
 		"text":"공격력 +3"
 	}, 
 	{
-		"ID":"reward0285",
+		"id":"reward0285",
 		"cost":6,
 		"name_en":"meteor",
-		"name_kr":"유성",
+		"name":"유성",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":41878,
@@ -3569,10 +3569,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 15 주고 그 양옆의 하수인들에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0286",
+		"id":"reward0286",
 		"cost":7,
 		"name_en":"firelands portal",
-		"name_kr":"불의 땅 차원문",
+		"name":"불의 땅 차원문",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":39715,
@@ -3580,10 +3580,10 @@ var rewardList = [
 		"text":"피해를 5 줍니다. 비용이 5인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0287",
+		"id":"reward0287",
 		"cost":7,
 		"name_en":"flamestrike",
-		"name_kr":"불기둥",
+		"name":"불기둥",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":1004,
@@ -3591,10 +3591,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 4 줍니다."
 	}, 
 	{
-		"ID":"reward0288",
+		"id":"reward0288",
 		"cost":10,
 		"name_en":"pyroblast",
-		"name_kr":"불덩이 작렬",
+		"name":"불덩이 작렬",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":1087,
@@ -3602,10 +3602,10 @@ var rewardList = [
 		"text":"피해를 10 줍니다."
 	}, 
 	{
-		"ID":"reward0289",
+		"id":"reward0289",
 		"cost":2,
 		"name_en":"fallen hero",
-		"name_kr":"영웅의 넋",
+		"name":"영웅의 넋",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":2545,
@@ -3615,10 +3615,10 @@ var rewardList = [
 		"text":"내 영웅 능력의 피해량이 1 증가합니다."
 	}, 
 	{
-		"ID":"reward0290",
+		"id":"reward0290",
 		"cost":3,
 		"name_en":"auctionmaster beardo",
-		"name_kr":"경매장 지배인 비어도",
+		"name":"경매장 지배인 비어도",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":40605,
@@ -3628,10 +3628,10 @@ var rewardList = [
 		"text":"내 주문이 시전된 후에, 내 영웅 능력을 다시 사용할 수 있습니다."
 	}, 
 	{
-		"ID":"reward0291",
+		"id":"reward0291",
 		"cost":4,
 		"name_en":"dalaran aspirant",
-		"name_kr":"달라란 지원자",
+		"name":"달라란 지원자",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":2549,
@@ -3641,10 +3641,10 @@ var rewardList = [
 		"text":"격려: 주문 공격력 +1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0292",
+		"id":"reward0292",
 		"cost":5,
 		"name_en":"kvaldir raider",
-		"name_kr":"크발디르 약탈자",
+		"name":"크발디르 약탈자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2511,
@@ -3654,10 +3654,10 @@ var rewardList = [
 		"text":"격려: +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0293",
+		"id":"reward0293",
 		"cost":5,
 		"name_en":"mukla's champion",
-		"name_kr":"무클라의 용사",
+		"name":"무클라의 용사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2497,
@@ -3668,10 +3668,10 @@ var rewardList = [
 		"text":"격려: 내 다른 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0294",
+		"id":"reward0294",
 		"cost":5,
 		"name_en":"nexus-champion saraad",
-		"name_kr":"연합용사 사라아드",
+		"name":"연합용사 사라아드",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2683,
@@ -3681,10 +3681,10 @@ var rewardList = [
 		"text":"격려: 무작위 주문 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0295",
+		"id":"reward0295",
 		"cost":6,
 		"name_en":"coldarra drake",
-		"name_kr":"콜다라 비룡",
+		"name":"콜다라 비룡",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":2544,
@@ -3695,10 +3695,10 @@ var rewardList = [
 		"text":"내 영웅 능력을 여러 번 쓸 수 있습니다."
 	}, 
 	{
-		"ID":"reward0296",
+		"id":"reward0296",
 		"cost":6,
 		"name_en":"kodorider",
-		"name_kr":"코도 기수",
+		"name":"코도 기수",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":2598,
@@ -3708,10 +3708,10 @@ var rewardList = [
 		"text":"격려: 3/5 전투코도를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0297",
+		"id":"reward0297",
 		"cost":2,
 		"name_en":"raven familiar",
-		"name_kr":"까마귀 전령",
+		"name":"까마귀 전령",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":45269,
@@ -3722,10 +3722,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 덱의 주문 하나를 공개해 내 것의 비용이 더 높으면, 그 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0298",
+		"id":"reward0298",
 		"cost":5,
 		"name_en":"arcane tyrant",
-		"name_kr":"비전 폭군",
+		"name":"비전 폭군",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":43483,
@@ -3736,10 +3736,10 @@ var rewardList = [
 		"text":"이번 턴에 비용이 (5) 이상인 주문을 시전했으면, 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0299",
+		"id":"reward0299",
 		"cost":5,
 		"name_en":"deck of wonders",
-		"name_kr":"신비의 덱",
+		"name":"신비의 덱",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":43424,
@@ -3747,10 +3747,10 @@ var rewardList = [
 		"text":"내 덱에 두루마리 카드 5장을 섞어 넣습니다. 두루마리 카드를 뽑으면, 무작위 주문을 하나 시전합니다."
 	}, 
 	{
-		"ID":"reward0300",
+		"id":"reward0300",
 		"cost":6,
 		"name_en":"spiteful summoner",
-		"name_kr":"원한 맺힌 소환사",
+		"name":"원한 맺힌 소환사",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46551,
@@ -3760,10 +3760,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱의 주문 하나를 공개해, 같은 비용의 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0301",
+		"id":"reward0301",
 		"cost":8,
 		"name_en":"grand archivist",
-		"name_kr":"고위 기록관",
+		"name":"고위 기록관",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46032,
@@ -3773,10 +3773,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 덱에 있는 주문 하나를 시전합니다. (대상은 무작위로 선택)"
 	}, 
 	{
-		"ID":"reward0302",
+		"id":"reward0302",
 		"cost":9,
 		"name_en":"dragoncaller alanna",
-		"name_kr":"용소환사 알라나",
+		"name":"용소환사 알라나",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":46499,
@@ -3786,10 +3786,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 내가 비용이 (5) 이상인 주문을 시전한만큼 5/5 용을 소환합니다."
 	}, 
 	{
-		"ID":"reward0303",
+		"id":"reward0303",
 		"cost":1,
 		"name_en":"arcane artificer",
-		"name_kr":"비전 기술병",
+		"name":"비전 기술병",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":45590,
@@ -3800,10 +3800,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 그 주문의 비용만큼 방어도를 얻습니다."
 	}, 
 	{
-		"ID":"reward0304",
+		"id":"reward0304",
 		"cost":1,
 		"name_en":"mirror image",
-		"name_kr":"환영 복제",
+		"name":"환영 복제",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":1084,
@@ -3811,10 +3811,10 @@ var rewardList = [
 		"text":"0/2 도발 하수인을 둘 소환합니다."
 	}, 
 	{
-		"ID":"reward0305",
+		"id":"reward0305",
 		"cost":3,
 		"name_en":"arcane intellect",
-		"name_kr":"신비한 지능",
+		"name":"신비한 지능",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":555,
@@ -3822,10 +3822,10 @@ var rewardList = [
 		"text":"카드를 2장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0306",
+		"id":"reward0306",
 		"cost":3,
 		"name_en":"polymorph: boar",
-		"name_kr":"변이: 멧돼지",
+		"name":"변이: 멧돼지",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":2542,
@@ -3833,10 +3833,10 @@ var rewardList = [
 		"text":"하수인 하나를 돌진 능력이 있는 4/2 멧돼지로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0307",
+		"id":"reward0307",
 		"cost":3,
 		"name_en":"potion of polymorph",
-		"name_kr":"변이 물약",
+		"name":"변이 물약",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":40409,
@@ -3844,10 +3844,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 1/1 양으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0308",
+		"id":"reward0308",
 		"cost":4,
 		"name_en":"polymorph",
-		"name_kr":"변이",
+		"name":"변이",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":77,
@@ -3855,10 +3855,10 @@ var rewardList = [
 		"text":"하수인 하나를 1/1 양으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0309",
+		"id":"reward0309",
 		"cost":6,
 		"name_en":"aluneth",
-		"name_kr":"알루네스",
+		"name":"알루네스",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":43426,
@@ -3868,10 +3868,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 카드를 3장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0310",
+		"id":"reward0310",
 		"cost":8,
 		"name_en":"rhonin",
-		"name_kr":"로닌",
+		"name":"로닌",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":2546,
@@ -3881,10 +3881,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 신비한 화살 카드 3장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0311",
+		"id":"reward0311",
 		"cost":2,
 		"name_en":"arcanologist",
-		"name_kr":"비전학자",
+		"name":"비전학자",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":41153,
@@ -3894,10 +3894,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에서 비밀 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0312",
+		"id":"reward0312",
 		"cost":2,
 		"name_en":"medivh's valet",
-		"name_kr":"메디브의 하인",
+		"name":"메디브의 하인",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":39767,
@@ -3907,10 +3907,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 영웅에게 비밀이 걸려 있으면, 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0313",
+		"id":"reward0313",
 		"cost":3,
 		"name_en":"counterspell",
-		"name_kr":"마법 차단",
+		"name":"마법 차단",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":113,
@@ -3918,10 +3918,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 주문을 시전하면, 차단합니다."
 	}, 
 	{
-		"ID":"reward0314",
+		"id":"reward0314",
 		"cost":3,
 		"name_en":"duplicate",
-		"name_kr":"복제",
+		"name":"복제",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":1801,
@@ -3929,10 +3929,10 @@ var rewardList = [
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 둘 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0315",
+		"id":"reward0315",
 		"cost":3,
 		"name_en":"frozen clone",
-		"name_kr":"얼어붙은 분신",
+		"name":"얼어붙은 분신",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":42754,
@@ -3940,10 +3940,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 둘 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0316",
+		"id":"reward0316",
 		"cost":3,
 		"name_en":"ice block",
-		"name_kr":"얼음 방패",
+		"name":"얼음 방패",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":192,
@@ -3951,10 +3951,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅이 치명적인 피해를 받으면, 피해를 막고 이번 턴에 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0317",
+		"id":"reward0317",
 		"cost":3,
 		"name_en":"mirror entity",
-		"name_kr":"거울상",
+		"name":"거울상",
 		"class":"마법사",
 		"rarity":"일반",
 		"cardid":195,
@@ -3962,10 +3962,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0318",
+		"id":"reward0318",
 		"cost":4,
 		"name_en":"ethereal arcanist",
-		"name_kr":"에테리얼 비전술사",
+		"name":"에테리얼 비전술사",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":1737,
@@ -3975,10 +3975,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때 내 영웅에게 비밀이 걸려 있으면, +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0319",
+		"id":"reward0319",
 		"cost":6,
 		"name_en":"kabal crystal runner",
-		"name_kr":"비밀결사 수정배달부",
+		"name":"비밀결사 수정배달부",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":40583,
@@ -3988,10 +3988,10 @@ var rewardList = [
 		"text":"이번 게임에서 내가 낸 비밀 하나당 비용이 (2)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0320",
+		"id":"reward0320",
 		"cost":3,
 		"name_en":"simulacrum",
-		"name_kr":"모사",
+		"name":"모사",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":43193,
@@ -3999,10 +3999,10 @@ var rewardList = [
 		"text":"내 손에 있는 가장 낮은 비용의 하수인을 복사합니다."
 	}, 
 	{
-		"ID":"reward0321",
+		"id":"reward0321",
 		"cost":4,
 		"name_en":"echo of medivh",
-		"name_kr":"메디브의 메아리",
+		"name":"메디브의 메아리",
 		"class":"마법사",
 		"rarity":"영웅",
 		"cardid":1941,
@@ -4010,10 +4010,10 @@ var rewardList = [
 		"text":"전장의 아군 하수인들을 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0322",
+		"id":"reward0322",
 		"cost":4,
 		"name_en":"molten reflection",
-		"name_kr":"녹아내린 환영",
+		"name":"녹아내린 환영",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":41690,
@@ -4021,10 +4021,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 선택합니다. 그 하수인을 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0323",
+		"id":"reward0323",
 		"cost":12,
 		"name_en":"arcane giant",
-		"name_kr":"비전 거인",
+		"name":"비전 거인",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":39426,
@@ -4034,10 +4034,10 @@ var rewardList = [
 		"text":"이번 게임에서 내가 시전한 주문 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0324",
+		"id":"reward0324",
 		"cost":25,
 		"name_en":"molten giant",
-		"name_kr":"용암 거인",
+		"name":"용암 거인",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":1372,
@@ -4047,10 +4047,10 @@ var rewardList = [
 		"text":"내 영웅이 받은 피해 1당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0325",
+		"id":"reward0325",
 		"cost":4,
 		"name_en":"animated armor",
-		"name_kr":"살아 움직이는 갑옷",
+		"name":"살아 움직이는 갑옷",
 		"class":"마법사",
 		"rarity":"희귀",
 		"cardid":36111,
@@ -4060,10 +4060,10 @@ var rewardList = [
 		"text":"내 영웅이 한 번에 받는 피해가 1로 고정됩니다."
 	}, 
 	{
-		"ID":"reward0326",
+		"id":"reward0326",
 		"cost":4,
 		"name_en":"kazakus",
-		"name_kr":"카자쿠스",
+		"name":"카자쿠스",
 		"class":"마법사,사제,흑마법사",
 		"rarity":"전설",
 		"cardid":40408,
@@ -4073,10 +4073,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 원하는 주문을 직접 만듭니다."
 	}, 
 	{
-		"ID":"reward0327",
+		"id":"reward0327",
 		"cost":6,
 		"name_en":"reno jackson",
-		"name_kr":"리노 잭슨",
+		"name":"리노 잭슨",
 		"class":"마법사,사제,흑마법사",
 		"rarity":"전설",
 		"cardid":2883,
@@ -4086,10 +4086,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 내 영웅의 생명력을 모두 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0328",
+		"id":"reward0328",
 		"cost":7,
 		"name_en":"inkmaster solia",
-		"name_kr":"문신사 솔리아",
+		"name":"문신사 솔리아",
 		"class":"마법사",
 		"rarity":"전설",
 		"cardid":40701,
@@ -4099,10 +4099,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 이번 턴에 내가 시전하는 다음 주문의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0329",
+		"id":"reward0329",
 		"cost":1,
 		"name_en":"noble sacrifice",
-		"name_kr":"고귀한 희생",
+		"name":"고귀한 희생",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":584,
@@ -4110,10 +4110,10 @@ var rewardList = [
 		"text":"비밀: 적이 공격할 때, 대신 맞아주는 2/1 수호자를 1명 소환합니다."
 	}, 
 	{
-		"ID":"reward0330",
+		"id":"reward0330",
 		"cost":1,
 		"name_en":"goldshire footman",
-		"name_kr":"황금골 보병",
+		"name":"황금골 보병",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":922,
@@ -4123,10 +4123,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0331",
+		"id":"reward0331",
 		"cost":1,
 		"name_en":"blessing of might",
-		"name_kr":"힘의 축복",
+		"name":"힘의 축복",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":70,
@@ -4134,10 +4134,10 @@ var rewardList = [
 		"text":"하수인 하나에게 공격력을 +3 부여합니다."
 	}, 
 	{
-		"ID":"reward0332",
+		"id":"reward0332",
 		"cost":2,
 		"name_en":"holy light",
-		"name_kr":"성스러운 빛",
+		"name":"성스러운 빛",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":291,
@@ -4145,10 +4145,10 @@ var rewardList = [
 		"text":"생명력을 6 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0333",
+		"id":"reward0333",
 		"cost":2,
 		"name_en":"argent protector",
-		"name_kr":"여명회 파수병",
+		"name":"여명회 파수병",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":1022,
@@ -4158,10 +4158,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나에게 천상의 보호막을 부여합니다."
 	}, 
 	{
-		"ID":"reward0334",
+		"id":"reward0334",
 		"cost":2,
 		"name_en":"equality",
-		"name_kr":"평등",
+		"name":"평등",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":756,
@@ -4169,10 +4169,10 @@ var rewardList = [
 		"text":"모든 하수인의 생명력을 1로 바꿉니다."
 	}, 
 	{
-		"ID":"reward0335",
+		"id":"reward0335",
 		"cost":4,
 		"name_en":"stormwind knight",
-		"name_kr":"스톰윈드 기사",
+		"name":"스톰윈드 기사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":622,
@@ -4182,10 +4182,10 @@ var rewardList = [
 		"text":"돌진"
 	}, 
 	{
-		"ID":"reward0336",
+		"id":"reward0336",
 		"cost":4,
 		"name_en":"consecration",
-		"name_kr":"신성화",
+		"name":"신성화",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":476,
@@ -4193,10 +4193,10 @@ var rewardList = [
 		"text":"모든 적에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0337",
+		"id":"reward0337",
 		"cost":4,
 		"name_en":"truesilver champion",
-		"name_kr":"용사의 진은검",
+		"name":"용사의 진은검",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":847,
@@ -4206,10 +4206,10 @@ var rewardList = [
 		"text":"내 영웅이 공격할 때마다 생명력을 2 회복합니다."
 	}, 
 	{
-		"ID":"reward0338",
+		"id":"reward0338",
 		"cost":1,
 		"name_en":"avenge",
-		"name_kr":"앙갚음",
+		"name":"앙갚음",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":1804,
@@ -4217,10 +4217,10 @@ var rewardList = [
 		"text":"비밀: 내 하수인 중 하나가 죽으면, 무작위 아군 하수인 하나에게 +3/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0339",
+		"id":"reward0339",
 		"cost":1,
 		"name_en":"competitive spirit",
-		"name_kr":"경쟁심",
+		"name":"경쟁심",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":2648,
@@ -4228,10 +4228,10 @@ var rewardList = [
 		"text":"비밀: 내 턴이 시작될 때, 내 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0340",
+		"id":"reward0340",
 		"cost":1,
 		"name_en":"getaway kodo",
-		"name_kr":"탈출용 코도",
+		"name":"탈출용 코도",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":40587,
@@ -4239,10 +4239,10 @@ var rewardList = [
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0341",
+		"id":"reward0341",
 		"cost":1,
 		"name_en":"redemption",
-		"name_kr":"구원",
+		"name":"구원",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":140,
@@ -4250,10 +4250,10 @@ var rewardList = [
 		"text":"비밀: 아군 하수인이 죽으면, 생명력이 1인 상태로 다시 소환합니다."
 	}, 
 	{
-		"ID":"reward0342",
+		"id":"reward0342",
 		"cost":1,
 		"name_en":"repentance",
-		"name_kr":"참회",
+		"name":"참회",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":232,
@@ -4261,10 +4261,10 @@ var rewardList = [
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인의 생명력이 1로 감소합니다."
 	}, 
 	{
-		"ID":"reward0343",
+		"id":"reward0343",
 		"cost":2,
 		"name_en":"hydrologist",
-		"name_kr":"수문학자",
+		"name":"수문학자",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":41139,
@@ -4275,10 +4275,10 @@ var rewardList = [
 		"text":"전투의 함성: 비밀 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0344",
+		"id":"reward0344",
 		"cost":6,
 		"name_en":"mysterious challenger",
-		"name_kr":"수수께끼의 도전자",
+		"name":"수수께끼의 도전자",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":2726,
@@ -4288,10 +4288,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 있는 모든 종류의 비밀 카드를 1장씩 사용합니다."
 	}, 
 	{
-		"ID":"reward0345",
+		"id":"reward0345",
 		"cost":2,
 		"name_en":"lesser pearl spellstone",
-		"name_kr":"하급 진주 주문석",
+		"name":"하급 진주 주문석",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":43382,
@@ -4299,10 +4299,10 @@ var rewardList = [
 		"text":"도발 능력이 있는 2/2 영혼을 하나 소환합니다. (생명력을 3 회복하면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0346",
+		"id":"reward0346",
 		"cost":3,
 		"name_en":"benevolent djinn",
-		"name_kr":"자애로운 신령",
+		"name":"자애로운 신령",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":46258,
@@ -4313,10 +4313,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 영웅의 생명력을 3 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0347",
+		"id":"reward0347",
 		"cost":3,
 		"name_en":"wickerflame burnbristle",
-		"name_kr":"불꽃수염 번브리슬",
+		"name":"불꽃수염 번브리슬",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":40636,
@@ -4326,10 +4326,10 @@ var rewardList = [
 		"text":"도발 천상의 보호막 생명력 흡수"
 	}, 
 	{
-		"ID":"reward0348",
+		"id":"reward0348",
 		"cost":4,
 		"name_en":"chillblade champion",
-		"name_kr":"싸늘칼날 용사",
+		"name":"싸늘칼날 용사",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":43127,
@@ -4339,10 +4339,10 @@ var rewardList = [
 		"text":"돌진 생명력 흡수"
 	}, 
 	{
-		"ID":"reward0349",
+		"id":"reward0349",
 		"cost":4,
 		"name_en":"shroom brewer",
-		"name_kr":"버섯 물약꾼",
+		"name":"버섯 물약꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45784,
@@ -4352,10 +4352,10 @@ var rewardList = [
 		"text":"전투의 함성: 생명력을 4 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0350",
+		"id":"reward0350",
 		"cost":6,
 		"name_en":"blackguard",
-		"name_kr":"검은경비병",
+		"name":"검은경비병",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":42825,
@@ -4365,10 +4365,10 @@ var rewardList = [
 		"text":"내 영웅이 치유될 때마다 무작위 적 하수인 하나에게 그만큼 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0351",
+		"id":"reward0351",
 		"cost":6,
 		"name_en":"ivory knight",
-		"name_kr":"상아색 나이트",
+		"name":"상아색 나이트",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":39439,
@@ -4378,10 +4378,10 @@ var rewardList = [
 		"text":"전투의 함성: 주문을 하나 발견합니다. 그 카드의 비용만큼 내 영웅의 생명력을 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0352",
+		"id":"reward0352",
 		"cost":8,
 		"name_en":"ragnaros, lightlord",
-		"name_kr":"빛의 군주 라그나로스",
+		"name":"빛의 군주 라그나로스",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":38758,
@@ -4392,10 +4392,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 피해를 받은 아군 캐릭터 하나의 생명력을 8 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0353",
+		"id":"reward0353",
 		"cost":9,
 		"name_en":"uther of the ebon blade",
-		"name_kr":"칠흑의 기사단장 우서",
+		"name":"칠흑의 기사단장 우서",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":43406,
@@ -4404,10 +4404,10 @@ var rewardList = [
 		"text":"전투의 함성: 5/3 생명력 흡수 무기를 장착합니다."
 	}, 
 	{
-		"ID":"reward0354",
+		"id":"reward0354",
 		"cost":1,
 		"name_en":"righteous protector",
-		"name_kr":"정의로운 수호자",
+		"name":"정의로운 수호자",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":42467,
@@ -4417,10 +4417,10 @@ var rewardList = [
 		"text":"도발 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0355",
+		"id":"reward0355",
 		"cost":2,
 		"name_en":"shielded minibot",
-		"name_kr":"보호막을 쓴 꼬마로봇",
+		"name":"보호막을 쓴 꼬마로봇",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":2026,
@@ -4431,10 +4431,10 @@ var rewardList = [
 		"text":"천상의 보호막"
 	}, 
 	{
-		"ID":"reward0356",
+		"id":"reward0356",
 		"cost":2,
 		"name_en":"tainted zealot",
-		"name_kr":"타락한 광신도",
+		"name":"타락한 광신도",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46103,
@@ -4444,10 +4444,10 @@ var rewardList = [
 		"text":"천상의 보호막 주문 공격력 +1"
 	}, 
 	{
-		"ID":"reward0357",
+		"id":"reward0357",
 		"cost":3,
 		"name_en":"argent horserider",
-		"name_kr":"은빛십자군 기수",
+		"name":"은빛십자군 기수",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2490,
@@ -4457,10 +4457,10 @@ var rewardList = [
 		"text":"돌진 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0358",
+		"id":"reward0358",
 		"cost":3,
 		"name_en":"blood knight",
-		"name_kr":"혈기사",
+		"name":"혈기사",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":755,
@@ -4470,10 +4470,10 @@ var rewardList = [
 		"text":"전투의 함성: 모든 하수인의 천상의 보호막을 흡수하여 보호막 하나당 +3/+3을 얻습니다."
 	}, 
 	{
-		"ID":"reward0359",
+		"id":"reward0359",
 		"cost":3,
 		"name_en":"howling commander",
-		"name_kr":"울부짖는 사령관",
+		"name":"울부짖는 사령관",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":42948,
@@ -4483,10 +4483,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에서 천상의 보호막 하수인을 하나 뽑습니다."
 	}, 
 	{
-		"ID":"reward0360",
+		"id":"reward0360",
 		"cost":3,
 		"name_en":"scarlet crusader",
-		"name_kr":"붉은십자군 성전사",
+		"name":"붉은십자군 성전사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":642,
@@ -4496,10 +4496,10 @@ var rewardList = [
 		"text":"천상의 보호막"
 	}, 
 	{
-		"ID":"reward0361",
+		"id":"reward0361",
 		"cost":3,
 		"name_en":"silent knight",
-		"name_kr":"고요한 기사",
+		"name":"고요한 기사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2579,
@@ -4509,10 +4509,10 @@ var rewardList = [
 		"text":"은신 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0362",
+		"id":"reward0362",
 		"cost":3,
 		"name_en":"steward of darkshire",
-		"name_kr":"어둠골 감시대원",
+		"name":"어둠골 감시대원",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":38911,
@@ -4522,10 +4522,10 @@ var rewardList = [
 		"text":"내가 생명력이 1인 하수인을 소환할 때마다 그 하수인에게 천상의 보호막을 부여합니다."
 	}, 
 	{
-		"ID":"reward0363",
+		"id":"reward0363",
 		"cost":4,
 		"name_en":"light's sorrow",
-		"name_kr":"빛의 슬픔",
+		"name":"빛의 슬픔",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":42735,
@@ -4535,10 +4535,10 @@ var rewardList = [
 		"text":"아군 하수인 하나가 천상의 보호막을 잃은 후에, 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0364",
+		"id":"reward0364",
 		"cost":5,
 		"name_en":"bolvar, fireblood",
-		"name_kr":"불꽃피 볼바르",
+		"name":"불꽃피 볼바르",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":45392,
@@ -4548,10 +4548,10 @@ var rewardList = [
 		"text":"천상의 보호막 아군 하수인 하나가 천상의 보호막을 잃은 후에, 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0365",
+		"id":"reward0365",
 		"cost":6,
 		"name_en":"argent commander",
-		"name_kr":"은빛십자군 부대장",
+		"name":"은빛십자군 부대장",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":281,
@@ -4561,10 +4561,10 @@ var rewardList = [
 		"text":"돌진 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0366",
+		"id":"reward0366",
 		"cost":6,
 		"name_en":"sunwalker",
-		"name_kr":"태양길잡이",
+		"name":"태양길잡이",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":759,
@@ -4574,10 +4574,10 @@ var rewardList = [
 		"text":"도발 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0367",
+		"id":"reward0367",
 		"cost":8,
 		"name_en":"tirion fordring",
-		"name_kr":"티리온 폴드링",
+		"name":"티리온 폴드링",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":890,
@@ -4587,10 +4587,10 @@ var rewardList = [
 		"text":"천상의 보호막, 도발, 죽음의 메아리: 5/3 파멸의 인도자를 장착합니다."
 	}, 
 	{
-		"ID":"reward0368",
+		"id":"reward0368",
 		"cost":1,
 		"name_en":"humility",
-		"name_kr":"겸손",
+		"name":"겸손",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":854,
@@ -4598,10 +4598,10 @@ var rewardList = [
 		"text":"하수인 하나의 공격력을 1로 만듭니다."
 	}, 
 	{
-		"ID":"reward0369",
+		"id":"reward0369",
 		"cost":2,
 		"name_en":"dark conviction",
-		"name_kr":"어두운 신념",
+		"name":"어두운 신념",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":42469,
@@ -4609,10 +4609,10 @@ var rewardList = [
 		"text":"하수인 하나의 공격력과 생명력을 3으로 만듭니다."
 	}, 
 	{
-		"ID":"reward0370",
+		"id":"reward0370",
 		"cost":3,
 		"name_en":"aldor peacekeeper",
-		"name_kr":"알도르 평화감시단",
+		"name":"알도르 평화감시단",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":1167,
@@ -4622,10 +4622,10 @@ var rewardList = [
 		"text":"전투의 함성: 적 하수인 하나의 공격력을 1로 바꿉니다."
 	}, 
 	{
-		"ID":"reward0371",
+		"id":"reward0371",
 		"cost":4,
 		"name_en":"hammer of wrath",
-		"name_kr":"천벌의 망치",
+		"name":"천벌의 망치",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":250,
@@ -4633,10 +4633,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0372",
+		"id":"reward0372",
 		"cost":4,
 		"name_en":"keeper of uldaman",
-		"name_kr":"울다만의 수호자",
+		"name":"울다만의 수호자",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":2889,
@@ -4646,10 +4646,10 @@ var rewardList = [
 		"text":"전투의 함성: 하수인 하나의 공격력과 생명력을 3으로 만듭니다."
 	}, 
 	{
-		"ID":"reward0373",
+		"id":"reward0373",
 		"cost":6,
 		"name_en":"avenging wrath",
-		"name_kr":"응징의 격노",
+		"name":"응징의 격노",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":1174,
@@ -4657,10 +4657,10 @@ var rewardList = [
 		"text":"모든 적에게 8의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
-		"ID":"reward0374",
+		"id":"reward0374",
 		"cost":6,
 		"name_en":"enter the coliseum",
-		"name_kr":"경기장 입장",
+		"name":"경기장 입장",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":2654,
@@ -4668,10 +4668,10 @@ var rewardList = [
 		"text":"각 플레이어의 전장에서 공격력이 가장 높은 하수인 하나씩을 제외한 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0375",
+		"id":"reward0375",
 		"cost":6,
 		"name_en":"sunkeeper tarim",
-		"name_kr":"태양지기 타림",
+		"name":"태양지기 타림",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":41145,
@@ -4681,10 +4681,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 다른 모든 하수인의 공격력과 생명력을 3으로 만듭니다."
 	}, 
 	{
-		"ID":"reward0376",
+		"id":"reward0376",
 		"cost":7,
 		"name_en":"eadric the pure",
-		"name_kr":"성기사 에드릭",
+		"name":"성기사 에드릭",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":2727,
@@ -4694,10 +4694,10 @@ var rewardList = [
 		"text":"전투의 함성: 모든 적 하수인의 공격력을 1로 바꿉니다."
 	}, 
 	{
-		"ID":"reward0377",
+		"id":"reward0377",
 		"cost":1,
 		"name_en":"grimscale chum",
-		"name_kr":"성난비늘 불량배",
+		"name":"성난비늘 불량배",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":40531,
@@ -4708,10 +4708,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 멀록 1마리에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0378",
+		"id":"reward0378",
 		"cost":1,
 		"name_en":"smuggler's run",
-		"name_kr":"밀수업자의 일상",
+		"name":"밀수업자의 일상",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":40371,
@@ -4719,10 +4719,10 @@ var rewardList = [
 		"text":"내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0379",
+		"id":"reward0379",
 		"cost":2,
 		"name_en":"grimestreet outfitter",
-		"name_kr":"험악한 거리 만물상",
+		"name":"험악한 거리 만물상",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":40567,
@@ -4732,10 +4732,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0380",
+		"id":"reward0380",
 		"cost":3,
 		"name_en":"grimestreet smuggler",
-		"name_kr":"험악한 거리 밀수업자",
+		"name":"험악한 거리 밀수업자",
 		"class":"성기사,전사",
 		"rarity":"일반",
 		"cardid":40743,
@@ -4745,10 +4745,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 하수인 하나에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0381",
+		"id":"reward0381",
 		"cost":5,
 		"name_en":"bolvar fordragon",
-		"name_kr":"볼바르 폴드라곤",
+		"name":"볼바르 폴드라곤",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":2031,
@@ -4758,10 +4758,10 @@ var rewardList = [
 		"text":"내 손에 이 카드가 있으면, 아군 하수인이 죽을 때마다 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0382",
+		"id":"reward0382",
 		"cost":5,
 		"name_en":"grimestreet enforcer",
-		"name_kr":"험악한 거리 집행자",
+		"name":"험악한 거리 집행자",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":40469,
@@ -4771,10 +4771,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0383",
+		"id":"reward0383",
 		"cost":2,
 		"name_en":"netherspite historian",
-		"name_kr":"황천의 원령 역사가",
+		"name":"황천의 원령 역사가",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":39554,
@@ -4784,10 +4784,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 용족을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0384",
+		"id":"reward0384",
 		"cost":3,
 		"name_en":"blackwing technician",
-		"name_kr":"검은날개 기술병",
+		"name":"검은날개 기술병",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2408,
@@ -4797,10 +4797,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0385",
+		"id":"reward0385",
 		"cost":4,
 		"name_en":"dragonkin sorcerer",
-		"name_kr":"용족 마술사",
+		"name":"용족 마술사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2306,
@@ -4811,10 +4811,10 @@ var rewardList = [
 		"text":"내가 주문의 대상으로 이 하수인을 지정할 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0386",
+		"id":"reward0386",
 		"cost":4,
 		"name_en":"hungry dragon",
-		"name_kr":"굶주린 용",
+		"name":"굶주린 용",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2283,
@@ -4825,10 +4825,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편에게 비용이 1인 하수인 하나를 무작위로 소환해 줍니다."
 	}, 
 	{
-		"ID":"reward0387",
+		"id":"reward0387",
 		"cost":4,
 		"name_en":"twilight drake",
-		"name_kr":"황혼의 비룡",
+		"name":"황혼의 비룡",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1037,
@@ -4839,10 +4839,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 카드 1장당 생명력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0388",
+		"id":"reward0388",
 		"cost":5,
 		"name_en":"blackwing corruptor",
-		"name_kr":"검은날개 타락자",
+		"name":"검은날개 타락자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2409,
@@ -4852,10 +4852,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0389",
+		"id":"reward0389",
 		"cost":5,
 		"name_en":"dragon consort",
-		"name_kr":"용의 배우자",
+		"name":"용의 배우자",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":2299,
@@ -4866,10 +4866,10 @@ var rewardList = [
 		"text":"전투의 함성: 다음에 내가 내는 용족의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0390",
+		"id":"reward0390",
 		"cost":6,
 		"name_en":"scaled nightmare",
-		"name_kr":"비늘 덮인 악몽",
+		"name":"비늘 덮인 악몽",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":38832,
@@ -4880,10 +4880,10 @@ var rewardList = [
 		"text":"내 턴이 시작될 때, 이 하수인은 공격력이 2배가 됩니다."
 	}, 
 	{
-		"ID":"reward0391",
+		"id":"reward0391",
 		"cost":6,
 		"name_en":"volcanic drake",
-		"name_kr":"화산 비룡",
+		"name":"화산 비룡",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2258,
@@ -4894,10 +4894,10 @@ var rewardList = [
 		"text":"이번 턴에 죽은 하수인 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0392",
+		"id":"reward0392",
 		"cost":6,
 		"name_en":"wrathion",
-		"name_kr":"래시온",
+		"name":"래시온",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":40603,
@@ -4907,10 +4907,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 용족이 아닌 카드를 뽑을 때까지 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0393",
+		"id":"reward0393",
 		"cost":8,
 		"name_en":"chromaggus",
-		"name_kr":"크로마구스",
+		"name":"크로마구스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2280,
@@ -4921,10 +4921,10 @@ var rewardList = [
 		"text":"내가 카드를 뽑을 때마다 그 카드를 1장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0394",
+		"id":"reward0394",
 		"cost":9,
 		"name_en":"dragonhatcher",
-		"name_kr":"용 사육사",
+		"name":"용 사육사",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46557,
@@ -4934,10 +4934,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 용족을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0395",
+		"id":"reward0395",
 		"cost":9,
 		"name_en":"onyxia",
-		"name_kr":"오닉시아",
+		"name":"오닉시아",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2431,
@@ -4945,10 +4945,10 @@ var rewardList = [
 		"health":15
 	}, 
 	{
-		"ID":"reward0396",
+		"id":"reward0396",
 		"cost":9,
 		"name_en":"sleepy dragon",
-		"name_kr":"잠꾸러기 용",
+		"name":"잠꾸러기 용",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":43494,
@@ -4959,10 +4959,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0397",
+		"id":"reward0397",
 		"cost":10,
 		"name_en":"deathwing, dragonlord",
-		"name_kr":"용족의 군주 데스윙",
+		"name":"용족의 군주 데스윙",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38943,
@@ -4973,10 +4973,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 손의 모든 용족을 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0398",
+		"id":"reward0398",
 		"cost":1,
 		"name_en":"lost in the jungle",
-		"name_kr":"길 잃은 신병들",
+		"name":"길 잃은 신병들",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":41912,
@@ -4984,10 +4984,10 @@ var rewardList = [
 		"text":"1/1 은빛 성기사단 신병을 2명 소환합니다."
 	}, 
 	{
-		"ID":"reward0399",
+		"id":"reward0399",
 		"cost":2,
 		"name_en":"drygulch jailor",
-		"name_kr":"마른협곡 교도관",
+		"name":"마른협곡 교도관",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":46007,
@@ -4997,10 +4997,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 은빛 성기사단 신병 셋을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0400",
+		"id":"reward0400",
 		"cost":3,
 		"name_en":"muster for battle",
-		"name_kr":"병력 소집",
+		"name":"병력 소집",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":2029,
@@ -5008,10 +5008,10 @@ var rewardList = [
 		"text":"1/1 은빛 성기사단 신병을 3명 소환합니다. 1/4 무기를 장착합니다."
 	}, 
 	{
-		"ID":"reward0401",
+		"id":"reward0401",
 		"cost":3,
 		"name_en":"silver hand regent",
-		"name_kr":"은빛 성기사단 섭정",
+		"name":"은빛 성기사단 섭정",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2503,
@@ -5021,10 +5021,10 @@ var rewardList = [
 		"text":"격려: 1/1 은빛 성기사단 신병을 1명 소환합니다."
 	}, 
 	{
-		"ID":"reward0402",
+		"id":"reward0402",
 		"cost":3,
 		"name_en":"warhorse trainer",
-		"name_kr":"전투마 조련사",
+		"name":"전투마 조련사",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":2515,
@@ -5034,10 +5034,10 @@ var rewardList = [
 		"text":"내 은빛 성기사단 신병들이 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0403",
+		"id":"reward0403",
 		"cost":4,
 		"name_en":"lightfused stegodon",
-		"name_kr":"빛이 주입된 스테고돈",
+		"name":"빛이 주입된 스테고돈",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":41945,
@@ -5048,10 +5048,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 은빛 성기사단 신병들을 적응시킵니다."
 	}, 
 	{
-		"ID":"reward0404",
+		"id":"reward0404",
 		"cost":5,
 		"name_en":"level up!",
-		"name_kr":"레벨 업!",
+		"name":"레벨 업!",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":45877,
@@ -5059,10 +5059,10 @@ var rewardList = [
 		"text":"내 은빛 성기사단 신병들에게 +2/+2와 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0405",
+		"id":"reward0405",
 		"cost":5,
 		"name_en":"quartermaster",
-		"name_kr":"병참장교",
+		"name":"병참장교",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":2028,
@@ -5072,10 +5072,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 은빛 성기사단 신병들에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0406",
+		"id":"reward0406",
 		"cost":5,
 		"name_en":"stand against darkness",
-		"name_kr":"어둠에 맞서리라",
+		"name":"어둠에 맞서리라",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":38843,
@@ -5083,10 +5083,10 @@ var rewardList = [
 		"text":"1/1 은빛 성기사단 신병을 5명 소환합니다."
 	}, 
 	{
-		"ID":"reward0407",
+		"id":"reward0407",
 		"cost":6,
 		"name_en":"crystal lion",
-		"name_kr":"수정 사자",
+		"name":"수정 사자",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":45833,
@@ -5096,10 +5096,10 @@ var rewardList = [
 		"text":"천상의 보호막, 내 전장에 있는 은빛 성기사단 신병 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0408",
+		"id":"reward0408",
 		"cost":7,
 		"name_en":"vinecleaver",
-		"name_kr":"탐험용 넓적칼",
+		"name":"탐험용 넓적칼",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":41859,
@@ -5109,10 +5109,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에 1/1 은빛 성기사단 신병을 2명 소환합니다."
 	}, 
 	{
-		"ID":"reward0409",
+		"id":"reward0409",
 		"cost":6,
 		"name_en":"the black knight",
-		"name_kr":"흑기사",
+		"name":"흑기사",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1656,
@@ -5122,10 +5122,10 @@ var rewardList = [
 		"text":"전투의 함성: 적 도발 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0410",
+		"id":"reward0410",
 		"cost":6,
 		"name_en":"val'anyr",
-		"name_kr":"발아니르",
+		"name":"발아니르",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":46263,
@@ -5135,10 +5135,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 손에 있는 하수인 하나에게 +4/+2를 부여합니다. 그 하수인이 죽으면, 이 무기를 다시 장착합니다."
 	}, 
 	{
-		"ID":"reward0411",
+		"id":"reward0411",
 		"cost":7,
 		"name_en":"troggzor the earthinator",
-		"name_kr":"대지종결자 트로그조르",
+		"name":"대지종결자 트로그조르",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2086,
@@ -5148,10 +5148,10 @@ var rewardList = [
 		"text":"상대편이 주문을 시전할 때마다 힘센 바위턱트로그를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0412",
+		"id":"reward0412",
 		"cost":8,
 		"name_en":"marin the fox",
-		"name_kr":"교활한 마린",
+		"name":"교활한 마린",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":45988,
@@ -5161,10 +5161,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편에게 0/8 보물 상자를 하나 소환해 줍니다. (상자를 부수고 멋진 전리품을 획득하세요!)"
 	}, 
 	{
-		"ID":"reward0413",
+		"id":"reward0413",
 		"cost":2,
 		"name_en":"annoy-o-tron",
-		"name_kr":"안녕로봇",
+		"name":"안녕로봇",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2053,
@@ -5175,10 +5175,10 @@ var rewardList = [
 		"text":"도발 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0414",
+		"id":"reward0414",
 		"cost":4,
 		"name_en":"corpsetaker",
-		"name_kr":"시체수집가",
+		"name":"시체수집가",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46102,
@@ -5188,10 +5188,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 도발 하수인이 있으면 도발을 얻습니다. 천상의 보호막, 생명력 흡수, 질풍도 동일하게 얻을 수 있습니다."
 	}, 
 	{
-		"ID":"reward0415",
+		"id":"reward0415",
 		"cost":5,
 		"name_en":"psych-o-tron",
-		"name_kr":"광기로봇",
+		"name":"광기로봇",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38526,
@@ -5202,10 +5202,10 @@ var rewardList = [
 		"text":"도발 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0416",
+		"id":"reward0416",
 		"cost":7,
 		"name_en":"grimestreet protector",
-		"name_kr":"험악한 거리 경호원",
+		"name":"험악한 거리 경호원",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":40295,
@@ -5215,10 +5215,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 양옆의 하수인들에게 천상의 보호막을 부여합니다."
 	}, 
 	{
-		"ID":"reward0417",
+		"id":"reward0417",
 		"cost":3,
 		"name_en":"coghammer",
-		"name_kr":"톱니망치",
+		"name":"톱니망치",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":2027,
@@ -5228,10 +5228,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위 아군 하수인 하나에게 천상의 보호막과 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0418",
+		"id":"reward0418",
 		"cost":3,
 		"name_en":"rallying blade",
-		"name_kr":"집결의 검",
+		"name":"집결의 검",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":38745,
@@ -5241,10 +5241,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 천상의 보호막 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0419",
+		"id":"reward0419",
 		"cost":3,
 		"name_en":"sword of justice",
-		"name_kr":"정의의 칼날",
+		"name":"정의의 칼날",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":643,
@@ -5254,10 +5254,10 @@ var rewardList = [
 		"text":"내 하수인이 소환된 후에, 그 하수인에게 +1/+1을 부여하고 내구도를 1 잃습니다."
 	}, 
 	{
-		"ID":"reward0420",
+		"id":"reward0420",
 		"cost":3,
 		"name_en":"unidentified maul",
-		"name_kr":"정체불명의 망치",
+		"name":"정체불명의 망치",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":45782,
@@ -5267,10 +5267,10 @@ var rewardList = [
 		"text":"내 손에서 추가 효과를 하나 얻습니다."
 	}, 
 	{
-		"ID":"reward0421",
+		"id":"reward0421",
 		"cost":1,
 		"name_en":"grimscale oracle",
-		"name_kr":"성난비늘 수련사",
+		"name":"성난비늘 수련사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":510,
@@ -5281,10 +5281,10 @@ var rewardList = [
 		"text":"내 다른 멀록들이 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0422",
+		"id":"reward0422",
 		"cost":1,
 		"name_en":"murloc tidecaller",
-		"name_kr":"멀록 파도술사",
+		"name":"멀록 파도술사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":475,
@@ -5295,10 +5295,10 @@ var rewardList = [
 		"text":"내가 멀록을 소환할 때마다 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0423",
+		"id":"reward0423",
 		"cost":1,
 		"name_en":"vilefin inquisitor",
-		"name_kr":"썩은지느러미 심문관",
+		"name":"썩은지느러미 심문관",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":38227,
@@ -5309,10 +5309,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 영웅 능력이 '1/1 은빛 성기사단 멀록을 1마리 소환합니다.'로 바뀝니다."
 	}, 
 	{
-		"ID":"reward0424",
+		"id":"reward0424",
 		"cost":2,
 		"name_en":"bluegill warrior",
-		"name_kr":"푸른아가미 전사",
+		"name":"푸른아가미 전사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":739,
@@ -5323,10 +5323,10 @@ var rewardList = [
 		"text":"돌진"
 	}, 
 	{
-		"ID":"reward0425",
+		"id":"reward0425",
 		"cost":2,
 		"name_en":"murloc tidehunter",
-		"name_kr":"멀록 바다사냥꾼",
+		"name":"멀록 바다사냥꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":976,
@@ -5337,10 +5337,10 @@ var rewardList = [
 		"text":"전투의 함성: 1/1 멀록 정찰병을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0426",
+		"id":"reward0426",
 		"cost":3,
 		"name_en":"murloc warleader",
-		"name_kr":"멀록 전투대장",
+		"name":"멀록 전투대장",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":1063,
@@ -5351,10 +5351,10 @@ var rewardList = [
 		"text":"내 다른 멀록들이 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0427",
+		"id":"reward0427",
 		"cost":3,
 		"name_en":"primalfin lookout",
-		"name_kr":"원시지느러미 망꾼",
+		"name":"원시지느러미 망꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41478,
@@ -5365,10 +5365,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 다른 멀록이 있으면, 멀록을 1마리 발견합니다."
 	}, 
 	{
-		"ID":"reward0428",
+		"id":"reward0428",
 		"cost":4,
 		"name_en":"gentle megasaur",
-		"name_kr":"온순한 메가사우루스",
+		"name":"온순한 메가사우루스",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41265,
@@ -5379,10 +5379,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 멀록들을 적응시킵니다."
 	}, 
 	{
-		"ID":"reward0429",
+		"id":"reward0429",
 		"cost":4,
 		"name_en":"murloc knight",
-		"name_kr":"멀록 기사",
+		"name":"멀록 기사",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":2655,
@@ -5393,10 +5393,10 @@ var rewardList = [
 		"text":"격려: 무작위 멀록을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0430",
+		"id":"reward0430",
 		"cost":4,
 		"name_en":"old murk-eye",
-		"name_kr":"늙은 거먹눈 멀록",
+		"name":"늙은 거먹눈 멀록",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":736,
@@ -5407,10 +5407,10 @@ var rewardList = [
 		"text":"돌진, 전장의 다른 멀록 하나당 공격력을 +1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0431",
+		"id":"reward0431",
 		"cost":5,
 		"name_en":"finja, the flying star",
-		"name_kr":"비성 핀자",
+		"name":"비성 핀자",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":40803,
@@ -5421,10 +5421,10 @@ var rewardList = [
 		"text":"은신, 이 하수인은 공격하여 다른 하수인을 처치할 때마다 내 덱에서 멀록을 2마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0432",
+		"id":"reward0432",
 		"cost":6,
 		"name_en":"corrupted seer",
-		"name_kr":"타락한 예언자",
+		"name":"타락한 예언자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38545,
@@ -5435,10 +5435,10 @@ var rewardList = [
 		"text":"전투의 함성: 멀록을 제외한 모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0433",
+		"id":"reward0433",
 		"cost":10,
 		"name_en":"anyfin can happen",
-		"name_kr":"무엇이든 가능하다옳",
+		"name":"무엇이든 가능하다옳",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":2898,
@@ -5446,10 +5446,10 @@ var rewardList = [
 		"text":"이번 게임에서 죽은 멀록 7마리를 소환합니다."
 	}, 
 	{
-		"ID":"reward0434",
+		"id":"reward0434",
 		"cost":1,
 		"name_en":"adaptation",
-		"name_kr":"적응",
+		"name":"적응",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":41944,
@@ -5457,10 +5457,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 적응시킵니다."
 	}, 
 	{
-		"ID":"reward0435",
+		"id":"reward0435",
 		"cost":1,
 		"name_en":"blessing of wisdom",
-		"name_kr":"지혜의 축복",
+		"name":"지혜의 축복",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":1373,
@@ -5468,10 +5468,10 @@ var rewardList = [
 		"text":"하수인 하나를 선택합니다. 그 하수인이 공격할 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0436",
+		"id":"reward0436",
 		"cost":1,
 		"name_en":"divine strength",
-		"name_kr":"천상의 힘",
+		"name":"천상의 힘",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":38749,
@@ -5479,10 +5479,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +1/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0437",
+		"id":"reward0437",
 		"cost":1,
 		"name_en":"the last kaleidosaur",
-		"name_kr":"마지막 칼라이도사우루스",
+		"name":"마지막 칼라이도사우루스",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":41868,
@@ -5490,10 +5490,10 @@ var rewardList = [
 		"text":"퀘스트: 내 하수인에게 주문을 6회 시전해야 합니다. 보상: 갈바돈"
 	}, 
 	{
-		"ID":"reward0438",
+		"id":"reward0438",
 		"cost":2,
 		"name_en":"desperate stand",
-		"name_kr":"필사적인 저항",
+		"name":"필사적인 저항",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":42824,
@@ -5501,10 +5501,10 @@ var rewardList = [
 		"text":"하수인 하나에게 \"죽음의 메아리: 이 하수인을 생명력이 1인 상태로 다시 소환합니다.\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0439",
+		"id":"reward0439",
 		"cost":2,
 		"name_en":"potion of heroism",
-		"name_kr":"무용의 물약",
+		"name":"무용의 물약",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":43373,
@@ -5512,10 +5512,10 @@ var rewardList = [
 		"text":"하수인 하나에게 천상의 보호막을 부여합니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0440",
+		"id":"reward0440",
 		"cost":2,
 		"name_en":"primalfin champion",
-		"name_kr":"원시지느러미 용사",
+		"name":"원시지느러미 용사",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":41866,
@@ -5526,10 +5526,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내가 이 하수인에게 시전한 모든 주문을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0441",
+		"id":"reward0441",
 		"cost":3,
 		"name_en":"seal of champions",
-		"name_kr":"용사의 문장",
+		"name":"용사의 문장",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":2717,
@@ -5537,10 +5537,10 @@ var rewardList = [
 		"text":"하수인 하나에게 공격력 +3과 천상의 보호막을 부여합니다."
 	}, 
 	{
-		"ID":"reward0442",
+		"id":"reward0442",
 		"cost":4,
 		"name_en":"blessing of kings",
-		"name_kr":"왕의 축복",
+		"name":"왕의 축복",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":943,
@@ -5548,10 +5548,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +4/+4를 부여합니다."
 	}, 
 	{
-		"ID":"reward0443",
+		"id":"reward0443",
 		"cost":4,
 		"name_en":"silvermoon portal",
-		"name_kr":"실버문 차원문",
+		"name":"실버문 차원문",
 		"class":"성기사",
 		"rarity":"일반",
 		"cardid":39716,
@@ -5559,10 +5559,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 비용이 2인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0444",
+		"id":"reward0444",
 		"cost":4,
 		"name_en":"the voraxx",
-		"name_kr":"폭식초",
+		"name":"폭식초",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":41913,
@@ -5572,10 +5572,10 @@ var rewardList = [
 		"text":"내가 이 하수인에게 주문을 시전한 후에 1/1 식물을 소환하여 그 하수인에게 동일한 주문을 시전합니다."
 	}, 
 	{
-		"ID":"reward0445",
+		"id":"reward0445",
 		"cost":5,
 		"name_en":"blessed champion",
-		"name_kr":"축복받은 용사",
+		"name":"축복받은 용사",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":1522,
@@ -5583,10 +5583,10 @@ var rewardList = [
 		"text":"하수인 하나의 공격력을 2배 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0446",
+		"id":"reward0446",
 		"cost":6,
 		"name_en":"spikeridged steed",
-		"name_kr":"가시가 돋친 탈것",
+		"name":"가시가 돋친 탈것",
 		"class":"성기사",
 		"rarity":"희귀",
 		"cardid":41864,
@@ -5594,10 +5594,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +2/+6과 도발을 부여합니다. 그 하수인이 죽으면, 스테고돈을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0447",
+		"id":"reward0447",
 		"cost":7,
 		"name_en":"lynessa sunsorrow",
-		"name_kr":"리네사 선소로우",
+		"name":"리네사 선소로우",
 		"class":"성기사",
 		"rarity":"전설",
 		"cardid":45539,
@@ -5607,10 +5607,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 내 하수인들에게 시전했던 모든 주문을 이 하수인에게 시전합니다."
 	}, 
 	{
-		"ID":"reward0448",
+		"id":"reward0448",
 		"cost":8,
 		"name_en":"dinosize",
-		"name_kr":"공룡의 몸집",
+		"name":"공룡의 몸집",
 		"class":"성기사",
 		"rarity":"영웅",
 		"cardid":41130,
@@ -5618,10 +5618,10 @@ var rewardList = [
 		"text":"하수인 하나의 공격력과 생명력을 10으로 만듭니다."
 	}, 
 	{
-		"ID":"reward0449",
+		"id":"reward0449",
 		"cost":1,
 		"name_en":"potion of madness",
-		"name_kr":"광기의 물약",
+		"name":"광기의 물약",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":40373,
@@ -5629,10 +5629,10 @@ var rewardList = [
 		"text":"공격력이 2 이하인 적 하수인 하나를 이번 턴에만 조종합니다."
 	}, 
 	{
-		"ID":"reward0450",
+		"id":"reward0450",
 		"cost":1,
 		"name_en":"northshire cleric",
-		"name_kr":"북녘골 성직자",
+		"name":"북녘골 성직자",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1650,
@@ -5642,10 +5642,10 @@ var rewardList = [
 		"text":"하수인이 치유될 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0451",
+		"id":"reward0451",
 		"cost":1,
 		"name_en":"holy smite",
-		"name_kr":"성스러운 일격",
+		"name":"성스러운 일격",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":279,
@@ -5653,10 +5653,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0452",
+		"id":"reward0452",
 		"cost":2,
 		"name_en":"shadow word: pain",
-		"name_kr":"어둠의 권능: 고통",
+		"name":"어둠의 권능: 고통",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1367,
@@ -5664,10 +5664,10 @@ var rewardList = [
 		"text":"공격력이 3 이하인 하수인을 하나 처치합니다."
 	}, 
 	{
-		"ID":"reward0453",
+		"id":"reward0453",
 		"cost":2,
 		"name_en":"faerie dragon",
-		"name_kr":"요정용",
+		"name":"요정용",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":609,
@@ -5678,10 +5678,10 @@ var rewardList = [
 		"text":"이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
 	}, 
 	{
-		"ID":"reward0454",
+		"id":"reward0454",
 		"cost":2,
 		"name_en":"miad blast",
-		"name_kr":"정신 분열",
+		"name":"정신 분열",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":545,
@@ -5689,10 +5689,10 @@ var rewardList = [
 		"text":"적 영웅에게 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0455",
+		"id":"reward0455",
 		"cost":3,
 		"name_en":"dark cultist",
-		"name_kr":"어둠의 이교도",
+		"name":"어둠의 이교도",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1807,
@@ -5702,10 +5702,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 아군 하수인 하나에게 생명력을 +3 부여합니다."
 	}, 
 	{
-		"ID":"reward0456",
+		"id":"reward0456",
 		"cost":4,
 		"name_en":"lightspawn",
-		"name_kr":"빛의 정령",
+		"name":"빛의 정령",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":886,
@@ -5716,10 +5716,10 @@ var rewardList = [
 		"text":"이 하수인의 공격력은 항상 생명력과 같습니다."
 	}, 
 	{
-		"ID":"reward0457",
+		"id":"reward0457",
 		"cost":4,
 		"name_en":"auchenai soulpriest",
-		"name_kr":"아키나이 영혼사제",
+		"name":"아키나이 영혼사제",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":237,
@@ -5729,10 +5729,10 @@ var rewardList = [
 		"text":"생명력을 회복시키는 내 카드와 능력들이 이제 그만큼의 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0458",
+		"id":"reward0458",
 		"cost":5,
 		"name_en":"holy nova",
-		"name_kr":"신성한 폭발",
+		"name":"신성한 폭발",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":841,
@@ -5740,10 +5740,10 @@ var rewardList = [
 		"text":"모든 적에게 피해를 2 줍니다. 모든 아군 캐릭터의 생명력을 2 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0459",
+		"id":"reward0459",
 		"cost":0,
 		"name_en":"circle of healing",
-		"name_kr":"치유의 마법진",
+		"name":"치유의 마법진",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1362,
@@ -5751,10 +5751,10 @@ var rewardList = [
 		"text":"모든 하수인의 생명력을 4 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0460",
+		"id":"reward0460",
 		"cost":1,
 		"name_en":"flash heal",
-		"name_kr":"순간 치유",
+		"name":"순간 치유",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":2582,
@@ -5762,10 +5762,10 @@ var rewardList = [
 		"text":"생명력을 5 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0461",
+		"id":"reward0461",
 		"cost":1,
 		"name_en":"light of the naaru",
-		"name_kr":"나루의 빛",
+		"name":"나루의 빛",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":1933,
@@ -5773,10 +5773,10 @@ var rewardList = [
 		"text":"생명력을 3 회복시킵니다. 그래도 대상이 피해를 받은 상태라면, 빛의 감시자를 소환합니다."
 	}, 
 	{
-		"ID":"reward0462",
+		"id":"reward0462",
 		"cost":1,
 		"name_en":"lightwarden",
-		"name_kr":"빛의 감시자",
+		"name":"빛의 감시자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1655,
@@ -5786,10 +5786,10 @@ var rewardList = [
 		"text":"캐릭터가 치유될 때마다 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0463",
+		"id":"reward0463",
 		"cost":4,
 		"name_en":"holy champion",
-		"name_kr":"신성한 용사",
+		"name":"신성한 용사",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":2555,
@@ -5799,10 +5799,10 @@ var rewardList = [
 		"text":"캐릭터가 치유될 때마다 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0464",
+		"id":"reward0464",
 		"cost":4,
 		"name_en":"priest of the feast",
-		"name_kr":"만찬의 사제",
+		"name":"만찬의 사제",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":39442,
@@ -5812,10 +5812,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 내 영웅의 생명력을 3 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0465",
+		"id":"reward0465",
 		"cost":5,
 		"name_en":"darkshire alchemist",
-		"name_kr":"어둠골 연금술사",
+		"name":"어둠골 연금술사",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":38764,
@@ -5825,10 +5825,10 @@ var rewardList = [
 		"text":"전투의 함성: 생명력을 5 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0466",
+		"id":"reward0466",
 		"cost":6,
 		"name_en":"holy fire",
-		"name_kr":"신성한 불꽃",
+		"name":"신성한 불꽃",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":1365,
@@ -5836,10 +5836,10 @@ var rewardList = [
 		"text":"피해를 5 줍니다. 내 영웅이 생명력을 5 회복합니다."
 	}, 
 	{
-		"ID":"reward0467",
+		"id":"reward0467",
 		"cost":6,
 		"name_en":"lightbomb",
-		"name_kr":"빛폭탄",
+		"name":"빛폭탄",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":1938,
@@ -5847,10 +5847,10 @@ var rewardList = [
 		"text":"모든 하수인이 자신의 공격력만큼 피해를 받습니다."
 	}, 
 	{
-		"ID":"reward0468",
+		"id":"reward0468",
 		"cost":7,
 		"name_en":"prophet velen",
-		"name_kr":"예언자 벨렌",
+		"name":"예언자 벨렌",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":9,
@@ -5860,10 +5860,10 @@ var rewardList = [
 		"text":"내 주문과 영웅 능력의 피해량과 치유량을 2배 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0469",
+		"id":"reward0469",
 		"cost":1,
 		"name_en":"awaken the makers",
-		"name_kr":"깨어난 창조주",
+		"name":"깨어난 창조주",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":41494,
@@ -5871,10 +5871,10 @@ var rewardList = [
 		"text":"퀘스트: 죽음의 메아리 하수인을 7회 소환해야 합니다. 보상: 희망의 감시자 아마라"
 	}, 
 	{
-		"ID":"reward0470",
+		"id":"reward0470",
 		"cost":1,
 		"name_en":"crystalline oracle",
-		"name_kr":"수정 예언자",
+		"name":"수정 예언자",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":41173,
@@ -5885,10 +5885,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 상대편의 덱에서 카드를 1장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0471",
+		"id":"reward0471",
 		"cost":2,
 		"name_en":"museum curator",
-		"name_kr":"박물관 관리인",
+		"name":"박물관 관리인",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":2878,
@@ -5898,10 +5898,10 @@ var rewardList = [
 		"text":"전투의 함성: 죽음의 메아리 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0472",
+		"id":"reward0472",
 		"cost":3,
 		"name_en":"shallow gravedigger",
-		"name_kr":"얕은 무덤 도굴꾼",
+		"name":"얕은 무덤 도굴꾼",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":42785,
@@ -5911,10 +5911,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 죽음의 메아리 하수인 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0473",
+		"id":"reward0473",
 		"cost":3,
 		"name_en":"twilight's call",
-		"name_kr":"황혼의 부름",
+		"name":"황혼의 부름",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":45353,
@@ -5922,10 +5922,10 @@ var rewardList = [
 		"text":"이번 게임에서 죽은 내 죽음의 메아리 하수인 둘을 복사하여 1/1 하수인으로 소환합니다."
 	}, 
 	{
-		"ID":"reward0474",
+		"id":"reward0474",
 		"cost":4,
 		"name_en":"baron rivendare",
-		"name_kr":"남작 리븐데어",
+		"name":"남작 리븐데어",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1915,
@@ -5935,10 +5935,10 @@ var rewardList = [
 		"text":"내 하수인들의 죽음의 메아리 능력이 2번 발동합니다."
 	}, 
 	{
-		"ID":"reward0475",
+		"id":"reward0475",
 		"cost":4,
 		"name_en":"piloted shredder",
-		"name_kr":"누군가 조종하는 벌목기",
+		"name":"누군가 조종하는 벌목기",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2064,
@@ -5949,10 +5949,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 비용이 2인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0476",
+		"id":"reward0476",
 		"cost":4,
 		"name_en":"shifting shade",
-		"name_kr":"변화무쌍한 망령",
+		"name":"변화무쌍한 망령",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":39034,
@@ -5962,10 +5962,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 상대편의 덱에서 카드를 1장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0477",
+		"id":"reward0477",
 		"cost":4,
 		"name_en":"spiritsinger umbra",
-		"name_kr":"영혼노래꾼 움브라",
+		"name":"영혼노래꾼 움브라",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41289,
@@ -5975,10 +5975,10 @@ var rewardList = [
 		"text":"내 하수인이 소환된 후에, 그 하수인의 죽음의 메아리를 발동시킵니다."
 	}, 
 	{
-		"ID":"reward0478",
+		"id":"reward0478",
 		"cost":4,
 		"name_en":"tortollan shellraiser",
-		"name_kr":"토르톨란 껍질방패병",
+		"name":"토르톨란 껍질방패병",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":41180,
@@ -5988,10 +5988,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 무작위 아군 하수인 하나에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0479",
+		"id":"reward0479",
 		"cost":5,
 		"name_en":"corrupted healbot",
-		"name_kr":"오작동하는 치유로봇",
+		"name":"오작동하는 치유로봇",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38528,
@@ -6002,10 +6002,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 적 영웅의 생명력을 8 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0480",
+		"id":"reward0480",
 		"cost":5,
 		"name_en":"tomb lurker",
-		"name_kr":"무덤 잠복꾼",
+		"name":"무덤 잠복꾼",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":42781,
@@ -6015,10 +6015,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 죽은 무작위 죽음의 메아리 하수인 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0481",
+		"id":"reward0481",
 		"cost":6,
 		"name_en":"cairne bloodhoof",
-		"name_kr":"케른 블러드후프",
+		"name":"케른 블러드후프",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":420,
@@ -6028,10 +6028,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 4/5 바인 블러드후프를 소환합니다."
 	}, 
 	{
-		"ID":"reward0482",
+		"id":"reward0482",
 		"cost":9,
 		"name_en":"obsidian statue",
-		"name_kr":"흑요석 석상",
+		"name":"흑요석 석상",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":42598,
@@ -6041,10 +6041,10 @@ var rewardList = [
 		"text":"도발, 생명력 흡수 죽음의 메아리: 무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0483",
+		"id":"reward0483",
 		"cost":1,
 		"name_en":"mind vision",
-		"name_kr":"마음의 눈",
+		"name":"마음의 눈",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1099,
@@ -6052,10 +6052,10 @@ var rewardList = [
 		"text":"상대편 손에 있는 카드 1장을 무작위로 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0484",
+		"id":"reward0484",
 		"cost":1,
 		"name_en":"psionic probe",
-		"name_kr":"정신 관찰",
+		"name":"정신 관찰",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":45979,
@@ -6063,10 +6063,10 @@ var rewardList = [
 		"text":"상대편의 덱에서 주문을 1장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0485",
+		"id":"reward0485",
 		"cost":3,
 		"name_en":"curious glimmerroot",
-		"name_kr":"호기심 많은 미명뿌리",
+		"name":"호기심 많은 미명뿌리",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":41177,
@@ -6076,10 +6076,10 @@ var rewardList = [
 		"text":"전투의 함성: 카드 3장이 제시됩니다. 게임이 시작됐을 때 상대편의 덱에 있던 카드를 맞히면 그 카드를 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0486",
+		"id":"reward0486",
 		"cost":3,
 		"name_en":"thoughtsteal",
-		"name_kr":"생각 훔치기",
+		"name":"생각 훔치기",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":30,
@@ -6087,10 +6087,10 @@ var rewardList = [
 		"text":"상대편의 덱에서 카드를 2장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0487",
+		"id":"reward0487",
 		"cost":4,
 		"name_en":"mindgames",
-		"name_kr":"심리 조작",
+		"name":"심리 조작",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":145,
@@ -6098,10 +6098,10 @@ var rewardList = [
 		"text":"상대편의 덱에서 무작위 하수인 하나를 복사하여 내 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0488",
+		"id":"reward0488",
 		"cost":4,
 		"name_en":"shadow madness",
-		"name_kr":"암흑의 광기",
+		"name":"암흑의 광기",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":220,
@@ -6109,10 +6109,10 @@ var rewardList = [
 		"text":"공격력이 3 이하인 적 하수인 하나를 이번 턴에만 조종합니다."
 	}, 
 	{
-		"ID":"reward0489",
+		"id":"reward0489",
 		"cost":5,
 		"name_en":"devour mind",
-		"name_kr":"생각 삼키기",
+		"name":"생각 삼키기",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":42566,
@@ -6120,10 +6120,10 @@ var rewardList = [
 		"text":"상대편의 덱에서 카드를 3장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0490",
+		"id":"reward0490",
 		"cost":6,
 		"name_en":"cabal shadow priest",
-		"name_kr":"비밀결사단 어둠사제",
+		"name":"비밀결사단 어둠사제",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":272,
@@ -6133,10 +6133,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력이 2 이하인 적 하수인 하나를 가져옵니다."
 	}, 
 	{
-		"ID":"reward0491",
+		"id":"reward0491",
 		"cost":6,
 		"name_en":"embrace darkness",
-		"name_kr":"어둠의 은총",
+		"name":"어둠의 은총",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":45308,
@@ -6144,10 +6144,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 선택합니다. 내 턴이 시작될 때, 그 하수인을 가져옵니다."
 	}, 
 	{
-		"ID":"reward0492",
+		"id":"reward0492",
 		"cost":6,
 		"name_en":"entomb",
-		"name_kr":"생매장",
+		"name":"생매장",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":3015,
@@ -6155,10 +6155,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0493",
+		"id":"reward0493",
 		"cost":7,
 		"name_en":"archbishop benedictus",
-		"name_kr":"대주교 베네딕투스",
+		"name":"대주교 베네딕투스",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":42633,
@@ -6168,10 +6168,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편의 덱을 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0494",
+		"id":"reward0494",
 		"cost":8,
 		"name_en":"king togwaggle",
-		"name_kr":"미궁왕 토그왜글",
+		"name":"미궁왕 토그왜글",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":46589,
@@ -6181,10 +6181,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편과 덱을 바꿉니다. 덱을 돌려주는 조건인 '덱값 지불' 카드를 상대편에게 줍니다."
 	}, 
 	{
-		"ID":"reward0495",
+		"id":"reward0495",
 		"cost":10,
 		"name_en":"mind control",
-		"name_kr":"정신 지배",
+		"name":"정신 지배",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":8,
@@ -6192,10 +6192,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 가져옵니다."
 	}, 
 	{
-		"ID":"reward0496",
+		"id":"reward0496",
 		"cost":2,
 		"name_en":"resurrect",
-		"name_kr":"부활",
+		"name":"부활",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":2298,
@@ -6203,10 +6203,10 @@ var rewardList = [
 		"text":"이번 게임에서 죽은 아군 하수인 하나를 무작위로 소환합니다."
 	}, 
 	{
-		"ID":"reward0497",
+		"id":"reward0497",
 		"cost":3,
 		"name_en":"injured blademaster",
-		"name_kr":"부상당한 검귀",
+		"name":"부상당한 검귀",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1109,
@@ -6216,10 +6216,10 @@ var rewardList = [
 		"text":"전투의 함성: 자신에게 피해를 4 줍니다."
 	}, 
 	{
-		"ID":"reward0498",
+		"id":"reward0498",
 		"cost":4,
 		"name_en":"eternal servitude",
-		"name_kr":"영원한 족쇄",
+		"name":"영원한 족쇄",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":42597,
@@ -6227,10 +6227,10 @@ var rewardList = [
 		"text":"이번 게임에서 죽은 아군 하수인을 하나 발견하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0499",
+		"id":"reward0499",
 		"cost":5,
 		"name_en":"onyx bishop",
-		"name_kr":"칠흑색 비숍",
+		"name":"칠흑색 비숍",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":39374,
@@ -6240,10 +6240,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 죽은 아군 하수인 하나를 무작위로 소환합니다."
 	}, 
 	{
-		"ID":"reward0500",
+		"id":"reward0500",
 		"cost":7,
 		"name_en":"lesser diamond spellstone",
-		"name_kr":"하급 다이아몬드 주문석",
+		"name":"하급 다이아몬드 주문석",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":46307,
@@ -6251,10 +6251,10 @@ var rewardList = [
 		"text":"서로 다른 아군 하수인 둘을 부활시킵니다. (주문을 4회 시전하면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0501",
+		"id":"reward0501",
 		"cost":1,
 		"name_en":"pint-size potion",
-		"name_kr":"축소 물약",
+		"name":"축소 물약",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":40936,
@@ -6262,10 +6262,10 @@ var rewardList = [
 		"text":"이번 턴에 모든 적 하수인에게 공격력을 -3 부여합니다."
 	}, 
 	{
-		"ID":"reward0502",
+		"id":"reward0502",
 		"cost":2,
 		"name_en":"convert",
-		"name_kr":"교화",
+		"name":"교화",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":2563,
@@ -6273,10 +6273,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0503",
+		"id":"reward0503",
 		"cost":2,
 		"name_en":"shrinkmeister",
-		"name_kr":"축소술사",
+		"name":"축소술사",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1936,
@@ -6286,10 +6286,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 턴에 하수인 하나에게 공격력을 -2 부여합니다."
 	}, 
 	{
-		"ID":"reward0504",
+		"id":"reward0504",
 		"cost":2,
 		"name_en":"spirit lash",
-		"name_kr":"영혼 채찍",
+		"name":"영혼 채찍",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":42992,
@@ -6297,10 +6297,10 @@ var rewardList = [
 		"text":"생명력 흡수 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0505",
+		"id":"reward0505",
 		"cost":3,
 		"name_en":"shadow word: death",
-		"name_kr":"어둠의 권능: 죽음",
+		"name":"어둠의 권능: 죽음",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1363,
@@ -6308,10 +6308,10 @@ var rewardList = [
 		"text":"공격력이 5 이상인 하수인을 하나 처치합니다."
 	}, 
 	{
-		"ID":"reward0506",
+		"id":"reward0506",
 		"cost":4,
 		"name_en":"elise starseeker",
-		"name_kr":"엘리스 스타시커",
+		"name":"엘리스 스타시커",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2951,
@@ -6321,10 +6321,10 @@ var rewardList = [
 		"text":"전투의 함성: '황금 원숭이 보물지도' 카드 1장을 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0507",
+		"id":"reward0507",
 		"cost":4,
 		"name_en":"shadow word: horror",
-		"name_kr":"어둠의 권능: 공포",
+		"name":"어둠의 권능: 공포",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":38433,
@@ -6332,10 +6332,10 @@ var rewardList = [
 		"text":"공격력이 2 이하인 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0508",
+		"id":"reward0508",
 		"cost":5,
 		"name_en":"elise the trailblazer",
-		"name_kr":"원정대장 엘리스",
+		"name":"원정대장 엘리스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41935,
@@ -6345,10 +6345,10 @@ var rewardList = [
 		"text":"전투의 함성: 개봉하지 않은 운고로 팩 하나를 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0509",
+		"id":"reward0509",
 		"cost":5,
 		"name_en":"excavated evil",
-		"name_kr":"파헤쳐진 악",
+		"name":"파헤쳐진 악",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":2999,
@@ -6356,10 +6356,10 @@ var rewardList = [
 		"text":"모든 하수인에게 피해를 3 줍니다. 이 카드를 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0510",
+		"id":"reward0510",
 		"cost":5,
 		"name_en":"kabal songstealer",
-		"name_kr":"비밀결사 노래도둑",
+		"name":"비밀결사 노래도둑",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":40929,
@@ -6369,10 +6369,10 @@ var rewardList = [
 		"text":"전투의 함성: 하수인 하나를 침묵시킵니다."
 	}, 
 	{
-		"ID":"reward0511",
+		"id":"reward0511",
 		"cost":7,
 		"name_en":"psychic scream",
-		"name_kr":"영혼의 절규",
+		"name":"영혼의 절규",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":43112,
@@ -6380,10 +6380,10 @@ var rewardList = [
 		"text":"모든 하수인을 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0512",
+		"id":"reward0512",
 		"cost":1,
 		"name_en":"zombie chow",
-		"name_kr":"간식용 좀비",
+		"name":"간식용 좀비",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1753,
@@ -6393,10 +6393,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 적 영웅의 생명력을 5 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0513",
+		"id":"reward0513",
 		"cost":2,
 		"name_en":"shadow ascendant",
-		"name_kr":"암흑의 승천자",
+		"name":"암흑의 승천자",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":42574,
@@ -6406,10 +6406,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 다른 무작위 아군 하수인 하나에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0514",
+		"id":"reward0514",
 		"cost":3,
 		"name_en":"acolyte of agony",
-		"name_kr":"고뇌의 수행사제",
+		"name":"고뇌의 수행사제",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":42596,
@@ -6419,10 +6419,10 @@ var rewardList = [
 		"text":"생명력 흡수"
 	}, 
 	{
-		"ID":"reward0515",
+		"id":"reward0515",
 		"cost":3,
 		"name_en":"mirage caller",
-		"name_kr":"신기루 소환사",
+		"name":"신기루 소환사",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":41155,
@@ -6432,10 +6432,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다."
 	}, 
 	{
-		"ID":"reward0516",
+		"id":"reward0516",
 		"cost":3,
 		"name_en":"shadowfiend",
-		"name_kr":"어둠의 마귀",
+		"name":"어둠의 마귀",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":2566,
@@ -6445,10 +6445,10 @@ var rewardList = [
 		"text":"내가 카드를 뽑을 때마다 그 카드의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0517",
+		"id":"reward0517",
 		"cost":3,
 		"name_en":"shadowform",
-		"name_kr":"어둠의 형상",
+		"name":"어둠의 형상",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":1368,
@@ -6456,10 +6456,10 @@ var rewardList = [
 		"text":"내 영웅 능력이 '피해를 2 줍니다.'로 바뀝니다. (이미 어둠의 형상이었다면 3)"
 	}, 
 	{
-		"ID":"reward0518",
+		"id":"reward0518",
 		"cost":3,
 		"name_en":"void ripper",
-		"name_kr":"공허 학살자",
+		"name":"공허 학살자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":46461,
@@ -6470,10 +6470,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 모든 하수인의 공격력과 생명력을 바꿉니다."
 	}, 
 	{
-		"ID":"reward0519",
+		"id":"reward0519",
 		"cost":4,
 		"name_en":"the darkness",
-		"name_kr":"어둠의 존재",
+		"name":"어둠의 존재",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":46454,
@@ -6483,10 +6483,10 @@ var rewardList = [
 		"text":"잠에 듭니다. 전투의 함성: 상대편의 덱에 양초 카드 3장을 섞어 넣습니다. 상대편이 양초를 모두 뽑으면, 깨어납니다."
 	}, 
 	{
-		"ID":"reward0520",
+		"id":"reward0520",
 		"cost":5,
 		"name_en":"vol'jon",
-		"name_kr":"볼진",
+		"name":"볼진",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":1931,
@@ -6496,10 +6496,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 하수인 하나와 생명력을 바꿉니다."
 	}, 
 	{
-		"ID":"reward0521",
+		"id":"reward0521",
 		"cost":6,
 		"name_en":"herald volazj",
-		"name_kr":"사자 볼라즈",
+		"name":"사자 볼라즈",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":38922,
@@ -6509,10 +6509,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다른 하수인들을 복사하여 1/1 하수인으로 소환합니다."
 	}, 
 	{
-		"ID":"reward0522",
+		"id":"reward0522",
 		"cost":6,
 		"name_en":"shadow essence",
-		"name_kr":"암흑의 정수",
+		"name":"암흑의 정수",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":42804,
@@ -6520,10 +6520,10 @@ var rewardList = [
 		"text":"내 덱에서 무작위 하수인 하나를 복사하여 5/5 하수인으로 소환합니다."
 	}, 
 	{
-		"ID":"reward0523",
+		"id":"reward0523",
 		"cost":8,
 		"name_en":"shadowreaper anduin",
-		"name_kr":"암흑사신 안두인",
+		"name":"암흑사신 안두인",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":43408,
@@ -6532,10 +6532,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력이 5 이상인 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0524",
+		"id":"reward0524",
 		"cost":1,
 		"name_en":"twilight whelp",
-		"name_kr":"황혼의 새끼용",
+		"name":"황혼의 새끼용",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":2286,
@@ -6546,10 +6546,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 생명력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0525",
+		"id":"reward0525",
 		"cost":2,
 		"name_en":"wyrmrest agent",
-		"name_kr":"고룡쉼터 요원",
+		"name":"고룡쉼터 요원",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":2596,
@@ -6559,10 +6559,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력 +1과 도발을 얻습니다."
 	}, 
 	{
-		"ID":"reward0526",
+		"id":"reward0526",
 		"cost":4,
 		"name_en":"duskbreaker",
-		"name_kr":"황혼파괴자",
+		"name":"황혼파괴자",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":45899,
@@ -6573,10 +6573,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 다른 모든 하수인에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0527",
+		"id":"reward0527",
 		"cost":4,
 		"name_en":"hoarding dragon",
-		"name_kr":"보물을 지키는 용",
+		"name":"보물을 지키는 용",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":43507,
@@ -6587,10 +6587,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 상대편에게 동전을 2개 줍니다."
 	}, 
 	{
-		"ID":"reward0528",
+		"id":"reward0528",
 		"cost":4,
 		"name_en":"twilight guardian",
-		"name_kr":"황혼의 수호자",
+		"name":"황혼의 수호자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":2569,
@@ -6601,10 +6601,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력 +1과 도발을 얻습니다."
 	}, 
 	{
-		"ID":"reward0529",
+		"id":"reward0529",
 		"cost":5,
 		"name_en":"drakonid operative",
-		"name_kr":"용기병 비밀요원",
+		"name":"용기병 비밀요원",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":40378,
@@ -6615,10 +6615,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 상대편의 덱에서 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0530",
+		"id":"reward0530",
 		"cost":6,
 		"name_en":"bone drake",
-		"name_kr":"해골 비룡",
+		"name":"해골 비룡",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":42439,
@@ -6629,10 +6629,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 용족 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0531",
+		"id":"reward0531",
 		"cost":6,
 		"name_en":"book wyrm",
-		"name_kr":"고룡 독서가",
+		"name":"고룡 독서가",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":39210,
@@ -6643,10 +6643,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력이 3 이하인 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0532",
+		"id":"reward0532",
 		"cost":6,
 		"name_en":"dragonfire potion",
-		"name_kr":"용숨결 물약",
+		"name":"용숨결 물약",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":40938,
@@ -6654,10 +6654,10 @@ var rewardList = [
 		"text":"용족을 제외한 모든 하수인에게 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0533",
+		"id":"reward0533",
 		"cost":1,
 		"name_en":"inner fire",
-		"name_kr":"내면의 열정",
+		"name":"내면의 열정",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":376,
@@ -6665,10 +6665,10 @@ var rewardList = [
 		"text":"하수인 하나의 공격력을 생명력과 같은 수치로 바꿉니다."
 	}, 
 	{
-		"ID":"reward0534",
+		"id":"reward0534",
 		"cost":1,
 		"name_en":"power word: shield",
-		"name_kr":"신의 권능: 보호막",
+		"name":"신의 권능: 보호막",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":613,
@@ -6676,10 +6676,10 @@ var rewardList = [
 		"text":"하수인 하나에게 생명력을 +2 부여합니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0535",
+		"id":"reward0535",
 		"cost":2,
 		"name_en":"divine spirit",
-		"name_kr":"천상의 정신",
+		"name":"천상의 정신",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1361,
@@ -6687,10 +6687,10 @@ var rewardList = [
 		"text":"하수인 하나의 생명력을 2배 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0536",
+		"id":"reward0536",
 		"cost":3,
 		"name_en":"eydis darkbane",
-		"name_kr":"아이디스 다크베인",
+		"name":"아이디스 다크베인",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2519,
@@ -6700,10 +6700,10 @@ var rewardList = [
 		"text":"내가 주문의 대상으로 이 하수인을 지정할 때마다 무작위 적 하나에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0537",
+		"id":"reward0537",
 		"cost":3,
 		"name_en":"fjola lightbane",
-		"name_kr":"피욜라 라이트베인",
+		"name":"피욜라 라이트베인",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2748,
@@ -6713,10 +6713,10 @@ var rewardList = [
 		"text":"내가 주문의 대상으로 이 하수인을 지정할 때마다 천상의 보호막을 얻습니다."
 	}, 
 	{
-		"ID":"reward0538",
+		"id":"reward0538",
 		"cost":3,
 		"name_en":"unidentified elixir",
-		"name_kr":"정체불명의 비약",
+		"name":"정체불명의 비약",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":45759,
@@ -6724,10 +6724,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 내 손에서 추가 효과를 하나 얻습니다."
 	}, 
 	{
-		"ID":"reward0539",
+		"id":"reward0539",
 		"cost":3,
 		"name_en":"velen's chosen",
-		"name_kr":"벨렌의 선택",
+		"name":"벨렌의 선택",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":1935,
@@ -6735,10 +6735,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +2/+4와 주문 공격력 +1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0540",
+		"id":"reward0540",
 		"cost":5,
 		"name_en":"djinni of zephyrs",
-		"name_kr":"서풍의 신령",
+		"name":"서풍의 신령",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":2925,
@@ -6749,10 +6749,10 @@ var rewardList = [
 		"text":"내가 다른 아군 하수인에게 주문을 시전한 후에 이 하수인에게도 동일한 주문을 시전합니다."
 	}, 
 	{
-		"ID":"reward0541",
+		"id":"reward0541",
 		"cost":5,
 		"name_en":"raza the chained",
-		"name_kr":"속박된 라자",
+		"name":"속박된 라자",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":40323,
@@ -6762,10 +6762,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 이번 게임에서 내 영웅 능력의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0542",
+		"id":"reward0542",
 		"cost":2,
 		"name_en":"radiant elemental",
-		"name_kr":"광명의 정령",
+		"name":"광명의 정령",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":41176,
@@ -6776,10 +6776,10 @@ var rewardList = [
 		"text":"내 주문의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0543",
+		"id":"reward0543",
 		"cost":3,
 		"name_en":"tar creeper",
-		"name_kr":"잿멍울 괴물",
+		"name":"잿멍울 괴물",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41418,
@@ -6790,10 +6790,10 @@ var rewardList = [
 		"text":"도발, 상대편의 턴 동안 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0544",
+		"id":"reward0544",
 		"cost":5,
 		"name_en":"lyra the sunshard",
-		"name_kr":"태양의 후예 라이라",
+		"name":"태양의 후예 라이라",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":42046,
@@ -6804,10 +6804,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 무작위 사제 주문 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0545",
+		"id":"reward0545",
 		"cost":4,
 		"name_en":"hooded acolyte",
-		"name_kr":"두건 쓴 수행사제",
+		"name":"두건 쓴 수행사제",
 		"class":"사제",
 		"rarity":"일반",
 		"cardid":39033,
@@ -6817,10 +6817,10 @@ var rewardList = [
 		"text":"캐릭터가 치유될 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0546",
+		"id":"reward0546",
 		"cost":5,
 		"name_en":"twilight darkmender",
-		"name_kr":"황혼의 암흑치유사",
+		"name":"황혼의 암흑치유사",
 		"class":"사제",
 		"rarity":"희귀",
 		"cardid":38429,
@@ -6830,10 +6830,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 크툰의 공격력이 10 이상이면, 내 영웅의 생명력을 10 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0547",
+		"id":"reward0547",
 		"cost":2,
 		"name_en":"shadow visions",
-		"name_kr":"암흑의 환영",
+		"name":"암흑의 환영",
 		"class":"사제",
 		"rarity":"영웅",
 		"cardid":41169,
@@ -6841,10 +6841,10 @@ var rewardList = [
 		"text":"내 덱에서 주문을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0548",
+		"id":"reward0548",
 		"cost":2,
 		"name_en":"wild pyromancer",
-		"name_kr":"광기의 화염술사",
+		"name":"광기의 화염술사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1014,
@@ -6854,10 +6854,10 @@ var rewardList = [
 		"text":"내 주문이 시전된 후에, 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0549",
+		"id":"reward0549",
 		"cost":3,
 		"name_en":"dragon soul",
-		"name_kr":"용의 영혼",
+		"name":"용의 영혼",
 		"class":"사제",
 		"rarity":"전설",
 		"cardid":45528,
@@ -6867,10 +6867,10 @@ var rewardList = [
 		"text":"한 턴에 내 주문이 3번 시전된 후에, 5/5 용을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0550",
+		"id":"reward0550",
 		"cost":0,
 		"name_en":"backstab",
-		"name_kr":"기습",
+		"name":"기습",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":180,
@@ -6878,10 +6878,10 @@ var rewardList = [
 		"text":"피해를 받지 않은 하수인 하나에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0551",
+		"id":"reward0551",
 		"cost":1,
 		"name_en":"pit snake",
-		"name_kr":"구덩이 독사",
+		"name":"구덩이 독사",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":2882,
@@ -6892,10 +6892,10 @@ var rewardList = [
 		"text":"독성"
 	}, 
 	{
-		"ID":"reward0552",
+		"id":"reward0552",
 		"cost":1,
 		"name_en":"deadly poison",
-		"name_kr":"맹독",
+		"name":"맹독",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":459,
@@ -6903,10 +6903,10 @@ var rewardList = [
 		"text":"내 무기에 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0553",
+		"id":"reward0553",
 		"cost":1,
 		"name_en":"sinister strike",
-		"name_kr":"사악한 일격",
+		"name":"사악한 일격",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":710,
@@ -6914,10 +6914,10 @@ var rewardList = [
 		"text":"적 영웅에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0554",
+		"id":"reward0554",
 		"cost":2,
 		"name_en":"gilblin stalker",
-		"name_kr":"길블린 추적자",
+		"name":"길블린 추적자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2049,
@@ -6927,10 +6927,10 @@ var rewardList = [
 		"text":"은신"
 	}, 
 	{
-		"ID":"reward0555",
+		"id":"reward0555",
 		"cost":2,
 		"name_en":"undercity huckster",
-		"name_kr":"언더시티 상인",
+		"name":"언더시티 상인",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":39026,
@@ -6940,10 +6940,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 상대편 직업의 카드 1장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
-		"ID":"reward0556",
+		"id":"reward0556",
 		"cost":3,
 		"name_en":"si:7 agent",
-		"name_kr":"SI:7 요원",
+		"name":"SI:7 요원",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":1117,
@@ -6953,10 +6953,10 @@ var rewardList = [
 		"text":"연계: 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0557",
+		"id":"reward0557",
 		"cost":3,
 		"name_en":"unearthed raptor",
-		"name_kr":"발굴된 랩터",
+		"name":"발굴된 랩터",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2891,
@@ -6966,10 +6966,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나의 죽음의 메아리를 복사합니다."
 	}, 
 	{
-		"ID":"reward0558",
+		"id":"reward0558",
 		"cost":5,
 		"name_en":"assassinate",
-		"name_kr":"암살",
+		"name":"암살",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":345,
@@ -6977,10 +6977,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0559",
+		"id":"reward0559",
 		"cost":6,
 		"name_en":"vanish",
-		"name_kr":"소멸",
+		"name":"소멸",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":196,
@@ -6988,10 +6988,10 @@ var rewardList = [
 		"text":"모든 하수인을 주인의 손으로 돌려보냅니다."
 	}, 
 	{
-		"ID":"reward0560",
+		"id":"reward0560",
 		"cost":0,
 		"name_en":"Counterfeit Coin",
-		"name_kr":"위조된 동전",
+		"name":"위조된 동전",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":40437,
@@ -6999,10 +6999,10 @@ var rewardList = [
 		"text":"이번 턴에만 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0561",
+		"id":"reward0561",
 		"cost":0,
 		"name_en":"Preparation",
-		"name_kr":"마음가짐",
+		"name":"마음가짐",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":1158,
@@ -7010,10 +7010,10 @@ var rewardList = [
 		"text":"이번 턴에 내가 시전하는 다음 주문의 비용이 (3) 감소합니다."
 	}, 
 	{
-		"ID":"reward0562",
+		"id":"reward0562",
 		"cost":2,
 		"name_en":"Razorpetal Volley",
-		"name_kr":"연발 칼날꽃잎",
+		"name":"연발 칼날꽃잎",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":41207,
@@ -7021,10 +7021,10 @@ var rewardList = [
 		"text":"피해를 1 주는 칼날꽃잎 카드 2장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0563",
+		"id":"reward0563",
 		"cost":3,
 		"name_en":"Edwin VanCleef",
-		"name_kr":"에드윈 밴클리프",
+		"name":"에드윈 밴클리프",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":306,
@@ -7034,10 +7034,10 @@ var rewardList = [
 		"text":"연계: 이번 턴에 앞서 낸 카드 1장당 +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0564",
+		"id":"reward0564",
 		"cost":3,
 		"name_en":"mimic pod",
-		"name_kr":"흉내쟁이 깍지",
+		"name":"흉내쟁이 깍지",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":41212,
@@ -7045,10 +7045,10 @@ var rewardList = [
 		"text":"카드를 1장 뽑습니다. 그 카드를 복사하여 1장 더 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0565",
+		"id":"reward0565",
 		"cost":3,
 		"name_en":"questing adventurer",
-		"name_kr":"퀘스트 중인 모험가",
+		"name":"퀘스트 중인 모험가",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":791,
@@ -7058,10 +7058,10 @@ var rewardList = [
 		"text":"내가 카드를 낼 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0566",
+		"id":"reward0566",
 		"cost":4,
 		"name_en":"sherazin, corpse flower",
-		"name_kr":"시체꽃 셰라진",
+		"name":"시체꽃 셰라진",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":41218,
@@ -7071,10 +7071,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 씨앗으로 변합니다. 한 턴에 카드를 4장 이상 내면, 되살아납니다."
 	}, 
 	{
-		"ID":"reward0567",
+		"id":"reward0567",
 		"cost":4,
 		"name_en":"xaril, poisoned mind",
-		"name_kr":"독한 마음의 자릴",
+		"name":"독한 마음의 자릴",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":38403,
@@ -7084,10 +7084,10 @@ var rewardList = [
 		"text":"전투의 함성과 죽음의 메아리: 무작위 독극물 카드 1장을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0568",
+		"id":"reward0568",
 		"cost":6,
 		"name_en":"illidan stormrage",
-		"name_kr":"일리단 스톰레이지",
+		"name":"일리단 스톰레이지",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":556,
@@ -7098,10 +7098,10 @@ var rewardList = [
 		"text":"내가 카드를 낼 때마다 2/1 아지노스의 불꽃을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0569",
+		"id":"reward0569",
 		"cost":6,
 		"name_en":"spectral pillager",
-		"name_kr":"유령 강탈자",
+		"name":"유령 강탈자",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":45975,
@@ -7111,10 +7111,10 @@ var rewardList = [
 		"text":"연계: 이번 턴에 앞서 낸 카드의 수만큼 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0570",
+		"id":"reward0570",
 		"cost":7,
 		"name_en":"sprint",
-		"name_kr":"전력 질주",
+		"name":"전력 질주",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":630,
@@ -7122,10 +7122,10 @@ var rewardList = [
 		"text":"카드를 4장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0571",
+		"id":"reward0571",
 		"cost":0,
 		"name_en":"shadowstep",
-		"name_kr":"그림자 밟기",
+		"name":"그림자 밟기",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":365,
@@ -7133,10 +7133,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 내 손으로 다시 가져옵니다. 그 하수인의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0572",
+		"id":"reward0572",
 		"cost":1,
 		"name_en":"the caverns below",
-		"name_kr":"지하 동굴",
+		"name":"지하 동굴",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":41222,
@@ -7144,10 +7144,10 @@ var rewardList = [
 		"text":"퀘스트: 이름이 같은 하수인을 5회 내야 합니다. 보상: 수정핵"
 	}, 
 	{
-		"ID":"reward0573",
+		"id":"reward0573",
 		"cost":2,
 		"name_en":"cheat death",
-		"name_kr":"구사일생",
+		"name":"구사일생",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":45520,
@@ -7155,10 +7155,10 @@ var rewardList = [
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 내 손으로 다시 가져오고 비용을 (2) 감소시킵니다."
 	}, 
 	{
-		"ID":"reward0574",
+		"id":"reward0574",
 		"cost":2,
 		"name_en":"gadgetzan ferryman",
-		"name_kr":"가젯잔 뱃사공",
+		"name":"가젯잔 뱃사공",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":40696,
@@ -7168,10 +7168,10 @@ var rewardList = [
 		"text":"연계: 아군 하수인 하나를 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0575",
+		"id":"reward0575",
 		"cost":2,
 		"name_en":"novice engineer",
-		"name_kr":"풋내기 기술자",
+		"name":"풋내기 기술자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":284,
@@ -7181,10 +7181,10 @@ var rewardList = [
 		"text":"전투의 함성: 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0576",
+		"id":"reward0576",
 		"cost":2,
 		"name_en":"youthful brewmaster",
-		"name_kr":"젊은 양조사",
+		"name":"젊은 양조사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":415,
@@ -7194,10 +7194,10 @@ var rewardList = [
 		"text":"전투의 함성: 전장의 아군 하수인 하나를 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0577",
+		"id":"reward0577",
 		"cost":3,
 		"name_en":"sonya shadowdancer",
-		"name_kr":"소냐 섀도댄서",
+		"name":"소냐 섀도댄서",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":45263,
@@ -7207,10 +7207,10 @@ var rewardList = [
 		"text":"아군 하수인이 죽은 후에, 그 하수인을 비용이 (1)인 1/1 하수인으로 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0578",
+		"id":"reward0578",
 		"cost":1,
 		"name_en":"doomerang",
-		"name_kr":"부셔메랑",
+		"name":"부셔메랑",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":42801,
@@ -7218,10 +7218,10 @@ var rewardList = [
 		"text":"하수인 하나에게 무기를 던져 무기의 공격력만큼 피해를 주고 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0579",
+		"id":"reward0579",
 		"cost":1,
 		"name_en":"kingsbane",
-		"name_kr":"왕의 파멸",
+		"name":"왕의 파멸",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":47035,
@@ -7231,10 +7231,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이 무기를 내 덱에 섞어 넣습니다. 모든 강화 효과가 유지됩니다."
 	}, 
 	{
-		"ID":"reward0580",
+		"id":"reward0580",
 		"cost":2,
 		"name_en":"cavern shinyfinder",
-		"name_kr":"동굴 금속탐지꾼",
+		"name":"동굴 금속탐지꾼",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":43237,
@@ -7244,10 +7244,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에서 무기를 하나 뽑습니다."
 	}, 
 	{
-		"ID":"reward0581",
+		"id":"reward0581",
 		"cost":2,
 		"name_en":"goblin auto-barber",
-		"name_kr":"고블린 자동 이발기",
+		"name":"고블린 자동 이발기",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":1988,
@@ -7258,10 +7258,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기에 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0582",
+		"id":"reward0582",
 		"cost":2,
 		"name_en":"leeching poison",
-		"name_kr":"착취 독",
+		"name":"착취 독",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":42665,
@@ -7269,10 +7269,10 @@ var rewardList = [
 		"text":"내 무기에 생명력 흡수를 부여합니다."
 	}, 
 	{
-		"ID":"reward0583",
+		"id":"reward0583",
 		"cost":3,
 		"name_en":"envenom weapon",
-		"name_kr":"독살",
+		"name":"독살",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":41834,
@@ -7280,10 +7280,10 @@ var rewardList = [
 		"text":"내 무기에 독성을 부여합니다."
 	}, 
 	{
-		"ID":"reward0584",
+		"id":"reward0584",
 		"cost":3,
 		"name_en":"shadowblade",
-		"name_kr":"그림자칼날",
+		"name":"그림자칼날",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":45338,
@@ -7293,10 +7293,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 턴에 내 영웅이 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0585",
+		"id":"reward0585",
 		"cost":4,
 		"name_en":"blade flurry",
-		"name_kr":"폭풍의 칼날",
+		"name":"폭풍의 칼날",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":1064,
@@ -7304,10 +7304,10 @@ var rewardList = [
 		"text":"내 무기를 파괴하고 그 무기의 공격력만큼 모든 적 하수인에게 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0586",
+		"id":"reward0586",
 		"cost":4,
 		"name_en":"grave shambler",
-		"name_kr":"무덤괴물",
+		"name":"무덤괴물",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":42780,
@@ -7318,10 +7318,10 @@ var rewardList = [
 		"text":"내 무기가 파괴될 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0587",
+		"id":"reward0587",
 		"cost":4,
 		"name_en":"runeforge haunter",
-		"name_kr":"룬가열로 외눈깨비",
+		"name":"룬가열로 외눈깨비",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":42819,
@@ -7331,10 +7331,10 @@ var rewardList = [
 		"text":"내 턴 동안 내 무기의 내구도가 감소하지 않습니다."
 	}, 
 	{
-		"ID":"reward0588",
+		"id":"reward0588",
 		"cost":4,
 		"name_en":"tinker's sharpsword oil",
-		"name_kr":"땜장이의 뾰족칼 기름",
+		"name":"땜장이의 뾰족칼 기름",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":2095,
@@ -7342,10 +7342,10 @@ var rewardList = [
 		"text":"내 무기에 공격력을 +3 부여합니다. 연계: 무작위 아군 하수인 하나에게 공격력을 +3 부여합니다."
 	}, 
 	{
-		"ID":"reward0589",
+		"id":"reward0589",
 		"cost":1,
 		"name_en":"journey below",
-		"name_kr":"심연 속으로",
+		"name":"심연 속으로",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38393,
@@ -7353,10 +7353,10 @@ var rewardList = [
 		"text":"죽음의 메아리 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0590",
+		"id":"reward0590",
 		"cost":2,
 		"name_en":"roll the bones",
-		"name_kr":"뼈개걸윷모",
+		"name":"뼈개걸윷모",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":42560,
@@ -7364,10 +7364,10 @@ var rewardList = [
 		"text":"카드를 1장 뽑습니다. 뽑은 카드가 죽음의 메아리 카드면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
-		"ID":"reward0591",
+		"id":"reward0591",
 		"cost":4,
 		"name_en":"twilight summoner",
-		"name_kr":"황혼의 소환사",
+		"name":"황혼의 소환사",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":38833,
@@ -7377,10 +7377,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 5/5 얼굴 없는 파괴자를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0592",
+		"id":"reward0592",
 		"cost":5,
 		"name_en":"lesser onyx spellstone",
-		"name_kr":"하급 흑마노 주문석",
+		"name":"하급 흑마노 주문석",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":46296,
@@ -7388,10 +7388,10 @@ var rewardList = [
 		"text":"무작위 적 하수인을 하나 처치합니다. (죽음의 메아리 카드를 3회 내면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0593",
+		"id":"reward0593",
 		"cost":2,
 		"name_en":"jade shuriken",
-		"name_kr":"비취 수리검",
+		"name":"비취 수리검",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":40698,
@@ -7399,10 +7399,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다. 연계: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0594",
+		"id":"reward0594",
 		"cost":2,
 		"name_en":"jade swarmer",
-		"name_kr":"비취 무리전사",
+		"name":"비취 무리전사",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":40697,
@@ -7412,10 +7412,10 @@ var rewardList = [
 		"text":"은신 죽음의 메아리: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0595",
+		"id":"reward0595",
 		"cost":2,
 		"name_en":"cutpurse",
-		"name_kr":"소매치기",
+		"name":"소매치기",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2766,
@@ -7425,10 +7425,10 @@ var rewardList = [
 		"text":"이 하수인이 영웅을 공격할 때마다 동전을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0596",
+		"id":"reward0596",
 		"cost":3,
 		"name_en":"coldlight oracle",
-		"name_kr":"시린빛 점쟁이",
+		"name":"시린빛 점쟁이",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1016,
@@ -7439,10 +7439,10 @@ var rewardList = [
 		"text":"전투의 함성: 각 플레이어가 카드를 2장씩 뽑습니다."
 	}, 
 	{
-		"ID":"reward0597",
+		"id":"reward0597",
 		"cost":4,
 		"name_en":"elven minstrel",
-		"name_kr":"엘프 음악가",
+		"name":"엘프 음악가",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":45531,
@@ -7452,10 +7452,10 @@ var rewardList = [
 		"text":"연계: 내 덱에서 하수인을 둘 뽑습니다."
 	}, 
 	{
-		"ID":"reward0598",
+		"id":"reward0598",
 		"cost":4,
 		"name_en":"genzo, the shark",
-		"name_kr":"상어 겐조",
+		"name":"상어 겐조",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":40607,
@@ -7465,10 +7465,10 @@ var rewardList = [
 		"text":"이 하수인이 공격할 때마다 각 플레이어가 카드가 3장이 될 때까지 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0599",
+		"id":"reward0599",
 		"cost":4,
 		"name_en":"tomb pillager",
-		"name_kr":"묘실 도굴꾼",
+		"name":"묘실 도굴꾼",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":2884,
@@ -7478,10 +7478,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 동전을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0600",
+		"id":"reward0600",
 		"cost":5,
 		"name_en":"burgly bully",
-		"name_kr":"트로그 절도범",
+		"name":"트로그 절도범",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":40954,
@@ -7491,10 +7491,10 @@ var rewardList = [
 		"text":"상대편이 주문을 시전할 때마다 동전을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0601",
+		"id":"reward0601",
 		"cost":1,
 		"name_en":"hallucination",
-		"name_kr":"환상",
+		"name":"환상",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":42011,
@@ -7502,10 +7502,10 @@ var rewardList = [
 		"text":"상대편 직업의 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0602",
+		"id":"reward0602",
 		"cost":1,
 		"name_en":"swashburglar",
-		"name_kr":"칼잡이 강도",
+		"name":"칼잡이 강도",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":39698,
@@ -7516,10 +7516,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편 직업의 카드 1장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
-		"ID":"reward0603",
+		"id":"reward0603",
 		"cost":2,
 		"name_en":"lorewalker cho",
-		"name_kr":"전승지기 초",
+		"name":"전승지기 초",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1135,
@@ -7529,10 +7529,10 @@ var rewardList = [
 		"text":"각 플레이어가 주문을 시전할 때마다 동일한 주문을 다른 플레이어의 손에 추가합니다."
 	}, 
 	{
-		"ID":"reward0604",
+		"id":"reward0604",
 		"cost":3,
 		"name_en":"burgle",
-		"name_kr":"도둑질",
+		"name":"도둑질",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2770,
@@ -7540,10 +7540,10 @@ var rewardList = [
 		"text":"상대편 직업의 카드 2장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
-		"ID":"reward0605",
+		"id":"reward0605",
 		"cost":3,
 		"name_en":"shaku, the collector",
-		"name_kr":"수집가 샤쿠",
+		"name":"수집가 샤쿠",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":40905,
@@ -7553,10 +7553,10 @@ var rewardList = [
 		"text":"은신, 이 하수인이 공격할 때마다 상대편 직업의 카드 1장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
-		"ID":"reward0606",
+		"id":"reward0606",
 		"cost":4,
 		"name_en":"lilian voss",
-		"name_kr":"릴리안 보스",
+		"name":"릴리안 보스",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":43031,
@@ -7566,10 +7566,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 모든 주문을 상대편 직업의 무작위 주문으로 교체합니다."
 	}, 
 	{
-		"ID":"reward0607",
+		"id":"reward0607",
 		"cost":4,
 		"name_en":"obsidian shard",
-		"name_kr":"흑요석 파편",
+		"name":"흑요석 파편",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":41213,
@@ -7579,10 +7579,10 @@ var rewardList = [
 		"text":"내가 낸 다른 직업의 카드 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0608",
+		"id":"reward0608",
 		"cost":5,
 		"name_en":"ethereal peddler",
-		"name_kr":"에테리얼 행상인",
+		"name":"에테리얼 행상인",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":39700,
@@ -7592,10 +7592,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 도적 카드가 아닌 직업 카드가 있으면, 그 카드들의 비용을 (2) 감소시킵니다."
 	}, 
 	{
-		"ID":"reward0609",
+		"id":"reward0609",
 		"cost":6,
 		"name_en":"trade prince gallywix",
-		"name_kr":"무역왕 갤리윅스",
+		"name":"무역왕 갤리윅스",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":1993,
@@ -7605,10 +7605,10 @@ var rewardList = [
 		"text":"상대편이 주문을 시전할 때마다 동일한 주문을 내 손으로 가져오고 상대편에게 동전을 줍니다."
 	}, 
 	{
-		"ID":"reward0610",
+		"id":"reward0610",
 		"cost":1,
 		"name_en":"cold blood",
-		"name_kr":"냉혈",
+		"name":"냉혈",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":268,
@@ -7616,10 +7616,10 @@ var rewardList = [
 		"text":"하수인 하나에게 공격력을 +2 부여합니다. 연계: 대신 공격력을 +4 부여합니다."
 	}, 
 	{
-		"ID":"reward0611",
+		"id":"reward0611",
 		"cost":2,
 		"name_en":"eviscerate",
-		"name_kr":"절개",
+		"name":"절개",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":904,
@@ -7627,10 +7627,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다. 연계: 대신 피해를 4 줍니다."
 	}, 
 	{
-		"ID":"reward0612",
+		"id":"reward0612",
 		"cost":2,
 		"name_en":"patient assassin",
-		"name_kr":"침착한 암살자",
+		"name":"침착한 암살자",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":1133,
@@ -7640,10 +7640,10 @@ var rewardList = [
 		"text":"은신 독성"
 	}, 
 	{
-		"ID":"reward0613",
+		"id":"reward0613",
 		"cost":2,
 		"name_en":"shiv",
-		"name_kr":"독칼",
+		"name":"독칼",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":573,
@@ -7651,10 +7651,10 @@ var rewardList = [
 		"text":"피해를 1 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0614",
+		"id":"reward0614",
 		"cost":3,
 		"name_en":"fan of knives",
-		"name_kr":"칼날 부채",
+		"name":"칼날 부채",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":667,
@@ -7662,10 +7662,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 1 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0615",
+		"id":"reward0615",
 		"cost":3,
 		"name_en":"plague scientist",
-		"name_kr":"역병 과학자",
+		"name":"역병 과학자",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":43028,
@@ -7675,10 +7675,10 @@ var rewardList = [
 		"text":"연계: 아군 하수인 하나에게 독성을 부여합니다."
 	}, 
 	{
-		"ID":"reward0616",
+		"id":"reward0616",
 		"cost":3,
 		"name_en":"shadow strike",
-		"name_kr":"그림자 일격",
+		"name":"그림자 일격",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":38578,
@@ -7686,10 +7686,10 @@ var rewardList = [
 		"text":"피해를 받지 않은 캐릭터 하나에게 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0617",
+		"id":"reward0617",
 		"cost":5,
 		"name_en":"dark iron skulker",
-		"name_kr":"검은무쇠 잠복자",
+		"name":"검은무쇠 잠복자",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2291,
@@ -7699,10 +7699,10 @@ var rewardList = [
 		"text":"전투의 함성: 피해를 받지 않은 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0618",
+		"id":"reward0618",
 		"cost":5,
 		"name_en":"vilespine slayer",
-		"name_kr":"썩은가시 식인꽃",
+		"name":"썩은가시 식인꽃",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":41217,
@@ -7712,10 +7712,10 @@ var rewardList = [
 		"text":"연계: 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0619",
+		"id":"reward0619",
 		"cost":1,
 		"name_en":"buccaneer",
-		"name_kr":"해적단원",
+		"name":"해적단원",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":2715,
@@ -7726,10 +7726,10 @@ var rewardList = [
 		"text":"내가 무기를 장착할 때마다 무기에 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0620",
+		"id":"reward0620",
 		"cost":1,
 		"name_en":"patches the pirate",
-		"name_kr":"해적 패치스",
+		"name":"해적 패치스",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":40465,
@@ -7740,10 +7740,10 @@ var rewardList = [
 		"text":"돌진 내가 해적을 낸 후에, 이 하수인을 내 덱에서 소환합니다."
 	}, 
 	{
-		"ID":"reward0621",
+		"id":"reward0621",
 		"cost":1,
 		"name_en":"southsea deckhand",
-		"name_kr":"남쪽바다 갑판원",
+		"name":"남쪽바다 갑판원",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":724,
@@ -7754,10 +7754,10 @@ var rewardList = [
 		"text":"내 영웅이 무기를 장착하고 있을 때 돌진을 얻습니다."
 	}, 
 	{
-		"ID":"reward0622",
+		"id":"reward0622",
 		"cost":2,
 		"name_en":"one-eyed cheat",
-		"name_kr":"외눈박이 사기꾼",
+		"name":"외눈박이 사기꾼",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":1990,
@@ -7768,10 +7768,10 @@ var rewardList = [
 		"text":"내가 해적을 소환할 때마다 은신을 얻습니다."
 	}, 
 	{
-		"ID":"reward0623",
+		"id":"reward0623",
 		"cost":2,
 		"name_en":"ship's cannon",
-		"name_kr":"함포",
+		"name":"함포",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2043,
@@ -7781,10 +7781,10 @@ var rewardList = [
 		"text":"내 해적이 소환된 후에, 무작위 적 하나에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0624",
+		"id":"reward0624",
 		"cost":3,
 		"name_en":"shady dealer",
-		"name_kr":"암거래상",
+		"name":"암거래상",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2768,
@@ -7794,10 +7794,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 해적이 있으면, +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0625",
+		"id":"reward0625",
 		"cost":3,
 		"name_en":"southsea captain",
-		"name_kr":"남쪽바다 선장",
+		"name":"남쪽바다 선장",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":680,
@@ -7808,10 +7808,10 @@ var rewardList = [
 		"text":"내 다른 해적들이 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0626",
+		"id":"reward0626",
 		"cost":4,
 		"name_en":"dread corsair",
-		"name_kr":"공포의 해적",
+		"name":"공포의 해적",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":878,
@@ -7822,10 +7822,10 @@ var rewardList = [
 		"text":"도발 내 무기의 공격력만큼 비용이 감소합니다."
 	}, 
 	{
-		"ID":"reward0627",
+		"id":"reward0627",
 		"cost":4,
 		"name_en":"naga corsair",
-		"name_kr":"나가 바다약탈자",
+		"name":"나가 바다약탈자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":40889,
@@ -7836,10 +7836,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기에 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0628",
+		"id":"reward0628",
 		"cost":4,
 		"name_en":"phantom freebooter",
-		"name_kr":"유령 약탈자",
+		"name":"유령 약탈자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":42327,
@@ -7850,10 +7850,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기의 능력치를 얻습니다."
 	}, 
 	{
-		"ID":"reward0629",
+		"id":"reward0629",
 		"cost":4,
 		"name_en":"southsea squidface",
-		"name_kr":"남쪽바다 촉수얼굴",
+		"name":"남쪽바다 촉수얼굴",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":38825,
@@ -7864,10 +7864,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 무기에 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0630",
+		"id":"reward0630",
 		"cost":5,
 		"name_en":"captain greenskin",
-		"name_kr":"선장 그린스킨",
+		"name":"선장 그린스킨",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":456,
@@ -7878,10 +7878,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기에 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0631",
+		"id":"reward0631",
 		"cost":6,
 		"name_en":"luckydo buccaneer",
-		"name_kr":"복덩이 찾는 해적단원",
+		"name":"복덩이 찾는 해적단원",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":40791,
@@ -7892,10 +7892,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 무기의 공격력이 3 이상이면, +4/+4를 얻습니다."
 	}, 
 	{
-		"ID":"reward0632",
+		"id":"reward0632",
 		"cost":2,
 		"name_en":"betrayal",
-		"name_kr":"배신",
+		"name":"배신",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":282,
@@ -7903,10 +7903,10 @@ var rewardList = [
 		"text":"적 하수인이 자신의 공격력만큼 양옆의 하수인들을 공격하게 만듭니다."
 	}, 
 	{
-		"ID":"reward0633",
+		"id":"reward0633",
 		"cost":2,
 		"name_en":"evasion",
-		"name_kr":"회피",
+		"name":"회피",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":45535,
@@ -7914,10 +7914,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅이 피해를 받은 후에, 이번 턴에 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0634",
+		"id":"reward0634",
 		"cost":2,
 		"name_en":"gang up",
-		"name_kr":"패거리",
+		"name":"패거리",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":2304,
@@ -7925,10 +7925,10 @@ var rewardList = [
 		"text":"하수인 하나를 선택합니다. 그 하수인을 셋 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0635",
+		"id":"reward0635",
 		"cost":2,
 		"name_en":"sudden betrayal",
-		"name_kr":"갑작스러운 배신",
+		"name":"갑작스러운 배신",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":45529,
@@ -7936,10 +7936,10 @@ var rewardList = [
 		"text":"비밀: 내 영웅을 공격하는 하수인이 자신의 양옆에 있는 하수인 중 하나를 공격하게 됩니다."
 	}, 
 	{
-		"ID":"reward0636",
+		"id":"reward0636",
 		"cost":3,
 		"name_en":"beneath the grounds",
-		"name_kr":"땅속의 위협",
+		"name":"땅속의 위협",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":2587,
@@ -7947,10 +7947,10 @@ var rewardList = [
 		"text":"상대편의 덱에 잠복 카드 3장을 섞어 넣습니다. 상대편이 잠복 카드를 뽑으면, 내가 4/4 네루비안을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0637",
+		"id":"reward0637",
 		"cost":4,
 		"name_en":"fal'dorei strider",
-		"name_kr":"팔도레이 순찰자",
+		"name":"팔도레이 순찰자",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":43228,
@@ -7960,10 +7960,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 잠복 카드 3장을 섞어 넣습니다. 잠복 카드를 뽑으면, 4/4 거미를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0638",
+		"id":"reward0638",
 		"cost":5,
 		"name_en":"shadowcaster",
-		"name_kr":"그림자술사",
+		"name":"그림자술사",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":38876,
@@ -7973,10 +7973,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 비용이 (1)인 1/1 하수인으로 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0639",
+		"id":"reward0639",
 		"cost":6,
 		"name_en":"thistle tea",
-		"name_kr":"엉겅퀴 차",
+		"name":"엉겅퀴 차",
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":38395,
@@ -7984,10 +7984,10 @@ var rewardList = [
 		"text":"카드를 1장 뽑습니다. 그 카드를 복사하여 2장 더 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0640",
+		"id":"reward0640",
 		"cost":9,
 		"name_en":"valeera the hollow",
-		"name_kr":"환영자객 발리라",
+		"name":"환영자객 발리라",
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":43392,
@@ -7996,10 +7996,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다음 턴까지 은신합니다."
 	}, 
 	{
-		"ID":"reward0641",
+		"id":"reward0641",
 		"cost":2,
 		"name_en":"twilight geomancer",
-		"name_kr":"황혼의 풍수사",
+		"name":"황혼의 풍수사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38864,
@@ -8009,10 +8009,10 @@ var rewardList = [
 		"text":"도발 전투의 함성: 내 크툰에게 도발을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0642",
+		"id":"reward0642",
 		"cost":9,
 		"name_en":"blade of c'thun",
-		"name_kr":"크툰의 자객",
+		"name":"크툰의 자객",
 		"class":"도적",
 		"rarity":"영웅",
 		"cardid":38861,
@@ -8022,10 +8022,10 @@ var rewardList = [
 		"text":"전투의 함성: 하수인 하나를 처치합니다. 그 하수인의 공격력과 생명력을 내 크툰에게 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0643",
+		"id":"reward0643",
 		"cost":2,
 		"name_en":"sap",
-		"name_kr":"혼절시키기",
+		"name":"혼절시키기",
 		"class":"도적",
 		"rarity":"일반",
 		"cardid":461,
@@ -8033,10 +8033,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 상대편의 손으로 돌려보냅니다."
 	}, 
 	{
-		"ID":"reward0644",
+		"id":"reward0644",
 		"cost":3,
 		"name_en":"brann bronzebeard",
-		"name_kr":"브란 브론즈비어드",
+		"name":"브란 브론즈비어드",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2949,
@@ -8046,10 +8046,10 @@ var rewardList = [
 		"text":"내 전투의 함성 능력이 2번 발동합니다."
 	}, 
 	{
-		"ID":"reward0645",
+		"id":"reward0645",
 		"cost":3,
 		"name_en":"violet illusionist",
-		"name_kr":"보랏빛 환영술사",
+		"name":"보랏빛 환영술사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":39313,
@@ -8059,10 +8059,10 @@ var rewardList = [
 		"text":"내 턴 동안 내 영웅이 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0646",
+		"id":"reward0646",
 		"cost":1,
 		"name_en":"air elemental",
-		"name_kr":"바람 정령",
+		"name":"바람 정령",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":41152,
@@ -8073,10 +8073,10 @@ var rewardList = [
 		"text":"이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
 	}, 
 	{
-		"ID":"reward0647",
+		"id":"reward0647",
 		"cost":1,
 		"name_en":"lightning bolt",
-		"name_kr":"번개 화살",
+		"name":"번개 화살",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":505,
@@ -8084,10 +8084,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0648",
+		"id":"reward0648",
 		"cost":2,
 		"name_en":"flametongue totem",
-		"name_kr":"불꽃의 토템",
+		"name":"불꽃의 토템",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":1008,
@@ -8098,10 +8098,10 @@ var rewardList = [
 		"text":"양옆의 하수인들이 공격력을 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0649",
+		"id":"reward0649",
 		"cost":2,
 		"name_en":"stormforges axe",
-		"name_kr":"폭풍으로 벼려낸 도끼",
+		"name":"폭풍으로 벼려낸 도끼",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":960,
@@ -8111,10 +8111,10 @@ var rewardList = [
 		"text":"과부하: (1)"
 	}, 
 	{
-		"ID":"reward0650",
+		"id":"reward0650",
 		"cost":3,
 		"name_en":"lightning storm",
-		"name_kr":"번개 폭풍",
+		"name":"번개 폭풍",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":629,
@@ -8122,10 +8122,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 2-3 줍니다. 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0651",
+		"id":"reward0651",
 		"cost":3,
 		"name_en":"unbound elemental",
-		"name_kr":"속박 풀린 정령",
+		"name":"속박 풀린 정령",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":774,
@@ -8136,10 +8136,10 @@ var rewardList = [
 		"text":"내가 과부하 카드를 낼 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0652",
+		"id":"reward0652",
 		"cost":4,
 		"name_en":"hex",
-		"name_kr":"사술",
+		"name":"사술",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":766,
@@ -8147,10 +8147,10 @@ var rewardList = [
 		"text":"하수인 하나를 도발 능력이 있는 0/1 개구리로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0653",
+		"id":"reward0653",
 		"cost":6,
 		"name_en":"fire elemental",
-		"name_kr":"불의 정령",
+		"name":"불의 정령",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":189,
@@ -8161,10 +8161,10 @@ var rewardList = [
 		"text":"전투의 함성: 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0654",
+		"id":"reward0654",
 		"cost":2,
 		"name_en":"crackle",
-		"name_kr":"파지직",
+		"name":"파지직",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2006,
@@ -8172,10 +8172,10 @@ var rewardList = [
 		"text":"피해를 3-6 줍니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0655",
+		"id":"reward0655",
 		"cost":2,
 		"name_en":"crushing hand",
-		"name_kr":"분쇄의 손",
+		"name":"분쇄의 손",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":43322,
@@ -8183,10 +8183,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 8 줍니다. 과부하: (3)"
 	}, 
 	{
-		"ID":"reward0656",
+		"id":"reward0656",
 		"cost":2,
 		"name_en":"lava shock",
-		"name_kr":"용암 충격",
+		"name":"용암 충격",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":2289,
@@ -8194,10 +8194,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다. 과부하된 내 마나 수정이 모두 잠금 해제됩니다."
 	}, 
 	{
-		"ID":"reward0657",
+		"id":"reward0657",
 		"cost":2,
 		"name_en":"maelstrom portal",
-		"name_kr":"혼돈의 소용돌이 차원문",
+		"name":"혼돈의 소용돌이 차원문",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":39712,
@@ -8205,10 +8205,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 1 줍니다. 비용이 1인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0658",
+		"id":"reward0658",
 		"cost":2,
 		"name_en":"stormcrack",
-		"name_kr":"벼락",
+		"name":"벼락",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":38724,
@@ -8216,10 +8216,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 4 줍니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0659",
+		"id":"reward0659",
 		"cost":3,
 		"name_en":"elemental destruction",
-		"name_kr":"파괴의 정기",
+		"name":"파괴의 정기",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":2620,
@@ -8227,10 +8227,10 @@ var rewardList = [
 		"text":"모든 하수인에게 피해를 4-5 줍니다. 과부하: (5)"
 	}, 
 	{
-		"ID":"reward0660",
+		"id":"reward0660",
 		"cost":3,
 		"name_en":"lava burst",
-		"name_kr":"용암 폭발",
+		"name":"용암 폭발",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":864,
@@ -8238,10 +8238,10 @@ var rewardList = [
 		"text":"피해를 5 줍니다. 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0661",
+		"id":"reward0661",
 		"cost":5,
 		"name_en":"volcano",
-		"name_kr":"화산",
+		"name":"화산",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":41159,
@@ -8249,10 +8249,10 @@ var rewardList = [
 		"text":"모든 하수인에게 15의 피해를 무작위로 나누어 입힙니다. 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0662",
+		"id":"reward0662",
 		"cost":2,
 		"name_en":"brrrloc",
-		"name_kr":"얼록",
+		"name":"얼록",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":42678,
@@ -8263,10 +8263,10 @@ var rewardList = [
 		"text":"전투의 함성: 적 하나를 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0663",
+		"id":"reward0663",
 		"cost":2,
 		"name_en":"cryostasis",
-		"name_kr":"급속 빙결",
+		"name":"급속 빙결",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":42676,
@@ -8274,10 +8274,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +3/+3을 부여하고 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0664",
+		"id":"reward0664",
 		"cost":3,
 		"name_en":"hyldnir frostrider",
-		"name_kr":"힐드니르 서리기수",
+		"name":"힐드니르 서리기수",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45377,
@@ -8287,10 +8287,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다른 하수인들을 빙결 상태로 만듭니다."
 	}, 
 	{
-		"ID":"reward0665",
+		"id":"reward0665",
 		"cost":3,
 		"name_en":"ice breaker",
-		"name_kr":"얼음 파괴자",
+		"name":"얼음 파괴자",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":42808,
@@ -8300,10 +8300,10 @@ var rewardList = [
 		"text":"이 무기에 피해를 받은 빙결 상태인 하수인을 무조건 처치합니다."
 	}, 
 	{
-		"ID":"reward0666",
+		"id":"reward0666",
 		"cost":4,
 		"name_en":"avalanche",
-		"name_kr":"눈사태",
+		"name":"눈사태",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":42747,
@@ -8311,10 +8311,10 @@ var rewardList = [
 		"text":"하수인 하나를 빙결 상태로 만들고 그 양옆의 하수인들에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0667",
+		"id":"reward0667",
 		"cost":5,
 		"name_en":"voodoo hexxer",
-		"name_kr":"부두교 사술사",
+		"name":"부두교 사술사",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":42762,
@@ -8324,10 +8324,10 @@ var rewardList = [
 		"text":"도발 이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0668",
+		"id":"reward0668",
 		"cost":6,
 		"name_en":"frozen crusher",
-		"name_kr":"얼어붙은 분쇄자",
+		"name":"얼어붙은 분쇄자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41253,
@@ -8338,10 +8338,10 @@ var rewardList = [
 		"text":"이 하수인은 공격한 후에 빙결 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0669",
+		"id":"reward0669",
 		"cost":6,
 		"name_en":"moorabi",
-		"name_kr":"무라비",
+		"name":"무라비",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":43072,
@@ -8351,10 +8351,10 @@ var rewardList = [
 		"text":"다른 하수인 하나가 빙결 상태가 될 때마다 그 카드를 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0670",
+		"id":"reward0670",
 		"cost":0,
 		"name_en":"ancestral healing",
-		"name_kr":"선인의 치유력",
+		"name":"선인의 치유력",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":149,
@@ -8362,10 +8362,10 @@ var rewardList = [
 		"text":"하수인 하나의 생명력을 모두 회복시키고 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0671",
+		"id":"reward0671",
 		"cost":2,
 		"name_en":"vitality totem",
-		"name_kr":"활력의 토템",
+		"name":"활력의 토템",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":2007,
@@ -8376,10 +8376,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 영웅의 생명력을 4 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0672",
+		"id":"reward0672",
 		"cost":3,
 		"name_en":"healing rain",
-		"name_kr":"치유의 비",
+		"name":"치유의 비",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":46067,
@@ -8387,10 +8387,10 @@ var rewardList = [
 		"text":"모든 아군 캐릭터에게 12의 생명력을 무작위로 나누어 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0673",
+		"id":"reward0673",
 		"cost":3,
 		"name_en":"healing wave",
-		"name_kr":"치유의 물결",
+		"name":"치유의 물결",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":2612,
@@ -8398,10 +8398,10 @@ var rewardList = [
 		"text":"생명력을 7 회복시킵니다. 각 덱의 하수인 하나를 공개해 내 것의 비용이 더 높으면, 생명력을 14 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0674",
+		"id":"reward0674",
 		"cost":3,
 		"name_en":"hot spring guardian",
-		"name_kr":"온천의 수호정령",
+		"name":"온천의 수호정령",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":41479,
@@ -8412,10 +8412,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 생명력을 3 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0675",
+		"id":"reward0675",
 		"cost":4,
 		"name_en":"jinyu waterspeaker",
-		"name_kr":"진위 물예언자",
+		"name":"진위 물예언자",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":40285,
@@ -8425,10 +8425,10 @@ var rewardList = [
 		"text":"전투의 함성: 생명력을 6 회복시킵니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0676",
+		"id":"reward0676",
 		"cost":4,
 		"name_en":"tidal surge",
-		"name_kr":"굽이치는 파도",
+		"name":"굽이치는 파도",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":41521,
@@ -8436,10 +8436,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 4 줍니다. 내 영웅이 생명력을 4 회복합니다."
 	}, 
 	{
-		"ID":"reward0677",
+		"id":"reward0677",
 		"cost":5,
 		"name_en":"hallazeal the ascendend",
-		"name_kr":"승천한 할라질",
+		"name":"승천한 할라질",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":38722,
@@ -8450,10 +8450,10 @@ var rewardList = [
 		"text":"내가 주문으로 피해를 줄 때마다 그만큼 내 영웅의 생명력을 회복시킵니다."
 	}, 
 	{
-		"ID":"reward0678",
+		"id":"reward0678",
 		"cost":1,
 		"name_en":"evlove",
-		"name_kr":"진화",
+		"name":"진화",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":38266,
@@ -8461,10 +8461,10 @@ var rewardList = [
 		"text":"내 하수인들을 비용이 (1) 높은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0679",
+		"id":"reward0679",
 		"cost":1,
 		"name_en":"unstable evolution",
-		"name_kr":"불안정한 진화",
+		"name":"불안정한 진화",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":46303,
@@ -8472,10 +8472,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 비용이 (1) 높은 하수인으로 변신시킵니다. 이번 턴에 반복할 수 있습니다."
 	}, 
 	{
-		"ID":"reward0680",
+		"id":"reward0680",
 		"cost":2,
 		"name_en":"devolve",
-		"name_kr":"퇴화",
+		"name":"퇴화",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":40694,
@@ -8483,10 +8483,10 @@ var rewardList = [
 		"text":"모든 적 하수인을 비용이 (1) 낮은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0681",
+		"id":"reward0681",
 		"cost":3,
 		"name_en":"tinkmaster overspark",
-		"name_kr":"수석땜장이 오버스파크",
+		"name":"수석땜장이 오버스파크",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":570,
@@ -8496,10 +8496,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 무작위 하수인 하나를 5/5 데빌사우루스 또는 1/1 다람쥐로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0682",
+		"id":"reward0682",
 		"cost":4,
 		"name_en":"faceless shambler",
-		"name_kr":"얼굴 없는 불가사의",
+		"name":"얼굴 없는 불가사의",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":38569,
@@ -8509,10 +8509,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 아군 하수인 하나의 공격력과 생명력을 복사합니다."
 	}, 
 	{
-		"ID":"reward0683",
+		"id":"reward0683",
 		"cost":4,
 		"name_en":"lotus illusionist",
-		"name_kr":"연꽃 환영술사",
+		"name":"연꽃 환영술사",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":40693,
@@ -8522,10 +8522,10 @@ var rewardList = [
 		"text":"이 하수인은 영웅을 공격한 후에, 비용이 6인 무작위 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0684",
+		"id":"reward0684",
 		"cost":4,
 		"name_en":"master of evolution",
-		"name_kr":"진화의 대가",
+		"name":"진화의 대가",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":39008,
@@ -8535,10 +8535,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 비용이 (1) 높은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0685",
+		"id":"reward0685",
 		"cost":5,
 		"name_en":"furbolg mossbinder",
-		"name_kr":"펄볼그 이끼결속사",
+		"name":"펄볼그 이끼결속사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":43517,
@@ -8548,10 +8548,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 6/6 정령으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0686",
+		"id":"reward0686",
 		"cost":5,
 		"name_en":"thrall, deathseer",
-		"name_kr":"사령술사 스랄",
+		"name":"사령술사 스랄",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":42987,
@@ -8560,10 +8560,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 하수인들을 비용이 (2) 높은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
-		"ID":"reward0687",
+		"id":"reward0687",
 		"cost":4,
 		"name_en":"fireguard destroyer",
-		"name_kr":"파괴의 화염수호정령",
+		"name":"파괴의 화염수호정령",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2290,
@@ -8574,10 +8574,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력을 1-4 얻습니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0688",
+		"id":"reward0688",
 		"cost":4,
 		"name_en":"saronite chain gang",
-		"name_kr":"사로나이트 광산 노예",
+		"name":"사로나이트 광산 노예",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":42395,
@@ -8587,10 +8587,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 이 하수인을 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0689",
+		"id":"reward0689",
 		"cost":5,
 		"name_en":"loatheb",
-		"name_kr":"로데브",
+		"name":"로데브",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1914,
@@ -8600,10 +8600,10 @@ var rewardList = [
 		"text":"전투의 함성: 다음 턴에 상대편이 시전하는 주문의 비용이 (5) 증가합니다."
 	}, 
 	{
-		"ID":"reward0690",
+		"id":"reward0690",
 		"cost":5,
 		"name_en":"lotus agents",
-		"name_kr":"비취 연꽃 요원",
+		"name":"비취 연꽃 요원",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":40742,
@@ -8613,10 +8613,10 @@ var rewardList = [
 		"text":"전투의 함성: 드루이드, 도적, 주술사 카드를 1장 발견합니다."
 	}, 
 	{
-		"ID":"reward0691",
+		"id":"reward0691",
 		"cost":6,
 		"name_en":"gelbin mekkatorque",
-		"name_kr":"겔빈 멕카토크",
+		"name":"겔빈 멕카토크",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":858,
@@ -8626,10 +8626,10 @@ var rewardList = [
 		"text":"전투의 함성: 끝내주는 발명품을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0692",
+		"id":"reward0692",
 		"cost":6,
 		"name_en":"grumble, worldshake",
-		"name_kr":"세계전율자 그럼블",
+		"name":"세계전율자 그럼블",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":45995,
@@ -8640,10 +8640,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다른 하수인들을 내 손으로 다시 가져옵니다. 그 하수인들의 비용이 (1)이 됩니다."
 	}, 
 	{
-		"ID":"reward0693",
+		"id":"reward0693",
 		"cost":6,
 		"name_en":"the mistcaller",
-		"name_kr":"안개소환사",
+		"name":"안개소환사",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":2618,
@@ -8653,10 +8653,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손과 덱에 있는 모든 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0694",
+		"id":"reward0694",
 		"cost":7,
 		"name_en":"bonemare",
-		"name_kr":"해골마",
+		"name":"해골마",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":42790,
@@ -8666,10 +8666,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나에게 +4/+4와 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0695",
+		"id":"reward0695",
 		"cost":3,
 		"name_en":"igneous elemental",
-		"name_kr":"화성암 정령",
+		"name":"화성암 정령",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41926,
@@ -8680,10 +8680,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 1/2 정령 둘을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0696",
+		"id":"reward0696",
 		"cost":7,
 		"name_en":"stone sentinel",
-		"name_kr":"바위 파수병",
+		"name":"바위 파수병",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":41116,
@@ -8694,10 +8694,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 도발 능력이 있는 2/3 정령을 둘 소환합니다."
 	}, 
 	{
-		"ID":"reward0697",
+		"id":"reward0697",
 		"cost":8,
 		"name_en":"al'akir the windloard",
-		"name_kr":"바람의 군주 알아키르",
+		"name":"바람의 군주 알아키르",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":32,
@@ -8708,10 +8708,10 @@ var rewardList = [
 		"text":"질풍, 돌진, 도발, 천상의 보호막"
 	}, 
 	{
-		"ID":"reward0698",
+		"id":"reward0698",
 		"cost":8,
 		"name_en":"kalimos, primal lord",
-		"name_kr":"원시 군주 칼리모스",
+		"name":"원시 군주 칼리모스",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":41331,
@@ -8722,10 +8722,10 @@ var rewardList = [
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 원소의 기원을 시전합니다."
 	}, 
 	{
-		"ID":"reward0699",
+		"id":"reward0699",
 		"cost":1,
 		"name_en":"deadscale knight",
-		"name_kr":"죽음비늘 기사",
+		"name":"죽음비늘 기사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":42663,
@@ -8736,10 +8736,10 @@ var rewardList = [
 		"text":"생명력 흡수"
 	}, 
 	{
-		"ID":"reward0700",
+		"id":"reward0700",
 		"cost":1,
 		"name_en":"unite the murlocs",
-		"name_kr":"멀록 집결",
+		"name":"멀록 집결",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":41499,
@@ -8747,10 +8747,10 @@ var rewardList = [
 		"text":"퀘스트: 멀록을 10마리 소환해야 합니다. 보상: 대왕아가미"
 	}, 
 	{
-		"ID":"reward0701",
+		"id":"reward0701",
 		"cost":2,
 		"name_en":"ice fishing",
-		"name_kr":"얼음 낚시",
+		"name":"얼음 낚시",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":42763,
@@ -8758,10 +8758,10 @@ var rewardList = [
 		"text":"내 덱에서 멀록을 2마리 뽑습니다."
 	}, 
 	{
-		"ID":"reward0702",
+		"id":"reward0702",
 		"cost":2,
 		"name_en":"rockpool hunter",
-		"name_kr":"바위웅덩이 사냥꾼",
+		"name":"바위웅덩이 사냥꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":41245,
@@ -8772,10 +8772,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 멀록 1마리에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0703",
+		"id":"reward0703",
 		"cost":3,
 		"name_en":"coldlight seer",
-		"name_kr":"시린빛 예언자",
+		"name":"시린빛 예언자",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":453,
@@ -8786,10 +8786,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다른 멀록들에게 생명력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0704",
+		"id":"reward0704",
 		"cost":4,
 		"name_en":"call in the finishers",
-		"name_kr":"멀록단 출동",
+		"name":"멀록단 출동",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":40419,
@@ -8797,10 +8797,10 @@ var rewardList = [
 		"text":"1/1 멀록을 4마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0705",
+		"id":"reward0705",
 		"cost":4,
 		"name_en":"siltfin spiritwalker",
-		"name_kr":"진흙지느러미 영혼방랑자",
+		"name":"진흙지느러미 영혼방랑자",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":2008,
@@ -8811,10 +8811,10 @@ var rewardList = [
 		"text":"다른 아군 멀록이 죽을 때마다 카드를 1장 뽑습니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0706",
+		"id":"reward0706",
 		"cost":7,
 		"name_en":"everyfin is awesome",
-		"name_kr":"모든 것이 멋지다옳",
+		"name":"모든 것이 멋지다옳",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":3007,
@@ -8822,10 +8822,10 @@ var rewardList = [
 		"text":"내 하수인들에게 +2/+2를 부여합니다. 내 전장에 있는 멀록 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0707",
+		"id":"reward0707",
 		"cost":1,
 		"name_en":"finders keepers",
-		"name_kr":"이건 내 거야!",
+		"name":"이건 내 거야!",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":40423,
@@ -8833,10 +8833,10 @@ var rewardList = [
 		"text":"과부하 카드를 1장 발견합니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0708",
+		"id":"reward0708",
 		"cost":1,
 		"name_en":"tunnel trogg",
-		"name_kr":"땅굴 트로그",
+		"name":"땅굴 트로그",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2890,
@@ -8846,10 +8846,10 @@ var rewardList = [
 		"text":"내가 과부하될 때마다 잠기는 마나 수정 하나당 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0709",
+		"id":"reward0709",
 		"cost":2,
 		"name_en":"ancestral knowledge",
-		"name_kr":"선조의 지혜",
+		"name":"선조의 지혜",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2514,
@@ -8857,10 +8857,10 @@ var rewardList = [
 		"text":"카드를 2장 뽑습니다. 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0710",
+		"id":"reward0710",
 		"cost":2,
 		"name_en":"eternal sentinel",
-		"name_kr":"영원한 감시자",
+		"name":"영원한 감시자",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":38265,
@@ -8870,10 +8870,10 @@ var rewardList = [
 		"text":"전투의 함성: 과부하된 내 마나 수정이 모두 잠금 해제됩니다."
 	}, 
 	{
-		"ID":"reward0711",
+		"id":"reward0711",
 		"cost":2,
 		"name_en":"totem golem",
-		"name_kr":"토템 골렘",
+		"name":"토템 골렘",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2610,
@@ -8884,10 +8884,10 @@ var rewardList = [
 		"text":"과부하: (1)"
 	}, 
 	{
-		"ID":"reward0712",
+		"id":"reward0712",
 		"cost":3,
 		"name_en":"drakkari defender",
-		"name_kr":"드라카리 수호병",
+		"name":"드라카리 수호병",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":42750,
@@ -8897,10 +8897,10 @@ var rewardList = [
 		"text":"도발 과부하: (3)"
 	}, 
 	{
-		"ID":"reward0713",
+		"id":"reward0713",
 		"cost":3,
 		"name_en":"feral spirit",
-		"name_kr":"야수 정령",
+		"name":"야수 정령",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":238,
@@ -8908,10 +8908,10 @@ var rewardList = [
 		"text":"도발 능력이 있는 2/3 늑대 정령을 둘 소환합니다. 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0714",
+		"id":"reward0714",
 		"cost":4,
 		"name_en":"flamewreathed faceless",
-		"name_kr":"얼굴 없는 화염투사",
+		"name":"얼굴 없는 화염투사",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":38263,
@@ -8921,10 +8921,10 @@ var rewardList = [
 		"text":"과부하: (2)"
 	}, 
 	{
-		"ID":"reward0715",
+		"id":"reward0715",
 		"cost":5,
 		"name_en":"doomhammer",
-		"name_kr":"둠해머",
+		"name":"둠해머",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":352,
@@ -8934,10 +8934,10 @@ var rewardList = [
 		"text":"질풍 과부하: (2)"
 	}, 
 	{
-		"ID":"reward0716",
+		"id":"reward0716",
 		"cost":5,
 		"name_en":"earth elemental",
-		"name_kr":"대지의 정령",
+		"name":"대지의 정령",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":1141,
@@ -8948,10 +8948,10 @@ var rewardList = [
 		"text":"도발 과부하: (3)"
 	}, 
 	{
-		"ID":"reward0717",
+		"id":"reward0717",
 		"cost":6,
 		"name_en":"lesser sapphire spellstone",
-		"name_kr":"하급 사파이어 주문석",
+		"name":"하급 사파이어 주문석",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":43331,
@@ -8959,10 +8959,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 복사하여 소환합니다. (내 마나 수정 3개를 과부하하면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0718",
+		"id":"reward0718",
 		"cost":11,
 		"name_en":"snowfury giant",
-		"name_kr":"눈덩이 거인",
+		"name":"눈덩이 거인",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":42765,
@@ -8973,10 +8973,10 @@ var rewardList = [
 		"text":"이번 게임에서 과부하된 내 마나 수정 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0719",
+		"id":"reward0719",
 		"cost":1,
 		"name_en":"primal fusion",
-		"name_kr":"원시의 힘",
+		"name":"원시의 힘",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":38262,
@@ -8984,10 +8984,10 @@ var rewardList = [
 		"text":"하수인 하나에게 내 전장에 있는 토템 하나당 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0720",
+		"id":"reward0720",
 		"cost":2,
 		"name_en":"kobold hermit",
-		"name_kr":"코볼트 은둔자",
+		"name":"코볼트 은둔자",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":43329,
@@ -8997,10 +8997,10 @@ var rewardList = [
 		"text":"전투의 함성: 기본 토템을 하나 선택하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0721",
+		"id":"reward0721",
 		"cost":3,
 		"name_en":"mana tide totem",
-		"name_kr":"마나 해일 토템",
+		"name":"마나 해일 토템",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":513,
@@ -9011,10 +9011,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0722",
+		"id":"reward0722",
 		"cost":3,
 		"name_en":"primal talismans",
-		"name_kr":"원시의 부적",
+		"name":"원시의 부적",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":45905,
@@ -9022,10 +9022,10 @@ var rewardList = [
 		"text":"내 하수인들에게 \"죽음의 메아리: 무작위 기본 토템을 하나 소환\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0723",
+		"id":"reward0723",
 		"cost":3,
 		"name_en":"tuskarr totemic",
-		"name_kr":"투스카르 토템지기",
+		"name":"투스카르 토템지기",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2513,
@@ -9035,10 +9035,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위 기본 토템을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0724",
+		"id":"reward0724",
 		"cost":4,
 		"name_en":"wicked witchdoctor",
-		"name_kr":"사악한 마녀",
+		"name":"사악한 마녀",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":39190,
@@ -9048,10 +9048,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 무작위 기본 토템을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0725",
+		"id":"reward0725",
 		"cost":5,
 		"name_en":"thunder bluff valiant",
-		"name_kr":"썬더 블러프 용맹전사",
+		"name":"썬더 블러프 용맹전사",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":2615,
@@ -9061,10 +9061,10 @@ var rewardList = [
 		"text":"격려: 내 토템들에게 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0726",
+		"id":"reward0726",
 		"cost":5,
 		"name_en":"windshear stormcaller",
-		"name_kr":"칼바람 폭풍소환사",
+		"name":"칼바람 폭풍소환사",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":46440,
@@ -9074,10 +9074,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 기본 토템 4개가 전부 있으면, 바람의 군주 알아키르를 소환합니다."
 	}, 
 	{
-		"ID":"reward0727",
+		"id":"reward0727",
 		"cost":6,
 		"name_en":"thng from below",
-		"name_kr":"심연의 괴수",
+		"name":"심연의 괴수",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":38267,
@@ -9087,10 +9087,10 @@ var rewardList = [
 		"text":"도발 이번 게임에서 내가 소환한 토템 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0728",
+		"id":"reward0728",
 		"cost":2,
 		"name_en":"jade claws",
-		"name_kr":"비취 발톱",
+		"name":"비취 발톱",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":40529,
@@ -9100,10 +9100,10 @@ var rewardList = [
 		"text":"전투의 함성: 비취 골렘을 하나 소환합니다. 과부하: (1)"
 	}, 
 	{
-		"ID":"reward0729",
+		"id":"reward0729",
 		"cost":4,
 		"name_en":"jade lightning",
-		"name_kr":"비취 번개",
+		"name":"비취 번개",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":40455,
@@ -9111,10 +9111,10 @@ var rewardList = [
 		"text":"피해를 4 줍니다. 비취 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0730",
+		"id":"reward0730",
 		"cost":7,
 		"name_en":"jade chieftain",
-		"name_kr":"비취 족장",
+		"name":"비취 족장",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":40422,
@@ -9124,10 +9124,10 @@ var rewardList = [
 		"text":"전투의 함성: 비취 골렘을 하나 소환하고 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0731",
+		"id":"reward0731",
 		"cost":2,
 		"name_en":"ancestral spirit",
-		"name_kr":"고대의 영혼",
+		"name":"고대의 영혼",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":404,
@@ -9135,10 +9135,10 @@ var rewardList = [
 		"text":"하수인 하나에게 \"죽음의 메아리: 이 하수인을 다시 소환함\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0732",
+		"id":"reward0732",
 		"cost":2,
 		"name_en":"reincarnate",
-		"name_kr":"윤회",
+		"name":"윤회",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":1809,
@@ -9146,10 +9146,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치하고, 그 하수인을 최대 생명력으로 다시 소환합니다."
 	}, 
 	{
-		"ID":"reward0733",
+		"id":"reward0733",
 		"cost":3,
 		"name_en":"far sight",
-		"name_kr":"천리안",
+		"name":"천리안",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":818,
@@ -9157,10 +9157,10 @@ var rewardList = [
 		"text":"카드를 1장 뽑습니다. 그 카드의 비용이 (3) 감소합니다."
 	}, 
 	{
-		"ID":"reward0734",
+		"id":"reward0734",
 		"cost":3,
 		"name_en":"spirit echo",
-		"name_kr":"영혼의 메아리",
+		"name":"영혼의 메아리",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":41879,
@@ -9168,10 +9168,10 @@ var rewardList = [
 		"text":"내 하수인들에게 \"죽음의 메아리: 이 하수인을 내 손으로 다시 가져옴\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0735",
+		"id":"reward0735",
 		"cost":4,
 		"name_en":"ancestor's call",
-		"name_kr":"선조의 부름",
+		"name":"선조의 부름",
 		"class":"주술사",
 		"rarity":"영웅",
 		"cardid":1998,
@@ -9179,10 +9179,10 @@ var rewardList = [
 		"text":"각 플레이어의 손에서 무작위 하수인 하나를 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0736",
+		"id":"reward0736",
 		"cost":5,
 		"name_en":"corpse raiser",
-		"name_kr":"시체생환사",
+		"name":"시체생환사",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":42909,
@@ -9192,10 +9192,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나에게 \"죽음의 메아리: 이 하수인을 다시 소환함\" 능력을 부여합니다."
 	}, 
 	{
-		"ID":"reward0737",
+		"id":"reward0737",
 		"cost":5,
 		"name_en":"white eyes",
-		"name_kr":"백안",
+		"name":"백안",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":40486,
@@ -9205,10 +9205,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: '폭풍수호자' 카드 1장을 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0738",
+		"id":"reward0738",
 		"cost":8,
 		"name_en":"the runespear",
-		"name_kr":"룬의 창",
+		"name":"룬의 창",
 		"class":"주술사",
 		"rarity":"전설",
 		"cardid":46305,
@@ -9218,10 +9218,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에, 주문을 하나 발견하여 무작위 대상에게 시전합니다."
 	}, 
 	{
-		"ID":"reward0739",
+		"id":"reward0739",
 		"cost":2,
 		"name_en":"mechwarper",
-		"name_kr":"기계소환로봇",
+		"name":"기계소환로봇",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1940,
@@ -9232,10 +9232,10 @@ var rewardList = [
 		"text":"내 기계의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0740",
+		"id":"reward0740",
 		"cost":2,
 		"name_en":"micro machine",
-		"name_kr":"초소형 기계",
+		"name":"초소형 기계",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2071,
@@ -9246,10 +9246,10 @@ var rewardList = [
 		"text":"각 플레이어의 턴이 시작될 때마다 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0741",
+		"id":"reward0741",
 		"cost":2,
 		"name_en":"whirling zap-o-matic",
-		"name_kr":"회전하는 자동제압로봇",
+		"name":"회전하는 자동제압로봇",
 		"class":"주술사",
 		"rarity":"일반",
 		"cardid":2005,
@@ -9260,10 +9260,10 @@ var rewardList = [
 		"text":"질풍"
 	}, 
 	{
-		"ID":"reward0742",
+		"id":"reward0742",
 		"cost":3,
 		"name_en":"harvest golem",
-		"name_kr":"허수아비골렘",
+		"name":"허수아비골렘",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":778,
@@ -9274,10 +9274,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 2/1 손상된 골렘을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0743",
+		"id":"reward0743",
 		"cost":3,
 		"name_en":"powermace",
-		"name_kr":"강화 철퇴",
+		"name":"강화 철퇴",
 		"class":"주술사",
 		"rarity":"희귀",
 		"cardid":2004,
@@ -9287,10 +9287,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 무작위 아군 기계 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0744",
+		"id":"reward0744",
 		"cost":4,
 		"name_en":"enchance-o mechano",
-		"name_kr":"강화로봇",
+		"name":"강화로봇",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":2075,
@@ -9301,10 +9301,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 다른 하수인들에게 무작위로 질풍, 도발, 천상의 보호막 중 하나를 부여합니다."
 	}, 
 	{
-		"ID":"reward0745",
+		"id":"reward0745",
 		"cost":4,
 		"name_en":"gorillabot a-3",
-		"name_kr":"고릴라로봇 A-3",
+		"name":"고릴라로봇 A-3",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2911,
@@ -9315,10 +9315,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 다른 기계가 있으면, 기계를 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0746",
+		"id":"reward0746",
 		"cost":6,
 		"name_en":"piloted sky golem",
-		"name_kr":"누군가 조종하는 하늘 골렘",
+		"name":"누군가 조종하는 하늘 골렘",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":2073,
@@ -9329,10 +9329,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 비용이 4인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0747",
+		"id":"reward0747",
 		"cost":1,
 		"name_en":"voidwalker",
-		"name_kr":"공허방랑자",
+		"name":"공허방랑자",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":48,
@@ -9343,10 +9343,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0748",
+		"id":"reward0748",
 		"cost":1,
 		"name_en":"corruption",
-		"name_kr":"부패",
+		"name":"부패",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":982,
@@ -9354,10 +9354,10 @@ var rewardList = [
 		"text":"적 하수인을 하나 선택합니다. 내 턴이 시작될 때, 그 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0749",
+		"id":"reward0749",
 		"cost":1,
 		"name_en":"mortal coil",
-		"name_kr":"필멸의 고리",
+		"name":"필멸의 고리",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":1092,
@@ -9365,10 +9365,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 1 줍니다. 이 피해로 하수인이 죽으면, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0750",
+		"id":"reward0750",
 		"cost":2,
 		"name_en":"knife juggler",
-		"name_kr":"단검 곡예사",
+		"name":"단검 곡예사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":48878,
@@ -9378,10 +9378,10 @@ var rewardList = [
 		"text":"내 하수인이 소환된 후에, 무작위 적 하나에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0751",
+		"id":"reward0751",
 		"cost":2,
 		"name_en":"sunfury protector",
-		"name_kr":"성난태양 파수병",
+		"name":"성난태양 파수병",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":891,
@@ -9391,10 +9391,10 @@ var rewardList = [
 		"text":"전투의 함성: 양옆의 하수인들에게 도발을 부여합니다."
 	}, 
 	{
-		"ID":"reward0752",
+		"id":"reward0752",
 		"cost":3,
 		"name_en":"drain life",
-		"name_kr":"생명력 흡수",
+		"name":"생명력 흡수",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":919,
@@ -9402,10 +9402,10 @@ var rewardList = [
 		"text":"피해를 2 줍니다. 내 영웅이 생명력을 2 회복합니다."
 	}, 
 	{
-		"ID":"reward0753",
+		"id":"reward0753",
 		"cost":3,
 		"name_en":"imp master",
-		"name_kr":"임프 소환사",
+		"name":"임프 소환사",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":926,
@@ -9415,10 +9415,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 피해를 1 받고 1/1 임프를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0754",
+		"id":"reward0754",
 		"cost":4,
 		"name_en":"dark iron dwarf",
-		"name_kr":"검은무쇠 드워프",
+		"name":"검은무쇠 드워프",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":348,
@@ -9428,10 +9428,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 턴에 하수인 하나에게 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0755",
+		"id":"reward0755",
 		"cost":4,
 		"name_en":"hellfire",
-		"name_kr":"지옥의 불길",
+		"name":"지옥의 불길",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":950,
@@ -9439,10 +9439,10 @@ var rewardList = [
 		"text":"모든 캐릭터에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0756",
+		"id":"reward0756",
 		"cost":5,
 		"name_en":"doomguard",
-		"name_kr":"파멸수호병",
+		"name":"파멸수호병",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":631,
@@ -9453,10 +9453,10 @@ var rewardList = [
 		"text":"돌진, 전투의 함성: 무작위로 카드를 2장 버립니다."
 	}, 
 	{
-		"ID":"reward0757",
+		"id":"reward0757",
 		"cost":1,
 		"name_en":"flame imp",
-		"name_kr":"화염 임프",
+		"name":"화염 임프",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":1090,
@@ -9467,10 +9467,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 영웅에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0758",
+		"id":"reward0758",
 		"cost":2,
 		"name_en":"mistress of pain",
-		"name_kr":"고통의 여제",
+		"name":"고통의 여제",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":2172,
@@ -9481,10 +9481,10 @@ var rewardList = [
 		"text":"생명력 흡수"
 	}, 
 	{
-		"ID":"reward0759",
+		"id":"reward0759",
 		"cost":2,
 		"name_en":"vulgar homunculus",
-		"name_kr":"야비한 소악마",
+		"name":"야비한 소악마",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":43121,
@@ -9495,10 +9495,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 내 영웅에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0760",
+		"id":"reward0760",
 		"cost":3,
 		"name_en":"bloodfury potion",
-		"name_kr":"혈폭풍 물약",
+		"name":"혈폭풍 물약",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":40393,
@@ -9506,10 +9506,10 @@ var rewardList = [
 		"text":"하수인 하나에게 공격력을 +3 부여합니다. 대상이 악마면, 생명력도 +3 부여합니다."
 	}, 
 	{
-		"ID":"reward0761",
+		"id":"reward0761",
 		"cost":3,
 		"name_en":"demonwrath",
-		"name_kr":"악마의 격노",
+		"name":"악마의 격노",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":2301,
@@ -9517,10 +9517,10 @@ var rewardList = [
 		"text":"악마를 제외한 모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0762",
+		"id":"reward0762",
 		"cost":3,
 		"name_en":"imp gang boss",
-		"name_kr":"임프 두목",
+		"name":"임프 두목",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":2288,
@@ -9531,10 +9531,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받을 때마다 1/1 임프를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0763",
+		"id":"reward0763",
 		"cost":4,
 		"name_en":"crystalweaver",
-		"name_kr":"수정술사",
+		"name":"수정술사",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":40391,
@@ -9544,10 +9544,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 악마들에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0764",
+		"id":"reward0764",
 		"cost":4,
 		"name_en":"dreadsteed",
-		"name_kr":"공포마",
+		"name":"공포마",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":2822,
@@ -9558,10 +9558,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 턴이 끝날 때, 공포마를 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0765",
+		"id":"reward0765",
 		"cost":4,
 		"name_en":"imp-losion",
-		"name_kr":"임프폭발",
+		"name":"임프폭발",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":2013,
@@ -9569,10 +9569,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2-4 줍니다. 입힌 피해만큼 1/1 임프를 소환합니다."
 	}, 
 	{
-		"ID":"reward0766",
+		"id":"reward0766",
 		"cost":5,
 		"name_en":"demonheart",
-		"name_kr":"악마의 심장",
+		"name":"악마의 심장",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":1985,
@@ -9580,10 +9580,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 5 줍니다. 대상이 아군 악마면, +5/+5를 부여합니다."
 	}, 
 	{
-		"ID":"reward0767",
+		"id":"reward0767",
 		"cost":5,
 		"name_en":"usher of souls",
-		"name_kr":"저승의 안내인",
+		"name":"저승의 안내인",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":38898,
@@ -9593,10 +9593,10 @@ var rewardList = [
 		"text":"아군 하수인이 죽을 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
 	}, 
 	{
-		"ID":"reward0768",
+		"id":"reward0768",
 		"cost":9,
 		"name_en":"krul the unshackled",
-		"name_kr":"속박 풀린 크룰",
+		"name":"속박 풀린 크룰",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":40537,
@@ -9607,10 +9607,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 내 손에 있는 모든 악마를 소환합니다."
 	}, 
 	{
-		"ID":"reward0769",
+		"id":"reward0769",
 		"cost":1,
 		"name_en":"lakkari sacrifice",
-		"name_kr":"락카리 제물",
+		"name":"락카리 제물",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":41856,
@@ -9618,10 +9618,10 @@ var rewardList = [
 		"text":"퀘스트: 카드를 6장 버려야 합니다. 보상: 황천의 차원문"
 	}, 
 	{
-		"ID":"reward0770",
+		"id":"reward0770",
 		"cost":1,
 		"name_en":"malchezaar's imp",
-		"name_kr":"말체자르의 임프",
+		"name":"말체자르의 임프",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":39740,
@@ -9632,10 +9632,10 @@ var rewardList = [
 		"text":"내가 카드를 버릴 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0771",
+		"id":"reward0771",
 		"cost":1,
 		"name_en":"soulfire",
-		"name_kr":"영혼의 불꽃",
+		"name":"영혼의 불꽃",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":974,
@@ -9643,10 +9643,10 @@ var rewardList = [
 		"text":"피해를 4 줍니다. 무작위로 카드를 1장 버립니다."
 	}, 
 	{
-		"ID":"reward0772",
+		"id":"reward0772",
 		"cost":2,
 		"name_en":"clutchmother zavas",
-		"name_kr":"여왕 자바스",
+		"name":"여왕 자바스",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":41876,
@@ -9657,10 +9657,10 @@ var rewardList = [
 		"text":"이 하수인을 버릴 때마다 +2/+2를 부여하고 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0773",
+		"id":"reward0773",
 		"cost":2,
 		"name_en":"darkshire librarian",
-		"name_kr":"어둠골 사서",
+		"name":"어둠골 사서",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":38447,
@@ -9670,10 +9670,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위로 카드를 1장 버립니다. 죽음의 메아리: 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0774",
+		"id":"reward0774",
 		"cost":2,
 		"name_en":"tiny knight of evil",
-		"name_kr":"작고 사악한 창기사",
+		"name":"작고 사악한 창기사",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":2777,
@@ -9684,10 +9684,10 @@ var rewardList = [
 		"text":"내가 카드를 버릴 때마다 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0775",
+		"id":"reward0775",
 		"cost":3,
 		"name_en":"silverware golem",
-		"name_kr":"식기 골렘",
+		"name":"식기 골렘",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":39380,
@@ -9697,10 +9697,10 @@ var rewardList = [
 		"text":"이 하수인을 버리면, 이 하수인을 소환합니다."
 	}, 
 	{
-		"ID":"reward0776",
+		"id":"reward0776",
 		"cost":4,
 		"name_en":"cataclysm",
-		"name_kr":"대격변",
+		"name":"대격변",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":46286,
@@ -9708,10 +9708,10 @@ var rewardList = [
 		"text":"모든 하수인을 처치하고 내 손에 있는 카드를 모두 버립니다."
 	}, 
 	{
-		"ID":"reward0777",
+		"id":"reward0777",
 		"cost":4,
 		"name_en":"lakkari felhound",
-		"name_kr":"락카리 지옥사냥개",
+		"name":"락카리 지옥사냥개",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":41873,
@@ -9722,10 +9722,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 무작위로 카드를 2장 버립니다."
 	}, 
 	{
-		"ID":"reward0778",
+		"id":"reward0778",
 		"cost":5,
 		"name_en":"blood-queen lana'thel",
-		"name_kr":"피의 여왕 라나텔",
+		"name":"피의 여왕 라나텔",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":46646,
@@ -9733,10 +9733,10 @@ var rewardList = [
 		"health":30
 	}, 
 	{
-		"ID":"reward0779",
+		"id":"reward0779",
 		"cost":6,
 		"name_en":"cruel dinomancer",
-		"name_kr":"잔혹한 공룡술사",
+		"name":"잔혹한 공룡술사",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":41869,
@@ -9746,10 +9746,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이번 게임에서 내가 버린 하수인 하나를 무작위로 소환합니다."
 	}, 
 	{
-		"ID":"reward0780",
+		"id":"reward0780",
 		"cost":2,
 		"name_en":"drain soul",
-		"name_kr":"영혼 흡수",
+		"name":"영혼 흡수",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":42658,
@@ -9757,10 +9757,10 @@ var rewardList = [
 		"text":"생명력 흡수 하수인 하나에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0781",
+		"id":"reward0781",
 		"cost":4,
 		"name_en":"deathaxe punisher",
-		"name_kr":"죽음도끼 응징자",
+		"name":"죽음도끼 응징자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":43029,
@@ -9770,10 +9770,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 생명력 흡수 하수인 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0782",
+		"id":"reward0782",
 		"cost":4,
 		"name_en":"lesser amethyst spellstone",
-		"name_kr":"하급 자수정 주문석",
+		"name":"하급 자수정 주문석",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":43272,
@@ -9781,10 +9781,10 @@ var rewardList = [
 		"text":"생명력 흡수, 하수인 하나에게 피해를 3 줍니다. (내 카드로 피해를 받으면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0783",
+		"id":"reward0783",
 		"cost":6,
 		"name_en":"siphon soul",
-		"name_kr":"영혼 착취",
+		"name":"영혼 착취",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":1100,
@@ -9792,10 +9792,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치합니다. 내 영웅이 생명력을 3 회복합니다."
 	}, 
 	{
-		"ID":"reward0784",
+		"id":"reward0784",
 		"cost":10,
 		"name_en":"bloodreaver gul'dan",
-		"name_kr":"핏빛약탈자 굴단",
+		"name":"핏빛약탈자 굴단",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":43415,
@@ -9804,10 +9804,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 게임에서 죽은 모든 아군 악마를 소환합니다."
 	}, 
 	{
-		"ID":"reward0785",
+		"id":"reward0785",
 		"cost":2,
 		"name_en":"dirty rat",
-		"name_kr":"비겁한 밀고자",
+		"name":"비겁한 밀고자",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":41567,
@@ -9817,10 +9817,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 상대편이 손에서 무작위 하수인 하나를 소환합니다."
 	}, 
 	{
-		"ID":"reward0786",
+		"id":"reward0786",
 		"cost":5,
 		"name_en":"green jelly",
-		"name_kr":"녹색 점액괴물",
+		"name":"녹색 점액괴물",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":43485,
@@ -9830,10 +9830,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 도발 능력이 있는 1/2 수액을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0787",
+		"id":"reward0787",
 		"cost":5,
 		"name_en":"tar lurker",
-		"name_kr":"잿멍울 군주",
+		"name":"잿멍울 군주",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":41881,
@@ -9844,10 +9844,10 @@ var rewardList = [
 		"text":"도발, 상대편의 턴 동안 공격력을 +4 얻습니다."
 	}, 
 	{
-		"ID":"reward0788",
+		"id":"reward0788",
 		"cost":9,
 		"name_en":"voidlord",
-		"name_kr":"공허군주",
+		"name":"공허군주",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":46056,
@@ -9858,10 +9858,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 도발 능력이 있는 1/3 악마를 셋 소환합니다."
 	}, 
 	{
-		"ID":"reward0789",
+		"id":"reward0789",
 		"cost":1,
 		"name_en":"kobold librarian",
-		"name_kr":"코볼트 사서",
+		"name":"코볼트 사서",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":43122,
@@ -9871,10 +9871,10 @@ var rewardList = [
 		"text":"전투의 함성: 카드를 1장 뽑습니다. 내 영웅에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0790",
+		"id":"reward0790",
 		"cost":1,
 		"name_en":"possessed villager",
-		"name_kr":"지배당한 주민",
+		"name":"지배당한 주민",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":38774,
@@ -9884,10 +9884,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 1/1 어둠의 야수를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0791",
+		"id":"reward0791",
 		"cost":3,
 		"name_en":"darkshire councilman",
-		"name_kr":"어둠골 원로원",
+		"name":"어둠골 원로원",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":38452,
@@ -9897,10 +9897,10 @@ var rewardList = [
 		"text":"내 하수인이 소환된 후에, 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0792",
+		"id":"reward0792",
 		"cost":5,
 		"name_en":"guild recruiter",
-		"name_kr":"길드 소집관",
+		"name":"길드 소집관",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46069,
@@ -9910,10 +9910,10 @@ var rewardList = [
 		"text":"전투의 함성: 비용이 (4) 이하인 하수인을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0793",
+		"id":"reward0793",
 		"cost":10,
 		"name_en":"sea giant",
-		"name_kr":"바다 거인",
+		"name":"바다 거인",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":211,
@@ -9923,10 +9923,10 @@ var rewardList = [
 		"text":"전장의 다른 하수인 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0794",
+		"id":"reward0794",
 		"cost":2,
 		"name_en":"darkbomb",
-		"name_kr":"검은폭탄",
+		"name":"검은폭탄",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":2093,
@@ -9934,10 +9934,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0795",
+		"id":"reward0795",
 		"cost":2,
 		"name_en":"defile",
-		"name_kr":"모독",
+		"name":"모독",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":42471,
@@ -9945,10 +9945,10 @@ var rewardList = [
 		"text":"모든 하수인에게 피해를 1 줍니다. 하나라도 죽으면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
-		"ID":"reward0796",
+		"id":"reward0796",
 		"cost":3,
 		"name_en":"shadow bolt",
-		"name_kr":"어둠의 화살",
+		"name":"어둠의 화살",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":914,
@@ -9956,10 +9956,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 4 줍니다."
 	}, 
 	{
-		"ID":"reward0797",
+		"id":"reward0797",
 		"cost":4,
 		"name_en":"blastcrystal potion",
-		"name_kr":"폭발성 수정 물약",
+		"name":"폭발성 수정 물약",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":40957,
@@ -9967,10 +9967,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치하고 내 마나 수정을 1개 파괴합니다."
 	}, 
 	{
-		"ID":"reward0798",
+		"id":"reward0798",
 		"cost":6,
 		"name_en":"felfire potion",
-		"name_kr":"지옥불꽃 물약",
+		"name":"지옥불꽃 물약",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":40517,
@@ -9978,10 +9978,10 @@ var rewardList = [
 		"text":"모든 캐릭터에게 피해를 5 줍니다."
 	}, 
 	{
-		"ID":"reward0799",
+		"id":"reward0799",
 		"cost":8,
 		"name_en":"twisting nether",
-		"name_kr":"뒤틀린 황천",
+		"name":"뒤틀린 황천",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":859,
@@ -9989,10 +9989,10 @@ var rewardList = [
 		"text":"모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0800",
+		"id":"reward0800",
 		"cost":10,
 		"name_en":"doom!",
-		"name_kr":"파멸!",
+		"name":"파멸!",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":38770,
@@ -10000,10 +10000,10 @@ var rewardList = [
 		"text":"모든 하수인을 처치합니다. 처치한만큼 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0801",
+		"id":"reward0801",
 		"cost":1,
 		"name_en":"dark pact",
-		"name_kr":"어둠의 서약",
+		"name":"어둠의 서약",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":43128,
@@ -10011,10 +10011,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 처치합니다. 내 영웅이 생명력을 8 회복합니다."
 	}, 
 	{
-		"ID":"reward0802",
+		"id":"reward0802",
 		"cost":1,
 		"name_en":"power overwhelming",
-		"name_kr":"압도적인 힘",
+		"name":"압도적인 힘",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":846,
@@ -10022,10 +10022,10 @@ var rewardList = [
 		"text":"아군 하수인 하나에게 +4/+4를 부여합니다. 턴이 끝나면 그 하수인은 죽습니다. 처참하게."
 	}, 
 	{
-		"ID":"reward0803",
+		"id":"reward0803",
 		"cost":1,
 		"name_en":"sanguine reveler",
-		"name_kr":"핏빛 하객",
+		"name":"핏빛 하객",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":45321,
@@ -10035,10 +10035,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 처치하고 +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0804",
+		"id":"reward0804",
 		"cost":2,
 		"name_en":"corrupting mist",
-		"name_kr":"부패의 안개",
+		"name":"부패의 안개",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":41871,
@@ -10046,10 +10046,10 @@ var rewardList = [
 		"text":"모든 하수인에게 부패를 시전합니다. 내 턴이 시작될 때, 그 하수인들을 처치합니다."
 	}, 
 	{
-		"ID":"reward0805",
+		"id":"reward0805",
 		"cost":2,
 		"name_en":"nerubian egg",
-		"name_kr":"네루비안 알",
+		"name":"네루비안 알",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1786,
@@ -10059,10 +10059,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 4/4 네루비안을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0806",
+		"id":"reward0806",
 		"cost":3,
 		"name_en":"devilsaur egg",
-		"name_kr":"데빌사우루스 알",
+		"name":"데빌사우루스 알",
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":41259,
@@ -10072,10 +10072,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 5/5 데빌사우루스를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0807",
+		"id":"reward0807",
 		"cost":3,
 		"name_en":"unwilling sacrifice",
-		"name_kr":"강제된 희생",
+		"name":"강제된 희생",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":42391,
@@ -10083,10 +10083,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 선택합니다. 그 하수인과 무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0808",
+		"id":"reward0808",
 		"cost":3,
 		"name_en":"void terror",
-		"name_kr":"공허의 괴물",
+		"name":"공허의 괴물",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":1221,
@@ -10097,10 +10097,10 @@ var rewardList = [
 		"text":"전투의 함성: 이 하수인 양옆에 있는 하수인들을 처치하고 그들의 공격력과 생명력을 얻습니다."
 	}, 
 	{
-		"ID":"reward0809",
+		"id":"reward0809",
 		"cost":4,
 		"name_en":"ravenous pterrordox",
-		"name_kr":"굶주린 테러닥스",
+		"name":"굶주린 테러닥스",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":41191,
@@ -10111,10 +10111,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 처치하고, 2번 적응합니다."
 	}, 
 	{
-		"ID":"reward0810",
+		"id":"reward0810",
 		"cost":4,
 		"name_en":"shadowflame",
-		"name_kr":"암흑불길",
+		"name":"암흑불길",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":147,
@@ -10122,10 +10122,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 처치하고 그 하수인의 공격력만큼 모든 적 하수인에게 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0811",
+		"id":"reward0811",
 		"cost":6,
 		"name_en":"dark bargain",
-		"name_kr":"어둠의 거래",
+		"name":"어둠의 거래",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":2632,
@@ -10133,10 +10133,10 @@ var rewardList = [
 		"text":"무작위 적 하수인 둘을 처치합니다. 무작위로 카드를 2장 버립니다."
 	}, 
 	{
-		"ID":"reward0812",
+		"id":"reward0812",
 		"cost":2,
 		"name_en":"bloodbloom",
-		"name_kr":"핏빛꽃",
+		"name":"핏빛꽃",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":41872,
@@ -10144,10 +10144,10 @@ var rewardList = [
 		"text":"이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다."
 	}, 
 	{
-		"ID":"reward0813",
+		"id":"reward0813",
 		"cost":3,
 		"name_en":"chittering tunneler",
-		"name_kr":"딸깍거리는 실리시드",
+		"name":"딸깍거리는 실리시드",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":41875,
@@ -10158,10 +10158,10 @@ var rewardList = [
 		"text":"전투의 함성: 주문을 하나 발견합니다. 그 카드의 비용만큼 내 영웅에게 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0814",
+		"id":"reward0814",
 		"cost":5,
 		"name_en":"floating watcher",
-		"name_kr":"떠 다니는 감시자",
+		"name":"떠 다니는 감시자",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":2068,
@@ -10172,10 +10172,10 @@ var rewardList = [
 		"text":"내 턴에 내 영웅이 피해를 받을 때마다 +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0815",
+		"id":"reward0815",
 		"cost":7,
 		"name_en":"cho'gall",
-		"name_kr":"초갈",
+		"name":"초갈",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":38464,
@@ -10185,10 +10185,10 @@ var rewardList = [
 		"text":"전투의 함성: 이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다."
 	}, 
 	{
-		"ID":"reward0816",
+		"id":"reward0816",
 		"cost":4,
 		"name_en":"voidcaller",
-		"name_kr":"공허소환사",
+		"name":"공허소환사",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":1806,
@@ -10199,10 +10199,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 내 손의 무작위 악마 하나를 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0817",
+		"id":"reward0817",
 		"cost":5,
 		"name_en":"possessed lackey",
-		"name_kr":"지배당한 졸개",
+		"name":"지배당한 졸개",
 		"class":"흑마법사",
 		"rarity":"희귀",
 		"cardid":45820,
@@ -10212,10 +10212,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 악마를 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0818",
+		"id":"reward0818",
 		"cost":5,
 		"name_en":"skull of the man'ari",
-		"name_kr":"만아리의 해골",
+		"name":"만아리의 해골",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":46299,
@@ -10225,10 +10225,10 @@ var rewardList = [
 		"text":"내 턴이 시작될 때, 내 손에 있는 악마 하나를 소환합니다."
 	}, 
 	{
-		"ID":"reward0819",
+		"id":"reward0819",
 		"cost":6,
 		"name_en":"dread infernal",
-		"name_kr":"공포의 지옥불정령",
+		"name":"공포의 지옥불정령",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":1019,
@@ -10239,10 +10239,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 모든 캐릭터에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0820",
+		"id":"reward0820",
 		"cost":6,
 		"name_en":"kabal trafficker",
-		"name_kr":"비밀결사 밀매자",
+		"name":"비밀결사 밀매자",
 		"class":"흑마법사",
 		"rarity":"영웅",
 		"cardid":40940,
@@ -10252,10 +10252,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 무작위 악마 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0821",
+		"id":"reward0821",
 		"cost":7,
 		"name_en":"abyssal enforcer",
-		"name_kr":"난폭한 심연불정령",
+		"name":"난폭한 심연불정령",
 		"class":"흑마법사",
 		"rarity":"일반",
 		"cardid":40541,
@@ -10266,10 +10266,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 모든 캐릭터에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0822",
+		"id":"reward0822",
 		"cost":9,
 		"name_en":"lord jaraxxus",
-		"name_kr":"군주 자락서스",
+		"name":"군주 자락서스",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":777,
@@ -10280,10 +10280,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 영웅을 군주 자락서스로 교체합니다."
 	}, 
 	{
-		"ID":"reward0823",
+		"id":"reward0823",
 		"cost":9,
 		"name_en":"mal'ganis",
-		"name_kr":"말가니스",
+		"name":"말가니스",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":1986,
@@ -10294,10 +10294,10 @@ var rewardList = [
 		"text":"내 다른 악마들이 +2/+2를 얻습니다. 내 영웅이 면역 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0824",
+		"id":"reward0824",
 		"cost":6,
 		"name_en":"wilfred fizzlebang",
-		"name_kr":"윌프레드 피즐뱅",
+		"name":"윌프레드 피즐뱅",
 		"class":"흑마법사",
 		"rarity":"전설",
 		"cardid":2621,
@@ -10307,10 +10307,10 @@ var rewardList = [
 		"text":"내 영웅 능력으로 뽑은 카드의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0825",
+		"id":"reward0825",
 		"cost":12,
 		"name_en":"mountain giant",
-		"name_kr":"산악 거인",
+		"name":"산악 거인",
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":993,
@@ -10320,10 +10320,10 @@ var rewardList = [
 		"text":"내 손에 있는 다른 카드 1장당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0826",
+		"id":"reward0826",
 		"cost":1,
 		"name_en":"warbot",
-		"name_kr":"전쟁로봇",
+		"name":"전쟁로봇",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2019,
@@ -10334,10 +10334,10 @@ var rewardList = [
 		"text":"격노: 공격력 +1"
 	}, 
 	{
-		"ID":"reward0827",
+		"id":"reward0827",
 		"cost":2,
 		"name_en":"amani berserker",
-		"name_kr":"아마니 광전사",
+		"name":"아마니 광전사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":790,
@@ -10347,10 +10347,10 @@ var rewardList = [
 		"text":"격노: 공격력 +3"
 	}, 
 	{
-		"ID":"reward0828",
+		"id":"reward0828",
 		"cost":2,
 		"name_en":"heroic strike",
-		"name_kr":"영웅의 일격",
+		"name":"영웅의 일격",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1007,
@@ -10358,10 +10358,10 @@ var rewardList = [
 		"text":"이번 턴에 내 영웅이 공격력을 +4 얻습니다."
 	}, 
 	{
-		"ID":"reward0829",
+		"id":"reward0829",
 		"cost":2,
 		"name_en":"cruel taskmaster",
-		"name_kr":"잔인한 감독관",
+		"name":"잔인한 감독관",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":285,
@@ -10371,10 +10371,10 @@ var rewardList = [
 		"text":"전투의 함성: 하수인 하나에게 피해를 1 주고 공격력을 +2 부여합니다."
 	}, 
 	{
-		"ID":"reward0830",
+		"id":"reward0830",
 		"cost":3,
 		"name_en":"bash",
-		"name_kr":"강타",
+		"name":"강타",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2729,
@@ -10382,10 +10382,10 @@ var rewardList = [
 		"text":"피해를 3 줍니다. 방어도를 +3 얻습니다."
 	}, 
 	{
-		"ID":"reward0831",
+		"id":"reward0831",
 		"cost":3,
 		"name_en":"hired gun",
-		"name_kr":"고용된 싸움꾼",
+		"name":"고용된 싸움꾼",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":40911,
@@ -10395,10 +10395,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0832",
+		"id":"reward0832",
 		"cost":3,
 		"name_en":"fiery war axe",
-		"name_kr":"이글거리는 전쟁 도끼",
+		"name":"이글거리는 전쟁 도끼",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":401,
@@ -10407,10 +10407,10 @@ var rewardList = [
 		"health":2
 	}, 
 	{
-		"ID":"reward0833",
+		"id":"reward0833",
 		"cost":3,
 		"name_en":"raging worgen",
-		"name_kr":"흉포한 늑대인간",
+		"name":"흉포한 늑대인간",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1155,
@@ -10420,10 +10420,10 @@ var rewardList = [
 		"text":"격노: 질풍, 공격력 +1"
 	}, 
 	{
-		"ID":"reward0834",
+		"id":"reward0834",
 		"cost":5,
 		"name_en":"brawl",
-		"name_kr":"난투",
+		"name":"난투",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":75,
@@ -10431,10 +10431,10 @@ var rewardList = [
 		"text":"무작위 하수인 하나를 제외한 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0835",
+		"id":"reward0835",
 		"cost":0,
 		"name_en":"inner rage",
-		"name_kr":"내면의 분노",
+		"name":"내면의 분노",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":22,
@@ -10442,10 +10442,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 1 주고 공격력을 +2 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0836",
+		"id":"reward0836",
 		"cost":2,
 		"name_en":"execute",
-		"name_kr":"마무리 일격",
+		"name":"마무리 일격",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":785,
@@ -10453,10 +10453,10 @@ var rewardList = [
 		"text":"피해를 받은 적 하수인 하나를 처치합니다."
 	}, 
 	{
-		"ID":"reward0837",
+		"id":"reward0837",
 		"cost":2,
 		"name_en":"rampage",
-		"name_kr":"광란",
+		"name":"광란",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1108,
@@ -10464,10 +10464,10 @@ var rewardList = [
 		"text":"피해를 받은 하수인 하나에게 +3/+3을 부여합니다."
 	}, 
 	{
-		"ID":"reward0838",
+		"id":"reward0838",
 		"cost":3,
 		"name_en":"acolyte of pain",
-		"name_kr":"고통의 수행사제",
+		"name":"고통의 수행사제",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":1659,
@@ -10477,10 +10477,10 @@ var rewardList = [
 		"text":"이 하수인이 피해를 받을 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0839",
+		"id":"reward0839",
 		"cost":3,
 		"name_en":"frothing berserker",
-		"name_kr":"거품 무는 광전사",
+		"name":"거품 무는 광전사",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":654,
@@ -10490,10 +10490,10 @@ var rewardList = [
 		"text":"하수인이 피해를 받을 때마다 공격력을 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0840",
+		"id":"reward0840",
 		"cost":3,
 		"name_en":"val'kyr soulclaimer",
-		"name_kr":"발키르 영혼강탈자",
+		"name":"발키르 영혼강탈자",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":42671,
@@ -10503,10 +10503,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받고 생존할 때마다 2/2 구울을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0841",
+		"id":"reward0841",
 		"cost":4,
 		"name_en":"axe flinger",
-		"name_kr":"도끼 투척수",
+		"name":"도끼 투척수",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2297,
@@ -10516,10 +10516,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받을 때마다 적 영웅에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0842",
+		"id":"reward0842",
 		"cost":4,
 		"name_en":"bloodhoof brave",
-		"name_kr":"블러드후프 용사",
+		"name":"블러드후프 용사",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":38738,
@@ -10529,10 +10529,10 @@ var rewardList = [
 		"text":"도발 격노: 공격력 +3"
 	}, 
 	{
-		"ID":"reward0843",
+		"id":"reward0843",
 		"cost":4,
 		"name_en":"death's bite",
-		"name_kr":"죽음의 이빨",
+		"name":"죽음의 이빨",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1805,
@@ -10542,10 +10542,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0844",
+		"id":"reward0844",
 		"cost":5,
 		"name_en":"grim patron",
-		"name_kr":"험상궂은 손님",
+		"name":"험상궂은 손님",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":2279,
@@ -10555,10 +10555,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받고 생존할 때마다 다른 험상궂은 손님을 소환합니다."
 	}, 
 	{
-		"ID":"reward0845",
+		"id":"reward0845",
 		"cost":7,
 		"name_en":"hogger, doom of elwynn",
-		"name_kr":"엘윈의 파멸 들창코",
+		"name":"엘윈의 파멸 들창코",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":38944,
@@ -10568,10 +10568,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받을 때마다 도발 능력이 있는 2/2 놀을 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0846",
+		"id":"reward0846",
 		"cost":8,
 		"name_en":"grommash hellscream",
-		"name_kr":"그롬마쉬 헬스크림",
+		"name":"그롬마쉬 헬스크림",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":338,
@@ -10581,10 +10581,10 @@ var rewardList = [
 		"text":"돌진 격노: 공격력 +6"
 	}, 
 	{
-		"ID":"reward0847",
+		"id":"reward0847",
 		"cost":8,
 		"name_en":"rotface",
-		"name_kr":"썩은얼굴",
+		"name":"썩은얼굴",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":42630,
@@ -10594,10 +10594,10 @@ var rewardList = [
 		"text":"이 하수인은 피해를 받고 생존할 때마다 무작위 전설 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0848",
+		"id":"reward0848",
 		"cost":1,
 		"name_en":"whirlwind",
-		"name_kr":"소용돌이",
+		"name":"소용돌이",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":636,
@@ -10605,10 +10605,10 @@ var rewardList = [
 		"text":"모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0849",
+		"id":"reward0849",
 		"cost":2,
 		"name_en":"battle rage",
-		"name_kr":"전투 격노",
+		"name":"전투 격노",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":400,
@@ -10616,10 +10616,10 @@ var rewardList = [
 		"text":"피해를 받은 아군 캐릭터의 수만큼 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0850",
+		"id":"reward0850",
 		"cost":2,
 		"name_en":"commanding shout",
-		"name_kr":"지휘의 외침",
+		"name":"지휘의 외침",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":1026,
@@ -10627,10 +10627,10 @@ var rewardList = [
 		"text":"이번 턴에는 내 하수인들의 생명력이 1 미만으로 내려가지 않습니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0851",
+		"id":"reward0851",
 		"cost":2,
 		"name_en":"sleep with the fishes",
-		"name_kr":"물고기 밥이나 되라고",
+		"name":"물고기 밥이나 되라고",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":41414,
@@ -10638,10 +10638,10 @@ var rewardList = [
 		"text":"피해를 받은 모든 하수인에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0852",
+		"id":"reward0852",
 		"cost":2,
 		"name_en":"unstable ghoul",
-		"name_kr":"불안정한 구울",
+		"name":"불안정한 구울",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1808,
@@ -10651,10 +10651,10 @@ var rewardList = [
 		"text":"도발 죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0853",
+		"id":"reward0853",
 		"cost":3,
 		"name_en":"blood warriors",
-		"name_kr":"피의 전사들",
+		"name":"피의 전사들",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":38848,
@@ -10662,10 +10662,10 @@ var rewardList = [
 		"text":"피해를 받은 아군 하수인들을 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0854",
+		"id":"reward0854",
 		"cost":3,
 		"name_en":"bouncing blade",
-		"name_kr":"날뛰는 톱날",
+		"name":"날뛰는 톱날",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":2018,
@@ -10673,10 +10673,10 @@ var rewardList = [
 		"text":"무작위 하수인 하나에게 피해를 1 줍니다. 하수인 하나가 죽을 때까지 반복됩니다."
 	}, 
 	{
-		"ID":"reward0855",
+		"id":"reward0855",
 		"cost":3,
 		"name_en":"ravaging ghoul",
-		"name_kr":"날뛰는 구울",
+		"name":"날뛰는 구울",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":38530,
@@ -10686,10 +10686,10 @@ var rewardList = [
 		"text":"전투의 함성: 다른 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0856",
+		"id":"reward0856",
 		"cost":4,
 		"name_en":"blood razor",
-		"name_kr":"피의 칼날",
+		"name":"피의 칼날",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":42700,
@@ -10699,10 +10699,10 @@ var rewardList = [
 		"text":"전투의 함성과 죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
-		"ID":"reward0857",
+		"id":"reward0857",
 		"cost":5,
 		"name_en":"sudden genesis",
-		"name_kr":"갑작스러운 기원",
+		"name":"갑작스러운 기원",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":41407,
@@ -10710,10 +10710,10 @@ var rewardList = [
 		"text":"피해를 받은 아군 하수인들을 복사하여 소환합니다."
 	}, 
 	{
-		"ID":"reward0858",
+		"id":"reward0858",
 		"cost":8,
 		"name_en":"scourgelord garrosh",
-		"name_kr":"스컬지군주 가로쉬",
+		"name":"스컬지군주 가로쉬",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":43423,
@@ -10722,10 +10722,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격 시 양옆의 하수인에게도 피해를 주는 4/3 어둠한을 장착합니다."
 	}, 
 	{
-		"ID":"reward0859",
+		"id":"reward0859",
 		"cost":9,
 		"name_en":"king mosh",
-		"name_kr":"폭군 모쉬",
+		"name":"폭군 모쉬",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":41425,
@@ -10736,10 +10736,10 @@ var rewardList = [
 		"text":"전투의 함성: 피해를 받은 모든 하수인을 처치합니다."
 	}, 
 	{
-		"ID":"reward0860",
+		"id":"reward0860",
 		"cost":1,
 		"name_en":"charge",
-		"name_kr":"돌진",
+		"name":"돌진",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":344,
@@ -10747,10 +10747,10 @@ var rewardList = [
 		"text":"아군 하수인 하나에게 돌진을 부여합니다. 그 하수인은 이번 턴에 영웅을 공격할 수 없습니다."
 	}, 
 	{
-		"ID":"reward0861",
+		"id":"reward0861",
 		"cost":4,
 		"name_en":"kor'kron elite",
-		"name_kr":"코르크론 정예병",
+		"name":"코르크론 정예병",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":28,
@@ -10760,10 +10760,10 @@ var rewardList = [
 		"text":"돌진"
 	}, 
 	{
-		"ID":"reward0862",
+		"id":"reward0862",
 		"cost":7,
 		"name_en":"skycap'n kragg",
-		"name_kr":"하늘선장 크라그",
+		"name":"하늘선장 크라그",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2757,
@@ -10774,10 +10774,10 @@ var rewardList = [
 		"text":"도오올지이인 내 전장에 있는 해적 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0863",
+		"id":"reward0863",
 		"cost":9,
 		"name_en":"icehowl",
-		"name_kr":"얼음울음",
+		"name":"얼음울음",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2725,
@@ -10787,10 +10787,10 @@ var rewardList = [
 		"text":"돌진 영웅을 공격할 수 없습니다."
 	}, 
 	{
-		"ID":"reward0864",
+		"id":"reward0864",
 		"cost":1,
 		"name_en":"upgrade!",
-		"name_kr":"강화!",
+		"name":"강화!",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":511,
@@ -10798,10 +10798,10 @@ var rewardList = [
 		"text":"내가 무기를 장착하고 있으면, +1/+1을 부여합니다. 무기가 없다면 1/3 무기를 장착합니다."
 	}, 
 	{
-		"ID":"reward0865",
+		"id":"reward0865",
 		"cost":2,
 		"name_en":"forge of souls",
-		"name_kr":"영혼의 제련소",
+		"name":"영혼의 제련소",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":42998,
@@ -10809,10 +10809,10 @@ var rewardList = [
 		"text":"내 덱에서 무기를 둘 뽑습니다."
 	}, 
 	{
-		"ID":"reward0866",
+		"id":"reward0866",
 		"cost":3,
 		"name_en":"orgrimmar aspirant",
-		"name_kr":"오그리마 지원자",
+		"name":"오그리마 지원자",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2711,
@@ -10822,10 +10822,10 @@ var rewardList = [
 		"text":"격려: 내 무기에 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0867",
+		"id":"reward0867",
 		"cost":5,
 		"name_en":"arcanite reaper",
-		"name_kr":"아케이나이트 도끼",
+		"name":"아케이나이트 도끼",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":304,
@@ -10834,10 +10834,10 @@ var rewardList = [
 		"health":2
 	}, 
 	{
-		"ID":"reward0868",
+		"id":"reward0868",
 		"cost":5,
 		"name_en":"tentacles for arms",
-		"name_kr":"뻗어나온 촉수",
+		"name":"뻗어나온 촉수",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":38279,
@@ -10847,10 +10847,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이 무기를 내 손으로 다시 가져옵니다."
 	}, 
 	{
-		"ID":"reward0869",
+		"id":"reward0869",
 		"cost":7,
 		"name_en":"gorehowl",
-		"name_kr":"피의 울음소리",
+		"name":"피의 울음소리",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":810,
@@ -10860,10 +10860,10 @@ var rewardList = [
 		"text":"이 무기는 하수인을 공격할 때 내구도 대신 공격력이 1 감소합니다."
 	}, 
 	{
-		"ID":"reward0870",
+		"id":"reward0870",
 		"cost":7,
 		"name_en":"lesser mithril spellstone",
-		"name_kr":"하급 미스릴 주문석",
+		"name":"하급 미스릴 주문석",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":45519,
@@ -10871,10 +10871,10 @@ var rewardList = [
 		"text":"5/5 미스릴 골렘을 하나 소환합니다. (무기를 1회 장착하면 강화됩니다.)"
 	}, 
 	{
-		"ID":"reward0871",
+		"id":"reward0871",
 		"cost":7,
 		"name_en":"malkorok",
-		"name_kr":"말코록",
+		"name":"말코록",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":38739,
@@ -10884,10 +10884,10 @@ var rewardList = [
 		"text":"전투의 함성: 무작위 무기를 장착합니다."
 	}, 
 	{
-		"ID":"reward0872",
+		"id":"reward0872",
 		"cost":1,
 		"name_en":"shield slam",
-		"name_kr":"방패 밀쳐내기",
+		"name":"방패 밀쳐내기",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":546,
@@ -10895,10 +10895,10 @@ var rewardList = [
 		"text":"내 방어도만큼 하수인 하나에게 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0873",
+		"id":"reward0873",
 		"cost":2,
 		"name_en":"armorsmith",
-		"name_kr":"방어구 제작자",
+		"name":"방어구 제작자",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":596,
@@ -10908,10 +10908,10 @@ var rewardList = [
 		"text":"아군 하수인이 피해를 받을 때마다 방어도를 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0874",
+		"id":"reward0874",
 		"cost":2,
 		"name_en":"bladed gauntlet",
-		"name_kr":"칼날주먹",
+		"name":"칼날주먹",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":43277,
@@ -10921,10 +10921,10 @@ var rewardList = [
 		"text":"이 무기의 공격력은 내 방어도와 같습니다. 영웅을 공격할 수 없습니다."
 	}, 
 	{
-		"ID":"reward0875",
+		"id":"reward0875",
 		"cost":2,
 		"name_en":"bring it on!",
-		"name_kr":"덤벼라!",
+		"name":"덤벼라!",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":2597,
@@ -10932,10 +10932,10 @@ var rewardList = [
 		"text":"공격력 +1, 도발"
 	}, 
 	{
-		"ID":"reward0876",
+		"id":"reward0876",
 		"cost":2,
 		"name_en":"drywhisker armorer",
-		"name_kr":"마른수염 방어구 제작자",
+		"name":"마른수염 방어구 제작자",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":46031,
@@ -10945,10 +10945,10 @@ var rewardList = [
 		"text":"전투의 함성: 적 하수인 하나당 방어도를 +2 얻습니다."
 	}, 
 	{
-		"ID":"reward0877",
+		"id":"reward0877",
 		"cost":3,
 		"name_en":"mountainfire armor",
-		"name_kr":"산불의 방어구",
+		"name":"산불의 방어구",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":42698,
@@ -10958,10 +10958,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 상대편의 턴이면, 방어도를 +6 얻습니다."
 	}, 
 	{
-		"ID":"reward0878",
+		"id":"reward0878",
 		"cost":3,
 		"name_en":"reckless flurry",
-		"name_kr":"무모한 난동",
+		"name":"무모한 난동",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":46026,
@@ -10969,10 +10969,10 @@ var rewardList = [
 		"text":"방어도를 모두 소모합니다. 소모한만큼 모든 하수인에게 피해를 줍니다."
 	}, 
 	{
-		"ID":"reward0879",
+		"id":"reward0879",
 		"cost":3,
 		"name_en":"shield block",
-		"name_kr":"방패 막기",
+		"name":"방패 막기",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1023,
@@ -10980,10 +10980,10 @@ var rewardList = [
 		"text":"방어도를 +5 얻습니다. 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0880",
+		"id":"reward0880",
 		"cost":5,
 		"name_en":"alley armorsmith",
-		"name_kr":"뒷골목 방어구 제작자",
+		"name":"뒷골목 방어구 제작자",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":40574,
@@ -10993,10 +10993,10 @@ var rewardList = [
 		"text":"도발, 이 하수인은 피해를 줄 때마다 그만큼 내 방어도를 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0881",
+		"id":"reward0881",
 		"cost":5,
 		"name_en":"ironforge portal",
-		"name_kr":"아이언포지 차원문",
+		"name":"아이언포지 차원문",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":39747,
@@ -11004,10 +11004,10 @@ var rewardList = [
 		"text":"방어도를 +4 얻습니다. 비용이 4인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0882",
+		"id":"reward0882",
 		"cost":6,
 		"name_en":"gemstudded golem",
-		"name_kr":"보석 박힌 골렘",
+		"name":"보석 박힌 골렘",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":46027,
@@ -11017,10 +11017,10 @@ var rewardList = [
 		"text":"도발, 내 방어도가 5 이상일 때에만 공격할 수 있습니다."
 	}, 
 	{
-		"ID":"reward0883",
+		"id":"reward0883",
 		"cost":6,
 		"name_en":"shieldmaiden",
-		"name_kr":"방패 여전사",
+		"name":"방패 여전사",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":2021,
@@ -11030,10 +11030,10 @@ var rewardList = [
 		"text":"전투의 함성: 방어도를 +5 얻습니다."
 	}, 
 	{
-		"ID":"reward0884",
+		"id":"reward0884",
 		"cost":6,
 		"name_en":"unidentified shield",
-		"name_kr":"정체불명의 방패",
+		"name":"정체불명의 방패",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":45775,
@@ -11041,10 +11041,10 @@ var rewardList = [
 		"text":"방어도를 +5 얻습니다. 내 손에서 추가 효과를 하나 얻습니다."
 	}, 
 	{
-		"ID":"reward0885",
+		"id":"reward0885",
 		"cost":8,
 		"name_en":"geosculptor yip",
-		"name_kr":"대지조각가 이프",
+		"name":"대지조각가 이프",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":46442,
@@ -11054,10 +11054,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 방어도와 같은 비용의 무작위 하수인을 하나 소환합니다. (최대 10)"
 	}, 
 	{
-		"ID":"reward0886",
+		"id":"reward0886",
 		"cost":1,
 		"name_en":"n'zoth's first mate",
-		"name_kr":"느조스의 일등항해사",
+		"name":"느조스의 일등항해사",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":38914,
@@ -11068,10 +11068,10 @@ var rewardList = [
 		"text":"전투의 함성: 1/3 녹슨 갈고리를 장착합니다."
 	}, 
 	{
-		"ID":"reward0887",
+		"id":"reward0887",
 		"cost":3,
 		"name_en":"bloodsail cultist",
-		"name_kr":"붉은해적단 이교도",
+		"name":"붉은해적단 이교도",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":38920,
@@ -11082,10 +11082,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 다른 해적이 있으면, 내 무기에 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0888",
+		"id":"reward0888",
 		"cost":1,
 		"name_en":"fire plume's heart",
-		"name_kr":"불길의 심장",
+		"name":"불길의 심장",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":41427,
@@ -11093,10 +11093,10 @@ var rewardList = [
 		"text":"퀘스트: 도발 하수인을 7회 내야 합니다. 보상: 설퍼라스"
 	}, 
 	{
-		"ID":"reward0889",
+		"id":"reward0889",
 		"cost":1,
 		"name_en":"I know a guy",
-		"name_kr":"일거리가 있다던데",
+		"name":"일거리가 있다던데",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":40839,
@@ -11104,10 +11104,10 @@ var rewardList = [
 		"text":"도발 하수인을 하나 발견합니다."
 	}, 
 	{
-		"ID":"reward0890",
+		"id":"reward0890",
 		"cost":2,
 		"name_en":"cornered sentry",
-		"name_kr":"궁지에 몰린 보초",
+		"name":"궁지에 몰린 보초",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":41406,
@@ -11117,10 +11117,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 상대편에게 1/1 랩터를 3마리 소환해 줍니다."
 	}, 
 	{
-		"ID":"reward0891",
+		"id":"reward0891",
 		"cost":3,
 		"name_en":"fierce monkey",
-		"name_kr":"사나운 원숭이",
+		"name":"사나운 원숭이",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2894,
@@ -11131,10 +11131,10 @@ var rewardList = [
 		"text":"도발"
 	}, 
 	{
-		"ID":"reward0892",
+		"id":"reward0892",
 		"cost":3,
 		"name_en":"king's defender",
-		"name_kr":"왕의 수호검",
+		"name":"왕의 수호검",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":2756,
@@ -11144,10 +11144,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 전장에 도발 하수인이 있으면, 내구도를 +1 얻습니다."
 	}, 
 	{
-		"ID":"reward0893",
+		"id":"reward0893",
 		"cost":5,
 		"name_en":"direhorn hatchling",
-		"name_kr":"새끼 공포뿔",
+		"name":"새끼 공포뿔",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":41890,
@@ -11158,10 +11158,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 도발 능력이 있는 6/9 공포뿔 1마리를 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0894",
+		"id":"reward0894",
 		"cost":7,
 		"name_en":"obsidian destroyer",
-		"name_kr":"흑요석 파괴자",
+		"name":"흑요석 파괴자",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":2881,
@@ -11171,10 +11171,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 도발 능력이 있는 1/1 딱정벌레를 1마리 소환합니다."
 	}, 
 	{
-		"ID":"reward0895",
+		"id":"reward0895",
 		"cost":1,
 		"name_en":"blood to ichor",
-		"name_kr":"피에서 수액을",
+		"name":"피에서 수액을",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":38918,
@@ -11182,10 +11182,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 1 줍니다. 그 하수인이 생존하면, 2/2 수액괴물을 소환합니다."
 	}, 
 	{
-		"ID":"reward0896",
+		"id":"reward0896",
 		"cost":2,
 		"name_en":"cleave",
-		"name_kr":"회전베기",
+		"name":"회전베기",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":940,
@@ -11193,10 +11193,10 @@ var rewardList = [
 		"text":"무작위 적 하수인 둘에게 피해를 2 줍니다."
 	}, 
 	{
-		"ID":"reward0897",
+		"id":"reward0897",
 		"cost":2,
 		"name_en":"slam",
-		"name_kr":"격돌",
+		"name":"격돌",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":1074,
@@ -11204,10 +11204,10 @@ var rewardList = [
 		"text":"하수인 하나에게 피해를 2 줍니다. 그 하수인이 생존하면, 카드를 1장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0898",
+		"id":"reward0898",
 		"cost":4,
 		"name_en":"mortal strike",
-		"name_kr":"필사의 일격",
+		"name":"필사의 일격",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":804,
@@ -11215,10 +11215,10 @@ var rewardList = [
 		"text":"피해를 4 줍니다. 내 생명력이 12 이하라면, 피해를 6 줍니다."
 	}, 
 	{
-		"ID":"reward0899",
+		"id":"reward0899",
 		"cost":5,
 		"name_en":"fool's bane",
-		"name_kr":"바보의 파멸",
+		"name":"바보의 파멸",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":39417,
@@ -11228,10 +11228,10 @@ var rewardList = [
 		"text":"한 턴에 여러번 공격할 수 있습니다. 영웅을 공격할 수 없습니다."
 	}, 
 	{
-		"ID":"reward0900",
+		"id":"reward0900",
 		"cost":7,
 		"name_en":"crush",
-		"name_kr":"으깨기",
+		"name":"으깨기",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":2020,
@@ -11239,10 +11239,10 @@ var rewardList = [
 		"text":"하수인 하나를 처치합니다. 내 전장에 피해를 받은 하수인이 있으면, 비용이 (4) 감소합니다."
 	}, 
 	{
-		"ID":"reward0901",
+		"id":"reward0901",
 		"cost":2,
 		"name_en":"hobart grapplehammer",
-		"name_kr":"호바트 그래플해머",
+		"name":"호바트 그래플해머",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":40482,
@@ -11252,10 +11252,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손과 덱에 있는 모든 무기에 공격력을 +1 부여합니다."
 	}, 
 	{
-		"ID":"reward0902",
+		"id":"reward0902",
 		"cost":3,
 		"name_en":"grimestreet pawnbroker",
-		"name_kr":"험악한 거리 전당포 주인",
+		"name":"험악한 거리 전당포 주인",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":40569,
@@ -11265,10 +11265,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 있는 무작위 무기 하나에 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0903",
+		"id":"reward0903",
 		"cost":4,
 		"name_en":"brass knuckles",
-		"name_kr":"황동 너클",
+		"name":"황동 너클",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":40438,
@@ -11278,10 +11278,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에 내 손에 있는 무작위 하수인 하나에게 +1/+1을 부여합니다."
 	}, 
 	{
-		"ID":"reward0904",
+		"id":"reward0904",
 		"cost":4,
 		"name_en":"grimy gadgeteer",
-		"name_kr":"험악한 기계공",
+		"name":"험악한 기계공",
 		"class":"전사",
 		"rarity":"일반",
 		"cardid":40568,
@@ -11291,10 +11291,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
-		"ID":"reward0905",
+		"id":"reward0905",
 		"cost":3,
 		"name_en":"zola the gorgon",
-		"name_kr":"고르곤 졸라",
+		"name":"고르곤 졸라",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":46403,
@@ -11304,10 +11304,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 황금 카드로 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0906",
+		"id":"reward0906",
 		"cost":6,
 		"name_en":"hemet, jungle hunter",
-		"name_kr":"밀림 사냥꾼 헤멧",
+		"name":"밀림 사냥꾼 헤멧",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41885,
@@ -11317,10 +11317,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 덱에 있는 비용이 (3) 이하인 카드를 모두 파괴합니다."
 	}, 
 	{
-		"ID":"reward0907",
+		"id":"reward0907",
 		"cost":6,
 		"name_en":"justicar trueheart",
-		"name_kr":"심판관 트루하트",
+		"name":"심판관 트루하트",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2736,
@@ -11330,10 +11330,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 기본 영웅 능력을 강화합니다."
 	}, 
 	{
-		"ID":"reward0908",
+		"id":"reward0908",
 		"cost":8,
 		"name_en":"gruul",
-		"name_kr":"그룰",
+		"name":"그룰",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":526,
@@ -11343,10 +11343,10 @@ var rewardList = [
 		"text":"각 턴이 끝날 때, +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0909",
+		"id":"reward0909",
 		"cost":8,
 		"name_en":"the boogeymonster",
-		"name_kr":"괴물",
+		"name":"괴물",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38895,
@@ -11356,10 +11356,10 @@ var rewardList = [
 		"text":"이 하수인은 공격하여 다른 하수인을 처치할 때마다 +2/+2를 얻습니다."
 	}, 
 	{
-		"ID":"reward0910",
+		"id":"reward0910",
 		"cost":9,
 		"name_en":"arch-thief rafaam",
-		"name_kr":"대도 라팜",
+		"name":"대도 라팜",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2964,
@@ -11369,10 +11369,10 @@ var rewardList = [
 		"text":"전투의 함성: 강력한 유물을 발견합니다."
 	}, 
 	{
-		"ID":"reward0911",
+		"id":"reward0911",
 		"cost":10,
 		"name_en":"varian wrynn",
-		"name_kr":"바리안 린",
+		"name":"바리안 린",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":2760,
@@ -11382,10 +11382,10 @@ var rewardList = [
 		"text":"전투의 함성: 카드를 3장 뽑습니다. 하수인을 뽑으면 바로 내 전장에 놓습니다."
 	}, 
 	{
-		"ID":"reward0912",
+		"id":"reward0912",
 		"cost":2,
 		"name_en":"alexstrasza's champion",
-		"name_kr":"알렉스트라자의 용사",
+		"name":"알렉스트라자의 용사",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":2758,
@@ -11395,10 +11395,10 @@ var rewardList = [
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력 +1과 돌진을 얻습니다."
 	}, 
 	{
-		"ID":"reward0913",
+		"id":"reward0913",
 		"cost":6,
 		"name_en":"drakonid crusher",
-		"name_kr":"용기병 분쇄자",
+		"name":"용기병 분쇄자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2257,
@@ -11409,10 +11409,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편의 생명력이 15 이하면, +3/+3을 얻습니다."
 	}, 
 	{
-		"ID":"reward0914",
+		"id":"reward0914",
 		"cost":7,
 		"name_en":"chillmaw",
-		"name_kr":"서리아귀",
+		"name":"서리아귀",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2682,
@@ -11423,10 +11423,10 @@ var rewardList = [
 		"text":"도발, 죽음의 메아리: 내 손에 용족이 있으면, 모든 하수인에게 피해를 3 줍니다."
 	}, 
 	{
-		"ID":"reward0915",
+		"id":"reward0915",
 		"cost":9,
 		"name_en":"nefarian",
-		"name_kr":"네파리안",
+		"name":"네파리안",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":2261,
@@ -11437,10 +11437,10 @@ var rewardList = [
 		"text":"전투의 함성: 상대편 직업의 무작위 주문 둘을 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0916",
+		"id":"reward0916",
 		"cost":2,
 		"name_en":"dead man's hand",
-		"name_kr":"망자의 손패",
+		"name":"망자의 손패",
 		"class":"전사",
 		"rarity":"영웅",
 		"cardid":42766,
@@ -11448,10 +11448,10 @@ var rewardList = [
 		"text":"내 손에 있는 카드를 모두 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0917",
+		"id":"reward0917",
 		"cost":6,
 		"name_en":"gather your party",
-		"name_kr":"파티 모집",
+		"name":"파티 모집",
 		"class":"전사",
 		"rarity":"희귀",
 		"cardid":46058,
@@ -11459,10 +11459,10 @@ var rewardList = [
 		"text":"하수인을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0918",
+		"id":"reward0918",
 		"cost":6,
 		"name_en":"madam goya",
-		"name_kr":"마님 고야",
+		"name":"마님 고야",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41841,
@@ -11472,10 +11472,10 @@ var rewardList = [
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 내 덱의 무작위 하수인 하나와 교체합니다."
 	}, 
 	{
-		"ID":"reward0919",
+		"id":"reward0919",
 		"cost":7,
 		"name_en":"silver vanguard",
-		"name_kr":"은빛 선봉대원",
+		"name":"은빛 선봉대원",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45287,
@@ -11485,10 +11485,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 비용이 8인 하수인을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0920",
+		"id":"reward0920",
 		"cost":8,
 		"name_en":"woecleaver",
-		"name_kr":"비통의 가로날도끼",
+		"name":"비통의 가로날도끼",
 		"class":"전사",
 		"rarity":"전설",
 		"cardid":46077,
@@ -11498,10 +11498,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에 하수인을 하나 소집합니다."
 	}, 
 	{
-		"ID":"reward0921",
+		"id":"reward0921",
 		"cost":9,
 		"name_en":"master oakheart",
-		"name_kr":"달인 오크하트",
+		"name":"달인 오크하트",
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":46449,
@@ -11511,10 +11511,10 @@ var rewardList = [
 		"text":"전투의 함성: 공격력이 1, 2, 3인 하수인을 하나씩 소집합니다."
 	}, 
 	{
-		"ID":"reward0922",
+		"id":"reward0922",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"그롬마쉬의 손목보호대",
+		"name":"그롬마쉬의 손목보호대",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46923,
@@ -11522,10 +11522,10 @@ var rewardList = [
 		"text":"지속 능력 내 무기의 비용이 (1)이 됩니다."
 	}, 
 	{
-		"ID":"reward0923",
+		"id":"reward0923",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"마도사의 로브",
+		"name":"마도사의 로브",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46430,
@@ -11533,10 +11533,10 @@ var rewardList = [
 		"text":"지속 능력 주문 공격력 +3"
 	}, 
 	{
-		"ID":"reward0924",
+		"id":"reward0924",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"소환의 홀",
+		"name":"소환의 홀",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46410,
@@ -11544,10 +11544,10 @@ var rewardList = [
 		"text":"지속 능력 비용이 (5) 이상인 내 하수인들의 비용이 (5)가 됩니다."
 	}, 
 	{
-		"ID":"reward0925",
+		"id":"reward0925",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"수수께끼의 고서",
+		"name":"수수께끼의 고서",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47021,
@@ -11555,10 +11555,10 @@ var rewardList = [
 		"text":"지속 능력 게임이 시작될 때, 무작위 비밀 카드를 3장 냅니다."
 	}, 
 	{
-		"ID":"reward0926",
+		"id":"reward0926",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"수정 보석",
+		"name":"수정 보석",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46407,
@@ -11566,10 +11566,10 @@ var rewardList = [
 		"text":"지속 능력 마나 수정 1개를 추가로 가진 상태로 시작합니다."
 	}, 
 	{
-		"ID":"reward0927",
+		"id":"reward0927",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"수호의 문장",
+		"name":"수호의 문장",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46925,
@@ -11577,10 +11577,10 @@ var rewardList = [
 		"text":"지속 능력 적 하수인의 비용이 (1) 증가합니다."
 	}, 
 	{
-		"ID":"reward0928",
+		"id":"reward0928",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"심판관의 반지",
+		"name":"심판관의 반지",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46408,
@@ -11588,10 +11588,10 @@ var rewardList = [
 		"text":"지속 능력 내 영웅 능력이 강화되고 비용이 (1)이 됩니다."
 	}, 
 	{
-		"ID":"reward0929",
+		"id":"reward0929",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"작은 배낭",
+		"name":"작은 배낭",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46411,
@@ -11599,10 +11599,10 @@ var rewardList = [
 		"text":"지속 능력 게임이 시작될 때, 카드를 2장 뽑습니다."
 	}, 
 	{
-		"ID":"reward0930",
+		"id":"reward0930",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"전투 토템",
+		"name":"전투 토템",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47300,
@@ -11610,10 +11610,10 @@ var rewardList = [
 		"text":"지속 능력 내 전투의 함성 능력이 2번 발동합니다."
 	}, 
 	{
-		"ID":"reward0931",
+		"id":"reward0931",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"쟁탈한 깃발",
+		"name":"쟁탈한 깃발",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46439,
@@ -11621,10 +11621,10 @@ var rewardList = [
 		"text":"지속 능력 내 하수인들이 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0932",
+		"id":"reward0932",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"죽은 자의 토템",
+		"name":"죽은 자의 토템",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47299,
@@ -11632,10 +11632,10 @@ var rewardList = [
 		"text":"지속 능력 내 죽음의 메아리 능력이 2번 발동합니다."
 	}, 
 	{
-		"ID":"reward0933",
+		"id":"reward0933",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"카드가의 수정구",
+		"name":"카드가의 수정구",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46428,
@@ -11643,10 +11643,10 @@ var rewardList = [
 		"text":"지속 능력 내 주문의 비용이 (1) 감소합니다."
 	}, 
 	{
-		"ID":"reward0934",
+		"id":"reward0934",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"투명 망토",
+		"name":"투명 망토",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47020,
@@ -11654,10 +11654,10 @@ var rewardList = [
 		"text":"지속 능력 내 하수인들이 영구히 은신 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0935",
+		"id":"reward0935",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"활력의 물약",
+		"name":"활력의 물약",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46405,
@@ -11665,10 +11665,10 @@ var rewardList = [
 		"text":"지속 능력 내 기본 생명력을 2배 증가시킵니다."
 	}, 
 	{
-		"ID":"reward0936",
+		"id":"reward0936",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"가득 찬 가방",
+		"name":"가득 찬 가방",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46426,
@@ -11676,10 +11676,10 @@ var rewardList = [
 		"text":"내 손이 가득 찰 때까지 카드를 뽑습니다."
 	}, 
 	{
-		"ID":"reward0937",
+		"id":"reward0937",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"가속의 장화",
+		"name":"가속의 장화",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46416,
@@ -11687,10 +11687,10 @@ var rewardList = [
 		"text":"이번 턴에 내 하수인들의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0938",
+		"id":"reward0938",
 		"cost":2,
 		"name_en":"none",
-		"name_kr":"도박의 함",
+		"name":"도박의 함",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46423,
@@ -11698,10 +11698,10 @@ var rewardList = [
 		"text":"모든 덱을 한 데 섞은 후, 각 플레이어들이 반씩 나누어 가집니다. 내 카드의 비용이 (2) 감소합니다."
 	}, 
 	{
-		"ID":"reward0939",
+		"id":"reward0939",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"동전 가방",
+		"name":"동전 가방",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47037,
@@ -11709,10 +11709,10 @@ var rewardList = [
 		"text":"내 손을 동전으로 가득 채웁니다."
 	}, 
 	{
-		"ID":"reward0940",
+		"id":"reward0940",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"라그나로스의 잿불",
+		"name":"라그나로스의 잿불",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46437,
@@ -11720,10 +11720,10 @@ var rewardList = [
 		"text":"피해를 8씩 주는 화염구 세 개를 무작위 적들에게 발사합니다."
 	}, 
 	{
-		"ID":"reward0941",
+		"id":"reward0941",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"마법 거울",
+		"name":"마법 거울",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":39633,
@@ -11731,10 +11731,10 @@ var rewardList = [
 		"health":30
 	}, 
 	{
-		"ID":"reward0942",
+		"id":"reward0942",
 		"cost":4,
 		"name_en":"none",
-		"name_kr":"박사 붐의 폭탄상자",
+		"name":"박사 붐의 폭탄상자",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47039,
@@ -11742,10 +11742,10 @@ var rewardList = [
 		"text":"'폭탄로봇'을 7개 소환합니다."
 	}, 
 	{
-		"ID":"reward0943",
+		"id":"reward0943",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"분해의 마법봉",
+		"name":"분해의 마법봉",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46413,
@@ -11753,10 +11753,10 @@ var rewardList = [
 		"text":"모든 적 하수인을 침묵시키고 처치합니다."
 	}, 
 	{
-		"ID":"reward0944",
+		"id":"reward0944",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"불가사의한 마법봉",
+		"name":"불가사의한 마법봉",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45726,
@@ -11764,10 +11764,10 @@ var rewardList = [
 		"text":"카드를 3장 뽑습니다. 그 카드들의 비용이 (0)이 됩니다."
 	}, 
 	{
-		"ID":"reward0945",
+		"id":"reward0945",
 		"cost":2,
 		"name_en":"none",
-		"name_kr":"세나리우스의 뿔피리",
+		"name":"세나리우스의 뿔피리",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47038,
@@ -11775,10 +11775,10 @@ var rewardList = [
 		"text":"하수인을 셋 소집합니다."
 	}, 
 	{
-		"ID":"reward0946",
+		"id":"reward0946",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"소매치기 장갑",
+		"name":"소매치기 장갑",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47022,
@@ -11786,10 +11786,10 @@ var rewardList = [
 		"text":"상대편의 손에서 카드를 3장 훔쳐옵니다."
 	}, 
 	{
-		"ID":"reward0947",
+		"id":"reward0947",
 		"cost":10,
 		"name_en":"none",
-		"name_kr":"소원",
+		"name":"소원",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46418,
@@ -11797,10 +11797,10 @@ var rewardList = [
 		"text":"내 전장을 전설 하수인으로 가득 채웁니다. 내 영웅이 생명력을 모두 회복합니다."
 	}, 
 	{
-		"ID":"reward0948",
+		"id":"reward0948",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"왕초",
+		"name":"왕초",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47251,
@@ -11808,10 +11808,10 @@ var rewardList = [
 		"text":"모든 적 하수인에게 피해를 4 줍니다. 이 카드를 내 덱에 섞어 넣습니다."
 	}, 
 	{
-		"ID":"reward0949",
+		"id":"reward0949",
 		"cost":2,
 		"name_en":"none",
-		"name_kr":"지배의 부적",
+		"name":"지배의 부적",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46412,
@@ -11819,10 +11819,10 @@ var rewardList = [
 		"text":"적 하수인 하나를 가져옵니다. 그 하수인을 내 미궁 덱에 추가합니다."
 	}, 
 	{
-		"ID":"reward0950",
+		"id":"reward0950",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"쿠엘델라의 손자루",
+		"name":"쿠엘델라의 손자루",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47046,
@@ -11830,10 +11830,10 @@ var rewardList = [
 		"text":"하수인 하나에게 +3/+3을 부여합니다."
 	}, 
 	{
-		"ID":"reward0951",
+		"id":"reward0951",
 		"cost":4,
 		"name_en":"none",
-		"name_kr":"태고의 마법봉",
+		"name":"태고의 마법봉",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46421,
@@ -11841,10 +11841,10 @@ var rewardList = [
 		"text":"아군 하수인 하나를 적응시킵니다. 이번 미궁 탐험에서 처치한 우두머리의 수만큼 반복합니다."
 	}, 
 	{
-		"ID":"reward0952",
+		"id":"reward0952",
 		"cost":10,
 		"name_en":"none",
-		"name_kr":"통구이 마법봉",
+		"name":"통구이 마법봉",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46425,
@@ -11852,10 +11852,10 @@ var rewardList = [
 		"text":"영웅 하나가 죽을 때까지 무작위 대상에게 '불덩이 작렬'을 시전합니다."
 	}, 
 	{
-		"ID":"reward0953",
+		"id":"reward0953",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"파괴의 구슬",
+		"name":"파괴의 구슬",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46414,
@@ -11863,10 +11863,10 @@ var rewardList = [
 		"text":"상대편의 마나 수정을 2개 파괴하고 카드를 2장 버리게 합니다."
 	}, 
 	{
-		"ID":"reward0954",
+		"id":"reward0954",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"혼란의 두루마리",
+		"name":"혼란의 두루마리",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47040,
@@ -11874,10 +11874,10 @@ var rewardList = [
 		"text":"모든 하수인이 무작위로 편을 선택합니다."
 	}, 
 	{
-		"ID":"reward0955",
+		"id":"reward0955",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"휴대용 제련소",
+		"name":"휴대용 제련소",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47042,
@@ -11885,10 +11885,10 @@ var rewardList = [
 		"text":"전설 무기를 하나 발견하여 장착합니다."
 	}, 
 	{
-		"ID":"reward0956",
+		"id":"reward0956",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"흉내의 가면",
+		"name":"흉내의 가면",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47893,
@@ -11896,10 +11896,10 @@ var rewardList = [
 		"text":"하수인 하나를 선택합니다. 내 손에 있는 하수인들이 선택한 하수인으로 변신합니다."
 	}, 
 	{
-		"ID":"reward0957",
+		"id":"reward0957",
 		"cost":7,
 		"name_en":"none",
-		"name_kr":"흐르는 모래시계",
+		"name":"흐르는 모래시계",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46922,
@@ -11907,10 +11907,10 @@ var rewardList = [
 		"text":"내 턴이 한 번 더 진행됩니다. 이번 미궁 탐험에서 처치한 우두머리 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
-		"ID":"reward0958",
+		"id":"reward0958",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"밀랍 광전사",
+		"name":"밀랍 광전사",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47041,
@@ -11921,10 +11921,10 @@ var rewardList = [
 		"text":"죽음의 메아리: 이 하수인을 다시 소환합니다."
 	}, 
 	{
-		"ID":"reward0959",
+		"id":"reward0959",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"충성스러운 부하",
+		"name":"충성스러운 부하",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46921,
@@ -11934,10 +11934,10 @@ var rewardList = [
 		"text":"도발, 내가 이번 미궁 탐험에서 처치한 우두머리의 수만큼 +1/+1을 얻습니다."
 	}, 
 	{
-		"ID":"reward0960",
+		"id":"reward0960",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"파티 차원문",
+		"name":"파티 차원문",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46420,
@@ -11947,10 +11947,10 @@ var rewardList = [
 		"text":"내가 주문을 시전할 때마다 같은 비용의 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0961",
+		"id":"reward0961",
 		"cost":3,
 		"name_en":"none",
-		"name_kr":"황금 코볼트",
+		"name":"황금 코볼트",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":45727,
@@ -11960,10 +11960,10 @@ var rewardList = [
 		"text":"도발, 전투의 함성: 내 손에 있는 모든 카드를 전설 하수인으로 교체합니다."
 	}, 
 	{
-		"ID":"reward0962",
+		"id":"reward0962",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"휴대용 얼음벽",
+		"name":"휴대용 얼음벽",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46436,
@@ -11973,10 +11973,10 @@ var rewardList = [
 		"text":"도발, 이 하수인은 적을 공격할 수 없습니다. 이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
 	}, 
 	{
-		"ID":"reward0963",
+		"id":"reward0963",
 		"cost":0,
 		"name_en":"none",
-		"name_kr":"대마법사의 지팡이",
+		"name":"대마법사의 지팡이",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46422,
@@ -11986,10 +11986,10 @@ var rewardList = [
 		"text":"내 턴이 시작될 때, 무작위 마법사 주문 하나를 내 손으로 가져옵니다."
 	}, 
 	{
-		"ID":"reward0964",
+		"id":"reward0964",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"쿠엘델라의 칼날",
+		"name":"쿠엘델라의 칼날",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47045,
@@ -11998,10 +11998,10 @@ var rewardList = [
 		"health":3
 	}, 
 	{
-		"ID":"reward0965",
+		"id":"reward0965",
 		"cost":2,
 		"name_en":"none",
-		"name_kr":"탐욕스러운 곡괭이",
+		"name":"탐욕스러운 곡괭이",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47036,
@@ -12011,10 +12011,10 @@ var rewardList = [
 		"text":"내 영웅이 공격한 후에 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
-		"ID":"reward0966",
+		"id":"reward0966",
 		"cost":2,
 		"name_en":"none",
-		"name_kr":"필살의 단검",
+		"name":"필살의 단검",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46424,
@@ -12024,10 +12024,10 @@ var rewardList = [
 		"text":"독성, 광풍 (한 턴에 4번 공격 가능.)"
 	}, 
 	{
-		"ID":"reward0967",
+		"id":"reward0967",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"옳챙이의 낚싯대",
+		"name":"옳챙이의 낚싯대",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":46251,
@@ -12037,10 +12037,10 @@ var rewardList = [
 		"text":"내 턴이 끝날 때, 상대편의 덱에서 하수인을 하나 소환합니다."
 	}, 
 	{
-		"ID":"reward0967",
+		"id":"reward0967",
 		"cost":1,
 		"name_en":"none",
-		"name_kr":"쿠엘델라",
+		"name":"쿠엘델라",
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":47044,

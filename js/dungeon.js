@@ -2,25 +2,45 @@
 'use strict';
 
 //변수 관리
+var invenURL = "http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/";
 var info = {
     class:"",//플레이어 직업
-    stage:1,
+    stage:1,//현재 층
+    boss:[]//출현한 보스 목록
 }
-var stageInfo = {
-    "우두머리":[1,2,3,4,5,6,7,8],
-    "지속효과":[1-1,5-1],
-    "보물":[3-1,7-1],
-    "전리품":[1-2,2-1,3-2,4-1,5-2,6-1,7-2]
+var stageInfo = [
+    "리치 왕",
+    "우두머리$1","지속효과","전리품",
+    "우두머리$2","전리품",
+    "우두머리$3","보물","전리품",
+    "우두머리$4","전리품",
+    "우두머리$5","지속효과","전리품",
+    "우두머리$6","전리품",
+    "우두머리$7","보물","전리품",
+    "우두머리$8"
+]
+var classInfo = {
+    "전사":"7",
+    "주술사":"1066",
+    "도적":"930",
+    "성기사":"671",
+    "사냥꾼":"31",
+    "드루이드":"274",
+    "흑마법사":"893",
+    "마법사":"637",
+    "사제":"813"
 }
-
 
 //토그왜글 대사
 var voices;
-function speak(situation) {
+function speak(input) {
     var str = "";
-    switch (situation) {
+    switch (input) {
         case "init":
             str = "이게 무슨 냄새지? 가죽? 철? 횃불이다… 모험가들이다. 흥! 모험가들이라니!";
+            break;
+        case "first":
+            str = "미궁에 들어설 때마다 여덟 마리의 괴물과 싸운다! 손가락 갯수랑 똑같다!";
             break;
         case "finish":
             var arr = [
@@ -42,6 +62,9 @@ function speak(situation) {
             ]
             str = arr[Math.floor(Math.random() * (arr.length-1))];
             break;
+        default:
+            str = input;
+            break;
     }
 
     $("#tog_text").innerHTML = str;
@@ -61,6 +84,7 @@ function voice(txt) {
 
 //직업 선택
 function select_class() {
+    //선택창 출력
     swal({
         title: '직업을 선택하세요.',
         input: 'select',
@@ -93,14 +117,53 @@ function select_class() {
     }).then(function(choose) {
         //직업 결정
         info.class = choose;
+        //직업 이미지 표시
+        $("#status_hero").src = invenURL + classInfo[choose] + ".jpg";
         //던전 개방
         dungeon_open(info.stage);
     });
 }
 
+//던전 이동
+function dungeon_next() {
+    //스테이지 증가
+    info.stage += 1;
+    //다음 던전이 있으면 진행
+    if (stageInfo[info.stage] !== undefined) {
+        dungeon_open(info.stage);
+    //없으면 클리어 처리
+    } else {
+        dungeon_clear();
+    }
+
+
+}
+
 //던전 관리
 function dungeon_open(floor) {
-    //내부 세팅
+    //우두머리 층 구분
+    let stagestr = stageInfo[floor].split("$");
+    //내부 치장하기
+    switch(stagestr[0]) {
+        case "우두머리":
+            dungeon_create("우두머리",parseInt(stagestr[1]));
+            break;
+        case "지속효과":
+            dungeon_create("지속효과");
+            /*임시*/
+            setTimeout(dungeon_next,800);
+            break;
+        case "보물":
+            dungeon_create("보물");
+            /*임시*/
+            setTimeout(dungeon_next,800);
+            break;
+        case "전리품":
+            dungeon_create("전리품");
+            /*임시*/
+            setTimeout(dungeon_next,800);
+            break;
+    }
     //버튼 활성화
     //해당 위치로 스크롤
     TweenMax.to($("#main_select_frame"),0.5,{scrollTo:$("#main_select_" +info.stage.toString()).offsetTop - 5});
@@ -117,6 +180,101 @@ function dungeon_open(floor) {
         }
 }
 
+function dungeon_create(type, stageNum) {
+    console.log(stageNum);
+    //우두머리 출현
+    if (type === "우두머리") {
+        let arr = [];
+        //해당 층 출현가능 보스 정리
+        bossList.forEach(function(boss) {
+            if (boss.stage.indexOf(stageNum) >= 0 & info.boss.indexOf(boss.name) < 0) {
+                arr.push(boss.id);
+            }
+        })
+        //출현확률 정리
+        let arr2 = [];
+        arr.forEach(function(target) {
+            arr2.push(indexArrKey(bossList,"id",target).weight)
+        })
+        //출현보스 선택
+        let boss = arr[rand(arr2)];
+        boss = indexArrKey(bossList,"id",boss);
+
+        //출현보스 기록
+        info.boss.push(boss.name);
+        //토그왜글 안내(0.5초 뒤)
+        setTimeout(function() {
+            //첫 보스 대사
+            if (stageNum === 1) {
+                speak("first");
+            //그 외: 보스 대사 있으면
+            } else if (boss.tog !== undefined) {
+                speak(boss.tog);
+            }
+        },500);
+
+        //내부 치장하기
+        let stage = $("#main_select_" + info.stage.toString());
+
+        let elm_boss = document.createElement("div.select_boss");
+
+        let elm_boss_img = document.createElement("div.boss_img");
+            elm_boss_img.style.backgroundImage = "" +
+            "url(./images/dungeon/boss_cover.png),url(" + invenURL + boss.cardid + ".jpg)";
+        let elm_boss_desc = document.createElement("div.boss_desc");
+            elm_boss_desc.innerHTML = boss.desc;
+        let elm_boss_power = document.createElement("div.boss_power");
+            elm_boss_power.innerHTML = boss.power;
+        let elm_boss_clear = document.createElement("button.boss_clear");
+            elm_boss_clear.classList.add("clickable");
+            elm_boss_clear.innerHTML = "무찌르기";
+        let elm_boss_name = document.createElement("div.boss_name");
+            elm_boss_name.innerHTML = boss.name;
+        let elm_boss_health = document.createElement("div.boss_health");
+            elm_boss_health.innerHTML = boss.health;
+
+        elm_boss.appendChild(elm_boss_img);
+        elm_boss.appendChild(elm_boss_desc);
+        elm_boss.appendChild(elm_boss_power);
+        elm_boss.appendChild(elm_boss_clear);
+        elm_boss.appendChild(elm_boss_name);
+        elm_boss.appendChild(elm_boss_health);
+
+        //버튼 설정
+        elm_boss_clear.onclick = function() {
+            //버튼 변경
+            elm_boss_clear.innerHTML = "무찔렀음";
+            //던전 폐쇄
+            stage.classList.remove("opened");
+            stage.classList.add("finished");
+            //다음 던전
+            dungeon_next();
+        }
+        //치장 완료
+        stage.appendChild(elm_boss);
+    }
+    //지속효과, 보물 출현
+    //전리품 출현
+}
+
+function dungeon_reset() {
+    //모든 보스/보물/전리품 삭제
+    $$(".select_boss").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
+    $$(".select_treasure").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
+    $$(".select_loot").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
+
+    //모든 층 닫기
+    $$(".main_select").forEach(function(target) {
+        target.classList.remove("finished","opened");
+        target.classList.add("closed");
+    })
+}
 
 //=============================================================================================
 //
