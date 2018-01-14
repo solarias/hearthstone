@@ -185,7 +185,7 @@ function card_input(param) {
         //해당 아이디만 덱에 넣기
         info.deck.push(param);
     //array: arr 전체 id를 집어넣기
-    } else if (param.isArray === true) {
+    } else  {
         param.forEach(function(x) {
             info.deck.push(x);
         })
@@ -320,8 +320,6 @@ function dungeon_open(floor) {
             break;
         case "전리품":
             dungeon_create("전리품");
-            /*임시*/
-            setTimeout(dungeon_next,800);
             break;
     }
     //버튼 활성화
@@ -495,8 +493,10 @@ function dungeon_create(type, stageNum) {
                 arr.splice(index,1);
         arr = shuffle(arr);
         //번들에서 카드 3장 선택
-        arr.forEach(function(theme) {
+        for (let i = 0;i < 3;i++) {
+            let theme = arr[i];
             //카드 요소 넣을 배열
+            let arrSort = [];
             let elmArr = [];
             //카드 3장 무작위 선택
             arr2 = shuffle(deepCopy(bundle[selectedClass][theme]));
@@ -507,29 +507,29 @@ function dungeon_create(type, stageNum) {
                     break;
                 case "2중복":
                     //0 두개, 1 한개 카드 생성
-                    arr[2] = arr[1];
-                    arr[1] = arr[0];
+                    arr2[2] = arr2[1];
+                    arr2[1] = arr2[0];
                     break
                 case "3중복":
                     //0 세개 생성
-                    arr[2] = arr[0];
-                    arr[1] = arr[0];
+                    arr2[2] = arr2[0];
+                    arr2[1] = arr2[0];
                     break
             }
+            arrSort = [arr2[0], arr2[1], arr2[2]].sort();
             //0~3 하나씩 카드 생성
-            elmArr[0] = card_input(arr2[0]);
-            elmArr[1] = card_input(arr2[1]);
-            elmArr[2] = card_input(arr2[2]);
+            elmArr[0] = card_generate(arrSort[0]);
+            elmArr[1] = card_generate(arrSort[1]);
+            elmArr[2] = card_generate(arrSort[2]);
 
             //전리품 요소 생성
             let stage = $("#main_select_" + info.stage.toString());
             let elm_loot = document.createElement("div.select_loot");
                 //전리품 카드
-                console.log(elmArr);
                 elmArr.forEach(function(elm,i) {
                     //마우스 올리면 설명
                     elm.onmouseover = function() {
-                        card_preview("show",indexArrKey(rewardList,"id",arr2[i]).cardid);
+                        card_preview("show",indexArrKey(rewardList,"id",arrSort[i]).cardid);
                     }
                     elm.onmouseout = function() {
                         card_preview("hide");
@@ -547,7 +547,7 @@ function dungeon_create(type, stageNum) {
                     elm_loot_take.classList.add("selected");
                     elm_loot_take.innerHTML = "선택했음";
                     //보물 획득
-                    card_input([arr2[0],arr2[1],arr2[2]]);
+                    card_input([arrSort[0],arrSort[1],arrSort[2]]);
                     //던전 폐쇄
                     stage.classList.remove("opened");
                     stage.classList.add("finished");
@@ -558,8 +558,8 @@ function dungeon_create(type, stageNum) {
             elm_loot.appendChild(elm_loot_take);
 
             //생성한 요소 집어넣기
-            stage.appendChild(elm_treasure);
-        })
+            stage.appendChild(elm_loot);
+        }
     }
 }
 

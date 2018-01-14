@@ -667,9 +667,9 @@ var rewardList = [
 		"name":"마법 거울",
 		"class":"중립",
 		"rarity":"일반",
-		"cardid":39633,
+		"cardid":46417,
 		"bundle":"보물",
-		"health":30
+		"text":"하수인 하나를 선택합니다. 그 하수인을 복사하여 소환하고 내 미궁 덱에 추가합니다."
 	}, 
 	{
 		"id":"reward0059",
