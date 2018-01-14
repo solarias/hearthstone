@@ -19,10 +19,10 @@
         box-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff, 0 0 7px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
         filter:brightness(1.5);
     }
-.normal {color:black;}
-.rare {color:blue;}
-.epic {color:purple;}
-.legendary {color:red;}
+.rarity_일반 {color:black;}
+.rarity_희귀 {color:blue;}
+.rarity_영웅 {color:purple;}
+.rarity_전설 {color:red;}
 
 /*공용 - 카드*/
 .card {
@@ -183,9 +183,9 @@ html, body {
 
         margin:0 auto 10px auto;
         width:180px;
-        height:200px;
+        height:260px;
 
-        background-color:purple;
+        background-color:#5A4370;
         border:1px black solid;
         box-sizing: border-box;
     }
@@ -193,12 +193,11 @@ html, body {
             display:block;
             position:relative;
 
-            margin:4px auto;
-            width:130px;
-            height:190px;
+            width:100%;height:100%;
 
             background-color:white;
             border:1px black solid;
+            border-radius:5px;
             box-sizing: border-box;
         }
             #card_preview.hidden {
@@ -320,7 +319,7 @@ html, body {
             float:right;
 
             margin-top:10px;
-            width:200px;
+            width:180px;
             height:60px;
 
             background-color:#DBBBA2;
@@ -334,6 +333,24 @@ html, body {
             .main_select.closed .boss_clear, .main_select.finished .boss_clear {
                 pointer-events: none;
             }
+        .boss_hint {
+            display:block;
+            position:relative;
+            float:right;
+
+            margin:10px 70px 0 0;
+            width:150px;
+            height:60px;
+
+            background-color:#1CFFBE;
+            border:3px gray outset;
+            border-radius: 10px;
+
+            color:#513E20;
+            font-size:30px;
+            font-weight: bold;
+        }
+            .main_select.closed .boss_hint, .main_select.finished .boss_hint {}
         .boss_name {
             position:relative;
             clear:left;
@@ -434,7 +451,9 @@ html, body {
             width:auto;
             height:190px;
 
+            background-color:white;
             border:1px gray solid;
+            border-radius:5px;
         }
         .loot_name {
             margin-top:50px;
@@ -468,7 +487,7 @@ html, body {
             .main_select.closed .select_take, .main_select.finished .select_take {
                 visibility: hidden;
             }
-            .select_take.selected {
+            .main_select.closed .select_take.selected, .main_select.finished .select_take.selected {
                 visibility: visible;
                 pointer-events: none;
             }
@@ -504,7 +523,7 @@ html, body {
             }
         #tog {
             position:absolute;
-                top:420px;left:170px;
+                top:430px;left:170px;
                 z-index:10;
             width:450px;
 			height:160px;

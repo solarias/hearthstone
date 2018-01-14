@@ -397,7 +397,7 @@ var bossList = [
 		"cardid_original":47465,
 		"health":0,
 		"stage":[6,7],
-		"weight":1,
+		"weight":0.25,
 		"reward":"보물창고",
 		"desc":"가능한 한 빨리, 최대한 많이 챙기십시오!",
 		"power":"(5) 닫히는 문: 게임을 끝냅니다."
@@ -434,7 +434,7 @@ var bossList = [
 		"cardid_original":46340,
 		"health":20,
 		"stage":[6],
-		"weight":0.5,
+		"weight":0.25,
 		"reward":"옳챙이의 낚싯대",
 		"desc":"그저 낚시가 하고 싶은 멀록일 뿐이에요, 알겠어요?",
 		"power":"(0) 월척이다옳! 내 덱에서 무작위 하수인을 하나 소환합니다."
