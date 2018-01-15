@@ -14,13 +14,13 @@
 
 		<link rel="stylesheet" type="text/css" href="./css/dungeon.css" />
 
-		<title>미궁 탐험 덱 짜기</title>
+		<title>미궁 탐험 훈련소</title>
 
 	</head>
 	<body>
         <div id="wrapper">
             <div id="frame_header">
-                <div id="header_title">미궁 탐험 덱 짜기</div>
+                <div id="header_title">미궁 탐험 훈련소</div>
                 <div id="header_author">By 솔라리어스</div>
                 <iframe id="header_youtube" src="https://www.youtube.com/embed/DAbC40LPAbM?autoplay=1&loop=1&playlist=DAbC40LPAbM" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
             </div>
@@ -30,7 +30,6 @@
 				<div id="frame_card">
 					<img id="card_preview" class="hidden" src="" alt="카드 불러오는 중">
 				</div>
-                <div class="frame_title">업적</div>
             </div>
             <div id="frame_main" class="frame_bottom">
 				<div id="main_select_frame">
@@ -43,49 +42,6 @@
 					<div id="main_select_2" class="main_select closed">
 						<div class="select_door"></div>
 						<div class="select_desc reward">1층 보물을 선택하세요!</div>
-						<!--
-						<div class="select_loot">
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">25</div>
-								<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
-								<div class="card_quantity">★</div>
-							</div>
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">2</div>
-								<div class="card_name epic">파멸의 예언자</div>
-								<div class="card_quantity">9</div>
-							</div>
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">5</div>
-								<div class="card_name legendary">난투</div>
-								<div class="card_quantity none">1</div>
-							</div>
-							<div class="loot_name">한 장 정도</div>
-							<button class="select_take clickable">선택하기</button>
-						</div>
-
-						<div class="select_treasure">
-							<img data-cardid="123" class="treasure_img selectable" src="http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42818.jpg" alt="리치 왕">
-							<button class="select_take clickable">선택하기</button>
-						</div>
-
-						<div class="select_loot">
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">25</div>
-								<div class="card_name rare">누군가가 타고있는 하늘 골렘</div>
-							</div>
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">2</div>
-								<div class="card_name epic">파멸의 예언자</div>
-							</div>
-							<div data-cardid="123" class="card selectable">
-								<div class="card_cost">5</div>
-								<div class="card_name legendary">난투</div>
-							</div>
-							<div class="loot_name">한 장 정도</div>
-							<button class="select_take clickable">선택하기</button>
-						</div>
-						-->
 					</div>
 					<div id="main_select_3" class="main_select closed">
 						<div class="select_door"></div>
@@ -161,15 +117,17 @@
 					<img id="status_hero" src="">
 					<img id="hero_cover">
 					<button id="status_button" class="clickable start">탐험<br>시작</button>
+
+					<div id="tog"><div id="tog_text_frame">
+						<div id="tog_text"></div>
+					</div></div>
 				</div>
-				<div id="tog"><div id="tog_text_frame">
-					<div id="tog_text"></div>
-				</div></div>
             </div>
 
             <div id="frame_right" class="frame_bottom">
                 <div class="frame_title">미궁 덱</div>
                 <div id="dungeon_deck"></div>
+				<div id="deck_quantity"></div>
             </div>
         </div>
 

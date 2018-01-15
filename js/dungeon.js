@@ -49,16 +49,17 @@ function speak(input) {
     let str = "", arr = [];
     switch (input) {
         case "init":
-            str = "미궁을 도전하는 모험가들을 위해 특별히 훈련장 만들었다. 얼른 도전해라. 보상은 기대하지 말고.";
+            str = "미궁을 도전하는 모험가들을 위해 특별히 훈련소 만들었다. 얼른 도전해라. 보상은 기대하지 말고.";
             break;
         case "first":
             str = "미궁에 들어설 때마다 여덟 마리의 괴물과 싸운다! 손가락 갯수랑 똑같다!";
             break;
         case "success":
             arr = [
-                "어떠냐, 지금 미궁 덱이 마음에 드느냐?",
-                "이번에는 운이 좋았나보구나. 한 번 더 도전해봐라.",
-                "쿠엘델라가 얻지 못했다면 이겨도 이긴 게 아니다. 쿠엘델라는 손에 얻었는가?"
+                "이 정도로 훈련 충분하다고 보나? 다시 훈련소에 들어가라.",
+                "어떠냐, 이번 미궁 덱은 마음에 드느냐?",
+                "이번에는 운이 좋았군. 한 번 더 도전해봐라.",
+                "쿠엘델라가 얻지 못했다면 이겨도 이긴 게 아니다. 쿠엘델라는 손에 얻었나?"
             ]
             str = arr[Math.floor(Math.random() * (arr.length-1))];
             break;
@@ -130,6 +131,9 @@ function card_generate(id, quantity) {
         elm_card.onmouseover = function() {
             card_preview("show",elm_card.dataset.cardid);
         }
+        elm_card.onclick = function() {
+            card_preview("show",elm_card.dataset.cardid);
+        }
         elm_card.onmouseout = function() {
             card_preview("hide");
         }
@@ -192,6 +196,27 @@ function card_input(param) {
     }
     //덱 반영
     deck_show();
+    //쿠엘델라 체크
+    let queldelar = [
+        indexArrKey(rewardList,"name","쿠엘델라의 칼날").id,
+        indexArrKey(rewardList,"name","쿠엘델라의 손자루").id,
+        indexArrKey(rewardList,"name","쿠엘델라").id
+    ];
+    if (info.deck.indexOf(queldelar[0]) >= 0 && info.deck.indexOf(queldelar[1]) >= 0) {
+        //쿠엘델라 칼날, 손잡이 제거
+        card_remove(queldelar[0]);
+        card_remove(queldelar[1]);
+        //쿠엘델라 추가
+        card_input(queldelar[2]);
+        //쿠엘델라 팝업
+        swal({
+            imageUrl:INVENURL + "47044.jpg",
+            imageWidth:180,
+            imageHeight:260,
+            title:"쿠엘델라 완성!",
+            confirmButtonText: '확인'
+        })
+    }
 }
 
 //카드 제거하기
@@ -199,6 +224,189 @@ function card_remove(id) {
     let index = info.deck.indexOf(id);
     if (index >= 0)
         info.deck.splice(index,1);
+}
+
+//카드 번들에서 카드 3장 뽑기
+function card_bundling(theme) {
+    let arr = [], arr2 = [];//공용 배열
+    //특정 테마는 별도로 처리
+    switch (theme) {
+        case "크툰의 교단":
+            let cthun = indexArrKey(rewardList,"name","크툰").id;//크툰 ID
+            //크툰이 없으면 [0번]은 반드시 크툰
+            if (info.deck.indexOf(cthun) < 0) {
+                arr[0] = cthun;
+                arr[1] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+                arr[2] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+                /*
+                //일단 번들에서 3장 추려냄
+                arr = shuffle(deepCopy(bundle[selectedClass][theme]));
+                //크툰을 [0번]으로 옮기기
+                for (let i = 0;i < arr.length;i++) {
+                    if (arr[i] === cthun) {
+                        let temp = arr[i];
+                        arr[i] = arr[0];
+                        arr[0] = temp;
+                        break;
+                    }
+                }
+                //중복 확률 체크
+                let same = DUPLICATE.str[rand(DUPLICATE.num)];
+                switch (same) {
+                    case "미중복"://그대로 시행
+                        break;
+                    case "2중복":
+                        //0 두개, 1 한개 카드 생성
+                        if (Math.random() <= (1/arr.length)) {
+                            //case 1: 크툰 2장
+                            arr[2] = arr[1];
+                            arr[1] = arr[0];
+                        } else {
+                            //case 2: 다른 카드가 2장
+                            arr[2] = arr[1];
+                        }
+                        break
+                    case "3중복":
+                        //0 세개 생성 = 크툰 3장
+                        arr[1] = arr[2] = arr[0];
+                        break
+                }
+                */
+            //크툰이 없으면 3장 무작위 선택
+            } else {
+                arr[0] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+                arr[1] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+                arr[2] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+                /*
+                arr = shuffle(deepCopy(bundle[selectedClass][theme]));
+                //중복 확률 체크
+                let same = DUPLICATE.str[rand(DUPLICATE.num)];
+                switch (same) {
+                    case "미중복":
+                        break;
+                    case "2중복":
+                        //0 두개, 1 한개 카드 생성
+                        arr[2] = arr[1];
+                        arr[1] = arr[0];
+                        break
+                    case "3중복":
+                        //0 세개 생성
+                        arr[2] = arr[0];
+                        arr[1] = arr[0];
+                        break
+                }
+                */
+            }
+
+            break;
+        //한 장 정도: 해당 직업 모든 카드를 긁어옴
+        case "한 장 정도":
+            //해당 직업 카드 수집
+            let all = [];
+            rewardList.forEach(function(reward) {
+                if (reward.class.indexOf(selectedClass) >= 0) {
+                    all.push(reward.id);
+                }
+            });
+            //'한 장 정도' 카드가 있는지 확인
+            let notused = [];
+            bundle[selectedClass]["한 장 정도"].forEach(function(card) {
+                if (info.deck.indexOf(card) < 0)
+                    notused.push(card);
+            })
+            //하이랜더계 중 없는 카드가 있다면
+            if (notused.length > 0) {
+                //무작위 하이랜더 선택
+                let highlander = shuffle(notused)[0];
+                //하이랜더는 0번, 나머지는 1~2번
+                arr[0] = highlander;
+                arr[1] = shuffle(all)[0];
+                arr[2] = shuffle(all)[0];
+                /*
+                //수집된 '모든' 카드 중 3장 무작위 선택
+                arr = shuffle(all);
+                //하이랜더 1장이 [0번]으로
+                for (let i = 0;i < arr.length;i++) {
+                    if (arr[i] === highlander) {
+                        let temp = arr[i];
+                        arr[i] = arr[0];
+                        arr[0] = temp;
+                        break;
+                    }
+                }
+                //중복 확률 체크
+                let same = DUPLICATE.str[rand(DUPLICATE.num)];
+                switch (same) {
+                    case "미중복"://그대로 시행
+                        break;
+                    case "2중복":
+                        //0 두개, 1 한개 카드 생성
+                        if (Math.random() <= (1/arr.length)) {
+                            //case 1: 하이랜더 2장
+                            arr[2] = arr[1];
+                            arr[1] = arr[0];
+                        } else {
+                            //case 2: 다른 카드가 2장
+                            arr[2] = arr[1];
+                        }
+                        break
+                    case "3중복":
+                        //0 세개 생성 = 하이랜더 3장
+                        arr[1] = arr[2] = arr[0];
+                        break
+                }
+                */
+            //하애린더 구성원 모두가 있다면
+            } else {
+                //올 카드로 번들 생성
+                let same = DUPLICATE.str[rand(DUPLICATE.num)];
+                switch (same) {
+                    case "미중복":
+                        break;
+                    case "2중복":
+                        //0 두개, 1 한개 카드 생성
+                        arr[2] = arr[1];
+                        arr[1] = arr[0];
+                        break
+                    case "3중복":
+                        //0 세개 생성
+                        arr[2] = arr[0];
+                        arr[1] = arr[0];
+                        break
+                }
+            }
+
+            break;
+        //그 외 테마: 번들 내에서 카드 3장 무작위 선택
+        default:
+            arr[0] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+            arr[1] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+            arr[2] = shuffle(deepCopy(bundle[selectedClass][theme]))[0];
+            /*
+            arr = shuffle(deepCopy(bundle[selectedClass][theme]));
+            //중복 확률 체크
+            let same = DUPLICATE.str[rand(DUPLICATE.num)];
+            switch (same) {
+                case "미중복":
+                    break;
+                case "2중복":
+                    //0 두개, 1 한개 카드 생성
+                    arr[2] = arr[1];
+                    arr[1] = arr[0];
+                    break
+                case "3중복":
+                    //0 세개 생성
+                    arr[2] = arr[0];
+                    arr[1] = arr[0];
+                    break
+            }
+            */
+
+            break;
+    }
+
+    //완성된 arr 0~2번 정렬해서 반출
+    return [arr[0], arr[1], arr[2]].sort();
 }
 
 //덱 출력
@@ -223,12 +431,18 @@ function deck_show() {
             $("#dungeon_deck").appendChild(elm);
         }
     })
+    //보유카드 수량 표시
+    $("#deck_quantity").innerHTML = "보유 카드 : " + info.deck.length + "장";
+
     //기존 좌표로 재이동
     $("#dungeon_deck").scrollTop = pos;
 }
 //덱 비우기
 function deck_clear() {
+    //덱 비우기
     $("#dungeon_deck").innerHTML = "";
+    //보유카드 수량 지우기
+    $("#deck_quantity").innerHTML = "";
 }
 //============================================================================================
 //※ 던전 진행 관련
@@ -269,9 +483,13 @@ function select_class() {
     }).then(function(choose) {
         //직업 결정
         selectedClass = choose;
+
+        //클리어 한 상태라면 수동 리셋
+        if (info.status !== undefined && info.status === "cleared") {
+            dungeon_reset(true);
+        }
         //직업 이미지 표시
         $("#status_hero").src = INVENURL + CLASSINFO[choose] + ".jpg";
-
         //진행상태 및 버튼 변경
             //info 준비
             info = deepCopy(INFO);
@@ -324,7 +542,10 @@ function dungeon_open(floor) {
     }
     //버튼 활성화
     //해당 위치로 스크롤
-    TweenMax.to($("#main_select_frame"),0.5,{scrollTo:$("#main_select_" + info.stage.toString())});
+    TweenMax.to($("#main_select_frame"),0.5,{scrollTo:{
+        y:$("#main_select_" + info.stage.toString()).offsetTop - 5,
+        autoKill:false
+    }});
     //해당 위치 오픈
         //1층이 아니라면 0.5초 대기
         if (info.stage !== 0) {
@@ -403,8 +624,64 @@ function dungeon_create(type, stageNum) {
 
         //버튼 설정
         elm_boss_clear.onclick = function() {
+            //클릭 해제
+            elm_boss_clear.onclick = "";
             //버튼 변경
             elm_boss_clear.innerHTML = "무찔렀음";
+            //특수 보상 있으면 획득
+            if (boss.reward !== undefined) {
+                switch(boss.reward) {
+                    //1. 옳챙이의 낚싯대
+                    case "옳챙이의 낚싯대":
+                        //낚싯대 획득
+                        let card = indexArrKey(rewardList,"name","옳챙이의 낚싯대");
+                        card_input(card.id);
+                        //획득 팝업
+                        swal({
+                            imageUrl:INVENURL + card.cardid + ".jpg",
+                            imageWidth:180,
+                            imageHeight:260,
+                            title:"옳챙이의 낚싯대 획득!",
+                            confirmButtonText: '확인'
+                        })
+                        break;
+                    //2. 보물창고
+                    case "보물창고":
+                        //무작위 보물 3장 획득
+                        let arr = [];
+                        for (let i = 0;i < 3;i++) {
+                            arr[i] = indexArrKey(rewardList,"id",shuffle(deepCopy(bundle.보물))[0]);
+                        }
+                        swal({
+                            imageUrl:INVENURL + arr[0].cardid + ".jpg",
+                            imageWidth:180,
+                            imageHeight:260,
+                            title:arr[0].name + " 획득!",
+                            confirmButtonText: '확인'
+                        }).then(function() {
+                            card_input(arr[0].id);
+                            swal({
+                                imageUrl:INVENURL + arr[1].cardid + ".jpg",
+                                imageWidth:180,
+                                imageHeight:260,
+                                title:arr[1].name + " 획득!",
+                                confirmButtonText: '확인'
+                            }).then(function() {
+                                card_input(arr[1].id);
+                                swal({
+                                    imageUrl:INVENURL + arr[2].cardid + ".jpg",
+                                    imageWidth:180,
+                                    imageHeight:260,
+                                    title:arr[2].name + " 획득!",
+                                    confirmButtonText: '확인'
+                                }).then(function() {
+                                    card_input(arr[2].id);
+                                })
+                            })
+                        })
+                        break;
+                }
+            }
             //던전 폐쇄
             stage.classList.remove("opened");
             stage.classList.add("finished");
@@ -436,6 +713,9 @@ function dungeon_create(type, stageNum) {
                 elm_treasure_img.onmouseover = function() {
                     card_preview("show",card.cardid);
                 }
+                elm_treasure_img.onclick = function() {
+                    card_preview("show",card.cardid);
+                }
                 elm_treasure_img.onmouseout = function() {
                     card_preview("hide");
                 }
@@ -450,26 +730,13 @@ function dungeon_create(type, stageNum) {
             if (card.tog_before !== undefined) speak(card.tog_before);
             //버튼 설정
             elm_treasure_take.onclick = function() {
+                //클릭 해제
+                elm_treasure_take.onclick = "";
                 //이 버튼만 남겨두기
                 elm_treasure_take.classList.add("selected");
                 elm_treasure_take.innerHTML = "선택했음";
                 //보물 획득
                 card_input(card.id);
-                    //쿠엘델라 체크
-                    if (info.deck.indexOf("reward0133") >= 0 && info.deck.indexOf("reward0134") >= 0) {
-                        //쿠엘델라 칼날, 손잡이 제거
-                        card_remove("reward0133");
-                        card_remove("reward0134");
-                        //쿠엘델라 추가
-                        card_input("reward0132");
-                        //쿠엘델라 팝업
-                        swal({
-                            imageUrl:INVENURL + "47044.jpg",
-                            imageWidth:180,
-                            imageHeight:260,
-                            title:"쿠엘델라 완성!"
-                        })
-                    }
                 //토그 획득후 해설(있으면)
                 if (card.tog_after !== undefined) speak(card.tog_after);
                 //던전 폐쇄
@@ -496,31 +763,12 @@ function dungeon_create(type, stageNum) {
         for (let i = 0;i < 3;i++) {
             let theme = arr[i];
             //카드 요소 넣을 배열
-            let arrSort = [];
             let elmArr = [];
-            //카드 3장 무작위 선택
-            arr2 = shuffle(deepCopy(bundle[selectedClass][theme]));
-            //중복 확률 체크
-            let same = DUPLICATE.str[rand(DUPLICATE.num)];
-            switch (same) {
-                case "미중복":
-                    break;
-                case "2중복":
-                    //0 두개, 1 한개 카드 생성
-                    arr2[2] = arr2[1];
-                    arr2[1] = arr2[0];
-                    break
-                case "3중복":
-                    //0 세개 생성
-                    arr2[2] = arr2[0];
-                    arr2[1] = arr2[0];
-                    break
-            }
-            arrSort = [arr2[0], arr2[1], arr2[2]].sort();
+            let arrSort = card_bundling(theme);
             //0~3 하나씩 카드 생성
-            elmArr[0] = card_generate(arrSort[0]);
-            elmArr[1] = card_generate(arrSort[1]);
-            elmArr[2] = card_generate(arrSort[2]);
+            elmArr[0] = card_generate(arrSort[0],1);
+            elmArr[1] = card_generate(arrSort[1],1);
+            elmArr[2] = card_generate(arrSort[2],1);
 
             //전리품 요소 생성
             let stage = $("#main_select_" + info.stage.toString());
@@ -529,6 +777,9 @@ function dungeon_create(type, stageNum) {
                 elmArr.forEach(function(elm,i) {
                     //마우스 올리면 설명
                     elm.onmouseover = function() {
+                        card_preview("show",indexArrKey(rewardList,"id",arrSort[i]).cardid);
+                    }
+                    elm.onclick = function() {
                         card_preview("show",indexArrKey(rewardList,"id",arrSort[i]).cardid);
                     }
                     elm.onmouseout = function() {
@@ -566,24 +817,23 @@ function dungeon_create(type, stageNum) {
 function dungeon_reset(cmd) {
     //모든 층 닫기
     $$(".main_select").forEach(function(target) {
-        target.classList.remove("finished","opened");
+        target.classList.remove("finished","end","opened");
         target.classList.add("closed");
     })
-    //모든 보스/보물/전리품 삭제 (5초 뒤)
-    setTimeout(function() {
-        $$(".select_boss").forEach(function(target) {
-            target.parentNode.removeChild(target);
-        })
-        $$(".select_treasure").forEach(function(target) {
-            target.parentNode.removeChild(target);
-        })
-        $$(".select_loot").forEach(function(target) {
-            target.parentNode.removeChild(target);
-        })
-    },500);
+    //모든 보스/보물/전리품 삭제
+    $$(".select_boss").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
+    $$(".select_treasure").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
+    $$(".select_loot").forEach(function(target) {
+        target.parentNode.removeChild(target);
+    })
 
-    //1층으로 복귀
-    TweenMax.to($("#main_select_frame"),0.5,{scrollTo:0});
+    //1층으로 복귀(초기화 한정)
+    if (cmd === false)
+        TweenMax.to($("#main_select_frame"),0.5,{scrollTo:{y:0,autoKill:false}});
 
     //변수 초기화
     info = {};
@@ -596,15 +846,29 @@ function dungeon_reset(cmd) {
     $("#status_button").classList.add("start");
     $("#status_button").innerHTML = "탐험 시작";
 
-    //토그 반응
-    switch (cmd) {
-        case true:
-            speak("success");
-            break;
-        case false:
-            speak("failure");
-            break;
-    }
+    //토그 반응(실패라면)
+    if (cmd === false)
+        speak("failure");
+}
+
+//미궁 완료
+function dungeon_clear() {
+    //모든 층 완료 표기
+    $$(".main_select").forEach(function(elm) {
+        elm.classList.remove("opened","finished");
+        elm.classList.add("end");
+    })
+
+    //진행 상태 변경
+    info.status = "cleared";
+
+    //버튼 초기화
+    $("#status_button").classList.remove("end");
+    $("#status_button").classList.add("start");
+    $("#status_button").innerHTML = "탐험 시작";
+
+    //토그 축사
+    speak("success");
 }
 
 //=============================================================================================
@@ -629,8 +893,8 @@ window.onload = function() {
 
     //탐험 시작 버튼
     $("#status_button").onclick = function() {
-        //현 상태 : 준비중
-        if (!info.status) {
+        //현 상태 : 준비중 or 클리어 완료
+        if (!info.status || info.status === "cleared") {
             //직업 선택
             select_class();
         //현 상태 : 진행 중

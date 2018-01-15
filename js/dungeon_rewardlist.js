@@ -2163,9 +2163,9 @@ var rewardList = [
 		"name":"단검 곡예사",
 		"class":"중립",
 		"rarity":"희귀",
-		"cardid":48878,
+		"cardid":1073,
 		"bundle":"흑마법사_기본,흑마법사_무리",
-		"attack":3,
+		"attack":2,
 		"health":2,
 		"text":"내 하수인이 소환된 후에, 무작위 적 하나에게 피해를 1 줍니다."
 	}, 
@@ -2190,9 +2190,9 @@ var rewardList = [
 		"name":"덤벼라!",
 		"class":"전사",
 		"rarity":"영웅",
-		"cardid":2597,
+		"cardid":43505,
 		"bundle":"전사_방어도",
-		"text":"공격력 +1, 도발"
+		"text":"방어도를 +10 얻습니다. 상대편 손에 있는 하수인들의 비용이 (2) 감소합니다."
 	}, 
 	{
 		"id":"reward0185",
@@ -3165,7 +3165,7 @@ var rewardList = [
 		"name":"완강한 복족이",
 		"class":"중립",
 		"rarity":"일반",
-		"cardid":46204,
+		"cardid":41318,
 		"bundle":"사냥꾼_작은 야수들,성기사_도발",
 		"attack":1,
 		"health":2,
@@ -6342,9 +6342,11 @@ var rewardList = [
 		"name":"교수 퓨트리사이드",
 		"class":"사냥꾼",
 		"rarity":"전설",
-		"cardid":46968,
+		"cardid":42563,
 		"bundle":"사냥꾼_비밀",
-		"health":30
+		"attack":5,
+		"health":4,
+		"text":"내가 비밀 카드를 낸 후에, 무작위 사냥꾼 비밀 카드 1장을 사용합니다."
 	}, 
 	{
 		"id":"reward0520",
@@ -8979,9 +8981,9 @@ var rewardList = [
 		"name":"용의 분노",
 		"class":"마법사",
 		"rarity":"영웅",
-		"cardid":2866,
+		"cardid":45271,
 		"bundle":"마법사_화염,마법사_강력한 주문",
-		"text":"공격력 +3"
+		"text":"내 덱의 주문 하나를 공개해 그 주문의 비용만큼 모든 하수인에게 피해를 줍니다."
 	}, 
 	{
 		"id":"reward0727",
@@ -9296,9 +9298,11 @@ var rewardList = [
 		"name":"피의 여왕 라나텔",
 		"class":"흑마법사",
 		"rarity":"전설",
-		"cardid":46646,
+		"cardid":43064,
 		"bundle":"흑마법사_버려버려",
-		"health":30
+		"attack":1,
+		"health":6,
+		"text":"생명력 흡수, 이번 게임에서 내가 버린 카드 하나당 공격력을 +1 얻습니다."
 	}, 
 	{
 		"id":"reward0752",
@@ -10502,9 +10506,12 @@ var rewardList = [
 		"name":"남작 게돈",
 		"class":"중립",
 		"rarity":"전설",
-		"cardid":2328,
+		"cardid":336,
 		"bundle":"마법사_정령,전사_전설",
-		"health":30
+		"attack":7,
+		"health":5,
+		"race":"정령",
+		"text":"내 턴이 끝날 때, 다른 모든 캐릭터에게 피해를 2 줍니다."
 	}, 
 	{
 		"id":"reward0848",
@@ -11581,7 +11588,7 @@ var rewardList = [
 		"cost":9,
 		"name_en":"aviana",
 		"name":"아비아나",
-		"class":"",
+		"class":"드루이드",
 		"rarity":"전설",
 		"cardid":2796,
 		"bundle":"드루이드_압도",
@@ -11596,9 +11603,9 @@ var rewardList = [
 		"name":"야생의 부름",
 		"class":"사냥꾼",
 		"rarity":"영웅",
-		"cardid":2991,
+		"cardid":38727,
 		"bundle":"사냥꾼_소환",
-		"text":"비용 감소"
+		"text":"동료 야수 3마리를 모두 소환합니다."
 	}, 
 	{
 		"id":"reward0933",
@@ -11926,7 +11933,7 @@ var rewardList = [
 		"name":"크툰",
 		"class":"중립",
 		"rarity":"전설",
-		"cardid":38856,
+		"cardid":38857,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
 		"attack":6,
 		"health":6,
