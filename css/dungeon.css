@@ -182,7 +182,7 @@ html, body {
     #frame_card {
         position:relative;
 
-        margin:0 auto 10px auto;
+        margin:0 auto 5px auto;
         width:180px;
         height:260px;
 
@@ -205,6 +205,109 @@ html, body {
             #card_preview.hidden {
                 visibility:hidden;
             }
+    #preview_card_name {
+        margin:0 auto;
+        width:180px;
+        height:30px;
+
+        background-color:#41B1E1;
+        border:1px black solid;
+        box-sizing: border-box;
+
+        color:white;
+        font-size:12px;
+            line-height:30px;
+        font-weight:bold;
+        text-align:center;
+    }
+    #preview_card_text {
+        margin:0 auto;
+        padding:5px;
+        width:180px;
+        height:80px;
+
+        background-color:white;
+        border-left:1px black solid;
+        border-right:1px black solid;
+        box-sizing: border-box;
+
+        color:black;
+        font-size:12px;
+        font-weight:bold;
+        text-align:center;
+    }
+    #preview_card_bottom {
+        position:relative;
+
+        margin:0 auto;
+        width:180px;
+        height:30px;
+
+        border:1px black solid;
+        box-sizing: border-box;
+    }
+        #preview_card_attack {
+            position:relative;
+            float:left;
+
+            width:40px;
+            height:100%;
+
+            background-color:yellow;
+            border-right:1px black solid;
+            box-sizing: border-box;
+
+            color:black;
+            font-size:20px;
+            font-weight:bold;
+            text-align:center;
+        }
+            #preview_card_bottom.spell #preview_card_attack {
+                display:none;
+            }
+        #preview_card_type {
+            position:relative;
+            float:left;
+
+            width:98px;
+            height:100%;
+
+            background-color:#41B1E1;
+            box-sizing: border-box;
+
+            color:white;
+            font-size:14px;
+                line-height:30px;
+            font-weight:bold;
+            text-align:center;
+        }
+            #preview_card_bottom.spell #preview_card_type {
+                width:100%;
+            }
+        #preview_card_health {
+            position:relative;
+            float:right;
+
+            width:40px;
+            height:100%;
+
+            background-color:red;
+            border-left:1px black solid;
+            box-sizing: border-box;
+
+            color:white;
+            font-size:20px;
+            font-weight:bold;
+            text-align:center;
+        }
+            #preview_card_bottom.spell #preview_card_health {
+                display:none;
+            }
+            #preview_card_health.armor {
+                background-color:#c0c0c0;
+                color:black;
+            }
+
 #frame_right {
     position:relative;
     float:left;

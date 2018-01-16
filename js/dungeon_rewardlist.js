@@ -9,6 +9,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46923,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 무기의 비용이 (1)이 됩니다."
 	}, 
 	{
@@ -20,6 +21,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":365,
 		"bundle":"도적_회피,도적_묘수,도적_탈진",
+		"type":"주문",
 		"text":"아군 하수인 하나를 내 손으로 다시 가져옵니다. 그 하수인의 비용이 (2) 감소합니다."
 	}, 
 	{
@@ -31,6 +33,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":180,
 		"bundle":"도적_기본,도적_암살",
+		"type":"주문",
 		"text":"피해를 받지 않은 하수인 하나에게 피해를 2 줍니다."
 	}, 
 	{
@@ -42,6 +45,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":22,
 		"bundle":"전사_광전사",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 1 주고 공격력을 +2 증가시킵니다."
 	}, 
 	{
@@ -53,6 +57,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":467,
 		"bundle":"드루이드_조화",
+		"type":"주문",
 		"text":"피해를 1 줍니다."
 	}, 
 	{
@@ -64,6 +69,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46422,
 		"bundle":"보물",
+		"type":"무기",
 		"attack":0,
 		"health":3,
 		"text":"내 턴이 시작될 때, 무작위 마법사 주문 하나를 내 손으로 가져옵니다."
@@ -77,6 +83,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47037,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"내 손을 동전으로 가득 채웁니다."
 	}, 
 	{
@@ -88,6 +95,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46430,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 주문 공격력 +3"
 	}, 
 	{
@@ -99,6 +107,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1158,
 		"bundle":"도적_아드레날린 촉진,도적_회피,도적_묘수",
+		"type":"주문",
 		"text":"이번 턴에 내가 시전하는 다음 주문의 비용이 (3) 감소합니다."
 	}, 
 	{
@@ -110,6 +119,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43420,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"이 주문은 내 손에 있으면 내 턴이 시작될 때마다 무작위 마법사 주문으로 변신합니다."
 	}, 
 	{
@@ -121,6 +131,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":149,
 		"bundle":"주술사_복원",
+		"type":"주문",
 		"text":"하수인 하나의 생명력을 모두 회복시키고 도발을 부여합니다."
 	}, 
 	{
@@ -132,6 +143,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46410,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 비용이 (5) 이상인 내 하수인들의 비용이 (5)가 됩니다."
 	}, 
 	{
@@ -143,6 +155,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47021,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 게임이 시작될 때, 무작위 비밀 카드를 3장 냅니다."
 	}, 
 	{
@@ -154,6 +167,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46407,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 마나 수정 1개를 추가로 가진 상태로 시작합니다."
 	}, 
 	{
@@ -165,6 +179,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46925,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 적 하수인의 비용이 (1) 증가합니다."
 	}, 
 	{
@@ -176,6 +191,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46408,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 영웅 능력이 강화되고 비용이 (1)이 됩니다."
 	}, 
 	{
@@ -187,6 +203,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40437,
 		"bundle":"도적_아드레날린 촉진,도적_탐욕",
+		"type":"주문",
 		"text":"이번 턴에만 마나 수정을 1개 획득합니다."
 	}, 
 	{
@@ -199,6 +216,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46411,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 게임이 시작될 때, 카드를 2장 뽑습니다."
 	}, 
 	{
@@ -211,6 +229,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46439,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 하수인들이 +1/+1을 얻습니다."
 	}, 
 	{
@@ -222,6 +241,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47300,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 전투의 함성 능력이 2번 발동합니다."
 	}, 
 	{
@@ -233,6 +253,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":254,
 		"bundle":"드루이드_추가 마나",
+		"type":"주문",
 		"text":"이번 턴에만 마나 수정을 1개 획득합니다."
 	}, 
 	{
@@ -244,6 +265,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47299,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 죽음의 메아리 능력이 2번 발동합니다."
 	}, 
 	{
@@ -255,6 +277,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1362,
 		"bundle":"사제_신성",
+		"type":"주문",
 		"text":"모든 하수인의 생명력을 4 회복시킵니다."
 	}, 
 	{
@@ -266,6 +289,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46428,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 주문의 비용이 (1) 감소합니다."
 	}, 
 	{
@@ -278,6 +302,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47020,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 하수인들이 영구히 은신 상태가 됩니다."
 	}, 
 	{
@@ -289,6 +314,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47040,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"모든 하수인이 무작위로 편을 선택합니다."
 	}, 
 	{
@@ -300,6 +326,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46405,
 		"bundle":"지속효과",
+		"type":"주문",
 		"text":"지속 능력 내 기본 생명력을 2배 증가시킵니다."
 	}, 
 	{
@@ -311,6 +338,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46426,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"내 손이 가득 찰 때까지 카드를 뽑습니다."
 	}, 
 	{
@@ -322,6 +350,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46416,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"이번 턴에 내 하수인들의 비용이 (0)이 됩니다."
 	}, 
 	{
@@ -333,6 +362,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1753,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"죽음의 메아리: 적 영웅의 생명력을 5 회복시킵니다."
@@ -346,6 +376,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":511,
 		"bundle":"전사_무기",
+		"type":"주문",
 		"text":"내가 무기를 장착하고 있으면, +1/+1을 부여합니다. 무기가 없다면 1/3 무기를 장착합니다."
 	}, 
 	{
@@ -357,6 +388,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":854,
 		"bundle":"성기사_정의",
+		"type":"주문",
 		"text":"하수인 하나의 공격력을 1로 만듭니다."
 	}, 
 	{
@@ -368,6 +400,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2648,
 		"bundle":"성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 내 턴이 시작될 때, 내 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
@@ -379,6 +412,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":584,
 		"bundle":"성기사_기본,성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 적이 공격할 때, 대신 맞아주는 2/1 수호자를 1명 소환합니다."
 	}, 
 	{
@@ -390,6 +424,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41168,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"퀘스트: 게임이 시작됐을 때 내 덱에 없던 주문을 6회 시전해야 합니다. 보상: 시간 왜곡"
 	}, 
 	{
@@ -401,6 +436,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":48,
 		"bundle":"흑마법사_기본,흑마법사_작은 군단,흑마법사_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"race":"악마",
@@ -415,6 +451,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40373,
 		"bundle":"사제_기본,사제_사적",
+		"type":"주문",
 		"text":"공격력이 2 이하인 적 하수인 하나를 이번 턴에만 조종합니다."
 	}, 
 	{
@@ -426,6 +463,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2882,
 		"bundle":"도적_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"야수",
@@ -440,6 +478,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":140,
 		"bundle":"성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 아군 하수인이 죽으면, 생명력이 1인 상태로 다시 소환합니다."
 	}, 
 	{
@@ -451,6 +490,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41912,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"주문",
 		"text":"1/1 은빛 성기사단 신병을 2명 소환합니다."
 	}, 
 	{
@@ -462,6 +502,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40426,
 		"bundle":"사냥꾼_작은 야수들,사냥꾼_소환",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"야수",
@@ -476,6 +517,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":13335,
 		"bundle":"드루이드_현명한 선택",
+		"type":"주문",
 		"text":"선택 - 하수인을 하나 발견합니다. 또는 주문을 하나 발견합니다."
 	}, 
 	{
@@ -487,6 +529,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41494,
 		"bundle":"사제_최후의 의식",
+		"type":"주문",
 		"text":"퀘스트: 죽음의 메아리 하수인을 7회 소환해야 합니다. 보상: 희망의 감시자 아마라"
 	}, 
 	{
@@ -498,6 +541,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1933,
 		"bundle":"사제_신성",
+		"type":"주문",
 		"text":"생명력을 3 회복시킵니다. 그래도 대상이 피해를 받은 상태라면, 빛의 감시자를 소환합니다."
 	}, 
 	{
@@ -509,6 +553,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43282,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"하수인 하나에게 생명력을 +3 부여합니다. 방어도를 +3 얻습니다."
 	}, 
 	{
@@ -520,6 +565,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39169,
 		"bundle":"마법사_무작위",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 무작위 마법사 주문 하나를 내 손으로 가져옵니다."
@@ -533,6 +579,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":724,
 		"bundle":"도적_무법,전사_돌진!",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"해적",
@@ -547,6 +594,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":376,
 		"bundle":"사제_수양",
+		"type":"주문",
 		"text":"하수인 하나의 공격력을 생명력과 같은 수치로 바꿉니다."
 	}, 
 	{
@@ -558,6 +606,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":268,
 		"bundle":"도적_암살",
+		"type":"주문",
 		"text":"하수인 하나에게 공격력을 +2 부여합니다. 연계: 대신 공격력을 +4 부여합니다."
 	}, 
 	{
@@ -569,6 +618,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38914,
 		"bundle":"전사_해적",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"해적",
@@ -583,6 +633,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41081,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"아군 하수인 하나에게 +1/+1을 부여하고, 그 하수인의 공격력만큼 방어도를 얻습니다."
 	}, 
 	{
@@ -594,6 +645,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":648,
 		"bundle":"사냥꾼_기본",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"야수",
@@ -608,6 +660,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":344,
 		"bundle":"전사_돌진!",
+		"type":"주문",
 		"text":"아군 하수인 하나에게 돌진을 부여합니다. 그 하수인은 이번 턴에 영웅을 공격할 수 없습니다."
 	}, 
 	{
@@ -619,6 +672,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2890,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"내가 과부하될 때마다 잠기는 마나 수정 하나당 공격력을 +1 얻습니다."
@@ -632,6 +686,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41856,
 		"bundle":"흑마법사_버려버려",
+		"type":"주문",
 		"text":"퀘스트: 카드를 6장 버려야 합니다. 보상: 황천의 차원문"
 	}, 
 	{
@@ -643,6 +698,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":405,
 		"bundle":"마법사_기본,마법사_마법 친구들",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"내가 주문을 시전할 때마다 공격력을 +1 얻습니다."
@@ -656,6 +712,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39350,
 		"bundle":"드루이드_기본,드루이드_밀림왕",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수"
@@ -669,6 +726,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46417,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"하수인 하나를 선택합니다. 그 하수인을 복사하여 소환하고 내 미궁 덱에 추가합니다."
 	}, 
 	{
@@ -680,6 +738,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1099,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"상대편 손에 있는 카드 1장을 무작위로 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -691,6 +750,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41868,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"퀘스트: 내 하수인에게 주문을 6회 시전해야 합니다. 보상: 갈바돈"
 	}, 
 	{
@@ -702,6 +762,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39740,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"race":"악마",
@@ -716,6 +777,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":459,
 		"bundle":"도적_기본,도적_검투사",
+		"type":"주문",
 		"text":"내 무기에 공격력을 +2 부여합니다."
 	}, 
 	{
@@ -727,6 +789,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41499,
 		"bundle":"주술사_멀록",
+		"type":"주문",
 		"text":"퀘스트: 멀록을 10마리 소환해야 합니다. 보상: 대왕아가미"
 	}, 
 	{
@@ -738,6 +801,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":475,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"멀록",
@@ -752,6 +816,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41099,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"주문",
 		"text":"퀘스트: 공격력이 5 이상인 하수인을 5회 소환해야 합니다. 보상: 바르나부스"
 	}, 
 	{
@@ -763,6 +828,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40679,
 		"bundle":"사냥꾼_밀수업자",
+		"type":"주문",
 		"text":"내 손에 있는 무작위 야수 1마리에게 +2/+2를 부여합니다."
 	}, 
 	{
@@ -774,6 +840,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40371,
 		"bundle":"성기사_도움의 손길",
+		"type":"주문",
 		"text":"내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
 	}, 
 	{
@@ -785,6 +852,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41152,
 		"bundle":"주술사_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"정령",
@@ -799,6 +867,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41323,
 		"bundle":"드루이드_무리의 힘,마법사_정령,사제_정령,도적_회피,주술사_정령",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"정령",
@@ -813,6 +882,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":546,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"내 방어도만큼 하수인 하나에게 피해를 줍니다."
 	}, 
 	{
@@ -824,6 +894,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":505,
 		"bundle":"주술사_기본,주술사_정기",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 과부하: (1)"
 	}, 
 	{
@@ -835,6 +906,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42801,
 		"bundle":"도적_검투사",
+		"type":"주문",
 		"text":"하수인 하나에게 무기를 던져 무기의 공격력만큼 피해를 주고 내 손으로 다시 가져옵니다."
 	}, 
 	{
@@ -846,6 +918,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":982,
 		"bundle":"흑마법사_기본",
+		"type":"주문",
 		"text":"적 하수인을 하나 선택합니다. 내 턴이 시작될 때, 그 하수인을 처치합니다."
 	}, 
 	{
@@ -857,6 +930,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1650,
 		"bundle":"사제_기본,사제_신성",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"하수인이 치유될 때마다 카드를 1장 뽑습니다."
@@ -870,6 +944,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41427,
 		"bundle":"전사_도발",
+		"type":"주문",
 		"text":"퀘스트: 도발 하수인을 7회 내야 합니다. 보상: 설퍼라스"
 	}, 
 	{
@@ -881,6 +956,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46303,
 		"bundle":"주술사_변신",
+		"type":"주문",
 		"text":"아군 하수인 하나를 비용이 (1) 높은 하수인으로 변신시킵니다. 이번 턴에 반복할 수 있습니다."
 	}, 
 	{
@@ -892,6 +968,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":158,
 		"bundle":"사냥꾼_비밀,성기사_비밀",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"text":"각 플레이어가 비밀을 낼 때마다 +1/+1을 얻습니다."
@@ -905,6 +982,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45590,
 		"bundle":"마법사_비전",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"정령",
@@ -919,6 +997,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2572,
 		"bundle":"마법사_마법 친구들",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2 줍니다. 이 주문은 주문 공격력의 효과를 2배로 받습니다."
 	}, 
 	{
@@ -930,6 +1009,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40372,
 		"bundle":"드루이드_비취 송곳니",
+		"type":"주문",
 		"text":"선택 - 비취 골렘을 하나 소환합니다. 또는 이 카드를 3장 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -941,6 +1021,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41111,
 		"bundle":"마법사_냉기,주술사_냉기",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"정령",
@@ -955,6 +1036,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1655,
 		"bundle":"사제_신성",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"text":"캐릭터가 치유될 때마다 공격력을 +2 얻습니다."
@@ -968,6 +1050,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":141,
 		"bundle":"사냥꾼_기본,사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나의 생명력을 1로 바꿉니다."
 	}, 
 	{
@@ -979,6 +1062,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":710,
 		"bundle":"도적_기본",
+		"type":"주문",
 		"text":"적 영웅에게 피해를 3 줍니다."
 	}, 
 	{
@@ -990,6 +1074,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2792,
 		"bundle":"드루이드_무리의 힘,드루이드_현명한 선택",
+		"type":"주문",
 		"text":"선택 - 피해를 2 줍니다. 또는 1/1 묘목을 둘 소환합니다."
 	}, 
 	{
@@ -1001,6 +1086,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40531,
 		"bundle":"성기사_도움의 손길",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"멀록",
@@ -1015,6 +1101,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":510,
 		"bundle":"성기사_멀록",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"멀록",
@@ -1029,6 +1116,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":279,
 		"bundle":"사제_기본",
+		"type":"주문",
 		"text":"피해를 2 줍니다."
 	}, 
 	{
@@ -1040,6 +1128,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47022,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"상대편의 손에서 카드를 3장 훔쳐옵니다."
 	}, 
 	{
@@ -1051,6 +1140,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":636,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
@@ -1062,6 +1152,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42232,
 		"bundle":"사냥꾼_야수 훈련",
+		"type":"주문",
 		"text":"지옥불 젖소를 2마리 소환합니다. 모든 지옥불 젖소에게 돌진을 부여합니다."
 	}, 
 	{
@@ -1073,6 +1164,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41173,
 		"bundle":"사제_최후의 의식,사제_사적,사제_정령",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"정령",
@@ -1087,6 +1179,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2582,
 		"bundle":"사제_신성",
+		"type":"주문",
 		"text":"생명력을 5 회복시킵니다."
 	}, 
 	{
@@ -1098,6 +1191,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43502,
 		"bundle":"마법사_냉기",
+		"type":"주문",
 		"text":"무작위 적 하수인 하나에게 피해를 2 주고 빙결 상태로 만듭니다."
 	}, 
 	{
@@ -1109,6 +1203,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":877,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"피해를 2 줍니다."
 	}, 
 	{
@@ -1120,6 +1215,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":564,
 		"bundle":"마법사_기본,마법사_비전",
+		"type":"주문",
 		"text":"모든 적에게 3의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
@@ -1131,6 +1227,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":613,
 		"bundle":"사제_수양,사제_주문 활용",
+		"type":"주문",
 		"text":"하수인 하나에게 생명력을 +2 부여합니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -1142,6 +1239,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40608,
 		"bundle":"사냥꾼_무기,도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"해적",
@@ -1155,7 +1253,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":38393,
-		"bundle":"도적_도적_저승사자",
+		"bundle":"도적_저승사자",
+		"type":"주문",
 		"text":"죽음의 메아리 카드를 1장 발견합니다."
 	}, 
 	{
@@ -1167,6 +1266,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38227,
 		"bundle":"성기사_멀록",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"race":"멀록",
@@ -1181,6 +1281,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":846,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"아군 하수인 하나에게 +4/+4를 부여합니다. 턴이 끝나면 그 하수인은 죽습니다. 처참하게."
 	}, 
 	{
@@ -1192,6 +1293,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1804,
 		"bundle":"성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 내 하수인 중 하나가 죽으면, 무작위 아군 하수인 하나에게 +3/+2를 부여합니다."
 	}, 
 	{
@@ -1203,6 +1305,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45537,
 		"bundle":"사냥꾼_비밀,사냥꾼_무기",
+		"type":"무기",
 		"attack":1,
 		"health":3,
 		"text":"공격할 때 면역 상태가 됩니다."
@@ -1216,6 +1319,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43128,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"아군 하수인 하나를 처치합니다. 내 영웅이 생명력을 8 회복합니다."
 	}, 
 	{
@@ -1227,6 +1331,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40397,
 		"bundle":"드루이드_무리의 힘",
+		"type":"주문",
 		"text":"내 하수인들에게 +1/+1을 부여합니다."
 	}, 
 	{
@@ -1238,6 +1343,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":974,
 		"bundle":"흑마법사_버려버려",
+		"type":"주문",
 		"text":"피해를 4 줍니다. 무작위로 카드를 1장 버립니다."
 	}, 
 	{
@@ -1249,6 +1355,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46251,
 		"bundle":"특수보물",
+		"type":"무기",
 		"attack":0,
 		"health":1,
 		"text":"내 턴이 끝날 때, 상대편의 덱에서 하수인을 하나 소환합니다."
@@ -1262,6 +1369,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":47035,
 		"bundle":"도적_검투사",
+		"type":"무기",
 		"attack":1,
 		"health":3,
 		"text":"죽음의 메아리: 이 무기를 내 덱에 섞어 넣습니다. 모든 강화 효과가 유지됩니다."
@@ -1277,6 +1385,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47251,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 4 줍니다. 이 카드를 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -1288,6 +1397,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38262,
 		"bundle":"주술사_토템",
+		"type":"주문",
 		"text":"하수인 하나에게 내 전장에 있는 토템 하나당 +1/+1을 부여합니다."
 	}, 
 	{
@@ -1299,6 +1409,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40423,
 		"bundle":"주술사_과부하",
+		"type":"주문",
 		"text":"과부하 카드를 1장 발견합니다. 과부하: (1)"
 	}, 
 	{
@@ -1310,6 +1421,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38584,
 		"bundle":"사냥꾼_작은 야수들",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"야수",
@@ -1324,6 +1436,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40839,
 		"bundle":"전사_도발",
+		"type":"주문",
 		"text":"도발 하수인을 하나 발견합니다."
 	}, 
 	{
@@ -1335,6 +1448,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":233,
 		"bundle":"드루이드_회복",
+		"type":"주문",
 		"text":"하수인 하나를 처치합니다. 상대편이 카드를 2장 뽑습니다."
 	}, 
 	{
@@ -1346,6 +1460,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41944,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"아군 하수인 하나를 적응시킵니다."
 	}, 
 	{
@@ -1357,6 +1472,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2019,
 		"bundle":"전사_기본",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"race":"기계",
@@ -1371,6 +1487,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45979,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"상대편의 덱에서 주문을 1장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -1382,6 +1499,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42467,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"도발 천상의 보호막"
@@ -1395,6 +1513,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42652,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"주문",
 		"text":"아군 하수인 하나의 죽음의 메아리 능력을 발동시킵니다."
 	}, 
 	{
@@ -1406,6 +1525,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42663,
 		"bundle":"주술사_멀록,흑마법사_생명력 흡수",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"멀록",
@@ -1420,6 +1540,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38774,
 		"bundle":"흑마법사_무리",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"죽음의 메아리: 1/1 어둠의 야수를 1마리 소환합니다."
@@ -1433,6 +1554,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41222,
 		"bundle":"도적_회피",
+		"type":"주문",
 		"text":"퀘스트: 이름이 같은 하수인을 5회 내야 합니다. 보상: 수정핵"
 	}, 
 	{
@@ -1444,6 +1566,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1373,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나를 선택합니다. 그 하수인이 공격할 때마다 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -1455,6 +1578,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38266,
 		"bundle":"주술사_변신",
+		"type":"주문",
 		"text":"내 하수인들을 비용이 (1) 높은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
@@ -1466,6 +1590,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":232,
 		"bundle":"성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인의 생명력이 1로 감소합니다."
 	}, 
 	{
@@ -1477,6 +1602,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38749,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 +1/+2를 부여합니다."
 	}, 
 	{
@@ -1488,6 +1614,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1047,
 		"bundle":"사냥꾼_추적자",
+		"type":"주문",
 		"text":"내가 다음에 뽑을 카드 3장을 미리 봅니다. 1장을 선택해 갖고, 나머지는 버립니다."
 	}, 
 	{
@@ -1499,6 +1626,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40936,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"이번 턴에 모든 적 하수인에게 공격력을 -3 부여합니다."
 	}, 
 	{
@@ -1510,6 +1638,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46921,
 		"bundle":"보물",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"도발, 내가 이번 미궁 탐험에서 처치한 우두머리의 수만큼 +1/+1을 얻습니다."
@@ -1523,6 +1652,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39698,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"해적",
@@ -1537,6 +1667,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43122,
 		"bundle":"흑마법사_무리",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"text":"전투의 함성: 카드를 1장 뽑습니다. 내 영웅에게 피해를 2 줍니다."
@@ -1550,6 +1681,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47044,
 		"bundle":"특수보물",
+		"type":"무기",
 		"attack":6,
 		"health":6,
 		"text":"내 영웅이 공격한 후에 모든 적에게 피해를 6 줍니다."
@@ -1564,6 +1696,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47046,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"하수인 하나에게 +3/+3을 부여합니다."
 	}, 
 	{
@@ -1576,6 +1709,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47045,
 		"bundle":"보물",
+		"type":"무기",
 		"attack":3,
 		"health":3
 	}, 
@@ -1588,6 +1722,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40587,
 		"bundle":"성기사_비밀",
+		"type":"주문",
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 내 손으로 다시 가져옵니다."
 	}, 
 	{
@@ -1599,6 +1734,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46420,
 		"bundle":"보물",
+		"type":"하수인",
 		"attack":0,
 		"health":10,
 		"text":"내가 주문을 시전할 때마다 같은 비용의 무작위 하수인을 하나 소환합니다."
@@ -1612,6 +1748,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38918,
 		"bundle":"전사_박살!",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 1 줍니다. 그 하수인이 생존하면, 2/2 수액괴물을 소환합니다."
 	}, 
 	{
@@ -1623,6 +1760,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1092,
 		"bundle":"흑마법사_기본",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 1 줍니다. 이 피해로 하수인이 죽으면, 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -1634,6 +1772,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45321,
 		"bundle":"흑마법사_희생",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 아군 하수인 하나를 처치하고 +2/+2를 얻습니다."
@@ -1647,6 +1786,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43288,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2 줍니다. (방어도를 +3 얻으면 강화됩니다.)"
 	}, 
 	{
@@ -1658,6 +1798,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1050,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"방어도를 +2 얻고, 이번 턴에 내 영웅이 공격력을 +2 얻습니다."
 	}, 
 	{
@@ -1669,6 +1810,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40465,
 		"bundle":"도적_무법,전사_돌진!,전사_해적",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"해적",
@@ -1683,6 +1825,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2715,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"해적",
@@ -1697,6 +1840,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41566,
 		"bundle":"드루이드_회복,성기사_치유,주술사_복원",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"죽음의 메아리: 각 영웅의 생명력을 4씩 회복시킵니다."
@@ -1710,6 +1854,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1090,
 		"bundle":"흑마법사_작은 군단,흑마법사_피",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"악마",
@@ -1724,6 +1869,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42011,
 		"bundle":"도적_도둑",
+		"type":"주문",
 		"text":"상대편 직업의 카드를 1장 발견합니다."
 	}, 
 	{
@@ -1735,6 +1881,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1084,
 		"bundle":"마법사_비전,마법사_방어",
+		"type":"주문",
 		"text":"0/2 도발 하수인을 둘 소환합니다."
 	}, 
 	{
@@ -1746,6 +1893,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":922,
 		"bundle":"성기사_기본",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"text":"도발"
@@ -1759,6 +1907,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2286,
 		"bundle":"사제_용 사제",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"용족",
@@ -1773,6 +1922,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":606,
 		"bundle":"사냥꾼_작은 야수들,사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"야수",
@@ -1787,6 +1937,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46436,
 		"bundle":"보물",
+		"type":"하수인",
 		"attack":3,
 		"health":15,
 		"text":"도발, 이 하수인은 적을 공격할 수 없습니다. 이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
@@ -1800,6 +1951,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47042,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"전설 무기를 하나 발견하여 장착합니다."
 	}, 
 	{
@@ -1811,6 +1963,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47893,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"하수인 하나를 선택합니다. 내 손에 있는 하수인들이 선택한 하수인으로 변신합니다."
 	}, 
 	{
@@ -1822,6 +1975,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":70,
 		"bundle":"성기사_기본,성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 공격력을 +3 부여합니다."
 	}, 
 	{
@@ -1833,6 +1987,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40696,
 		"bundle":"도적_회피",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"연계: 아군 하수인 하나를 내 손으로 다시 가져옵니다."
@@ -1846,6 +2001,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45529,
 		"bundle":"도적_묘수",
+		"type":"주문",
 		"text":"비밀: 내 영웅을 공격하는 하수인이 자신의 양옆에 있는 하수인 중 하나를 공격하게 됩니다."
 	}, 
 	{
@@ -1857,6 +2013,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2093,
 		"bundle":"흑마법사_파괴",
+		"type":"주문",
 		"text":"피해를 3 줍니다."
 	}, 
 	{
@@ -1868,6 +2025,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1074,
 		"bundle":"전사_박살!",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2 줍니다. 그 하수인이 생존하면, 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -1879,6 +2037,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":404,
 		"bundle":"주술사_선견자",
+		"type":"주문",
 		"text":"하수인 하나에게 \"죽음의 메아리: 이 하수인을 다시 소환함\" 능력을 부여합니다."
 	}, 
 	{
@@ -1890,6 +2049,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2596,
 		"bundle":"사제_용 사제",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력 +1과 도발을 얻습니다."
@@ -1903,6 +2063,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1988,
 		"bundle":"도적_검투사",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"기계",
@@ -1917,6 +2078,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39160,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 주문을 시전한 후에, 은신 능력이 있는 4/2 표범을 1마리 소환합니다."
 	}, 
 	{
@@ -1928,6 +2090,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2172,
 		"bundle":"흑마법사_작은 군단,흑마법사_생명력 흡수",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"race":"악마",
@@ -1942,6 +2105,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2641,
 		"bundle":"사냥꾼_비밀,사냥꾼_방어",
+		"type":"주문",
 		"text":"비밀: 내 영웅이 공격받은 후에 도발 능력이 있는 3/3 곰을 1마리 소환합니다."
 	}, 
 	{
@@ -1953,6 +2117,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41363,
 		"bundle":"사냥꾼_야수 훈련",
+		"type":"주문",
 		"text":"내 영웅 능력이 '야수 1마리에게 +2/+2를 부여합니다.'로 바뀝니다."
 	}, 
 	{
@@ -1964,6 +2129,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1014,
 		"bundle":"사제_주문 활용",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"내 주문이 시전된 후에, 모든 하수인에게 피해를 1 줍니다."
@@ -1977,6 +2143,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1108,
 		"bundle":"전사_광전사",
+		"type":"주문",
 		"text":"피해를 받은 하수인 하나에게 +3/+3을 부여합니다."
 	}, 
 	{
@@ -1988,6 +2155,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41176,
 		"bundle":"사제_정령,사제_주문 활용",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"정령",
@@ -2002,6 +2170,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":985,
 		"bundle":"사냥꾼_기본,사냥꾼_작은 야수들,흑마법사_무리",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -2016,6 +2185,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2563,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"적 하수인 하나를 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -2027,6 +2197,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45520,
 		"bundle":"도적_회피",
+		"type":"주문",
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 내 손으로 다시 가져오고 비용을 (2) 감소시킵니다."
 	}, 
 	{
@@ -2038,6 +2209,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41406,
 		"bundle":"전사_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":6,
 		"text":"도발, 전투의 함성: 상대편에게 1/1 랩터를 3마리 소환해 줍니다."
@@ -2051,6 +2223,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42676,
 		"bundle":"주술사_냉기",
+		"type":"주문",
 		"text":"하수인 하나에게 +3/+3을 부여하고 빙결 상태로 만듭니다."
 	}, 
 	{
@@ -2062,6 +2235,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1124,
 		"bundle":"드루이드_추가 마나",
+		"type":"주문",
 		"text":"빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
@@ -2073,6 +2247,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1940,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"기계",
@@ -2087,6 +2262,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2049,
 		"bundle":"도적_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"은신"
@@ -2100,6 +2276,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45269,
 		"bundle":"마법사_강력한 주문",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -2114,6 +2291,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1928,
 		"bundle":"마법사_냉기",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"기계",
@@ -2128,6 +2306,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1786,
 		"bundle":"흑마법사_희생",
+		"type":"하수인",
 		"attack":0,
 		"health":2,
 		"text":"죽음의 메아리: 4/4 네루비안을 하나 소환합니다."
@@ -2141,6 +2320,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1091,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 내 영웅을 공격하는 적이 다른 무작위 캐릭터 하나를 공격하게 됩니다."
 	}, 
 	{
@@ -2152,6 +2332,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2782,
 		"bundle":"드루이드_추가 마나",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 빈 마나 수정을 1개 획득합니다. 죽음의 메아리: 마나 수정을 1개 파괴합니다."
@@ -2165,6 +2346,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1073,
 		"bundle":"흑마법사_기본,흑마법사_무리",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"내 하수인이 소환된 후에, 무작위 적 하나에게 피해를 1 줍니다."
@@ -2178,6 +2360,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45930,
 		"bundle":"드루이드_자연의 방어",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"야수",
@@ -2192,6 +2375,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43505,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"방어도를 +10 얻습니다. 상대편 손에 있는 하수인들의 비용이 (2) 감소합니다."
 	}, 
 	{
@@ -2204,6 +2388,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46423,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"모든 덱을 한 데 섞은 후, 각 플레이어들이 반씩 나누어 가집니다. 내 카드의 비용이 (2) 감소합니다."
 	}, 
 	{
@@ -2215,6 +2400,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42525,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 내 하수인이 공격받으면, 독성 능력이 있는 2/3 코브라를 1마리 소환합니다."
 	}, 
 	{
@@ -2226,6 +2412,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":573,
 		"bundle":"도적_암살",
+		"type":"주문",
 		"text":"피해를 1 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -2237,6 +2424,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43237,
 		"bundle":"도적_검투사",
+		"type":"하수인",
 		"attack":3,
 		"health":1,
 		"text":"전투의 함성: 내 덱에서 무기를 하나 뽑습니다."
@@ -2250,6 +2438,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43359,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 적이 내 영웅을 공격할 때, 대신 맞아주는 비용이 3인 하수인 하나를 소환합니다."
 	}, 
 	{
@@ -2261,6 +2450,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46031,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 적 하수인 하나당 방어도를 +2 얻습니다."
@@ -2274,6 +2464,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46007,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"죽음의 메아리: 은빛 성기사단 신병 셋을 내 손으로 가져옵니다."
@@ -2287,6 +2478,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":785,
 		"bundle":"전사_광전사,전사_모두의 아픔,전사_박살!",
+		"type":"주문",
 		"text":"피해를 받은 적 하수인 하나를 처치합니다."
 	}, 
 	{
@@ -2298,6 +2490,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":614,
 		"bundle":"마법사_기본,마법사_마법 친구들",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"내 주문의 비용이 (1) 감소합니다."
@@ -2311,6 +2504,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42766,
 		"bundle":"전사_소집",
+		"type":"주문",
 		"text":"내 손에 있는 카드를 모두 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -2322,6 +2516,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42648,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2 줍니다. 그 하수인이 생존하면, 독성을 부여합니다."
 	}, 
 	{
@@ -2333,6 +2528,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":976,
 		"bundle":"성기사_멀록,주술사_기본,주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"멀록",
@@ -2347,6 +2543,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39767,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 내 영웅에게 비밀이 걸려 있으면, 피해를 3 줍니다."
@@ -2360,6 +2557,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42471,
 		"bundle":"흑마법사_파괴",
+		"type":"주문",
 		"text":"모든 하수인에게 피해를 1 줍니다. 하나라도 죽으면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
@@ -2371,6 +2569,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42651,
 		"bundle":"드루이드_무리의 힘,드루이드_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"text":"선택 - 1/2 독성 하수인 또는 1/5 도발 하수인으로 변신합니다."
@@ -2384,6 +2583,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43373,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 천상의 보호막을 부여합니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -2395,6 +2595,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41414,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"피해를 받은 모든 하수인에게 피해를 3 줍니다."
 	}, 
 	{
@@ -2406,6 +2607,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1783,
 		"bundle":"사냥꾼_비밀,마법사_잃어버린 비밀,성기사_비밀",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"죽음의 메아리: 내 덱에 있는 비밀 카드 1장을 사용합니다."
@@ -2419,6 +2621,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41245,
 		"bundle":"주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"멀록",
@@ -2433,6 +2636,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2878,
 		"bundle":"사제_최후의 의식",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"text":"전투의 함성: 죽음의 메아리 카드를 1장 발견합니다."
@@ -2446,6 +2650,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":596,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"text":"아군 하수인이 피해를 받을 때마다 방어도를 +1 얻습니다."
@@ -2459,6 +2664,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":282,
 		"bundle":"도적_묘수",
+		"type":"주문",
 		"text":"적 하수인이 자신의 공격력만큼 양옆의 하수인들을 공격하게 만듭니다."
 	}, 
 	{
@@ -2470,6 +2676,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":455,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 내 하수인이 공격받으면, 1/1 뱀을 3마리 소환합니다."
 	}, 
 	{
@@ -2481,6 +2688,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38724,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 4 줍니다. 과부하: (1)"
 	}, 
 	{
@@ -2492,6 +2700,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2901,
 		"bundle":"사냥꾼_추적자",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"야수",
@@ -2506,6 +2715,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2026,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"기계",
@@ -2520,6 +2730,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41871,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"모든 하수인에게 부패를 시전합니다. 내 턴이 시작될 때, 그 하수인들을 처치합니다."
 	}, 
 	{
@@ -2531,6 +2742,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2298,
 		"bundle":"사제_부활",
+		"type":"주문",
 		"text":"이번 게임에서 죽은 아군 하수인 하나를 무작위로 소환합니다."
 	}, 
 	{
@@ -2542,6 +2754,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43322,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 8 줍니다. 과부하: (3)"
 	}, 
 	{
@@ -2553,6 +2766,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1008,
 		"bundle":"주술사_기본,주술사_토템",
+		"type":"하수인",
 		"attack":0,
 		"health":3,
 		"race":"토템",
@@ -2567,6 +2781,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41162,
 		"bundle":"마법사_정령",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"정령",
@@ -2581,6 +2796,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1808,
 		"bundle":"전사_모두의 아픔",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"도발 죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
@@ -2594,6 +2810,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41524,
 		"bundle":"마법사_정령",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"정령",
@@ -2608,6 +2825,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1929,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"무작위 하수인 하나를 내 손으로 가져옵니다. 그 하수인의 비용이 (3) 감소합니다."
 	}, 
 	{
@@ -2619,6 +2837,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":999,
 		"bundle":"사냥꾼_무기,도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"해적",
@@ -2633,6 +2852,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41567,
 		"bundle":"흑마법사_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":6,
 		"text":"도발, 전투의 함성: 상대편이 손에서 무작위 하수인 하나를 소환합니다."
@@ -2646,6 +2866,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41153,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 내 덱에서 비밀 카드를 1장 뽑습니다."
@@ -2659,6 +2880,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40697,
 		"bundle":"도적_비취 연꽃",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"은신 죽음의 메아리: 비취 골렘을 하나 소환합니다."
@@ -2672,6 +2894,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40529,
 		"bundle":"주술사_비취 연꽃",
+		"type":"무기",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 비취 골렘을 하나 소환합니다. 과부하: (1)"
@@ -2685,6 +2908,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40698,
 		"bundle":"도적_비취 연꽃",
+		"type":"주문",
 		"text":"피해를 2 줍니다. 연계: 비취 골렘을 하나 소환합니다."
 	}, 
 	{
@@ -2696,6 +2920,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":519,
 		"bundle":"사냥꾼_비밀,사냥꾼_방어",
+		"type":"주문",
 		"text":"비밀: 적 하수인이 공격하면, 그 하수인을 주인의 손으로 돌려보내고 비용을 (2) 증가시킵니다."
 	}, 
 	{
@@ -2706,7 +2931,8 @@ var rewardList = [
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":42560,
-		"bundle":"도적_도적_저승사자",
+		"bundle":"도적_저승사자",
+		"type":"주문",
 		"text":"카드를 1장 뽑습니다. 뽑은 카드가 죽음의 메아리 카드면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
@@ -2718,6 +2944,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38407,
 		"bundle":"마법사_냉기",
+		"type":"주문",
 		"text":"빙결 상태인 하수인을 하나 처치합니다."
 	}, 
 	{
@@ -2729,6 +2956,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2514,
 		"bundle":"주술사_과부하,주술사_선견자",
+		"type":"주문",
 		"text":"카드를 2장 뽑습니다. 과부하: (2)"
 	}, 
 	{
@@ -2740,6 +2968,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":896,
 		"bundle":"사냥꾼_추적자",
+		"type":"주문",
 		"text":"모든 하수인이 은신을 잃습니다. 적의 모든 비밀을 없앱니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -2751,6 +2980,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":891,
 		"bundle":"흑마법사_기본,흑마법사_도발,흑마법사_큰손",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 양옆의 하수인들에게 도발을 부여합니다."
@@ -2764,6 +2994,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":291,
 		"bundle":"성기사_기본",
+		"type":"주문",
 		"text":"생명력을 6 회복시킵니다."
 	}, 
 	{
@@ -2775,6 +3006,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47038,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"하수인을 셋 소집합니다."
 	}, 
 	{
@@ -2786,6 +3018,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2766,
 		"bundle":"도적_탐욕",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"이 하수인이 영웅을 공격할 때마다 동전을 내 손으로 가져옵니다."
@@ -2799,6 +3032,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2260,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 내 손에 카드가 없으면, 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -2810,6 +3044,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2011,
 		"bundle":"사냥꾼_무기",
+		"type":"무기",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 무작위 아군 하수인 하나에게 공격력을 +1 부여합니다."
@@ -2823,6 +3058,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41139,
 		"bundle":"성기사_비밀,성기사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"멀록",
@@ -2837,6 +3073,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40339,
 		"bundle":"사냥꾼_밀수업자",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
 	}, 
 	{
@@ -2848,6 +3085,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2484,
 		"bundle":"사냥꾼_추적자",
+		"type":"주문",
 		"text":"이번 턴에 내가 주문을 시전할 때마다 사냥꾼 카드 1장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
@@ -2859,6 +3097,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":790,
 		"bundle":"전사_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"격노: 공격력 +3"
@@ -2872,6 +3111,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38859,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
@@ -2885,6 +3125,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2053,
 		"bundle":"성기사_도발,주술사_기계",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"기계",
@@ -2899,6 +3140,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2758,
 		"bundle":"전사_용의 심장",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 내 손에 용족이 있으면, 공격력 +1과 돌진을 얻습니다."
@@ -2912,6 +3154,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42574,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"내 턴이 끝날 때, 다른 무작위 아군 하수인 하나에게 +1/+1을 부여합니다."
@@ -2925,6 +3168,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41169,
 		"bundle":"사제_주문 활용",
+		"type":"주문",
 		"text":"내 덱에서 주문을 하나 발견합니다."
 	}, 
 	{
@@ -2936,6 +3180,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43121,
 		"bundle":"흑마법사_작은 군단,흑마법사_도발,흑마법사_피",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"악마",
@@ -2950,6 +3195,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":503,
 		"bundle":"드루이드_기본,드루이드_무리의 힘",
+		"type":"주문",
 		"text":"선택 - 내 하수인들에게 +1/+1을 부여합니다. 또는 3/2 표범을 1마리 소환합니다."
 	}, 
 	{
@@ -2961,6 +3207,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2096,
 		"bundle":"드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"기계",
@@ -2975,6 +3222,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42469,
 		"bundle":"성기사_정의",
+		"type":"주문",
 		"text":"하수인 하나의 공격력과 생명력을 3으로 만듭니다."
 	}, 
 	{
@@ -2986,6 +3234,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38447,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 무작위로 카드를 1장 버립니다. 죽음의 메아리: 카드를 1장 뽑습니다."
@@ -2999,6 +3248,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1367,
 		"bundle":"사제_기본,사제_묘수",
+		"type":"주문",
 		"text":"공격력이 3 이하인 하수인을 하나 처치합니다."
 	}, 
 	{
@@ -3009,7 +3259,8 @@ var rewardList = [
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":39026,
-		"bundle":"도적_기본,도적_도적_저승사자,도적_도둑",
+		"bundle":"도적_기본,도적_저승사자,도적_도둑",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"죽음의 메아리: 상대편 직업의 카드 1장을 무작위로 내 손에 가져옵니다."
@@ -3023,6 +3274,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42678,
 		"bundle":"주술사_냉기",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"멀록",
@@ -3037,6 +3289,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42763,
 		"bundle":"주술사_멀록",
+		"type":"주문",
 		"text":"내 덱에서 멀록을 2마리 뽑습니다."
 	}, 
 	{
@@ -3048,6 +3301,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":662,
 		"bundle":"마법사_기본,마법사_냉기",
+		"type":"주문",
 		"text":"캐릭터 하나에게 피해를 3 주고 빙결 상태로 만듭니다."
 	}, 
 	{
@@ -3059,6 +3313,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1022,
 		"bundle":"성기사_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 아군 하수인 하나에게 천상의 보호막을 부여합니다."
@@ -3072,6 +3327,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41876,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -3086,6 +3342,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41207,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"주문",
 		"text":"피해를 1 주는 칼날꽃잎 카드 2장을 내 손으로 가져옵니다."
 	}, 
 	{
@@ -3097,6 +3354,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2545,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"내 영웅 능력의 피해량이 1 증가합니다."
@@ -3110,6 +3368,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1007,
 		"bundle":"전사_기본,전사_박살!",
+		"type":"주문",
 		"text":"이번 턴에 내 영웅이 공격력을 +4 얻습니다."
 	}, 
 	{
@@ -3121,6 +3380,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38265,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 과부하된 내 마나 수정이 모두 잠금 해제됩니다."
@@ -3134,6 +3394,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42992,
 		"bundle":"사제_묘수,사제_암흑",
+		"type":"주문",
 		"text":"생명력 흡수 모든 하수인에게 피해를 1 줍니다."
 	}, 
 	{
@@ -3145,6 +3406,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42658,
 		"bundle":"흑마법사_생명력 흡수",
+		"type":"주문",
 		"text":"생명력 흡수 하수인 하나에게 피해를 2 줍니다."
 	}, 
 	{
@@ -3156,6 +3418,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42998,
 		"bundle":"전사_무기",
+		"type":"주문",
 		"text":"내 덱에서 무기를 둘 뽑습니다."
 	}, 
 	{
@@ -3167,6 +3430,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41318,
 		"bundle":"사냥꾼_작은 야수들,성기사_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"야수",
@@ -3181,6 +3445,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2918,
 		"bundle":"사냥꾼_작은 야수들",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"야수",
@@ -3195,6 +3460,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2635,
 		"bundle":"사냥꾼_추적자",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"야수",
@@ -3209,6 +3475,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1990,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":4,
 		"health":1,
 		"race":"해적",
@@ -3223,6 +3490,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":609,
 		"bundle":"사제_기본",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"용족",
@@ -3237,6 +3505,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2289,
 		"bundle":"주술사_정기,주술사_과부하",
+		"type":"주문",
 		"text":"피해를 2 줍니다. 과부하된 내 마나 수정이 모두 잠금 해제됩니다."
 	}, 
 	{
@@ -3248,6 +3517,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41866,
 		"bundle":"성기사_수많은 축복",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"멀록",
@@ -3262,6 +3532,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1781,
 		"bundle":"드루이드_무리의 힘,사냥꾼_작은 야수들,사냥꾼_소환,사제_최후의 의식,흑마법사_무리",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"야수",
@@ -3276,6 +3547,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1809,
 		"bundle":"주술사_선견자",
+		"type":"주문",
 		"text":"하수인 하나를 처치하고, 그 하수인을 최대 생명력으로 다시 소환합니다."
 	}, 
 	{
@@ -3287,6 +3559,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38900,
 		"bundle":"마법사_마법 친구들",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"주문 공격력 +1, 내 주문이 시전된 후에, 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
@@ -3300,6 +3573,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38337,
 		"bundle":"드루이드_밀림왕",
+		"type":"주문",
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 대상이 야수면, 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -3311,6 +3585,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39481,
 		"bundle":"사냥꾼_작은 야수들,사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"야수",
@@ -3325,6 +3600,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2777,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"악마",
@@ -3339,6 +3615,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":285,
 		"bundle":"전사_기본,전사_광전사",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 하수인 하나에게 피해를 1 주고 공격력을 +2 부여합니다."
@@ -3352,6 +3629,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":814,
 		"bundle":"사냥꾼_사격,사냥꾼_비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인에게 피해를 4 줍니다."
 	}, 
 	{
@@ -3363,6 +3641,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":251,
 		"bundle":"사냥꾼_추적자,도적_탐욕",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"text":"죽음의 메아리: 카드를 1장 뽑습니다."
@@ -3376,6 +3655,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1135,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":0,
 		"health":4,
 		"text":"각 플레이어가 주문을 시전할 때마다 동일한 주문을 다른 플레이어의 손에 추가합니다."
@@ -3389,6 +3669,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":400,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"피해를 받은 아군 캐릭터의 수만큼 카드를 뽑습니다."
 	}, 
 	{
@@ -3400,6 +3681,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":904,
 		"bundle":"도적_암살",
+		"type":"주문",
 		"text":"피해를 2 줍니다. 연계: 대신 피해를 4 줍니다."
 	}, 
 	{
@@ -3411,6 +3693,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":415,
 		"bundle":"도적_회피",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 전장의 아군 하수인 하나를 내 손으로 다시 가져옵니다."
@@ -3424,6 +3707,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":545,
 		"bundle":"사제_기본",
+		"type":"주문",
 		"text":"적 영웅에게 피해를 5 줍니다."
 	}, 
 	{
@@ -3435,6 +3719,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1991,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"주문",
 		"text":"내 하수인들의 죽음의 메아리 능력을 모두 발동시킵니다."
 	}, 
 	{
@@ -3446,6 +3731,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46412,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"적 하수인 하나를 가져옵니다. 그 하수인을 내 미궁 덱에 추가합니다."
 	}, 
 	{
@@ -3457,6 +3743,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1026,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"이번 턴에는 내 하수인들의 생명력이 1 미만으로 내려가지 않습니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -3468,6 +3755,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42665,
 		"bundle":"도적_검투사",
+		"type":"주문",
 		"text":"내 무기에 생명력 흡수를 부여합니다."
 	}, 
 	{
@@ -3479,6 +3767,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":836,
 		"bundle":"드루이드_현명한 선택,드루이드_조화",
+		"type":"주문",
 		"text":"선택 - 하수인 하나에게 피해를 3 줍니다. 또는 피해를 1 주고 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -3490,6 +3779,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1361,
 		"bundle":"사제_수양",
+		"type":"주문",
 		"text":"하수인 하나의 생명력을 2배 증가시킵니다."
 	}, 
 	{
@@ -3501,6 +3791,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1281,
 		"bundle":"사냥꾼_소환",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -3515,6 +3806,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2071,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":1,
 		"health":2,
 		"race":"기계",
@@ -3529,6 +3821,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1936,
 		"bundle":"사제_묘수",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 이번 턴에 하수인 하나에게 공격력을 -2 부여합니다."
@@ -3542,6 +3835,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41350,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2 주고 그 양옆의 하수인들에게 피해를 1 줍니다."
 	}, 
 	{
@@ -3553,6 +3847,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1133,
 		"bundle":"도적_암살",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"은신 독성"
@@ -3566,6 +3861,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2783,
 		"bundle":"드루이드_밀림왕",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"text":"선택 - 2/1 돌진 하수인 또는 3/2 은신 하수인으로 변신합니다."
@@ -3579,6 +3875,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43277,
 		"bundle":"전사_방어도",
+		"type":"무기",
 		"attack":0,
 		"health":2,
 		"text":"이 무기의 공격력은 내 방어도와 같습니다. 영웅을 공격할 수 없습니다."
@@ -3592,6 +3889,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43329,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 기본 토템을 하나 선택하여 소환합니다."
@@ -3605,6 +3903,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46103,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"천상의 보호막 주문 공격력 +1"
@@ -3618,6 +3917,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47036,
 		"bundle":"보물",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"내 영웅이 공격한 후에 빈 마나 수정을 1개 획득합니다."
@@ -3631,6 +3931,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":3001,
 		"bundle":"사냥꾼_추적자",
+		"type":"주문",
 		"text":"하수인 하나에게 +1/+1과 \"죽음의 메아리: 탐험가의 모자를 내 손으로 가져옴\" 능력을 부여합니다."
 	}, 
 	{
@@ -3642,6 +3943,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41496,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"주문을 하나 발견합니다. 그 카드의 비용이 (2) 감소합니다."
 	}, 
 	{
@@ -3653,6 +3955,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41252,
 		"bundle":"드루이드_기본,드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 공격력이 5 이상인 무작위 하수인 하나를 내 손으로 가져옵니다."
@@ -3666,6 +3969,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2610,
 		"bundle":"주술사_과부하,주술사_토템",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"토템",
@@ -3680,6 +3984,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40694,
 		"bundle":"주술사_변신",
+		"type":"주문",
 		"text":"모든 적 하수인을 비용이 (1) 낮은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
@@ -3691,6 +3996,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40684,
 		"bundle":"사냥꾼_밀수업자",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 내 손에 있는 무작위 야수 1마리에게 +1/+1을 부여합니다."
@@ -3704,6 +4010,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":138,
 		"bundle":"사냥꾼_방어,마법사_기본,마법사_방어,흑마법사_파괴,흑마법사_희생",
+		"type":"하수인",
 		"attack":0,
 		"health":7,
 		"text":"내 턴이 시작될 때, 모든 하수인을 처치합니다."
@@ -3717,6 +4024,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2006,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"피해를 3-6 줍니다. 과부하: (1)"
 	}, 
 	{
@@ -3728,6 +4036,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41358,
 		"bundle":"사냥꾼_작은 야수들,사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"야수",
@@ -3742,6 +4051,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2304,
 		"bundle":"도적_묘수,도적_탈진",
+		"type":"주문",
 		"text":"하수인 하나를 선택합니다. 그 하수인을 셋 복사하여 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -3753,6 +4063,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":756,
 		"bundle":"성기사_기본,성기사_정의",
+		"type":"주문",
 		"text":"모든 하수인의 생명력을 1로 바꿉니다."
 	}, 
 	{
@@ -3764,6 +4075,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":585,
 		"bundle":"사냥꾼_기본,사냥꾼_비밀,사냥꾼_방어",
+		"type":"주문",
 		"text":"비밀: 내 영웅이 공격받으면, 모든 적에게 피해를 2 줍니다."
 	}, 
 	{
@@ -3775,6 +4087,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":960,
 		"bundle":"주술사_기본",
+		"type":"무기",
 		"attack":2,
 		"health":3,
 		"text":"과부하: (1)"
@@ -3788,6 +4101,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":739,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"멀록",
@@ -3802,6 +4116,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":284,
 		"bundle":"도적_회피",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 카드를 1장 뽑습니다."
@@ -3815,6 +4130,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42824,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 \"죽음의 메아리: 이 하수인을 생명력이 1인 상태로 다시 소환합니다.\" 능력을 부여합니다."
 	}, 
 	{
@@ -3826,6 +4142,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46424,
 		"bundle":"보물",
+		"type":"무기",
 		"attack":1,
 		"health":4,
 		"text":"독성, 광풍 (한 턴에 4번 공격 가능.)"
@@ -3839,6 +4156,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41872,
 		"bundle":"흑마법사_피",
+		"type":"주문",
 		"text":"이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다."
 	}, 
 	{
@@ -3850,6 +4168,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43414,
 		"bundle":"마법사_정령",
+		"type":"주문",
 		"text":"무작위 마법사 주문 하나를 내 손으로 가져옵니다. (정령을 2장 내면 강화됩니다.)"
 	}, 
 	{
@@ -3861,6 +4180,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43382,
 		"bundle":"성기사_치유",
+		"type":"주문",
 		"text":"도발 능력이 있는 2/2 영혼을 하나 소환합니다. (생명력을 3 회복하면 강화됩니다.)"
 	}, 
 	{
@@ -3872,6 +4192,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2043,
 		"bundle":"도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"내 해적이 소환된 후에, 무작위 적 하나에게 피해를 2 줍니다."
@@ -3885,6 +4206,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40567,
 		"bundle":"성기사_도움의 손길",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
@@ -3897,7 +4219,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":749,
-		"bundle":"드루이드_조화,마법사_마법 친구들,도적_도적_저승사자,도적_탐욕",
+		"bundle":"드루이드_조화,마법사_마법 친구들,도적_저승사자,도적_탐욕",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"주문 공격력 +1 죽음의 메아리: 카드를 1장 뽑습니다."
@@ -3911,6 +4234,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40482,
 		"bundle":"전사_떡대들",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 내 손과 덱에 있는 모든 무기에 공격력을 +1 부여합니다."
@@ -3924,6 +4248,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39712,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 1 줍니다. 비용이 1인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
@@ -3935,6 +4260,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":461,
 		"bundle":"도적_탈진",
+		"type":"주문",
 		"text":"적 하수인 하나를 상대편의 손으로 돌려보냅니다."
 	}, 
 	{
@@ -3946,6 +4272,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2007,
 		"bundle":"주술사_복원",
+		"type":"하수인",
 		"attack":0,
 		"health":3,
 		"race":"토템",
@@ -3960,6 +4287,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39554,
 		"bundle":"성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"전투의 함성: 내 손에 용족이 있으면, 용족을 하나 발견합니다."
@@ -3973,6 +4301,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38864,
 		"bundle":"도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"text":"도발 전투의 함성: 내 크툰에게 도발을 부여합니다. (어디에 있든)"
@@ -3986,6 +4315,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":940,
 		"bundle":"전사_박살!",
+		"type":"주문",
 		"text":"무작위 적 하수인 둘에게 피해를 2 줍니다."
 	}, 
 	{
@@ -3997,6 +4327,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2005,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"기계",
@@ -4011,6 +4342,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":45535,
 		"bundle":"도적_묘수",
+		"type":"주문",
 		"text":"비밀: 내 영웅이 피해를 받은 후에, 이번 턴에 면역 상태가 됩니다."
 	}, 
 	{
@@ -4022,6 +4354,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41927,
 		"bundle":"마법사_정령",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"정령",
@@ -4036,6 +4369,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1117,
 		"bundle":"도적_기본,도적_암살",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"연계: 피해를 2 줍니다."
@@ -4049,6 +4383,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40401,
 		"bundle":"드루이드_추가 마나",
+		"type":"주문",
 		"text":"아군 하수인 하나당 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
@@ -4060,6 +4395,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38329,
 		"bundle":"사냥꾼_소환",
+		"type":"주문",
 		"text":"내 하수인들에게 \"죽음의 메아리: 무작위 야수 카드 1장을 내 손으로 가져옴\" 능력을 부여합니다."
 	}, 
 	{
@@ -4071,6 +4407,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42391,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"아군 하수인 하나를 선택합니다. 그 하수인과 무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
@@ -4082,6 +4419,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2729,
 		"bundle":"전사_기본,전사_방어도,전사_박살!",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 방어도를 +3 얻습니다."
 	}, 
 	{
@@ -4093,6 +4431,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2638,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"선택한 하수인과 그 양옆의 하수인들에게 피해를 2 줍니다."
 	}, 
 	{
@@ -4104,6 +4443,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2004,
 		"bundle":"주술사_기계",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"죽음의 메아리: 무작위 아군 기계 하나에게 +2/+2를 부여합니다."
@@ -4117,6 +4457,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1243,
 		"bundle":"사냥꾼_기본,사냥꾼_소환,사냥꾼_방어",
+		"type":"주문",
 		"text":"적 하수인 하나당 돌진 능력이 있는 1/1 사냥개를 1마리씩 소환합니다."
 	}, 
 	{
@@ -4128,6 +4469,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":195,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 복사하여 소환합니다."
 	}, 
 	{
@@ -4139,6 +4481,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":654,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"하수인이 피해를 받을 때마다 공격력을 +1 얻습니다."
@@ -4152,6 +4495,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2408,
 		"bundle":"성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"전투의 함성: 내 손에 용족이 있으면, +1/+1을 얻습니다."
@@ -4165,6 +4509,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40681,
 		"bundle":"사냥꾼_밀수업자",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"죽음의 메아리: 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
@@ -4178,6 +4523,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40605,
 		"bundle":"마법사_영웅 능력,성기사_전설,사제_묘수",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내 주문이 시전된 후에, 내 영웅 능력을 다시 사용할 수 있습니다."
@@ -4191,6 +4537,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42596,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"생명력 흡수"
@@ -4204,6 +4551,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46403,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 황금 카드로 복사하여 내 손으로 가져옵니다."
@@ -4217,6 +4565,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2579,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"은신 천상의 보호막"
@@ -4230,6 +4579,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40911,
 		"bundle":"전사_기본",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"도발"
@@ -4243,6 +4593,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1659,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"이 하수인이 피해를 받을 때마다 카드를 1장 뽑습니다."
@@ -4256,6 +4607,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42711,
 		"bundle":"사냥꾼_작은 야수들",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"race":"야수",
@@ -4270,6 +4622,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2634,
 		"bundle":"사냥꾼_추적자",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"race":"야수",
@@ -4284,6 +4637,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41304,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 아군 하수인 하나의 죽음의 메아리 능력을 발동시킵니다."
@@ -4297,6 +4651,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46461,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"악마",
@@ -4311,6 +4666,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1221,
 		"bundle":"흑마법사_희생",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"악마",
@@ -4325,6 +4681,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38578,
 		"bundle":"도적_암살",
+		"type":"주문",
 		"text":"피해를 받지 않은 캐릭터 하나에게 피해를 5 줍니다."
 	}, 
 	{
@@ -4336,6 +4693,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45338,
 		"bundle":"도적_검투사",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 이번 턴에 내 영웅이 면역 상태가 됩니다."
@@ -4349,6 +4707,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42707,
 		"bundle":"사냥꾼_추적자",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 내 덱에서 하수인을 하나 발견합니다."
@@ -4362,6 +4721,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1784,
 		"bundle":"드루이드_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"은신. 내 턴이 시작될 때, +1/+1을 얻습니다."
@@ -4375,6 +4735,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38530,
 		"bundle":"전사_모두의 아픔",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 다른 모든 하수인에게 피해를 1 줍니다."
@@ -4388,6 +4749,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2018,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"무작위 하수인 하나에게 피해를 1 줍니다. 하수인 하나가 죽을 때까지 반복됩니다."
 	}, 
 	{
@@ -4399,6 +4761,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":680,
 		"bundle":"도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"해적",
@@ -4413,6 +4776,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1651,
 		"bundle":"드루이드_회복,마법사_기본,성기사_기본",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 생명력을 3 회복시킵니다."
@@ -4426,6 +4790,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41086,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":5,
 		"health":1,
 		"race":"야수",
@@ -4440,6 +4805,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41259,
 		"bundle":"흑마법사_희생",
+		"type":"하수인",
 		"attack":0,
 		"health":3,
 		"text":"죽음의 메아리: 5/5 데빌사우루스를 1마리 소환합니다."
@@ -4453,6 +4819,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2770,
 		"bundle":"도적_도둑",
+		"type":"주문",
 		"text":"상대편 직업의 카드 2장을 무작위로 내 손에 가져옵니다."
 	}, 
 	{
@@ -4464,6 +4831,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41834,
 		"bundle":"도적_검투사",
+		"type":"주문",
 		"text":"내 무기에 독성을 부여합니다."
 	}, 
 	{
@@ -4475,6 +4843,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1662,
 		"bundle":"사냥꾼_기본,사냥꾼_비밀,사냥꾼_무기",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"내 비밀이 밝혀질 때마다 내구도를 +1 얻습니다."
@@ -4488,6 +4857,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43358,
 		"bundle":"사냥꾼_작은 야수들",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"야수",
@@ -4502,6 +4872,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46088,
 		"bundle":"사냥꾼_무기,도적_검투사,전사_무기",
+		"type":"하수인",
 		"attack":1,
 		"health":3,
 		"text":"전투의 함성: 파괴된 내 무기 중 하나를 내 손으로 다시 가져옵니다."
@@ -4515,6 +4886,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42750,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":2,
 		"health":8,
 		"text":"도발 과부하: (3)"
@@ -4528,6 +4900,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41875,
 		"bundle":"흑마법사_피",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"야수",
@@ -4542,6 +4915,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2587,
 		"bundle":"도적_묘수",
+		"type":"주문",
 		"text":"상대편의 덱에 잠복 카드 3장을 섞어 넣습니다. 상대편이 잠복 카드를 뽑으면, 내가 4/4 네루비안을 하나 소환합니다."
 	}, 
 	{
@@ -4553,6 +4927,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46437,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"피해를 8씩 주는 화염구 세 개를 무작위 적들에게 발사합니다."
 	}, 
 	{
@@ -4564,6 +4939,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2922,
 		"bundle":"드루이드_기본,드루이드_밀림왕",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"야수",
@@ -4578,6 +4954,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41158,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"비밀: 상대편이 주문을 시전하면, 그 주문을 복사하여 내 손으로 가져옵니다. 그 주문의 비용이 (0)이 됩니다."
 	}, 
 	{
@@ -4589,6 +4966,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":513,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":0,
 		"health":3,
 		"race":"토템",
@@ -4603,6 +4981,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":113,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 주문을 시전하면, 차단합니다."
 	}, 
 	{
@@ -4614,6 +4993,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39492,
 		"bundle":"사냥꾼_비밀",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내 비밀의 비용이 (0)이 됩니다."
@@ -4627,6 +5007,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1063,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"멀록",
@@ -4641,6 +5022,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43193,
 		"bundle":"마법사_거인 군대",
+		"type":"주문",
 		"text":"내 손에 있는 가장 낮은 비용의 하수인을 복사합니다."
 	}, 
 	{
@@ -4652,6 +5034,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46026,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"방어도를 모두 소모합니다. 소모한만큼 모든 하수인에게 피해를 줍니다."
 	}, 
 	{
@@ -4664,6 +5047,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47041,
 		"bundle":"보물",
+		"type":"하수인",
 		"attack":5,
 		"health":1,
 		"race":"정령",
@@ -4678,6 +5062,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":921,
 		"bundle":"사냥꾼_기본",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"race":"야수",
@@ -4692,6 +5077,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1693,
 		"bundle":"드루이드_밀림의 괴수,도적_탈진",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"야수",
@@ -4706,6 +5092,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41243,
 		"bundle":"드루이드_도발,주술사_전투의 함성,흑마법사_도발,전사_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"text":"도발, 전투의 함성: 도발 하수인을 하나 발견합니다."
@@ -4718,7 +5105,8 @@ var rewardList = [
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":2891,
-		"bundle":"도적_기본,도적_도적_저승사자",
+		"bundle":"도적_기본,도적_저승사자",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 아군 하수인 하나의 죽음의 메아리를 복사합니다."
@@ -4732,6 +5120,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42671,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":1,
 		"health":4,
 		"text":"이 하수인은 피해를 받고 생존할 때마다 2/2 구울을 하나 소환합니다."
@@ -4745,6 +5134,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1023,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"방어도를 +5 얻습니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -4756,6 +5146,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38875,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"text":"전투의 함성: 내 손에 있는 모든 죽음의 메아리 하수인에게 +1/+1을 부여합니다."
@@ -4769,6 +5160,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":629,
 		"bundle":"주술사_기본,주술사_정기",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 2-3 줍니다. 과부하: (2)"
 	}, 
 	{
@@ -4780,6 +5172,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1935,
 		"bundle":"사제_수양",
+		"type":"주문",
 		"text":"하수인 하나에게 +2/+4와 주문 공격력 +1을 부여합니다."
 	}, 
 	{
@@ -4791,6 +5184,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40409,
 		"bundle":"마법사_비전",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 1/1 양으로 변신시킵니다."
 	}, 
 	{
@@ -4802,6 +5196,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2542,
 		"bundle":"마법사_비전",
+		"type":"주문",
 		"text":"하수인 하나를 돌진 능력이 있는 4/2 멧돼지로 변신시킵니다."
 	}, 
 	{
@@ -4813,6 +5208,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2029,
 		"bundle":"성기사_은빛 성기사단,성기사_신성한 무기",
+		"type":"주문",
 		"text":"1/1 은빛 성기사단 신병을 3명 소환합니다. 1/4 무기를 장착합니다."
 	}, 
 	{
@@ -4824,6 +5220,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39313,
 		"bundle":"도적_탈진",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"내 턴 동안 내 영웅이 면역 상태가 됩니다."
@@ -4837,6 +5234,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1801,
 		"bundle":"마법사_잃어버린 비밀,마법사_거인 군대",
+		"type":"주문",
 		"text":"비밀: 아군 하수인이 죽으면, 그 하수인을 둘 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -4848,6 +5246,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1109,
 		"bundle":"사제_부활",
+		"type":"하수인",
 		"attack":4,
 		"health":7,
 		"text":"전투의 함성: 자신에게 피해를 4 줍니다."
@@ -4861,6 +5260,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46413,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"모든 적 하수인을 침묵시키고 처치합니다."
 	}, 
 	{
@@ -4872,6 +5272,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45726,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"카드를 3장 뽑습니다. 그 카드들의 비용이 (0)이 됩니다."
 	}, 
 	{
@@ -4883,6 +5284,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2275,
 		"bundle":"마법사_마법 친구들",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"내 주문이 시전된 후에, 모든 적에게 2의 피해를 무작위로 나누어 입힙니다."
@@ -4896,6 +5298,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40636,
 		"bundle":"성기사_치유,성기사_천상의 보호막,성기사_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"도발 천상의 보호막 생명력 흡수"
@@ -4909,6 +5312,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":642,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":3,
 		"health":1,
 		"text":"천상의 보호막"
@@ -4922,6 +5326,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38920,
 		"bundle":"전사_해적",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"해적",
@@ -4936,6 +5341,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2949,
 		"bundle":"도적_탈진,주술사_전투의 함성",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"내 전투의 함성 능력이 2번 발동합니다."
@@ -4949,6 +5355,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40496,
 		"bundle":"마법사_무작위",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 마법사, 사제, 흑마법사 카드를 1장 발견합니다."
@@ -4962,6 +5369,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40523,
 		"bundle":"드루이드_비취 송곳니",
+		"type":"주문",
 		"text":"비취 골렘을 하나 소환합니다. 빈 마나 수정을 1개 획득합니다."
 	}, 
 	{
@@ -4973,6 +5381,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42748,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"방어도를 +3 얻고, 이번 턴에 내 영웅이 공격력을 +3 얻습니다."
 	}, 
 	{
@@ -4984,6 +5393,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2894,
 		"bundle":"전사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"야수",
@@ -4998,6 +5408,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42698,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"죽음의 메아리: 상대편의 턴이면, 방어도를 +6 얻습니다."
@@ -5011,6 +5422,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":296,
 		"bundle":"사냥꾼_야수 훈련",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 내 전장에 야수가 있으면, 피해를 5 줍니다."
 	}, 
 	{
@@ -5022,6 +5434,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":30,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"상대편의 덱에서 카드를 2장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -5033,6 +5446,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":919,
 		"bundle":"흑마법사_기본,흑마법사_생명력 흡수",
+		"type":"주문",
 		"text":"피해를 2 줍니다. 내 영웅이 생명력을 2 회복합니다."
 	}, 
 	{
@@ -5044,6 +5458,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42836,
 		"bundle":"마법사_냉기",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 빙결 상태인 적이 있으면, 카드를 1장 뽑습니다."
@@ -5057,6 +5472,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45263,
 		"bundle":"도적_회피",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"아군 하수인이 죽은 후에, 그 하수인을 비용이 (1)인 1/1 하수인으로 복사하여 내 손으로 가져옵니다."
@@ -5070,6 +5486,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":774,
 		"bundle":"주술사_기본,주술사_과부하",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"정령",
@@ -5084,6 +5501,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":570,
 		"bundle":"주술사_변신",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 다른 무작위 하수인 하나를 5/5 데빌사우루스 또는 1/1 다람쥐로 변신시킵니다."
@@ -5097,6 +5515,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40905,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"은신, 이 하수인이 공격할 때마다 상대편 직업의 카드 1장을 무작위로 내 손에 가져옵니다."
@@ -5110,6 +5529,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2225,
 		"bundle":"드루이드_추가 마나",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"선택 - 각 플레이어가 마나 수정을 1개씩 획득합니다. 또는 각 플레이어가 카드를 1장씩 뽑습니다."
@@ -5123,6 +5543,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":453,
 		"bundle":"주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"멀록",
@@ -5137,6 +5558,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1016,
 		"bundle":"도적_탐욕,도적_탈진,주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"멀록",
@@ -5151,6 +5573,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39380,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"이 하수인을 버리면, 이 하수인을 소환합니다."
@@ -5164,6 +5587,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41155,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다."
@@ -5177,6 +5601,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":555,
 		"bundle":"마법사_비전",
+		"type":"주문",
 		"text":"카드를 2장 뽑습니다."
 	}, 
 	{
@@ -5188,6 +5613,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2519,
 		"bundle":"사제_수양",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내가 주문의 대상으로 이 하수인을 지정할 때마다 무작위 적 하나에게 피해를 3 줍니다."
@@ -5201,6 +5627,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2301,
 		"bundle":"흑마법사_작은 군단",
+		"type":"주문",
 		"text":"악마를 제외한 모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
@@ -5212,6 +5639,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1167,
 		"bundle":"성기사_정의",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 적 하수인 하나의 공격력을 1로 바꿉니다."
@@ -5225,6 +5653,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41249,
 		"bundle":"사냥꾼_소환,흑마법사_무리",
+		"type":"하수인",
 		"attack":3,
 		"health":1,
 		"text":"죽음의 메아리: 1/1 랩터를 2마리 소환합니다."
@@ -5238,6 +5667,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2768,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"전투의 함성: 내 전장에 해적이 있으면, +1/+1을 얻습니다."
@@ -5251,6 +5681,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":437,
 		"bundle":"사냥꾼_기본,사냥꾼_소환",
+		"type":"주문",
 		"text":"무작위 동료 야수 1마리를 소환합니다."
 	}, 
 	{
@@ -5262,6 +5693,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38334,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"선택 - 이번 턴에 내 영웅에게 공격력을 +4 부여합니다. 또는 방어도를 +8 얻습니다."
 	}, 
 	{
@@ -5273,6 +5705,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":742,
 		"bundle":"드루이드_무리의 힘",
+		"type":"주문",
 		"text":"이번 턴에 내 캐릭터들에게 공격력을 +2 부여합니다."
 	}, 
 	{
@@ -5284,6 +5717,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":238,
 		"bundle":"주술사_과부하",
+		"type":"주문",
 		"text":"도발 능력이 있는 2/3 늑대 정령을 둘 소환합니다. 과부하: (2)"
 	}, 
 	{
@@ -5295,6 +5729,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2793,
 		"bundle":"드루이드_기본,드루이드_회복",
+		"type":"주문",
 		"text":"하수인 하나를 처치합니다. 무작위 하수인 하나를 상대편의 손에 추가합니다."
 	}, 
 	{
@@ -5305,7 +5740,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":42785,
-		"bundle":"사제_최후의 의식,도적_도적_저승사자",
+		"bundle":"사제_최후의 의식,도적_저승사자",
+		"type":"하수인",
 		"attack":3,
 		"health":1,
 		"text":"죽음의 메아리: 무작위 죽음의 메아리 하수인 하나를 내 손으로 가져옵니다."
@@ -5319,6 +5755,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38911,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"내가 생명력이 1인 하수인을 소환할 때마다 그 하수인에게 천상의 보호막을 부여합니다."
@@ -5332,6 +5769,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38452,
 		"bundle":"흑마법사_무리",
+		"type":"하수인",
 		"attack":1,
 		"health":5,
 		"text":"내 하수인이 소환된 후에, 공격력을 +1 얻습니다."
@@ -5345,6 +5783,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1363,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"공격력이 5 이상인 하수인을 하나 처치합니다."
 	}, 
 	{
@@ -5356,6 +5795,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2566,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"내가 카드를 뽑을 때마다 그 카드의 비용이 (1) 감소합니다."
@@ -5369,6 +5809,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1807,
 		"bundle":"사제_기본,사제_최후의 의식",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"죽음의 메아리: 무작위 아군 하수인 하나에게 생명력을 +3 부여합니다."
@@ -5382,6 +5823,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1368,
 		"bundle":"사제_암흑",
+		"type":"주문",
 		"text":"내 영웅 능력이 '피해를 2 줍니다.'로 바뀝니다. (이미 어둠의 형상이었다면 3)"
 	}, 
 	{
@@ -5393,6 +5835,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":914,
 		"bundle":"흑마법사_파괴",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 4 줍니다."
 	}, 
 	{
@@ -5404,6 +5847,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42754,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"주문",
 		"text":"비밀: 상대편이 하수인을 낸 후에, 그 하수인을 둘 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -5415,6 +5859,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":192,
 		"bundle":"마법사_잃어버린 비밀,마법사_거인 군대,마법사_방어",
+		"type":"주문",
 		"text":"비밀: 내 영웅이 치명적인 피해를 받으면, 피해를 막고 이번 턴에 면역 상태가 됩니다."
 	}, 
 	{
@@ -5426,6 +5871,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":621,
 		"bundle":"마법사_기본",
+		"type":"주문",
 		"text":"비밀: 내 영웅이 공격받으면, 방어도를 +8 얻습니다."
 	}, 
 	{
@@ -5437,6 +5883,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42808,
 		"bundle":"주술사_냉기",
+		"type":"무기",
 		"attack":1,
 		"health":3,
 		"text":"이 무기에 피해를 받은 빙결 상태인 하수인을 무조건 처치합니다."
@@ -5450,6 +5897,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":587,
 		"bundle":"마법사_냉기,마법사_방어",
+		"type":"주문",
 		"text":"모든 적 하수인을 빙결 상태로 만듭니다."
 	}, 
 	{
@@ -5461,6 +5909,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":306,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"연계: 이번 턴에 앞서 낸 카드 1장당 +2/+2를 얻습니다."
@@ -5474,6 +5923,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43028,
 		"bundle":"도적_암살",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"연계: 아군 하수인 하나에게 독성을 부여합니다."
@@ -5487,6 +5937,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41879,
 		"bundle":"주술사_선견자",
+		"type":"주문",
 		"text":"내 하수인들에게 \"죽음의 메아리: 이 하수인을 내 손으로 다시 가져옴\" 능력을 부여합니다."
 	}, 
 	{
@@ -5498,6 +5949,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2711,
 		"bundle":"전사_무기",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"격려: 내 무기에 공격력을 +1 부여합니다."
@@ -5511,6 +5963,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41479,
 		"bundle":"주술사_복원",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"정령",
@@ -5525,6 +5978,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2756,
 		"bundle":"전사_도발",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 내 전장에 도발 하수인이 있으면, 내구도를 +1 얻습니다."
@@ -5538,6 +5992,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45945,
 		"bundle":"드루이드_추가 마나",
+		"type":"하수인",
 		"attack":3,
 		"health":1,
 		"text":"죽음의 메아리: 빈 마나 수정을 1개 획득합니다."
@@ -5551,6 +6006,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2717,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 공격력 +3과 천상의 보호막을 부여합니다."
 	}, 
 	{
@@ -5562,6 +6018,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":864,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"피해를 5 줍니다. 과부하: (2)"
 	}, 
 	{
@@ -5573,6 +6030,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45528,
 		"bundle":"사제_주문 활용",
+		"type":"무기",
 		"attack":0,
 		"health":3,
 		"text":"한 턴에 내 주문이 3번 시전된 후에, 5/5 용을 하나 소환합니다."
@@ -5586,6 +6044,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42948,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 내 덱에서 천상의 보호막 하수인을 하나 뽑습니다."
@@ -5599,6 +6058,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45905,
 		"bundle":"주술사_토템",
+		"type":"주문",
 		"text":"내 하수인들에게 \"죽음의 메아리: 무작위 기본 토템을 하나 소환\" 능력을 부여합니다."
 	}, 
 	{
@@ -5610,6 +6070,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41478,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"멀록",
@@ -5624,6 +6085,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2503,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"격려: 1/1 은빛 성기사단 신병을 1명 소환합니다."
@@ -5637,6 +6099,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2490,
 		"bundle":"성기사_천상의 보호막,전사_돌진!",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"text":"돌진 천상의 보호막"
@@ -5650,6 +6113,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":401,
 		"bundle":"전사_기본,전사_무기",
+		"type":"무기",
 		"attack":3,
 		"health":2
 	}, 
@@ -5662,6 +6126,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2288,
 		"bundle":"흑마법사_작은 군단,흑마법사_무리",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"악마",
@@ -5676,6 +6141,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":926,
 		"bundle":"흑마법사_기본,흑마법사_무리",
+		"type":"하수인",
 		"attack":1,
 		"health":5,
 		"text":"내 턴이 끝날 때, 피해를 1 받고 1/1 임프를 하나 소환합니다."
@@ -5689,6 +6155,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2874,
 		"bundle":"마법사_화염",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 피해를 6 주는 '이글거리는 횃불' 카드 1장을 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -5700,6 +6167,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46258,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"정령",
@@ -5714,6 +6182,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41418,
 		"bundle":"사제_정령,주술사_정령,흑마법사_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":5,
 		"race":"정령",
@@ -5728,6 +6197,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2515,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"내 은빛 성기사단 신병들이 공격력을 +1 얻습니다."
@@ -5741,6 +6211,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":643,
 		"bundle":"성기사_신성한 무기",
+		"type":"무기",
 		"attack":1,
 		"health":5,
 		"text":"내 하수인이 소환된 후에, 그 하수인에게 +1/+1을 부여하고 내구도를 1 잃습니다."
@@ -5754,6 +6225,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45782,
 		"bundle":"성기사_신성한 무기",
+		"type":"무기",
 		"attack":2,
 		"health":2,
 		"text":"내 손에서 추가 효과를 하나 얻습니다."
@@ -5767,6 +6239,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45759,
 		"bundle":"사제_수양",
+		"type":"주문",
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 내 손에서 추가 효과를 하나 얻습니다."
 	}, 
 	{
@@ -5778,6 +6251,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2571,
 		"bundle":"마법사_무작위",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 각 플레이어가 무작위 주문을 1장씩 손으로 가져옵니다."
@@ -5791,6 +6265,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1790,
 		"bundle":"사냥꾼_방어,사제_최후의 의식,도적_탈진",
+		"type":"하수인",
 		"attack":2,
 		"health":8,
 		"text":"도발, 죽음의 메아리: 상대편이 덱에서 하수인 하나를 뽑아 전장에 놓습니다."
@@ -5804,6 +6279,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40428,
 		"bundle":"사냥꾼_작은 야수들,사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -5818,6 +6294,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43025,
 		"bundle":"드루이드_무리의 힘,드루이드_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":6,
 		"text":"도발 내 하수인이 소환된 후에, 생명력을 +1 얻습니다."
@@ -5831,6 +6308,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38745,
 		"bundle":"성기사_신성한 무기",
+		"type":"무기",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 내 천상의 보호막 하수인들에게 +1/+1을 부여합니다."
@@ -5844,6 +6322,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":818,
 		"bundle":"주술사_선견자",
+		"type":"주문",
 		"text":"카드를 1장 뽑습니다. 그 카드의 비용이 (3) 감소합니다."
 	}, 
 	{
@@ -5855,6 +6334,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40404,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 전장에 공격력이 5 이상인 하수인이 있으면, +2/+2를 얻습니다."
@@ -5868,6 +6348,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1093,
 		"bundle":"사냥꾼_기본,사냥꾼_사격",
+		"type":"주문",
 		"text":"무작위 적 하수인 하나를 처치합니다."
 	}, 
 	{
@@ -5879,6 +6360,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2612,
 		"bundle":"주술사_복원",
+		"type":"주문",
 		"text":"생명력을 7 회복시킵니다. 각 덱의 하수인 하나를 공개해 내 것의 비용이 더 높으면, 생명력을 14 회복시킵니다."
 	}, 
 	{
@@ -5890,6 +6372,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46067,
 		"bundle":"주술사_복원",
+		"type":"주문",
 		"text":"모든 아군 캐릭터에게 12의 생명력을 무작위로 나누어 회복시킵니다."
 	}, 
 	{
@@ -5901,6 +6384,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":773,
 		"bundle":"드루이드_회복",
+		"type":"주문",
 		"text":"생명력을 8 회복시킵니다."
 	}, 
 	{
@@ -5912,6 +6396,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":667,
 		"bundle":"도적_암살",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 1 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -5923,6 +6408,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":791,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"내가 카드를 낼 때마다 +1/+1을 얻습니다."
@@ -5936,6 +6422,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38547,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"text":"전투의 함성: 피해를 2 줍니다. 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
@@ -5949,6 +6436,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2027,
 		"bundle":"성기사_신성한 무기",
+		"type":"무기",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 무작위 아군 하수인 하나에게 천상의 보호막과 도발을 부여합니다."
@@ -5962,6 +6450,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2513,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성: 무작위 기본 토템을 하나 소환합니다."
@@ -5975,6 +6464,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46414,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"상대편의 마나 수정을 2개 파괴하고 카드를 2장 버리게 합니다."
 	}, 
 	{
@@ -5986,6 +6476,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2620,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"모든 하수인에게 피해를 4-5 줍니다. 과부하: (5)"
 	}, 
 	{
@@ -5997,6 +6488,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2748,
 		"bundle":"사제_수양",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내가 주문의 대상으로 이 하수인을 지정할 때마다 천상의 보호막을 얻습니다."
@@ -6010,6 +6502,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38848,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"피해를 받은 아군 하수인들을 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -6021,6 +6514,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":778,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"기계",
@@ -6035,6 +6529,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40743,
 		"bundle":"성기사_도움의 손길,전사_떡대들",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"전투의 함성: 내 손에 있는 무작위 하수인 하나에게 +1/+1을 부여합니다."
@@ -6048,6 +6543,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40569,
 		"bundle":"전사_떡대들",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 손에 있는 무작위 무기 하나에 +1/+1을 부여합니다."
@@ -6061,6 +6557,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":755,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 모든 하수인의 천상의 보호막을 흡수하여 보호막 하나당 +3/+3을 얻습니다."
@@ -6074,6 +6571,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40393,
 		"bundle":"흑마법사_작은 군단",
+		"type":"주문",
 		"text":"하수인 하나에게 공격력을 +3 부여합니다. 대상이 악마면, 생명력도 +3 부여합니다."
 	}, 
 	{
@@ -6085,6 +6583,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41177,
 		"bundle":"사제_사적",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 카드 3장이 제시됩니다. 게임이 시작됐을 때 상대편의 덱에 있던 카드를 맞히면 그 카드를 복사하여 내 손으로 가져옵니다."
@@ -6098,6 +6597,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40297,
 		"bundle":"마법사_화염",
+		"type":"주문",
 		"text":"모든 하수인에게 피해를 2 줍니다."
 	}, 
 	{
@@ -6109,6 +6609,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41926,
 		"bundle":"주술사_정령",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"정령",
@@ -6123,6 +6624,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2292,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"선택 - 5/2 또는 2/5 하수인으로 변신합니다."
@@ -6136,6 +6638,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45727,
 		"bundle":"보물",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"도발, 전투의 함성: 내 손에 있는 모든 카드를 전설 하수인으로 교체합니다."
@@ -6149,6 +6652,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45353,
 		"bundle":"사제_최후의 의식,사제_부활",
+		"type":"주문",
 		"text":"이번 게임에서 죽은 내 죽음의 메아리 하수인 둘을 복사하여 1/1 하수인으로 소환합니다."
 	}, 
 	{
@@ -6160,6 +6664,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38868,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내 턴이 끝날 때, 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
@@ -6173,6 +6678,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41212,
 		"bundle":"도적_아드레날린 촉진,도적_묘수",
+		"type":"주문",
 		"text":"카드를 1장 뽑습니다. 그 카드를 복사하여 1장 더 내 손으로 가져옵니다."
 	}, 
 	{
@@ -6184,6 +6690,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1155,
 		"bundle":"전사_기본",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"격노: 질풍, 공격력 +1"
@@ -6197,6 +6704,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41247,
 		"bundle":"드루이드_밀림왕,드루이드_무리의 힘,사냥꾼_작은 야수들",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"야수",
@@ -6211,6 +6719,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45377,
 		"bundle":"주술사_냉기",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 내 다른 하수인들을 빙결 상태로 만듭니다."
@@ -6224,6 +6733,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43294,
 		"bundle":"드루이드_자연의 방어,드루이드_현명한 선택",
+		"type":"주문",
 		"text":"두 번 선택 - 카드를 1장 뽑습니다. 또는 내 하수인들에게 공격력을 +1 부여합니다. 또는 방어도를 +6 얻습니다."
 	}, 
 	{
@@ -6234,7 +6744,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":38784,
-		"bundle":"사냥꾼_소환,도적_도적_저승사자",
+		"bundle":"사냥꾼_소환,도적_저승사자",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"도발 죽음의 메아리: 2/2 수액괴물을 하나 소환합니다."
@@ -6248,6 +6759,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43284,
 		"bundle":"드루이드_자연의 방어",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"도발, 내 방어도가 3 이상일 때에만 공격할 수 있습니다."
@@ -6261,6 +6773,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2075,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"race":"기계",
@@ -6275,6 +6788,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":348,
 		"bundle":"흑마법사_기본",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 이번 턴에 하수인 하나에게 공격력을 +2 부여합니다."
@@ -6288,6 +6802,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2911,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"기계",
@@ -6302,6 +6817,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2822,
 		"bundle":"흑마법사_작은 군단",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"race":"악마",
@@ -6316,6 +6832,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":878,
 		"bundle":"도적_무법,전사_기본,전사_해적",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"해적",
@@ -6330,6 +6847,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1806,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"악마",
@@ -6344,6 +6862,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42563,
 		"bundle":"사냥꾼_비밀",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"내가 비밀 카드를 낸 후에, 무작위 사냥꾼 비밀 카드 1장을 사용합니다."
@@ -6357,6 +6876,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2283,
 		"bundle":"성기사_용기사,전사_용의 심장",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"race":"용족",
@@ -6371,6 +6891,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41191,
 		"bundle":"흑마법사_희생",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"야수",
@@ -6385,6 +6906,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41521,
 		"bundle":"주술사_복원",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 4 줍니다. 내 영웅이 생명력을 4 회복합니다."
 	}, 
 	{
@@ -6396,6 +6918,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40973,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"선택 - 5/3 은신 하수인 또는 3/5 도발 하수인으로 변신합니다."
@@ -6409,6 +6932,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40889,
 		"bundle":"도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"해적",
@@ -6422,7 +6946,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1915,
-		"bundle":"사제_최후의 의식,도적_도적_저승사자",
+		"bundle":"사제_최후의 의식,도적_저승사자",
+		"type":"하수인",
 		"attack":1,
 		"health":7,
 		"text":"내 하수인들의 죽음의 메아리 능력이 2번 발동합니다."
@@ -6436,6 +6961,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38825,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"해적",
@@ -6450,6 +6976,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":430,
 		"bundle":"마법사_냉기",
+		"type":"주문",
 		"text":"선택한 하수인과 그 양옆의 하수인들을 빙결 상태로 만들고 피해를 1 줍니다."
 	}, 
 	{
@@ -6461,6 +6988,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41690,
 		"bundle":"마법사_거인 군대",
+		"type":"주문",
 		"text":"아군 하수인 하나를 선택합니다. 그 하수인을 복사하여 소환합니다."
 	}, 
 	{
@@ -6471,7 +6999,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"일반",
 		"cardid":2064,
-		"bundle":"사제_최후의 의식,도적_도적_저승사자,주술사_기계",
+		"bundle":"사제_최후의 의식,도적_저승사자,주술사_기계",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"race":"기계",
@@ -6486,6 +7015,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42747,
 		"bundle":"주술사_냉기",
+		"type":"주문",
 		"text":"하수인 하나를 빙결 상태로 만들고 그 양옆의 하수인들에게 피해를 3 줍니다."
 	}, 
 	{
@@ -6497,6 +7027,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":736,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"멀록",
@@ -6511,6 +7042,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2549,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"격려: 주문 공격력 +1을 얻습니다."
@@ -6524,6 +7056,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46286,
 		"bundle":"흑마법사_버려버려,흑마법사_파괴",
+		"type":"주문",
 		"text":"모든 하수인을 처치하고 내 손에 있는 카드를 모두 버립니다."
 	}, 
 	{
@@ -6535,6 +7068,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2297,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":2,
 		"health":5,
 		"text":"이 하수인은 피해를 받을 때마다 적 영웅에게 피해를 2 줍니다."
@@ -6548,6 +7082,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1802,
 		"bundle":"드루이드_조화",
+		"type":"주문",
 		"text":"모든 하수인을 처치하고 2/2 나무정령으로 교체합니다."
 	}, 
 	{
@@ -6558,7 +7093,8 @@ var rewardList = [
 		"class":"도적",
 		"rarity":"전설",
 		"cardid":38403,
-		"bundle":"도적_아드레날린 촉진,도적_도적_저승사자",
+		"bundle":"도적_아드레날린 촉진,도적_저승사자",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"전투의 함성과 죽음의 메아리: 무작위 독극물 카드 1장을 내 손으로 가져옵니다."
@@ -6572,6 +7108,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39033,
 		"bundle":"사제_크툰의 교단",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"캐릭터가 치유될 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
@@ -6585,6 +7122,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2095,
 		"bundle":"도적_검투사",
+		"type":"주문",
 		"text":"내 무기에 공격력을 +3 부여합니다. 연계: 무작위 아군 하수인 하나에게 공격력을 +3 부여합니다."
 	}, 
 	{
@@ -6596,6 +7134,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41873,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":3,
 		"health":8,
 		"race":"악마",
@@ -6610,6 +7149,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42819,
 		"bundle":"도적_검투사",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"내 턴 동안 내 무기의 내구도가 감소하지 않습니다."
@@ -6623,6 +7163,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43031,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 내 손에 있는 모든 주문을 상대편 직업의 무작위 주문으로 교체합니다."
@@ -6636,6 +7177,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39442,
 		"bundle":"사제_신성,사제_주문 활용",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"내가 주문을 시전할 때마다 내 영웅의 생명력을 3 회복시킵니다."
@@ -6649,6 +7191,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2655,
 		"bundle":"성기사_멀록",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"멀록",
@@ -6663,6 +7206,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40419,
 		"bundle":"주술사_멀록",
+		"type":"주문",
 		"text":"1/1 멀록을 4마리 소환합니다."
 	}, 
 	{
@@ -6673,7 +7217,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":45366,
-		"bundle":"드루이드_밀림왕,사냥꾼_죽음의 메아리,도적_도적_저승사자",
+		"bundle":"드루이드_밀림왕,사냥꾼_죽음의 메아리,도적_저승사자",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"race":"야수",
@@ -6688,6 +7233,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1941,
 		"bundle":"마법사_거인 군대",
+		"type":"주문",
 		"text":"전장의 아군 하수인들을 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -6699,6 +7245,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2884,
 		"bundle":"도적_탐욕",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"죽음의 메아리: 동전을 내 손으로 가져옵니다."
@@ -6712,6 +7259,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42780,
 		"bundle":"도적_검투사,전사_무기",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"정령",
@@ -6726,6 +7274,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":395,
 		"bundle":"마법사_정령,마법사_냉기",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"race":"정령",
@@ -6741,6 +7290,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":47039,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"'폭탄로봇'을 7개 소환합니다."
 	}, 
 	{
@@ -6752,6 +7302,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":39941,
 		"bundle":"사냥꾼_전설,사제_최후의 의식",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 내 덱에서 무작위 하수인 하나를 복사하여 1/1 하수인으로 소환합니다."
@@ -6765,6 +7316,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45784,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 생명력을 4 회복시킵니다."
@@ -6778,6 +7330,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":77,
 		"bundle":"마법사_비전",
+		"type":"주문",
 		"text":"하수인 하나를 1/1 양으로 변신시킵니다."
 	}, 
 	{
@@ -6789,6 +7342,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39034,
 		"bundle":"사제_최후의 의식,사제_사적",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"죽음의 메아리: 상대편의 덱에서 카드를 1장 복사하여 내 손으로 가져옵니다."
@@ -6802,6 +7356,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1029,
 		"bundle":"마법사_마법 친구들,사제_주문 활용,도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"내가 주문을 시전할 때마다 1/1 보랏빛 수습생을 1명 소환합니다."
@@ -6815,6 +7370,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43507,
 		"bundle":"사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"race":"용족",
@@ -6829,6 +7385,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38738,
 		"bundle":"전사_광전사,전사_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":6,
 		"text":"도발 격노: 공격력 +3"
@@ -6842,6 +7399,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40455,
 		"bundle":"주술사_비취 연꽃",
+		"type":"주문",
 		"text":"피해를 4 줍니다. 비취 골렘을 하나 소환합니다."
 	}, 
 	{
@@ -6853,6 +7411,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40527,
 		"bundle":"드루이드_비취 송곳니,도적_비취 연꽃,주술사_비취 연꽃",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"정령",
@@ -6867,6 +7426,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42735,
 		"bundle":"성기사_천상의 보호막",
+		"type":"무기",
 		"attack":1,
 		"health":4,
 		"text":"아군 하수인 하나가 천상의 보호막을 잃은 후에, 공격력을 +1 얻습니다."
@@ -6880,6 +7440,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":886,
 		"bundle":"사제_기본,사제_정령",
+		"type":"하수인",
 		"attack":0,
 		"health":5,
 		"race":"정령",
@@ -6894,6 +7455,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41945,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"야수",
@@ -6908,6 +7470,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1003,
 		"bundle":"사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"전투의 함성: 아군 야수 1마리에게 +2/+2와 도발을 부여합니다."
@@ -6921,6 +7484,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42395,
 		"bundle":"주술사_전투의 함성,흑마법사_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"도발, 전투의 함성: 이 하수인을 복사하여 소환합니다."
@@ -6934,6 +7498,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":766,
 		"bundle":"주술사_기본,주술사_변신",
+		"type":"주문",
 		"text":"하수인 하나를 도발 능력이 있는 0/1 개구리로 변신시킵니다."
 	}, 
 	{
@@ -6945,6 +7510,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39190,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내가 주문을 시전할 때마다 무작위 기본 토템을 하나 소환합니다."
@@ -6958,6 +7524,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":36111,
 		"bundle":"마법사_방어",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"내 영웅이 한 번에 받는 피해가 1로 고정됩니다."
@@ -6971,6 +7538,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40607,
 		"bundle":"도적_탐욕",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"이 하수인이 공격할 때마다 각 플레이어가 카드가 3장이 될 때까지 카드를 뽑습니다."
@@ -6984,6 +7552,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":90,
 		"bundle":"마법사_기본",
+		"type":"하수인",
 		"attack":4,
 		"health":5
 	}, 
@@ -6996,6 +7565,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1998,
 		"bundle":"주술사_선견자",
+		"type":"주문",
 		"text":"각 플레이어의 손에서 무작위 하수인 하나를 전장에 놓습니다."
 	}, 
 	{
@@ -7007,6 +7577,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46107,
 		"bundle":"드루이드_추가 마나",
+		"type":"무기",
 		"attack":1,
 		"health":5,
 		"text":"죽음의 메아리: 마나 수정을 10개 획득합니다."
@@ -7020,6 +7591,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41154,
 		"bundle":"마법사_정령",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"정령",
@@ -7034,6 +7606,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38718,
 		"bundle":"드루이드_추가 마나",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"선택 - 2/2 수액괴물을 하나 소환합니다. 또는 빈 마나 수정을 1개 획득합니다."
@@ -7047,6 +7620,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40391,
 		"bundle":"흑마법사_작은 군단",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"전투의 함성: 내 악마들에게 +1/+1을 부여합니다."
@@ -7060,6 +7634,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":601,
 		"bundle":"드루이드_기본,드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"선택 - 피해를 2 줍니다. 또는 하수인 하나를 침묵시킵니다."
@@ -7073,6 +7648,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":381,
 		"bundle":"드루이드_무리의 힘",
+		"type":"주문",
 		"text":"내 하수인들에게 \"죽음의 메아리: 2/2 나무정령 하나 소환\" 능력을 부여합니다."
 	}, 
 	{
@@ -7084,6 +7660,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":622,
 		"bundle":"성기사_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":5,
 		"text":"돌진"
@@ -7097,6 +7674,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41126,
 		"bundle":"사냥꾼_밀수업자",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"야수",
@@ -7111,6 +7689,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41218,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"죽음의 메아리: 씨앗으로 변합니다. 한 턴에 카드를 4장 이상 내면, 되살아납니다."
@@ -7124,6 +7703,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46102,
 		"bundle":"성기사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 덱에 도발 하수인이 있으면 도발을 얻습니다. 천상의 보호막, 생명력 흡수, 질풍도 동일하게 얻을 수 있습니다."
@@ -7137,6 +7717,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2555,
 		"bundle":"사제_신성",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"캐릭터가 치유될 때마다 공격력을 +2 얻습니다."
@@ -7150,6 +7731,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":476,
 		"bundle":"성기사_기본,성기사_정의",
+		"type":"주문",
 		"text":"모든 적에게 피해를 2 줍니다."
 	}, 
 	{
@@ -7161,6 +7743,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39716,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 +2/+2를 부여합니다. 비용이 2인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
@@ -7172,6 +7755,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":145,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"상대편의 덱에서 무작위 하수인 하나를 복사하여 내 전장에 놓습니다."
 	}, 
 	{
@@ -7183,6 +7767,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43127,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"돌진 생명력 흡수"
@@ -7196,6 +7781,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":763,
 		"bundle":"사냥꾼_방어,주술사_기본,흑마법사_큰손",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 양옆의 하수인들에게 +1/+1과 도발을 부여합니다."
@@ -7209,6 +7795,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":237,
 		"bundle":"사제_기본,사제_암흑",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"생명력을 회복시키는 내 카드와 능력들이 이제 그만큼의 피해를 줍니다."
@@ -7222,6 +7809,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":147,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"아군 하수인 하나를 처치하고 그 하수인의 공격력만큼 모든 적 하수인에게 피해를 줍니다."
 	}, 
 	{
@@ -7233,6 +7821,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":220,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"공격력이 3 이하인 적 하수인 하나를 이번 턴에만 조종합니다."
 	}, 
 	{
@@ -7244,6 +7833,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38433,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"공격력이 2 이하인 모든 하수인을 처치합니다."
 	}, 
 	{
@@ -7255,6 +7845,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46454,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":20,
 		"health":20,
 		"text":"잠에 듭니다. 전투의 함성: 상대편의 덱에 양초 카드 3장을 섞어 넣습니다. 상대편이 양초를 모두 뽑으면, 깨어납니다."
@@ -7268,6 +7859,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38569,
 		"bundle":"주술사_변신",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"도발, 전투의 함성: 아군 하수인 하나의 공격력과 생명력을 복사합니다."
@@ -7281,6 +7873,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38263,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"과부하: (2)"
@@ -7294,6 +7887,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1737,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"내 턴이 끝날 때 내 영웅에게 비밀이 걸려 있으면, +2/+2를 얻습니다."
@@ -7307,6 +7901,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2951,
 		"bundle":"사제_묘수,전사_전설",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"전투의 함성: '황금 원숭이 보물지도' 카드 1장을 내 덱에 섞어 넣습니다."
@@ -7320,6 +7915,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45531,
 		"bundle":"도적_탐욕",
+		"type":"하수인",
 		"attack":3,
 		"health":2,
 		"text":"연계: 내 덱에서 하수인을 둘 뽑습니다."
@@ -7333,6 +7929,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40693,
 		"bundle":"주술사_변신",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"이 하수인은 영웅을 공격한 후에, 비용이 6인 무작위 하수인으로 변신합니다."
@@ -7346,6 +7943,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42597,
 		"bundle":"사제_부활",
+		"type":"주문",
 		"text":"이번 게임에서 죽은 아군 하수인을 하나 발견하여 소환합니다."
 	}, 
 	{
@@ -7356,7 +7954,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":41289,
-		"bundle":"사제_최후의 의식,도적_도적_저승사자",
+		"bundle":"사제_최후의 의식,도적_저승사자",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"내 하수인이 소환된 후에, 그 하수인의 죽음의 메아리를 발동시킵니다."
@@ -7370,6 +7969,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1370,
 		"bundle":"사냥꾼_기본",
+		"type":"하수인",
 		"attack":2,
 		"health":7,
 		"race":"야수"
@@ -7383,6 +7983,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41265,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"야수",
@@ -7397,6 +7998,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":943,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 +4/+4를 부여합니다."
 	}, 
 	{
@@ -7408,6 +8010,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":847,
 		"bundle":"성기사_기본,성기사_신성한 무기",
+		"type":"무기",
 		"attack":4,
 		"health":2,
 		"text":"내 영웅이 공격할 때마다 생명력을 2 회복합니다."
@@ -7421,6 +8024,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2306,
 		"bundle":"성기사_용기사",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"race":"용족",
@@ -7435,6 +8039,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2889,
 		"bundle":"성기사_정의",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 하수인 하나의 공격력과 생명력을 3으로 만듭니다."
@@ -7448,6 +8053,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42327,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"해적",
@@ -7462,6 +8068,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":811,
 		"bundle":"사냥꾼_소환",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"text":"내 다른 하수인이 죽을 때마다 카드를 1장 뽑습니다."
@@ -7475,6 +8082,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":292,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"무작위 적 하수인 둘에게 피해를 3 줍니다."
 	}, 
 	{
@@ -7486,6 +8094,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2013,
 		"bundle":"흑마법사_작은 군단,흑마법사_무리",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 2-4 줍니다. 입힌 피해만큼 1/1 임프를 소환합니다."
 	}, 
 	{
@@ -7497,6 +8106,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45594,
 		"bundle":"드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":5,
 		"health":1,
 		"text":"죽음의 메아리: 5/1 망령을 하나 소환합니다."
@@ -7510,6 +8120,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43029,
 		"bundle":"흑마법사_생명력 흡수",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 손에 있는 무작위 생명력 흡수 하수인 하나에게 +2/+2를 부여합니다."
@@ -7523,6 +8134,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1805,
 		"bundle":"전사_광전사,전사_모두의 아픔,전사_무기",
+		"type":"무기",
 		"attack":4,
 		"health":2,
 		"text":"죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
@@ -7536,6 +8148,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":46541,
 		"bundle":"마법사_무작위",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"race":"정령",
@@ -7550,6 +8163,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":950,
 		"bundle":"흑마법사_기본,흑마법사_피",
+		"type":"주문",
 		"text":"모든 캐릭터에게 피해를 3 줍니다."
 	}, 
 	{
@@ -7561,6 +8175,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40285,
 		"bundle":"주술사_복원",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"전투의 함성: 생명력을 6 회복시킵니다. 과부하: (1)"
@@ -7574,6 +8189,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39008,
 		"bundle":"주술사_변신",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 아군 하수인 하나를 비용이 (1) 높은 무작위 하수인으로 변신시킵니다."
@@ -7587,6 +8203,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2008,
 		"bundle":"주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":5,
 		"race":"멀록",
@@ -7601,6 +8218,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45828,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"방어도를 +6 얻고 비용이 (4) 이하인 하수인을 하나 소집합니다."
 	}, 
 	{
@@ -7612,6 +8230,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2785,
 		"bundle":"드루이드_추가 마나",
+		"type":"주문",
 		"text":"마나 수정을 10개 획득합니다. 내 손에 있는 카드를 모두 버립니다."
 	}, 
 	{
@@ -7623,6 +8242,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":250,
 		"bundle":"성기사_정의",
+		"type":"주문",
 		"text":"피해를 3 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -7634,6 +8254,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43357,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 3 줍니다. 3/3 늑대를 1마리 소환합니다."
 	}, 
 	{
@@ -7645,6 +8266,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43465,
 		"bundle":"사냥꾼_무기,성기사_신성한 무기,전사_무기",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"용족",
@@ -7659,6 +8281,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40408,
 		"bundle":"마법사_한 장 정도,사제_한 장 정도,흑마법사_한 장 정도",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 원하는 주문을 직접 만듭니다."
@@ -7672,6 +8295,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":28,
 		"bundle":"전사_돌진!",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"돌진"
@@ -7685,6 +8309,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38863,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"text":"천상의 보호막 전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든)"
@@ -7698,6 +8323,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38621,
 		"bundle":"드루이드_크툰의 교단",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 내 크툰의 공격력이 10 이상이면, 생명력을 +5 얻습니다."
@@ -7711,6 +8337,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46421,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"아군 하수인 하나를 적응시킵니다. 이번 미궁 탐험에서 처치한 우두머리의 수만큼 반복합니다."
 	}, 
 	{
@@ -7722,6 +8349,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41180,
 		"bundle":"사제_최후의 의식,사제_부활",
+		"type":"하수인",
 		"attack":2,
 		"health":6,
 		"text":"도발, 죽음의 메아리: 무작위 아군 하수인 하나에게 +1/+1을 부여합니다."
@@ -7735,6 +8363,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41241,
 		"bundle":"마법사_정령,사제_정령,주술사_정령",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"전투의 함성: 내가 이전 턴에 정령을 냈다면, 도발과 천상의 보호막을 얻습니다."
@@ -7748,6 +8377,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2704,
 		"bundle":"드루이드_회복",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"전투의 함성: 각 영웅의 생명력을 4씩 회복시킵니다."
@@ -7761,6 +8391,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43022,
 		"bundle":"드루이드_도발",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"text":"전투의 함성: 내 도발 하수인들에게 +2/+2를 부여합니다."
@@ -7774,6 +8405,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2290,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"race":"정령",
@@ -7788,6 +8420,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38318,
 		"bundle":"드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"내 선택 효과의 두 능력이 모두 발동합니다."
@@ -7801,6 +8434,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43228,
 		"bundle":"도적_묘수",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 내 덱에 잠복 카드 3장을 섞어 넣습니다. 잠복 카드를 뽑으면, 4/4 거미를 하나 소환합니다."
@@ -7814,6 +8448,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40957,
 		"bundle":"흑마법사_파괴",
+		"type":"주문",
 		"text":"하수인 하나를 처치하고 내 마나 수정을 1개 파괴합니다."
 	}, 
 	{
@@ -7825,6 +8460,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42320,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":2,
 		"health":1,
 		"race":"야수",
@@ -7839,6 +8475,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41913,
 		"bundle":"성기사_수많은 축복,사제_수양",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"내가 이 하수인에게 주문을 시전한 후에 1/1 식물을 소환하여 그 하수인에게 동일한 주문을 시전합니다."
@@ -7852,6 +8489,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1064,
 		"bundle":"도적_검투사",
+		"type":"주문",
 		"text":"내 무기를 파괴하고 그 무기의 공격력만큼 모든 적 하수인에게 피해를 줍니다."
 	}, 
 	{
@@ -7863,6 +8501,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42700,
 		"bundle":"전사_모두의 아픔,전사_무기",
+		"type":"무기",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성과 죽음의 메아리: 모든 하수인에게 피해를 1 줍니다."
@@ -7876,6 +8515,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":804,
 		"bundle":"전사_박살!",
+		"type":"주문",
 		"text":"피해를 4 줍니다. 내 생명력이 12 이하라면, 피해를 6 줍니다."
 	}, 
 	{
@@ -7887,6 +8527,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43272,
 		"bundle":"흑마법사_생명력 흡수,흑마법사_피",
+		"type":"주문",
 		"text":"생명력 흡수, 하수인 하나에게 피해를 3 줍니다. (내 카드로 피해를 받으면 강화됩니다.)"
 	}, 
 	{
@@ -7898,6 +8539,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40568,
 		"bundle":"전사_떡대들",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"내 턴이 끝날 때, 내 손에 있는 무작위 하수인 하나에게 +2/+2를 부여합니다."
@@ -7911,6 +8553,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":315,
 		"bundle":"마법사_기본,마법사_화염",
+		"type":"주문",
 		"text":"피해를 6 줍니다."
 	}, 
 	{
@@ -7922,6 +8565,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40438,
 		"bundle":"전사_떡대들",
+		"type":"무기",
 		"attack":2,
 		"health":3,
 		"text":"내 영웅이 공격한 후에 내 손에 있는 무작위 하수인 하나에게 +1/+1을 부여합니다."
@@ -7935,6 +8579,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1037,
 		"bundle":"성기사_용기사,사제_용 사제,흑마법사_큰손,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":1,
 		"race":"용족",
@@ -7948,7 +8593,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":38833,
-		"bundle":"도적_도적_저승사자",
+		"bundle":"도적_저승사자",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"죽음의 메아리: 5/5 얼굴 없는 파괴자를 하나 소환합니다."
@@ -7962,6 +8608,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2569,
 		"bundle":"사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":2,
 		"health":6,
 		"race":"용족",
@@ -7976,6 +8623,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45899,
 		"bundle":"사제_용 사제",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"용족",
@@ -7990,6 +8638,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":64,
 		"bundle":"드루이드_기본,드루이드_조화",
+		"type":"주문",
 		"text":"선택한 적 하나에게 피해를 4 주고 다른 모든 적에게 피해를 1 줍니다."
 	}, 
 	{
@@ -8001,6 +8650,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2780,
 		"bundle":"드루이드_기본,드루이드_밀림왕",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"야수",
@@ -8015,6 +8665,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41213,
 		"bundle":"도적_도둑",
+		"type":"무기",
 		"attack":3,
 		"health":3,
 		"text":"내가 낸 다른 직업의 카드 하나당 비용이 (1)씩 감소합니다."
@@ -8028,6 +8679,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":68,
 		"bundle":"드루이드_밀림왕,드루이드_밀림의 괴수,사냥꾼_큰 야수들",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"야수",
@@ -8042,6 +8694,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41407,
 		"bundle":"전사_모두의 아픔",
+		"type":"주문",
 		"text":"피해를 받은 아군 하수인들을 복사하여 소환합니다."
 	}, 
 	{
@@ -8053,6 +8706,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41263,
 		"bundle":"사냥꾼_큰 야수들",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"야수",
@@ -8067,6 +8721,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2409,
 		"bundle":"성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"전투의 함성: 내 손에 용족이 있으면, 피해를 3 줍니다."
@@ -8080,6 +8735,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2291,
 		"bundle":"도적_암살",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"전투의 함성: 피해를 받지 않은 모든 적 하수인에게 피해를 2 줍니다."
@@ -8093,6 +8749,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45859,
 		"bundle":"드루이드_무리의 힘",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"정령",
@@ -8107,6 +8764,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38910,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"race":"야수",
@@ -8121,6 +8779,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38526,
 		"bundle":"성기사_도발,주술사_기계",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"기계",
@@ -8135,6 +8794,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38876,
 		"bundle":"도적_묘수",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 비용이 (1)인 1/1 하수인으로 복사하여 내 손으로 가져옵니다."
@@ -8148,6 +8808,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46069,
 		"bundle":"흑마법사_무리,전사_소집",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"전투의 함성: 비용이 (4) 이하인 하수인을 하나 소집합니다."
@@ -8161,6 +8822,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":75,
 		"bundle":"전사_기본,전사_모두의 아픔",
+		"type":"주문",
 		"text":"무작위 하수인 하나를 제외한 모든 하수인을 처치합니다."
 	}, 
 	{
@@ -8172,6 +8834,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1371,
 		"bundle":"사냥꾼_큰 야수들",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"race":"야수",
@@ -8186,6 +8849,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2037,
 		"bundle":"드루이드_회복,사냥꾼_방어,마법사_방어,성기사_치유,주술사_복원",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"race":"기계",
@@ -8200,6 +8864,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43485,
 		"bundle":"흑마법사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"내 턴이 끝날 때, 도발 능력이 있는 1/2 수액을 하나 소환합니다."
@@ -8213,6 +8878,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40615,
 		"bundle":"드루이드_압도",
+		"type":"주문",
 		"text":"카드를 2장 뽑습니다. 하수인이면, 비용이 (2) 감소합니다."
 	}, 
 	{
@@ -8224,6 +8890,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1141,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":7,
 		"health":8,
 		"race":"정령",
@@ -8238,6 +8905,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":352,
 		"bundle":"주술사_과부하",
+		"type":"무기",
 		"attack":2,
 		"health":8,
 		"text":"질풍 과부하: (2)"
@@ -8251,6 +8919,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41305,
 		"bundle":"사냥꾼_큰 야수들",
+		"type":"하수인",
 		"attack":4,
 		"health":7,
 		"race":"야수",
@@ -8265,6 +8934,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40574,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":2,
 		"health":7,
 		"text":"도발, 이 하수인은 피해를 줄 때마다 그만큼 내 방어도를 증가시킵니다."
@@ -8278,6 +8948,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2068,
 		"bundle":"흑마법사_피",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"악마",
@@ -8292,6 +8963,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":45877,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"주문",
 		"text":"내 은빛 성기사단 신병들에게 +2/+2와 도발을 부여합니다."
 	}, 
 	{
@@ -8303,6 +8975,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1914,
 		"bundle":"주술사_전투의 함성,전사_전설",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 다음 턴에 상대편이 시전하는 주문의 비용이 (5) 증가합니다."
@@ -8316,6 +8989,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":559,
 		"bundle":"사냥꾼_전설,전사_돌진!",
+		"type":"하수인",
 		"attack":6,
 		"health":2,
 		"text":"돌진 전투의 함성: 상대편에게 1/1 새끼용을 둘 소환해 줍니다."
@@ -8329,6 +9003,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46299,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"무기",
 		"attack":0,
 		"health":3,
 		"text":"내 턴이 시작될 때, 내 손에 있는 악마 하나를 소환합니다."
@@ -8342,6 +9017,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42781,
 		"bundle":"사제_최후의 의식",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"전투의 함성: 이번 게임에서 죽은 무작위 죽음의 메아리 하수인 하나를 내 손으로 가져옵니다."
@@ -8355,6 +9031,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2497,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"race":"야수",
@@ -8369,6 +9046,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39417,
 		"bundle":"전사_박살!",
+		"type":"무기",
 		"attack":3,
 		"health":4,
 		"text":"한 턴에 여러번 공격할 수 있습니다. 영웅을 공격할 수 없습니다."
@@ -8382,6 +9060,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":692,
 		"bundle":"드루이드_기본,드루이드_도발",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"선택 - 4/4 돌진 하수인 또는 4/6 도발 하수인으로 변신합니다."
@@ -8395,6 +9074,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40486,
 		"bundle":"주술사_선견자",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"도발, 죽음의 메아리: '폭풍수호자' 카드 1장을 내 덱에 섞어 넣습니다."
@@ -8408,6 +9088,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":86,
 		"bundle":"드루이드_조화",
+		"type":"주문",
 		"text":"선택 - 하수인 하나에게 피해를 5 줍니다. 또는 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
@@ -8419,6 +9100,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2028,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":2,
 		"health":5,
 		"text":"전투의 함성: 내 은빛 성기사단 신병들에게 +2/+2를 부여합니다."
@@ -8432,6 +9114,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2031,
 		"bundle":"성기사_도움의 손길",
+		"type":"하수인",
 		"attack":1,
 		"health":7,
 		"text":"내 손에 이 카드가 있으면, 아군 하수인이 죽을 때마다 공격력을 +1 얻습니다."
@@ -8445,6 +9128,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1931,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":6,
 		"health":2,
 		"text":"전투의 함성: 다른 하수인 하나와 생명력을 바꿉니다."
@@ -8458,6 +9142,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42762,
 		"bundle":"주술사_냉기",
+		"type":"하수인",
 		"attack":2,
 		"health":7,
 		"text":"도발 이 하수인에게 피해를 받은 캐릭터는 빙결 상태가 됩니다."
@@ -8471,6 +9156,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40953,
 		"bundle":"사냥꾼_밀수업자,주술사_전투의 함성",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"전투의 함성: 이 하수인을 둘 복사하여 소환합니다."
@@ -8484,6 +9170,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45392,
 		"bundle":"성기사_천상의 보호막",
+		"type":"하수인",
 		"attack":1,
 		"health":7,
 		"text":"천상의 보호막 아군 하수인 하나가 천상의 보호막을 잃은 후에, 공격력을 +2 얻습니다."
@@ -8497,6 +9184,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2087,
 		"bundle":"사냥꾼_무기",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"race":"기계",
@@ -8511,6 +9199,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40929,
 		"bundle":"사제_묘수",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 하수인 하나를 침묵시킵니다."
@@ -8524,6 +9213,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40803,
 		"bundle":"성기사_멀록,주술사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"race":"멀록",
@@ -8538,6 +9228,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43483,
 		"bundle":"마법사_강력한 주문",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"정령",
@@ -8552,6 +9243,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40742,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"전투의 함성: 드루이드, 도적, 주술사 카드를 1장 발견합니다."
@@ -8565,6 +9257,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38279,
 		"bundle":"전사_무기",
+		"type":"무기",
 		"attack":2,
 		"health":2,
 		"text":"죽음의 메아리: 이 무기를 내 손으로 다시 가져옵니다."
@@ -8578,7 +9271,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42987,
 		"bundle":"주술사_변신",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 내 하수인들을 비용이 (2) 높은 무작위 하수인으로 변신시킵니다."
 	}, 
 	{
@@ -8590,6 +9284,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2552,
 		"bundle":"사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 내 전장에 야수가 있으면, 무작위 야수 1마리를 소환합니다."
@@ -8603,6 +9298,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41094,
 		"bundle":"드루이드_무리의 힘",
+		"type":"주문",
 		"text":"내 마나 수정들을 2/2 하수인으로 변신시킵니다. 그 하수인들이 죽으면 빈 마나 수정을 획득합니다."
 	}, 
 	{
@@ -8614,6 +9310,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41890,
 		"bundle":"전사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"race":"야수",
@@ -8628,6 +9325,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42566,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"상대편의 덱에서 카드를 3장 복사하여 내 손으로 가져옵니다."
 	}, 
 	{
@@ -8639,6 +9337,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2925,
 		"bundle":"사제_수양",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"race":"정령",
@@ -8653,6 +9352,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":456,
 		"bundle":"도적_무법,전사_해적",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"해적",
@@ -8667,6 +9367,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40323,
 		"bundle":"사제_한 장 정도",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 이번 게임에서 내 영웅 능력의 비용이 (0)이 됩니다."
@@ -8680,6 +9381,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2048,
 		"bundle":"드루이드_밀림왕",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 내 전장에 야수가 있으면, 7/7 야수로 변신합니다."
@@ -8693,6 +9395,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38722,
 		"bundle":"주술사_복원",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"race":"정령",
@@ -8707,6 +9410,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42822,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"race":"야수",
@@ -8721,6 +9425,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42909,
 		"bundle":"주술사_선견자",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 아군 하수인 하나에게 \"죽음의 메아리: 이 하수인을 다시 소환함\" 능력을 부여합니다."
@@ -8734,6 +9439,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40971,
 		"bundle":"드루이드_밀림왕",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"race":"야수",
@@ -8748,6 +9454,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38418,
 		"bundle":"마법사_무작위",
+		"type":"주문",
 		"text":"무작위 마법사 주문 셋을 내 손으로 가져옵니다."
 	}, 
 	{
@@ -8759,6 +9466,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43424,
 		"bundle":"마법사_강력한 주문",
+		"type":"주문",
 		"text":"내 덱에 두루마리 카드 5장을 섞어 넣습니다. 두루마리 카드를 뽑으면, 무작위 주문을 하나 시전합니다."
 	}, 
 	{
@@ -8770,6 +9478,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":841,
 		"bundle":"사제_기본,사제_신성",
+		"type":"주문",
 		"text":"모든 적에게 피해를 2 줍니다. 모든 아군 캐릭터의 생명력을 2 회복시킵니다."
 	}, 
 	{
@@ -8781,6 +9490,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38958,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"도발, 이 하수인이 피해를 입을 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
@@ -8794,6 +9504,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41217,
 		"bundle":"도적_암살",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"연계: 하수인 하나를 처치합니다."
@@ -8806,7 +9517,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"희귀",
 		"cardid":1793,
-		"bundle":"사냥꾼_방어,마법사_방어,성기사_도발,사제_최후의 의식,도적_도적_저승사자,흑마법사_도발,전사_도발",
+		"bundle":"사냥꾼_방어,마법사_방어,성기사_도발,사제_최후의 의식,도적_저승사자,흑마법사_도발,전사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"도발 죽음의 메아리: 도발 능력이 있는 1/2 수액괴물을 하나 소환합니다."
@@ -8820,6 +9532,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2615,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"격려: 내 토템들에게 공격력을 +2 부여합니다."
@@ -8833,6 +9546,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39747,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"방어도를 +4 얻습니다. 비용이 4인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
@@ -8844,6 +9558,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":304,
 		"bundle":"전사_무기",
+		"type":"무기",
 		"attack":5,
 		"health":2
 	}, 
@@ -8856,6 +9571,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1985,
 		"bundle":"흑마법사_작은 군단",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 5 줍니다. 대상이 아군 악마면, +5/+5를 부여합니다."
 	}, 
 	{
@@ -8867,6 +9583,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":345,
 		"bundle":"도적_기본,도적_암살",
+		"type":"주문",
 		"text":"적 하수인 하나를 처치합니다."
 	}, 
 	{
@@ -8878,6 +9595,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38764,
 		"bundle":"사제_신성",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 생명력을 5 회복시킵니다."
@@ -8891,6 +9609,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38843,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"주문",
 		"text":"1/1 은빛 성기사단 신병을 5명 소환합니다."
 	}, 
 	{
@@ -8902,6 +9621,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2875,
 		"bundle":"마법사_무작위",
+		"type":"하수인",
 		"attack":6,
 		"health":3,
 		"text":"전투의 함성: 주문을 하나 발견합니다."
@@ -8915,6 +9635,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39700,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"text":"전투의 함성: 내 손에 도적 카드가 아닌 직업 카드가 있으면, 그 카드들의 비용을 (2) 감소시킵니다."
@@ -8928,6 +9649,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2683,
 		"bundle":"마법사_영웅 능력,성기사_전설,흑마법사_큰손,전사_전설",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"격려: 무작위 주문 하나를 내 손으로 가져옵니다."
@@ -8941,6 +9663,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38528,
 		"bundle":"사제_최후의 의식",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"기계",
@@ -8955,6 +9678,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40378,
 		"bundle":"사제_용 사제",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"race":"용족",
@@ -8969,6 +9693,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2299,
 		"bundle":"성기사_용기사",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"용족",
@@ -8983,6 +9708,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":45271,
 		"bundle":"마법사_화염,마법사_강력한 주문",
+		"type":"주문",
 		"text":"내 덱의 주문 하나를 공개해 그 주문의 비용만큼 모든 하수인에게 피해를 줍니다."
 	}, 
 	{
@@ -8994,6 +9720,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42615,
 		"bundle":"드루이드_무리의 힘,드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"죽음의 메아리 (비밀) 선택 - 모든 하수인에게 피해를 3 줍니다. 또는 +2/+2를 부여합니다."
@@ -9007,6 +9734,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41935,
 		"bundle":"사제_묘수,전사_전설",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 개봉하지 않은 운고로 팩 하나를 내 덱에 섞어 넣습니다."
@@ -9020,6 +9748,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":95,
 		"bundle":"드루이드_추가 마나,드루이드_현명한 선택",
+		"type":"주문",
 		"text":"선택 - 마나 수정을 2개 획득합니다. 또는 카드를 3장 뽑습니다."
 	}, 
 	{
@@ -9030,7 +9759,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"영웅",
 		"cardid":45195,
-		"bundle":"사냥꾼_죽음의 메아리,마법사_거인 군대,사제_최후의 의식,도적_도적_저승사자,주술사_선견자,흑마법사_희생",
+		"bundle":"사냥꾼_죽음의 메아리,마법사_거인 군대,사제_최후의 의식,도적_저승사자,주술사_선견자,흑마법사_희생",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"전투의 함성: 아군 하수인 하나를 처치합니다. 죽음의 메아리: 그 하수인을 둘 복사하여 소환합니다."
@@ -9044,6 +9774,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":493,
 		"bundle":"드루이드_무리의 힘",
+		"type":"주문",
 		"text":"2/2 나무정령을 셋 소환합니다."
 	}, 
 	{
@@ -9055,6 +9786,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":41881,
 		"bundle":"흑마법사_도발",
+		"type":"하수인",
 		"attack":1,
 		"health":11,
 		"race":"정령",
@@ -9069,6 +9801,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38898,
 		"bundle":"흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"text":"아군 하수인이 죽을 때마다 내 크툰에게 +1/+1을 부여합니다. (어디에 있든)"
@@ -9082,6 +9815,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45820,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":2,
 		"health":2,
 		"text":"죽음의 메아리: 악마를 하나 소집합니다."
@@ -9095,6 +9829,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1522,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나의 공격력을 2배 증가시킵니다."
 	}, 
 	{
@@ -9106,6 +9841,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39374,
 		"bundle":"사제_부활",
+		"type":"하수인",
 		"attack":3,
 		"health":4,
 		"text":"전투의 함성: 이번 게임에서 죽은 아군 하수인 하나를 무작위로 소환합니다."
@@ -9119,6 +9855,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41410,
 		"bundle":"마법사_정령,사제_정령,주술사_정령",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"race":"정령",
@@ -9133,6 +9870,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46440,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 내 전장에 기본 토템 4개가 전부 있으면, 바람의 군주 알아키르를 소환합니다."
@@ -9146,6 +9884,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2041,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나와 적 영웅에게 피해를 3 줍니다."
 	}, 
 	{
@@ -9157,6 +9896,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2511,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"격려: +2/+2를 얻습니다."
@@ -9170,6 +9910,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42046,
 		"bundle":"사제_정령,사제_주문 활용",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"race":"정령",
@@ -9184,6 +9925,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40641,
 		"bundle":"드루이드_밀림왕",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 아군 야수 1마리에게 +2/+2를 부여합니다."
@@ -9197,6 +9939,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":699,
 		"bundle":"사냥꾼_큰 야수들,사냥꾼_야수 훈련",
+		"type":"하수인",
 		"attack":2,
 		"health":5,
 		"race":"야수",
@@ -9211,6 +9954,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40954,
 		"bundle":"도적_탐욕",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"상대편이 주문을 시전할 때마다 동전을 내 손으로 가져옵니다."
@@ -9224,6 +9968,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":631,
 		"bundle":"흑마법사_기본,흑마법사_버려버려,흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":5,
 		"health":7,
 		"race":"악마",
@@ -9238,6 +9983,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2999,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"모든 하수인에게 피해를 3 줍니다. 이 카드를 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -9249,6 +9995,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43517,
 		"bundle":"주술사_변신",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 아군 하수인 하나를 6/6 정령으로 변신시킵니다."
@@ -9262,6 +10009,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":394,
 		"bundle":"사냥꾼_사격",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 5 주고 그 양옆의 하수인들에게 피해를 2 줍니다."
 	}, 
 	{
@@ -9273,6 +10021,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45329,
 		"bundle":"사냥꾼_큰 야수들,흑마법사_생명력 흡수",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"야수",
@@ -9287,6 +10036,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40683,
 		"bundle":"사냥꾼_무기",
+		"type":"무기",
 		"attack":2,
 		"health":4,
 		"text":"내 영웅이 공격한 후에 1/1 피라냐를 1마리 소환합니다."
@@ -9300,6 +10050,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43064,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":1,
 		"health":6,
 		"text":"생명력 흡수, 이번 게임에서 내가 버린 카드 하나당 공격력을 +1 얻습니다."
@@ -9313,6 +10064,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43363,
 		"bundle":"사냥꾼_비밀",
+		"type":"주문",
 		"text":"3/3 늑대를 2마리 소환합니다. (비밀 카드를 1회 내면 강화됩니다.)"
 	}, 
 	{
@@ -9323,7 +10075,8 @@ var rewardList = [
 		"class":"도적",
 		"rarity":"희귀",
 		"cardid":46296,
-		"bundle":"도적_도적_저승사자",
+		"bundle":"도적_저승사자",
+		"type":"주문",
 		"text":"무작위 적 하수인을 하나 처치합니다. (죽음의 메아리 카드를 3회 내면 강화됩니다.)"
 	}, 
 	{
@@ -9335,6 +10088,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":825,
 		"bundle":"드루이드_조화,마법사_마법 친구들,성기사_용기사,사제_용 사제,도적_탐욕,주술사_전투의 함성,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"용족",
@@ -9349,6 +10103,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2279,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"이 하수인은 피해를 받고 생존할 때마다 다른 험상궂은 손님을 소환합니다."
@@ -9362,6 +10117,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40469,
 		"bundle":"성기사_도움의 손길",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"내 턴이 끝날 때, 내 손에 있는 모든 하수인에게 +1/+1을 부여합니다."
@@ -9375,6 +10131,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41159,
 		"bundle":"주술사_정기",
+		"type":"주문",
 		"text":"모든 하수인에게 15의 피해를 무작위로 나누어 입힙니다. 과부하: (2)"
 	}, 
 	{
@@ -9386,6 +10143,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38429,
 		"bundle":"사제_크툰의 교단",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"text":"전투의 함성: 내 크툰의 공격력이 10 이상이면, 내 영웅의 생명력을 10 회복시킵니다."
@@ -9399,6 +10157,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41864,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나에게 +2/+6과 도발을 부여합니다. 그 하수인이 죽으면, 스테고돈을 1마리 소환합니다."
 	}, 
 	{
@@ -9410,6 +10169,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":932,
 		"bundle":"마법사_마법 친구들,도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"내가 주문을 시전할 때마다 카드를 1장 뽑습니다."
@@ -9423,6 +10183,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2483,
 		"bundle":"사냥꾼_소환",
+		"type":"주문",
 		"text":"1/1 그물거미를 3마리 소환합니다."
 	}, 
 	{
@@ -9434,6 +10195,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42825,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":3,
 		"health":9,
 		"text":"내 영웅이 치유될 때마다 무작위 적 하수인 하나에게 그만큼 피해를 줍니다."
@@ -9447,6 +10209,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":858,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 끝내주는 발명품을 하나 소환합니다."
@@ -9460,6 +10223,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2654,
 		"bundle":"성기사_정의",
+		"type":"주문",
 		"text":"각 플레이어의 전장에서 공격력이 가장 높은 하수인 하나씩을 제외한 모든 하수인을 처치합니다."
 	}, 
 	{
@@ -9471,6 +10235,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39210,
 		"bundle":"사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"race":"용족",
@@ -9485,6 +10250,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1019,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"악마",
@@ -9499,6 +10265,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":46082,
 		"bundle":"드루이드_도발,성기사_도발,흑마법사_도발,전사_도발",
+		"type":"하수인",
 		"attack":4,
 		"health":10,
 		"text":"도발, 전투의 함성: 상대편에게 비용이 2인 하수인 하나를 무작위로 소환해 줍니다."
@@ -9512,6 +10279,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2073,
 		"bundle":"주술사_기계",
+		"type":"하수인",
 		"attack":6,
 		"health":4,
 		"race":"기계",
@@ -9526,6 +10294,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":457,
 		"bundle":"마법사_기본,마법사_냉기,마법사_강력한 주문,마법사_방어",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 2 주고 빙결 상태로 만듭니다."
 	}, 
 	{
@@ -9537,6 +10306,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39714,
 		"bundle":"드루이드_회복",
+		"type":"주문",
 		"text":"생명력을 6 회복시킵니다. 비용이 6인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
@@ -9548,6 +10318,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40603,
 		"bundle":"성기사_용기사,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"도발, 전투의 함성: 용족이 아닌 카드를 뽑을 때까지 카드를 뽑습니다."
@@ -9561,6 +10332,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2883,
 		"bundle":"마법사_한 장 정도,사제_한 장 정도,흑마법사_한 장 정도",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 내 영웅의 생명력을 모두 회복시킵니다."
@@ -9574,6 +10346,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41841,
 		"bundle":"전사_소집",
+		"type":"하수인",
 		"attack":4,
 		"health":3,
 		"text":"전투의 함성: 아군 하수인 하나를 선택합니다. 그 하수인을 내 덱의 무작위 하수인 하나와 교체합니다."
@@ -9587,6 +10360,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1791,
 		"bundle":"사냥꾼_전설",
+		"type":"하수인",
 		"attack":2,
 		"health":8,
 		"race":"야수",
@@ -9601,6 +10375,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43072,
 		"bundle":"주술사_냉기",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"다른 하수인 하나가 빙결 상태가 될 때마다 그 카드를 복사하여 내 손으로 가져옵니다."
@@ -9614,6 +10389,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1993,
 		"bundle":"도적_도둑",
+		"type":"하수인",
 		"attack":5,
 		"health":8,
 		"text":"상대편이 주문을 시전할 때마다 동일한 주문을 내 손으로 가져오고 상대편에게 동전을 줍니다."
@@ -9627,6 +10403,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41885,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 내 덱에 있는 비용이 (3) 이하인 카드를 모두 파괴합니다."
@@ -9640,6 +10417,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39696,
 		"bundle":"드루이드_밀림왕,드루이드_밀림의 괴수",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 아군 야수 1마리를 선택합니다. 그 야수를 복사하여 소환합니다."
@@ -9653,6 +10431,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46263,
 		"bundle":"성기사_전설,성기사_신성한 무기",
+		"type":"무기",
 		"attack":4,
 		"health":2,
 		"text":"죽음의 메아리: 내 손에 있는 하수인 하나에게 +4/+2를 부여합니다. 그 하수인이 죽으면, 이 무기를 다시 장착합니다."
@@ -9666,6 +10445,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2021,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 방어도를 +5 얻습니다."
@@ -9679,6 +10459,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":823,
 		"bundle":"드루이드_조화",
+		"type":"주문",
 		"text":"피해를 5 줍니다. 카드를 1장 뽑습니다."
 	}, 
 	{
@@ -9690,6 +10471,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46027,
 		"bundle":"전사_방어도",
+		"type":"하수인",
 		"attack":5,
 		"health":9,
 		"text":"도발, 내 방어도가 5 이상일 때에만 공격할 수 있습니다."
@@ -9703,6 +10485,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40791,
 		"bundle":"도적_무법",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"해적",
@@ -9717,6 +10500,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":189,
 		"bundle":"주술사_기본,주술사_전투의 함성",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"race":"정령",
@@ -9731,6 +10515,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38832,
 		"bundle":"성기사_용기사",
+		"type":"하수인",
 		"attack":2,
 		"health":8,
 		"race":"용족",
@@ -9745,6 +10530,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40940,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"내 턴이 끝날 때, 무작위 악마 하나를 내 손으로 가져옵니다."
@@ -9758,6 +10544,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40583,
 		"bundle":"마법사_잃어버린 비밀",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"이번 게임에서 내가 낸 비밀 하나당 비용이 (2)씩 감소합니다."
@@ -9771,6 +10558,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":272,
 		"bundle":"사제_사적",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 공격력이 2 이하인 적 하수인 하나를 가져옵니다."
@@ -9784,6 +10572,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40797,
 		"bundle":"드루이드_비취 송곳니",
+		"type":"하수인",
 		"attack":3,
 		"health":6,
 		"text":"도발, 전투의 함성: 비취 골렘을 하나 소환합니다."
@@ -9797,6 +10586,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1938,
 		"bundle":"사제_신성,사제_묘수",
+		"type":"주문",
 		"text":"모든 하수인이 자신의 공격력만큼 피해를 받습니다."
 	}, 
 	{
@@ -9808,6 +10598,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1261,
 		"bundle":"사냥꾼_큰 야수들,사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"race":"야수",
@@ -9822,6 +10613,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38922,
 		"bundle":"사제_암흑",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 내 다른 하수인들을 복사하여 1/1 하수인으로 소환합니다."
@@ -9835,6 +10627,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":39439,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 주문을 하나 발견합니다. 그 카드의 비용만큼 내 영웅의 생명력을 회복시킵니다."
@@ -9848,6 +10641,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":3015,
 		"bundle":"사제_사적,사제_묘수",
+		"type":"주문",
 		"text":"적 하수인 하나를 내 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -9859,6 +10653,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45995,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"race":"정령",
@@ -9873,6 +10668,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":196,
 		"bundle":"도적_기본,도적_회피,도적_탈진",
+		"type":"주문",
 		"text":"모든 하수인을 주인의 손으로 돌려보냅니다."
 	}, 
 	{
@@ -9884,6 +10680,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2726,
 		"bundle":"성기사_비밀",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 내 덱에 있는 모든 종류의 비밀 카드를 1장씩 사용합니다."
@@ -9897,6 +10694,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45833,
 		"bundle":"성기사_은빛 성기사단",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"천상의 보호막, 내 전장에 있는 은빛 성기사단 신병 하나당 비용이 (1)씩 감소합니다."
@@ -9910,6 +10708,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":46445,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":5,
 		"health":4,
 		"text":"전투의 함성: 내 덱에 있는 무작위 하수인의 죽음의 메아리 능력을 얻습니다."
@@ -9923,6 +10722,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1365,
 		"bundle":"사제_신성",
+		"type":"주문",
 		"text":"피해를 5 줍니다. 내 영웅이 생명력을 5 회복합니다."
 	}, 
 	{
@@ -9933,7 +10733,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":1721,
-		"bundle":"사냥꾼_죽음의 메아리,사제_부활,도적_도적_저승사자,주술사_선견자,흑마법사_희생,전사_전설",
+		"bundle":"사냥꾼_죽음의 메아리,사제_부활,도적_저승사자,주술사_선견자,흑마법사_희생,전사_전설",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"죽음의 메아리: 무작위 적 하수인 하나를 가져옵니다."
@@ -9947,6 +10748,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38267,
 		"bundle":"주술사_토템",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"도발 이번 게임에서 내가 소환한 토템 하나당 비용이 (1)씩 감소합니다."
@@ -9960,6 +10762,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2736,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":3,
 		"text":"전투의 함성: 내 기본 영웅 능력을 강화합니다."
@@ -9973,6 +10776,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40596,
 		"bundle":"드루이드_비취 송곳니,도적_비취 연꽃,주술사_비취 연꽃",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"text":"전투의 함성과 죽음의 메아리: 비취 골렘을 하나 소환합니다."
@@ -9986,6 +10790,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2618,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 내 손과 덱에 있는 모든 하수인에게 +1/+1을 부여합니다."
@@ -9999,6 +10804,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43426,
 		"bundle":"마법사_비전",
+		"type":"무기",
 		"attack":0,
 		"health":3,
 		"text":"내 턴이 끝날 때, 카드를 3장 뽑습니다."
@@ -10012,6 +10818,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42804,
 		"bundle":"사제_암흑",
+		"type":"주문",
 		"text":"내 덱에서 무작위 하수인 하나를 복사하여 5/5 하수인으로 소환합니다."
 	}, 
 	{
@@ -10023,6 +10830,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":38882,
 		"bundle":"드루이드_크툰의 교단",
+		"type":"하수인",
 		"attack":5,
 		"health":7,
 		"text":"도발, 전투의 함성: 내 크툰에게 +3/+3을 부여합니다. (어디에 있든)"
@@ -10036,6 +10844,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2632,
 		"bundle":"흑마법사_희생",
+		"type":"주문",
 		"text":"무작위 적 하수인 둘을 처치합니다. 무작위로 카드를 2장 버립니다."
 	}, 
 	{
@@ -10047,6 +10856,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2009,
 		"bundle":"드루이드_현명한 선택",
+		"type":"주문",
 		"text":"선택 - 1/1 위습을 5마리를 소환합니다. 또는 하수인 하나에게 +5/+5와 도발을 부여합니다."
 	}, 
 	{
@@ -10058,6 +10868,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":45308,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"적 하수인 하나를 선택합니다. 내 턴이 시작될 때, 그 하수인을 가져옵니다."
 	}, 
 	{
@@ -10069,6 +10880,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41253,
 		"bundle":"주술사_냉기",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"정령",
@@ -10083,6 +10895,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38395,
 		"bundle":"도적_묘수",
+		"type":"주문",
 		"text":"카드를 1장 뽑습니다. 그 카드를 복사하여 2장 더 내 손으로 가져옵니다."
 	}, 
 	{
@@ -10094,6 +10907,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1100,
 		"bundle":"흑마법사_생명력 흡수",
+		"type":"주문",
 		"text":"하수인 하나를 처치합니다. 내 영웅이 생명력을 3 회복합니다."
 	}, 
 	{
@@ -10105,6 +10919,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42779,
 		"bundle":"사냥꾼_무기,성기사_신성한 무기,도적_검투사,전사_무기",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 내 손에 있는 모든 무기를 버리고 그 무기의 능력치를 얻습니다."
@@ -10118,6 +10933,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2257,
 		"bundle":"전사_용의 심장",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"용족",
@@ -10132,6 +10948,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":40938,
 		"bundle":"사제_용 사제",
+		"type":"주문",
 		"text":"용족을 제외한 모든 하수인에게 피해를 5 줍니다."
 	}, 
 	{
@@ -10143,6 +10960,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46551,
 		"bundle":"마법사_강력한 주문",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 내 덱의 주문 하나를 공개해, 같은 비용의 무작위 하수인을 하나 소환합니다."
@@ -10156,6 +10974,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2621,
 		"bundle":"흑마법사_큰손",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"내 영웅 능력으로 뽑은 카드의 비용이 (0)이 됩니다."
@@ -10169,6 +10988,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":45975,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"연계: 이번 턴에 앞서 낸 카드의 수만큼 피해를 줍니다."
@@ -10182,6 +11002,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41878,
 		"bundle":"마법사_화염,마법사_강력한 주문",
+		"type":"주문",
 		"text":"하수인 하나에게 피해를 15 주고 그 양옆의 하수인들에게 피해를 3 줍니다."
 	}, 
 	{
@@ -10193,6 +11014,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":281,
 		"bundle":"성기사_천상의 보호막,전사_돌진!",
+		"type":"하수인",
 		"attack":4,
 		"health":2,
 		"text":"돌진 천상의 보호막"
@@ -10206,6 +11028,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1174,
 		"bundle":"성기사_정의",
+		"type":"주문",
 		"text":"모든 적에게 8의 피해를 무작위로 나누어 입힙니다."
 	}, 
 	{
@@ -10217,6 +11040,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":556,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"하수인",
 		"attack":7,
 		"health":5,
 		"race":"악마",
@@ -10231,6 +11055,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41869,
 		"bundle":"흑마법사_버려버려",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"죽음의 메아리: 이번 게임에서 내가 버린 하수인 하나를 무작위로 소환합니다."
@@ -10244,6 +11069,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":1995,
 		"bundle":"드루이드_회복",
+		"type":"주문",
 		"text":"적 하수인 하나를 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -10255,6 +11081,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45775,
 		"bundle":"전사_방어도",
+		"type":"주문",
 		"text":"방어도를 +5 얻습니다. 내 손에서 추가 효과를 하나 얻습니다."
 	}, 
 	{
@@ -10266,6 +11093,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2262,
 		"bundle":"사냥꾼_밀수업자,마법사_거인 군대,성기사_도움의 손길,성기사_전설,흑마법사_큰손,전사_떡대들",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"내 턴이 끝날 때, 내 손에 있는 카드들의 비용이 (1) 감소합니다."
@@ -10279,7 +11107,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43398,
 		"bundle":"사냥꾼_큰 야수들,사냥꾼_추적자",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 모든 적 하수인에게 피해를 2 줍니다."
 	}, 
 	{
@@ -10291,6 +11120,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40517,
 		"bundle":"흑마법사_파괴,흑마법사_피",
+		"type":"주문",
 		"text":"모든 캐릭터에게 피해를 5 줍니다."
 	}, 
 	{
@@ -10302,6 +11132,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":420,
 		"bundle":"사제_최후의 의식,주술사_선견자,전사_전설",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"죽음의 메아리: 4/5 바인 블러드후프를 소환합니다."
@@ -10315,6 +11146,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2598,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"text":"격려: 3/5 전투코도를 1마리 소환합니다."
@@ -10328,6 +11160,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2544,
 		"bundle":"마법사_영웅 능력",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"용족",
@@ -10342,6 +11175,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38545,
 		"bundle":"성기사_멀록",
+		"type":"하수인",
 		"attack":2,
 		"health":3,
 		"race":"멀록",
@@ -10356,6 +11190,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":759,
 		"bundle":"성기사_천상의 보호막,성기사_도발",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"도발 천상의 보호막"
@@ -10369,6 +11204,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41145,
 		"bundle":"성기사_정의,성기사_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":7,
 		"text":"도발, 전투의 함성: 다른 모든 하수인의 공격력과 생명력을 3으로 만듭니다."
@@ -10382,6 +11218,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":46058,
 		"bundle":"전사_소집",
+		"type":"주문",
 		"text":"하수인을 하나 소집합니다."
 	}, 
 	{
@@ -10393,6 +11230,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42656,
 		"bundle":"드루이드_도발",
+		"type":"주문",
 		"text":"도발 능력이 있는 1/5 딱정벌레를 하나 소환합니다. 상대편의 하수인이 더 많으면, 이 주문을 한 번 더 시전합니다."
 	}, 
 	{
@@ -10404,6 +11242,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":43331,
 		"bundle":"주술사_과부하",
+		"type":"주문",
 		"text":"아군 하수인 하나를 복사하여 소환합니다. (내 마나 수정 3개를 과부하하면 강화됩니다.)"
 	}, 
 	{
@@ -10415,6 +11254,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":42439,
 		"bundle":"사제_용 사제",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"race":"용족",
@@ -10429,6 +11269,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2258,
 		"bundle":"성기사_용기사",
+		"type":"하수인",
 		"attack":6,
 		"health":4,
 		"race":"용족",
@@ -10443,6 +11284,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1656,
 		"bundle":"성기사_전설",
+		"type":"하수인",
 		"attack":4,
 		"health":5,
 		"text":"전투의 함성: 적 도발 하수인 하나를 처치합니다."
@@ -10456,6 +11298,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41262,
 		"bundle":"드루이드_밀림왕,드루이드_압도",
+		"type":"하수인",
 		"attack":5,
 		"health":3,
 		"race":"야수",
@@ -10470,6 +11313,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":311,
 		"bundle":"사냥꾼_무기",
+		"type":"무기",
 		"attack":5,
 		"health":2,
 		"text":"내 영웅이 공격할 때, 면역 상태가 됩니다."
@@ -10483,6 +11327,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38655,
 		"bundle":"드루이드_현명한 선택",
+		"type":"주문",
 		"text":"선택 - 1/1 위습을 7마리 소환합니다. 또는 내 하수인들에게 +2/+2를 부여합니다."
 	}, 
 	{
@@ -10494,6 +11339,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40541,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"악마",
@@ -10508,6 +11354,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":336,
 		"bundle":"마법사_정령,전사_전설",
+		"type":"하수인",
 		"attack":7,
 		"health":5,
 		"race":"정령",
@@ -10522,6 +11369,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43245,
 		"bundle":"사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":6,
 		"health":7,
 		"text":"죽음의 메아리: 이번 게임에서 죽은 무작위 아군 야수 1마리를 소환합니다."
@@ -10535,6 +11383,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46450,
 		"bundle":"사냥꾼_방어",
+		"type":"주문",
 		"text":"상대편의 가장 왼쪽과 오른쪽에 있는 하수인을 처치합니다."
 	}, 
 	{
@@ -10546,6 +11395,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1080,
 		"bundle":"마법사_마법 친구들",
+		"type":"하수인",
 		"attack":5,
 		"health":7,
 		"text":"내가 주문을 시전할 때마다 '화염구' 카드 1장을 내 손으로 가져옵니다."
@@ -10559,6 +11409,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42633,
 		"bundle":"사제_사적",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"전투의 함성: 상대편의 덱을 복사하여 내 덱에 섞어 넣습니다."
@@ -10572,6 +11423,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2086,
 		"bundle":"성기사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"상대편이 주문을 시전할 때마다 힘센 바위턱트로그를 하나 소환합니다."
@@ -10585,6 +11437,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40703,
 		"bundle":"사냥꾼_밀수업자,성기사_도움의 손길,전사_떡대들",
+		"type":"하수인",
 		"attack":5,
 		"health":6,
 		"text":"전투의 함성: 내 손에 있는 무작위 하수인 하나에게 +5/+5를 부여합니다."
@@ -10598,6 +11451,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41366,
 		"bundle":"사냥꾼_전설",
+		"type":"하수인",
 		"attack":9,
 		"health":9,
 		"race":"야수",
@@ -10612,6 +11466,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45539,
 		"bundle":"성기사_수많은 축복",
+		"type":"하수인",
 		"attack":1,
 		"health":1,
 		"text":"전투의 함성: 이번 게임에서 내 하수인들에게 시전했던 모든 주문을 이 하수인에게 시전합니다."
@@ -10625,6 +11480,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38739,
 		"bundle":"전사_무기",
+		"type":"하수인",
 		"attack":6,
 		"health":5,
 		"text":"전투의 함성: 무작위 무기를 장착합니다."
@@ -10638,6 +11494,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":3007,
 		"bundle":"주술사_멀록",
+		"type":"주문",
 		"text":"내 하수인들에게 +2/+2를 부여합니다. 내 전장에 있는 멀록 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
@@ -10649,6 +11506,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40701,
 		"bundle":"마법사_한 장 정도",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 내 덱에 똑같은 카드가 하나도 없다면, 이번 턴에 내가 시전하는 다음 주문의 비용이 (0)이 됩니다."
@@ -10662,6 +11520,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41116,
 		"bundle":"주술사_정령",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"race":"정령",
@@ -10676,6 +11535,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2078,
 		"bundle":"사냥꾼_전설,성기사_전설",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"전투의 함성: 1/1 폭탄로봇을 둘 소환합니다. 경고: 로봇이 폭발할 수 있음."
@@ -10689,6 +11549,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":1004,
 		"bundle":"마법사_화염,마법사_강력한 주문",
+		"type":"주문",
 		"text":"모든 적 하수인에게 피해를 4 줍니다."
 	}, 
 	{
@@ -10700,6 +11561,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41928,
 		"bundle":"마법사_정령,사제_정령,주술사_정령",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"정령",
@@ -10714,6 +11576,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":39715,
 		"bundle":"마법사_화염",
+		"type":"주문",
 		"text":"피해를 5 줍니다. 비용이 5인 무작위 하수인을 하나 소환합니다."
 	}, 
 	{
@@ -10725,6 +11588,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":40422,
 		"bundle":"주술사_비취 연꽃",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 비취 골렘을 하나 소환하고 도발을 부여합니다."
@@ -10738,6 +11602,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2682,
 		"bundle":"전사_용의 심장",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"race":"용족",
@@ -10752,6 +11617,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2727,
 		"bundle":"성기사_정의",
+		"type":"하수인",
 		"attack":3,
 		"health":7,
 		"text":"전투의 함성: 모든 적 하수인의 공격력을 1로 바꿉니다."
@@ -10765,6 +11631,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38488,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"도발, 전투의 함성: 내 크툰의 공격력이 10 이상이면, 다른 쌍둥이 제왕을 소환합니다."
@@ -10778,6 +11645,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2788,
 		"bundle":"드루이드_밀림왕",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"내가 야수를 소환할 때마다 이 카드의 비용이 (1) 감소합니다."
@@ -10791,6 +11659,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38944,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"이 하수인은 피해를 받을 때마다 도발 능력이 있는 2/2 놀을 1마리 소환합니다."
@@ -10804,7 +11673,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43417,
 		"bundle":"드루이드_도발",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"선택 - 독성 능력이 있는 거미를 2마리 소환합니다. 또는 도발 능력이 있는 딱정벌레를 2마리 소환합니다."
 	}, 
 	{
@@ -10816,6 +11686,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43112,
 		"bundle":"사제_묘수",
+		"type":"주문",
 		"text":"모든 하수인을 상대편의 덱에 섞어 넣습니다."
 	}, 
 	{
@@ -10827,6 +11698,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":9,
 		"bundle":"사제_신성",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"내 주문과 영웅 능력의 피해량과 치유량을 2배 증가시킵니다."
@@ -10840,6 +11712,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2020,
 		"bundle":"전사_광전사,전사_박살!",
+		"type":"주문",
 		"text":"하수인 하나를 처치합니다. 내 전장에 피해를 받은 하수인이 있으면, 비용이 (4) 감소합니다."
 	}, 
 	{
@@ -10851,6 +11724,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":45287,
 		"bundle":"전사_소집",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"죽음의 메아리: 비용이 8인 하수인을 하나 소집합니다."
@@ -10864,6 +11738,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":630,
 		"bundle":"도적_아드레날린 촉진",
+		"type":"주문",
 		"text":"카드를 4장 뽑습니다."
 	}, 
 	{
@@ -10875,6 +11750,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":39225,
 		"bundle":"드루이드_도발,성기사_전설,성기사_도발,전사_도발",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"race":"기계",
@@ -10889,6 +11765,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1035,
 		"bundle":"드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"선택 - 공격력 +5 또는 생명력 +5와 도발을 얻습니다."
@@ -10902,6 +11779,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":43515,
 		"bundle":"사냥꾼_소환",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"야수",
@@ -10916,6 +11794,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38464,
 		"bundle":"흑마법사_피",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"전투의 함성: 이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다."
@@ -10929,6 +11808,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":41859,
 		"bundle":"성기사_은빛 성기사단,성기사_신성한 무기",
+		"type":"무기",
 		"attack":4,
 		"health":3,
 		"text":"내 영웅이 공격한 후에 1/1 은빛 성기사단 신병을 2명 소환합니다."
@@ -10942,6 +11822,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":810,
 		"bundle":"전사_무기",
+		"type":"무기",
 		"attack":7,
 		"health":1,
 		"text":"이 무기는 하수인을 공격할 때 내구도 대신 공격력이 1 감소합니다."
@@ -10955,6 +11836,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":46307,
 		"bundle":"사제_부활",
+		"type":"주문",
 		"text":"서로 다른 아군 하수인 둘을 부활시킵니다. (주문을 4회 시전하면 강화됩니다.)"
 	}, 
 	{
@@ -10966,6 +11848,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45519,
 		"bundle":"전사_무기",
+		"type":"주문",
 		"text":"5/5 미스릴 골렘을 하나 소환합니다. (무기를 1회 장착하면 강화됩니다.)"
 	}, 
 	{
@@ -10977,6 +11860,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2757,
 		"bundle":"전사_돌진!,전사_해적",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"race":"해적",
@@ -10991,6 +11875,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":42790,
 		"bundle":"주술사_전투의 함성",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 아군 하수인 하나에게 +4/+4와 도발을 부여합니다."
@@ -11004,6 +11889,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":40295,
 		"bundle":"성기사_도발",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"도발, 전투의 함성: 양옆의 하수인들에게 천상의 보호막을 부여합니다."
@@ -11017,6 +11903,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46922,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"내 턴이 한 번 더 진행됩니다. 이번 미궁 탐험에서 처치한 우두머리 하나당 비용이 (1)씩 감소합니다."
 	}, 
 	{
@@ -11028,6 +11915,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":2881,
 		"bundle":"전사_도발",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"내 턴이 끝날 때, 도발 능력이 있는 1/1 딱정벌레를 1마리 소환합니다."
@@ -11041,6 +11929,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41286,
 		"bundle":"사냥꾼_큰 야수들,전사_돌진!",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"race":"야수",
@@ -11055,6 +11944,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38909,
 		"bundle":"사냥꾼_큰 야수들",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"야수",
@@ -11069,6 +11959,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46032,
 		"bundle":"마법사_강력한 주문,사제_주문 활용",
+		"type":"하수인",
 		"attack":4,
 		"health":7,
 		"text":"내 턴이 끝날 때, 내 덱에 있는 주문 하나를 시전합니다. (대상은 무작위로 선택)"
@@ -11082,6 +11973,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41130,
 		"bundle":"성기사_수많은 축복",
+		"type":"주문",
 		"text":"하수인 하나의 공격력과 생명력을 10으로 만듭니다."
 	}, 
 	{
@@ -11093,6 +11985,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38895,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":7,
 		"text":"이 하수인은 공격하여 다른 하수인을 처치할 때마다 +2/+2를 얻습니다."
@@ -11106,6 +11999,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":45988,
 		"bundle":"성기사_전설,도적_탐욕,주술사_전투의 함성,전사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 상대편에게 0/8 보물 상자를 하나 소환해 줍니다. (상자를 부수고 멋진 전리품을 획득하세요!)"
@@ -11119,6 +12013,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":338,
 		"bundle":"전사_광전사,전사_돌진!",
+		"type":"하수인",
 		"attack":4,
 		"health":9,
 		"text":"돌진 격노: 공격력 +6"
@@ -11132,6 +12027,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":526,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"각 턴이 끝날 때, +1/+1을 얻습니다."
@@ -11145,6 +12041,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46442,
 		"bundle":"전사_방어도,전사_소집",
+		"type":"하수인",
 		"attack":4,
 		"health":8,
 		"text":"내 턴이 끝날 때, 내 방어도와 같은 비용의 무작위 하수인을 하나 소환합니다. (최대 10)"
@@ -11158,6 +12055,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":859,
 		"bundle":"흑마법사_파괴",
+		"type":"주문",
 		"text":"모든 하수인을 처치합니다."
 	}, 
 	{
@@ -11169,6 +12067,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2546,
 		"bundle":"마법사_비전",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"죽음의 메아리: 신비한 화살 카드 3장을 내 손으로 가져옵니다."
@@ -11182,6 +12081,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46305,
 		"bundle":"주술사_선견자",
+		"type":"무기",
 		"attack":3,
 		"health":3,
 		"text":"내 영웅이 공격한 후에, 주문을 하나 발견하여 무작위 대상에게 시전합니다."
@@ -11195,6 +12095,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42818,
 		"bundle":"드루이드_압도,사냥꾼_전설,마법사_방어,성기사_전설,성기사_도발,흑마법사_도발,전사_도발,전사_전설",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"도발 내 턴이 끝날 때, 무작위 죽음의 기사 카드 1장을 내 손으로 가져옵니다."
@@ -11208,6 +12109,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":205,
 		"bundle":"드루이드_도발",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"도발"
@@ -11221,6 +12123,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46589,
 		"bundle":"사제_사적",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 상대편과 덱을 바꿉니다. 덱을 돌려주는 조건인 '덱값 지불' 카드를 상대편에게 줍니다."
@@ -11234,6 +12137,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":32,
 		"bundle":"주술사_정령",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"race":"정령",
@@ -11248,6 +12152,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":45835,
 		"bundle":"드루이드_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":5,
 		"race":"야수",
@@ -11260,9 +12165,12 @@ var rewardList = [
 		"name":"불의 군주 라그나로스",
 		"class":"중립",
 		"rarity":"전설",
-		"cardid":2318,
+		"cardid":374,
 		"bundle":"드루이드_압도,마법사_정령,마법사_화염,성기사_전설,사제_정령,주술사_정령,전사_전설",
+		"type":"하수인",
+		"attack":8,
 		"health":8,
+		"race":"정령",
 		"text":"이 하수인은 적을 공격할 수 없습니다. 내 턴이 끝날 때, 무작위 적 하나에게 피해를 8 줍니다."
 	}, 
 	{
@@ -11274,6 +12182,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46077,
 		"bundle":"전사_소집",
+		"type":"무기",
 		"attack":3,
 		"health":3,
 		"text":"내 영웅이 공격한 후에 하수인을 하나 소집합니다."
@@ -11287,6 +12196,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38758,
 		"bundle":"성기사_치유",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"정령",
@@ -11301,6 +12211,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2082,
 		"bundle":"드루이드_압도,사냥꾼_전설,주술사_기계,전사_전설",
+		"type":"하수인",
 		"attack":5,
 		"health":7,
 		"race":"기계",
@@ -11315,7 +12226,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43423,
 		"bundle":"전사_모두의 아픔",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 공격 시 양옆의 하수인에게도 피해를 주는 4/3 어둠한을 장착합니다."
 	}, 
 	{
@@ -11327,6 +12239,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":42630,
 		"bundle":"전사_광전사",
+		"type":"하수인",
 		"attack":4,
 		"health":6,
 		"text":"이 하수인은 피해를 받고 생존할 때마다 무작위 전설 하수인을 하나 소환합니다."
@@ -11340,7 +12253,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43408,
 		"bundle":"사제_암흑,사제_주문 활용",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 공격력이 5 이상인 모든 하수인을 처치합니다."
 	}, 
 	{
@@ -11352,6 +12266,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41331,
 		"bundle":"주술사_정령",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"race":"정령",
@@ -11366,6 +12281,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46390,
 		"bundle":"사냥꾼_큰 야수들,사냥꾼_소환,사냥꾼_죽음의 메아리",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성과 죽음의 메아리: 야수를 1마리 소집합니다."
@@ -11379,6 +12295,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1794,
 		"bundle":"사냥꾼_전설,사제_부활,주술사_선견자,전사_전설",
+		"type":"하수인",
 		"attack":6,
 		"health":8,
 		"text":"각 턴이 끝날 때, 이번 턴에 죽은 모든 아군 하수인을 소환합니다."
@@ -11392,6 +12309,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2280,
 		"bundle":"성기사_용기사,흑마법사_큰손",
+		"type":"하수인",
 		"attack":6,
 		"health":8,
 		"race":"용족",
@@ -11406,6 +12324,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":41929,
 		"bundle":"드루이드_도발,드루이드_압도,성기사_용기사,전사_모두의 아픔,전사_도발,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":8,
 		"race":"용족",
@@ -11420,6 +12339,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":890,
 		"bundle":"성기사_천상의 보호막,성기사_도발",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"천상의 보호막, 도발, 죽음의 메아리: 5/3 파멸의 인도자를 장착합니다."
@@ -11433,6 +12353,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":38795,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":7,
 		"health":9,
 		"text":"전투의 함성: 내 크툰에게 +2/+2를 부여합니다. (어디에 있든) 내 크툰이 죽었다면, 크툰을 내 덱에 섞어 넣습니다."
@@ -11446,6 +12367,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46056,
 		"bundle":"흑마법사_도발,흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":3,
 		"health":9,
 		"race":"악마",
@@ -11460,6 +12382,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":777,
 		"bundle":"흑마법사_끔찍한 악마,흑마법사_큰손",
+		"type":"하수인",
 		"attack":3,
 		"health":15,
 		"race":"악마",
@@ -11474,6 +12397,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2261,
 		"bundle":"전사_용의 심장",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"용족",
@@ -11488,6 +12412,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46449,
 		"bundle":"전사_소집",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"전투의 함성: 공격력이 1, 2, 3인 하수인을 하나씩 소집합니다."
@@ -11501,6 +12426,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2964,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":7,
 		"health":8,
 		"text":"전투의 함성: 강력한 유물을 발견합니다."
@@ -11514,7 +12440,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43419,
 		"bundle":"마법사_정령,마법사_영웅 능력",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 3/6 물의 정령을 하나 소환합니다. 이번 게임에서 내 정령들이 생명력 흡수 능력을 얻습니다."
 	}, 
 	{
@@ -11526,6 +12453,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1986,
 		"bundle":"흑마법사_끔찍한 악마",
+		"type":"하수인",
 		"attack":9,
 		"health":7,
 		"race":"악마",
@@ -11540,6 +12468,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":436,
 		"bundle":"드루이드_조화,마법사_마법 친구들,성기사_용기사,사제_용 사제",
+		"type":"하수인",
 		"attack":4,
 		"health":12,
 		"race":"용족",
@@ -11554,6 +12483,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":2001,
 		"bundle":"드루이드_회복",
+		"type":"주문",
 		"text":"모든 캐릭터를 최대 생명력으로 회복시킵니다."
 	}, 
 	{
@@ -11565,6 +12495,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":36,
 		"bundle":"드루이드_현명한 선택",
+		"type":"하수인",
 		"attack":5,
 		"health":8,
 		"text":"선택 - 내 다른 하수인들에게 +2/+2를 부여합니다. 또는 도발 능력이 있는 2/2 나무정령을 둘 소환합니다."
@@ -11578,6 +12509,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40537,
 		"bundle":"흑마법사_한 장 정도",
+		"type":"하수인",
 		"attack":7,
 		"health":9,
 		"race":"악마",
@@ -11592,6 +12524,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2796,
 		"bundle":"드루이드_압도",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"text":"내 하수인들의 비용이 (1)이 됩니다."
@@ -11605,6 +12538,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38727,
 		"bundle":"사냥꾼_소환",
+		"type":"주문",
 		"text":"동료 야수 3마리를 모두 소환합니다."
 	}, 
 	{
@@ -11616,6 +12550,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2725,
 		"bundle":"전사_돌진!",
+		"type":"하수인",
 		"attack":10,
 		"health":10,
 		"text":"돌진 영웅을 공격할 수 없습니다."
@@ -11627,9 +12562,13 @@ var rewardList = [
 		"name":"오닉시아",
 		"class":"중립",
 		"rarity":"전설",
-		"cardid":2431,
+		"cardid":363,
 		"bundle":"성기사_용기사",
-		"health":15
+		"type":"하수인",
+		"attack":8,
+		"health":8,
+		"race":"용족",
+		"text":"전투의 함성: 내 전장을 1/1 새끼용으로 가득 채웁니다."
 	}, 
 	{
 		"id":"reward0935",
@@ -11640,6 +12579,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41294,
 		"bundle":"마법사_정령,사제_정령,주술사_정령",
+		"type":"하수인",
 		"attack":5,
 		"health":5,
 		"race":"정령",
@@ -11654,6 +12594,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1144,
 		"bundle":"사냥꾼_전설",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"야수",
@@ -11668,6 +12609,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":46557,
 		"bundle":"성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":2,
 		"health":4,
 		"text":"내 턴이 끝날 때, 용족을 하나 소집합니다."
@@ -11681,6 +12623,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":46499,
 		"bundle":"마법사_강력한 주문",
+		"type":"하수인",
 		"attack":3,
 		"health":3,
 		"text":"전투의 함성: 이번 게임에서 내가 비용이 (5) 이상인 주문을 시전한만큼 5/5 용을 소환합니다."
@@ -11694,6 +12637,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":39119,
 		"bundle":"드루이드_압도,전사_도발",
+		"type":"하수인",
 		"attack":5,
 		"health":9,
 		"text":"도발 이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다."
@@ -11707,6 +12651,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":1186,
 		"bundle":"드루이드_압도,성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":12,
 		"race":"용족",
@@ -11721,6 +12666,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":43494,
 		"bundle":"성기사_용기사,사제_용 사제,전사_도발,전사_용의 심장",
+		"type":"하수인",
 		"attack":4,
 		"health":12,
 		"race":"용족",
@@ -11735,7 +12681,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43406,
 		"bundle":"성기사_치유",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 5/3 생명력 흡수 무기를 장착합니다."
 	}, 
 	{
@@ -11747,6 +12694,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38861,
 		"bundle":"도적_크툰의 교단",
+		"type":"하수인",
 		"attack":4,
 		"health":4,
 		"text":"전투의 함성: 하수인 하나를 처치합니다. 그 하수인의 공격력과 생명력을 내 크툰에게 부여합니다. (어디에 있든)"
@@ -11760,6 +12708,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41425,
 		"bundle":"전사_모두의 아픔",
+		"type":"하수인",
 		"attack":9,
 		"health":7,
 		"race":"야수",
@@ -11774,6 +12723,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43439,
 		"bundle":"드루이드_도발",
+		"type":"하수인",
 		"attack":3,
 		"health":7,
 		"race":"야수",
@@ -11788,7 +12738,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43392,
 		"bundle":"도적_묘수",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 내 다음 턴까지 은신합니다."
 	}, 
 	{
@@ -11800,6 +12751,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42598,
 		"bundle":"사제_최후의 의식,사제_부활,사제_묘수",
+		"type":"하수인",
 		"attack":4,
 		"health":8,
 		"text":"도발, 생명력 흡수 죽음의 메아리: 무작위 적 하수인 하나를 처치합니다."
@@ -11813,6 +12765,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42759,
 		"bundle":"드루이드_자연의 방어",
+		"type":"주문",
 		"text":"피해를 5 주고, 카드를 5장 뽑고, 방어도를 +5 얻고, 5/5 구울을 하나 소환합니다."
 	}, 
 	{
@@ -11824,6 +12777,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":834,
 		"bundle":"드루이드_압도,성기사_용기사,흑마법사_파괴,전사_용의 심장",
+		"type":"하수인",
 		"attack":12,
 		"health":12,
 		"race":"용족",
@@ -11838,6 +12792,7 @@ var rewardList = [
 		"rarity":"희귀",
 		"cardid":2898,
 		"bundle":"성기사_멀록",
+		"type":"주문",
 		"text":"이번 게임에서 죽은 멀록 7마리를 소환합니다."
 	}, 
 	{
@@ -11849,6 +12804,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":211,
 		"bundle":"흑마법사_무리",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"전장의 다른 하수인 하나당 비용이 (1)씩 감소합니다."
@@ -11862,6 +12818,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":2760,
 		"bundle":"전사_전설",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"전투의 함성: 카드를 3장 뽑습니다. 하수인을 뽑으면 바로 내 전장에 놓습니다."
@@ -11875,6 +12832,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1087,
 		"bundle":"마법사_화염,마법사_강력한 주문",
+		"type":"주문",
 		"text":"피해를 10 줍니다."
 	}, 
 	{
@@ -11886,6 +12844,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46418,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"내 전장을 전설 하수인으로 가득 채웁니다. 내 영웅이 생명력을 모두 회복합니다."
 	}, 
 	{
@@ -11897,6 +12856,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38943,
 		"bundle":"성기사_용기사,사제_용 사제,전사_용의 심장",
+		"type":"하수인",
 		"attack":12,
 		"health":12,
 		"race":"용족",
@@ -11911,6 +12871,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":40416,
 		"bundle":"드루이드_밀림의 괴수,드루이드_압도",
+		"type":"하수인",
 		"attack":7,
 		"health":7,
 		"text":"선택 - 방어도를 +10 얻습니다. 또는 내 마나 수정을 모두 회복합니다."
@@ -11924,6 +12885,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":8,
 		"bundle":"사제_사적",
+		"type":"주문",
 		"text":"적 하수인 하나를 가져옵니다."
 	}, 
 	{
@@ -11935,6 +12897,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38857,
 		"bundle":"드루이드_크툰의 교단,사제_크툰의 교단,도적_크툰의 교단,흑마법사_크툰의 교단",
+		"type":"하수인",
 		"attack":6,
 		"health":6,
 		"text":"전투의 함성: 모든 적에게 이 하수인의 공격력만큼의 피해를 무작위로 나누어 입힙니다."
@@ -11947,7 +12910,8 @@ var rewardList = [
 		"class":"중립",
 		"rarity":"전설",
 		"cardid":38496,
-		"bundle":"사냥꾼_죽음의 메아리,사제_최후의 의식,도적_도적_저승사자",
+		"bundle":"사냥꾼_죽음의 메아리,사제_최후의 의식,도적_저승사자",
+		"type":"하수인",
 		"attack":5,
 		"health":7,
 		"text":"전투의 함성: 이번 게임에서 죽은 내 죽음의 메아리 하수인들을 소환합니다."
@@ -11962,6 +12926,7 @@ var rewardList = [
 		"rarity":"일반",
 		"cardid":46425,
 		"bundle":"보물",
+		"type":"주문",
 		"text":"영웅 하나가 죽을 때까지 무작위 대상에게 '불덩이 작렬'을 시전합니다."
 	}, 
 	{
@@ -11973,6 +12938,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":41954,
 		"bundle":"드루이드_밀림의 괴수,드루이드_압도",
+		"type":"하수인",
 		"attack":12,
 		"health":12,
 		"race":"야수",
@@ -11987,6 +12953,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":38770,
 		"bundle":"흑마법사_파괴,흑마법사_희생",
+		"type":"주문",
 		"text":"모든 하수인을 처치합니다. 처치한만큼 카드를 뽑습니다."
 	}, 
 	{
@@ -11998,7 +12965,8 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":43415,
 		"bundle":"흑마법사_생명력 흡수,흑마법사_끔찍한 악마",
-		"health":30,
+		"type":"영웅 교체",
+		"health":5,
 		"text":"전투의 함성: 이번 게임에서 죽은 모든 아군 악마를 소환합니다."
 	}, 
 	{
@@ -12010,6 +12978,7 @@ var rewardList = [
 		"rarity":"전설",
 		"cardid":38312,
 		"bundle":"드루이드_압도,사냥꾼_전설,전사_소집",
+		"type":"하수인",
 		"attack":10,
 		"health":10,
 		"text":"내 턴이 끝날 때, 내 덱에서 하수인 하나를 뽑아 전장에 놓습니다."
@@ -12023,6 +12992,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":42765,
 		"bundle":"주술사_과부하",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"race":"정령",
@@ -12037,6 +13007,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":39426,
 		"bundle":"마법사_거인 군대",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"이번 게임에서 내가 시전한 주문 하나당 비용이 (1)씩 감소합니다."
@@ -12050,6 +13021,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":993,
 		"bundle":"흑마법사_큰손",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"내 손에 있는 다른 카드 1장당 비용이 (1)씩 감소합니다."
@@ -12063,6 +13035,7 @@ var rewardList = [
 		"rarity":"영웅",
 		"cardid":1372,
 		"bundle":"마법사_거인 군대,흑마법사_피,흑마법사_큰손",
+		"type":"하수인",
 		"attack":8,
 		"health":8,
 		"text":"내 영웅이 받은 피해 1당 비용이 (1)씩 감소합니다."

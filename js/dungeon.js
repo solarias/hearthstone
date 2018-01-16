@@ -57,7 +57,7 @@ function speak(input) {
         case "success":
             arr = [
                 "이 정도로 훈련 충분하다고 보나? 다시 훈련소에 들어가라.",
-                "어떠냐, 이번 미궁 덱은 마음에 드느냐?",
+                "어떠냐, 이번 미궁 덱은 마음에 드나?",
                 "이번에는 운이 좋았군. 한 번 더 도전해봐라.",
                 "쿠엘델라가 얻지 못했다면 이겨도 이긴 게 아니다. 쿠엘델라는 손에 얻었나?"
             ]
@@ -165,8 +165,47 @@ function card_generate(id, quantity) {
 function card_preview(cmd, cardid) {
     switch(cmd) {
         case "show":
-            $("#card_preview").src = INVENURL + cardid + ".jpg";
+            //카드 정보
+            let card = indexArrKey(rewardList,"cardid",parseInt(cardid));
+            //카드 이미지
+            $("#card_preview").src = INVENURL + card.cardid + ".jpg";
             $("#card_preview").classList.remove("hidden");
+            //카드 이름
+            $("#preview_card_name").innerHTML = card.name;
+            //카드 텍스트
+            if (card.text) $("#preview_card_text").innerHTML = card.text;
+                else $("#preview_card_text").innerHTML = "";
+            //카드 공격력
+            if (card.attack) $("#preview_card_attack").innerHTML = card.attack;
+                else $("#preview_card_attack").innerHTML = "";
+            //카드 체력
+            if (card.health) $("#preview_card_health").innerHTML = card.health;
+                else $("#preview_card_health").innerHTML = "";
+            //카드 타입
+            switch(card.type) {
+                case "하수인":
+                    $("#preview_card_bottom").classList.remove("spell");
+                    $("#preview_card_health").classList.remove("armor");
+                    if (card.race) $("#preview_card_type").innerHTML = card.race;
+                        else $("#preview_card_type").innerHTML = "하수인";
+                    break;
+                case "주문":
+                    $("#preview_card_bottom").classList.add("spell");
+                    $("#preview_card_health").classList.remove("armor");
+                    $("#preview_card_type").innerHTML = "주문";
+                    break;
+                case "무기":
+                    $("#preview_card_bottom").classList.remove("spell");
+                    $("#preview_card_health").classList.add("armor");
+                    $("#preview_card_type").innerHTML = "무기";
+                    break;
+                case "영웅 교체":
+                    $("#preview_card_bottom").classList.remove("spell");
+                    $("#preview_card_health").classList.add("armor");
+                    $("#preview_card_type").innerHTML = "영웅 교체";
+                    break;
+            }
+
             break;
         case "hide":
             $("#card_preview").classList.add("hidden");
@@ -215,6 +254,9 @@ function card_input(param) {
             imageHeight:260,
             title:"쿠엘델라 완성!",
             confirmButtonText: '확인'
+        }).then(function() {
+            //스크롤 고정
+            $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
         })
     }
 }
@@ -498,7 +540,7 @@ function select_class() {
             //버튼 변경
             $("#status_button").classList.remove("start");
             $("#status_button").classList.add("end");
-            $("#status_button").innerHTML = "탐험 포기";
+            $("#status_button").innerHTML = "훈련 중단";
         //기본덱 구축
         card_input(selectedClass);
         //던전 개방
@@ -643,6 +685,9 @@ function dungeon_create(type, stageNum) {
                             imageHeight:260,
                             title:"옳챙이의 낚싯대 획득!",
                             confirmButtonText: '확인'
+                        }).then(function() {
+                            //스크롤 고정
+                            $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
                         })
                         break;
                     //2. 보물창고
@@ -659,6 +704,8 @@ function dungeon_create(type, stageNum) {
                             title:arr[0].name + " 획득!",
                             confirmButtonText: '확인'
                         }).then(function() {
+                            //스크롤 고정
+                            $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
                             card_input(arr[0].id);
                             swal({
                                 imageUrl:INVENURL + arr[1].cardid + ".jpg",
@@ -667,6 +714,8 @@ function dungeon_create(type, stageNum) {
                                 title:arr[1].name + " 획득!",
                                 confirmButtonText: '확인'
                             }).then(function() {
+                                //스크롤 고정
+                                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
                                 card_input(arr[1].id);
                                 swal({
                                     imageUrl:INVENURL + arr[2].cardid + ".jpg",
@@ -675,6 +724,8 @@ function dungeon_create(type, stageNum) {
                                     title:arr[2].name + " 획득!",
                                     confirmButtonText: '확인'
                                 }).then(function() {
+                                    //스크롤 고정
+                                    $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
                                     card_input(arr[2].id);
                                 })
                             })
@@ -844,7 +895,7 @@ function dungeon_reset(cmd) {
     //버튼 초기화
     $("#status_button").classList.remove("end");
     $("#status_button").classList.add("start");
-    $("#status_button").innerHTML = "탐험 시작";
+    $("#status_button").innerHTML = "모험 시작";
 
     //토그 반응(실패라면)
     if (cmd === false)
@@ -865,8 +916,96 @@ function dungeon_clear() {
     //버튼 초기화
     $("#status_button").classList.remove("end");
     $("#status_button").classList.add("start");
-    $("#status_button").innerHTML = "탐험 시작";
+    $("#status_button").innerHTML = "모험 시작";
 
+    //소소한 업적
+        let num = 0;
+        //크툰 3마리
+        let cthun = indexArrKey(rewardList,"name","크툰").id;//크툰 ID
+        num = 0;
+        info.deck.forEach(function(x) {
+            if (x === cthun) num += 1;
+        })
+        if (num >= 3) {
+            swal({
+                imageUrl:INVENURL + "38857.jpg",
+                imageWidth:180,
+                imageHeight:260,
+                title:"업적: 크툰께서 날 보셨어!",
+                text:"크툰 3장 확보하기",
+                confirmButtonText: '확인'
+            }).then(function() {
+                //스크롤 고정
+                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
+            })
+        }
+        //아이야 6마리
+        let aya = indexArrKey(rewardList,"name","아이야 블랙포우").id;//아이야 ID
+        num = 0;
+        info.deck.forEach(function(x) {
+            if (x === aya) num += 1;
+        })
+        if (num >= 6) {
+            swal({
+                imageUrl:INVENURL + "40596.jpg",
+                imageWidth:180,
+                imageHeight:260,
+                title:"업적: 아이야 패거리",
+                text:"아이야 6장 확보하기",
+                confirmButtonText: '확인'
+            }).then(function() {
+                //스크롤 고정
+                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
+            })
+        }
+        //완전한 하이랜더
+        let highlander = [];
+        info.deck.forEach(function(x) {
+            if (highlander.indexOf(x) < 0) highlander.push(x);
+        })
+        if (highlander.length === info.deck.length) {
+            swal({
+                imageUrl:INVENURL + "40408.jpg",
+                imageWidth:180,
+                imageHeight:260,
+                title:"업적: 비밀 결사의 종복",
+                text:"미궁 덱에 중복 카드 하나도 없이 훈련 완료하기",
+                confirmButtonText: '확인'
+            }).then(function() {
+                //스크롤 고정
+                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
+            })
+        }
+        //낚싯대 획득
+        let pole = indexArrKey(rewardList,"name","옳챙이의 낚싯대").id;
+        if (info.deck.indexOf(pole) >= 0) {
+            swal({
+                imageUrl:INVENURL + "46251.jpg",
+                imageWidth:180,
+                imageHeight:260,
+                title:"업적: 흔치 않은 낚싯대",
+                text:"옳챙이의 낚싯대 확보하기",
+                confirmButtonText: '확인'
+            }).then(function() {
+                //스크롤 고정
+                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
+            })
+        }
+        //쿠엘델라 획득
+        let queldelar = indexArrKey(rewardList,"name","쿠엘델라").id;
+        if (info.deck.indexOf(queldelar) >= 0) {
+            swal({
+                imageUrl:INVENURL + "47044.jpg",
+                imageWidth:180,
+                imageHeight:260,
+                title:"업적: 전설의 검",
+                text:"쿠엘델라 확보하기",
+                confirmButtonText: '확인'
+            }).then(function() {
+                //스크롤 고정
+                $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
+            })
+        }
     //토그 축사
     speak("success");
 }
@@ -891,6 +1030,17 @@ window.onload = function() {
     $("#tog").style.transform = "scale(1)";
     speak("init");
 
+    //안내 문구
+    swal({
+        imageUrl:"./images/dungeon/wallpaper.jpg",
+        imageWidth:300,
+        imageHeight:260,
+        confirmButtonText: '예',
+        title:"미궁 탐험 훈련소 안내문",
+        html:"'미궁 탐험 훈련소'는 실제 미궁 탐험과 다를 수 있지 너무 신뢰하지 말고 재미로만 이용해주세요.<br><br>"+
+            "내부에서 사용된 대부분의 이미지는 인벤 카드 이미지입니다. 해당 컨텐츠를 절대로 상업적으로 이용하지 않겠습니다."
+    })
+
     //탐험 시작 버튼
     $("#status_button").onclick = function() {
         //현 상태 : 준비중 or 클리어 완료
@@ -902,7 +1052,7 @@ window.onload = function() {
             //경고창
             swal({
                 type:"warning",
-                title:"정말로 탐험을 포기하시겠습니까?",
+                title:"정말로 훈련을 중단하시겠습니까?",
                 showCancelButton: true,
                 confirmButtonText: '예',
                 cancelButtonText: '아니오',
