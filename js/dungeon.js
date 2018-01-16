@@ -1013,7 +1013,7 @@ function dungeon_clear() {
 //=============================================================================================
 //
 //
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function(e) {
     //IE 경고
     (function() {
         let agent = navigator.userAgent.toLowerCase();
@@ -1066,4 +1066,4 @@ window.onload = function() {
             //(승인 시)리셋 - 포기
         }
     }
-}
+});
