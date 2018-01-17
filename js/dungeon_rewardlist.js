@@ -9781,16 +9781,16 @@ var rewardList = [
 		"id":"reward0732",
 		"cost":5,
 		"name_en":"tar lurker",
-		"name":"잿멍울 군주",
+		"name":"잿멍울 잠복꾼",
 		"class":"흑마법사",
 		"rarity":"일반",
-		"cardid":41881,
+		"cardid":41194,
 		"bundle":"흑마법사_도발",
 		"type":"하수인",
 		"attack":1,
-		"health":11,
+		"health":7,
 		"race":"정령",
-		"text":"도발, 상대편의 턴 동안 공격력을 +4 얻습니다."
+		"text":"도발, 상대편의 턴 동안 공격력을 +3 얻습니다."
 	}, 
 	{
 		"id":"reward0733",

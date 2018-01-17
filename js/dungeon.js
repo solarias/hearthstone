@@ -165,6 +165,8 @@ function card_generate(id, quantity) {
 function card_preview(cmd, cardid) {
     switch(cmd) {
         case "show":
+            //카드 정보 창 활성화
+            $("#preview_card").style.display = "block";
             //카드 정보
             let card = indexArrKey(rewardList,"cardid",parseInt(cardid));
             //카드 이미지
@@ -210,6 +212,8 @@ function card_preview(cmd, cardid) {
         case "hide":
             $("#card_preview").classList.add("hidden");
             $("#card_preview").src = "";
+            //카드 정보 창 활성화
+            $("#preview_card").style.display = "none";
             break;
     }
 }
@@ -346,7 +350,8 @@ function card_bundling(theme) {
             //해당 직업 카드 수집
             let all = [];
             rewardList.forEach(function(reward) {
-                if (reward.class.indexOf(selectedClass) >= 0) {
+                let classes = reward.class.split(",");
+                if (classes.indexOf(selectedClass) >= 0) {
                     all.push(reward.id);
                 }
             });
@@ -706,7 +711,8 @@ function dungeon_create(type, stageNum) {
                         }).then(function() {
                             //스크롤 고정
                             $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
-                            card_input(arr[0].id);
+                            //card_input(arr[0].id);
+                            card_input("reward0007");
                             swal({
                                 imageUrl:INVENURL + arr[1].cardid + ".jpg",
                                 imageWidth:180,
@@ -716,7 +722,8 @@ function dungeon_create(type, stageNum) {
                             }).then(function() {
                                 //스크롤 고정
                                 $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
-                                card_input(arr[1].id);
+                                //card_input(arr[1].id);
+                                card_input("reward0550");
                                 swal({
                                     imageUrl:INVENURL + arr[2].cardid + ".jpg",
                                     imageWidth:180,
@@ -726,7 +733,8 @@ function dungeon_create(type, stageNum) {
                                 }).then(function() {
                                     //스크롤 고정
                                     $("#main_select_frame").scrollTop = $("#main_select_" + info.stage.toString()).offsetTop - 5;
-                                    card_input(arr[2].id);
+                                    //card_input(arr[2].id);
+                                    card_input("reward0550");
                                 })
                             })
                         })

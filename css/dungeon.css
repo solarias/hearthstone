@@ -205,6 +205,9 @@ html, body {
             #card_preview.hidden {
                 visibility:hidden;
             }
+    #preview_card {
+        display:none;
+    }
     #preview_card_name {
         margin:0 auto;
         width:180px;
