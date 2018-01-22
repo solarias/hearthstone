@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<link rel="stylesheet" type="text/css" href="./css/mycard2.css" />
+
+		<title>나에게 맞는 카드 2</title>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>나에게 맞는 카드 2</h1>
+			<h2>이미지를 입력하면 나에게 맞는 하수인 카드가 출력됩니다.</h2>
+			<input id="inputimg" type="file"> <button id="inputname">이름 설정</button>
+			<br/>
+			<div id="frame_card">
+				<div id="card_image"></div>
+				<div id="card_body" class="frame_neutral"></div>
+				<div id="card_rarity"></div>
+				<div id="card_cost"></div>
+				<div id="card_name">
+					<div id="card_name_text"></div>
+				</div>
+				<div id="card_desc">
+					<p id="card_desc_text"></p>
+				</div>
+				<div id="card_race"></div>
+				<div id="card_attack"></div>
+				<div id="card_health"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./js/md5.js"></script>
+		<script type="text/javascript" src="./js/seedrandom.js"></script>
+		<script type="text/javascript" src="./js/cards.js"></script>
+		<script type="text/javascript">
+			let pool = [], temp, name = "";
+			function generatePool() {
+				cards.forEach(function(card, i) {
+					if (card.type === "MINION")
+						pool.push(card);
+				})
+			}
+			function generateCard(seed) {
+				Math.seedrandom(seed);
+
+				function pick() {
+					let selected = shuffle(deepCopy(pool))[0];
+
+					if (selected.dbfId !== 43430) {
+						return selected;
+					} else {
+						return pick();
+					}
+				}
+
+				//직업 선택 및 출력
+				let classList = [
+					"neutral","neutral","neutral","neutral",
+					"warrior","shaman","rogue",
+					"paladin","hunter","druid",
+					"warlock","mage","priest"
+				];
+				let card_class = shuffle(classList)[0];
+					$("#card_body").className = "frame_" + card_class;
+				//등급 선택 및 출력
+				temp = pick(), card_rarity = "";
+				if (temp.rarity !== undefined) {
+					card_rarity = temp.rarity.toLowerCase();
+				} else {
+					card = "free";
+				}
+				$("#card_rarity").className = "frame_" + card_rarity;
+				//비용 선택 및 출력
+				temp = pick(), card_cost = "";
+				if (temp.cost !== undefined) {
+					card_cost = temp.cost.toString();
+				} else {
+					card_cost = "0";
+				}
+				$("#card_cost").innerHTML = card_cost;
+				//공격력 선택 및 출력
+				temp = pick(), card_attack = "";
+				if (temp.attack !== undefined) {
+					card_attack = temp.attack.toString();
+				} else {
+					card_attack = "0";
+				}
+				$("#card_attack").innerHTML = card_attack;
+				//생명력 선택 및 출력
+				temp = pick(), card_health = "";
+				if (temp.health !== undefined) {
+					card_health = temp.health.toString();
+				} else {
+					card_health = "0";
+				}
+				$("#card_health").innerHTML = card_health;
+				//종족 선택 및 출력
+				temp = pick(), card_race = "";
+				if (temp.race !== undefined) {
+					card_race = temp.race;
+					$("#card_race").innerHTML = card_race;
+					$("#card_race").style.display = "block";
+				} else {
+					$("#card_race").innerHTML = "";
+					$("#card_race").style.display = "none";
+				}
+				//효과 선택 및 출력
+				temp = pick(), card_desc_text = "";
+				if (temp.text !== undefined) {
+					card_desc_text = temp.text;
+					//불필요 키워드 걸러내기
+					card_desc_text = card_desc_text.replace("@","");
+					card_desc_text = card_desc_text.replace("$","");
+					card_desc_text = card_desc_text.replace("#","");
+					card_desc_text = card_desc_text.replace("[x]","");
+					card_desc_text = card_desc_text.replace("{0}","");
+					$("#card_desc_text").innerHTML = card_desc_text;
+				} else {
+					$("#card_desc_text").innerHTML = "";
+				}
+			}
+			document.addEventListener("DOMContentLoaded", function(e) {
+				//준비
+				generatePool();
+
+				//이미지 변경
+				$("#inputimg").onchange = function() {
+			        //버튼 비활성화
+			        $("#inputimg").disabled = true;
+			        $("#inputname").disabled = true;
+
+			        //이미지 불러오기
+			        var file = $("#inputimg").files[0];
+			        var imageType = /image.*/;
+
+			        if (file) {
+			            if (file.type.match(imageType)) {
+			                var reader = new FileReader();
+			                if (file.name !== undefined) reader.fileName = file.name;
+
+			                reader.onload = function(readerEvt) {
+								//이미지 출력
+								var image = new Image();
+								image.src = reader.result;
+
+								image.onload = function() {
+									let ratio = this.height/this.width;
+									let card = $("#card_image");
+									if (ratio > 335 / 240) {
+										$("#card_image").style.backgroundSize = "240px auto";
+									} else {
+										$("#card_image").style.backgroundSize = "auto 335px";
+									}
+									$("#card_image").style.backgroundImage = "url(" + this.src + ")";
+								};
+								//BASE64 지정
+								let seed = md5(reader.result.split(",")[1]);
+
+								//랜덤 시드값 설정
+
+								//카드 출력
+								generateCard(seed);
+
+								//이름 교체(있으면)
+			                    if (readerEvt.target.fileName !== undefined) {
+			                        var title = readerEvt.target.fileName.split(".");
+			                        title.pop();
+			                        $("#card_name_text").innerHTML = title.join("");
+			                    }
+
+								//버튼 활성화
+								$("#inputimg").disabled = false;
+								$("#inputname").disabled = false;
+			                };
+
+			                reader.readAsDataURL(file);
+			            } else {
+			                alert("※ 경고 : 지원되지 않는 파일입니다.");
+			                //버튼 활성화
+			                $("#inputimg").disabled = false;
+			                $("#inputname").disabled = false;
+			            }
+			        } else {
+			            //버튼 활성화
+			            $("#inputimg").disabled = false;
+			            $("#inputname").disabled = false;
+			        }
+				}
+
+				//이름 설정
+				$("#inputname").onclick = function() {
+					let input = prompt("카드의 이름을 설정해주세요.");
+					if (input.length <= 0) {
+						alert("한 글자 이상 입력해야 이름이 반영됩니다.");
+					} else {
+						$("#card_name_text").innerHTML = input;
+					}
+				}
+
+			});
+		</script>
+
+
+	</body>
+
+</html>
