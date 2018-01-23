@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
 		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
 
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
 		<link rel="stylesheet" type="text/css" href="./css/mycard2.css" />
 
 		<title>나에게 맞는 카드 2</title>
@@ -15,26 +16,36 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<h1>나에게 맞는 카드 2</h1>
-			<h2>이미지를 입력하면 나에게 맞는 하수인 카드가 출력됩니다.</h2>
-			<input id="inputimg" type="file"> <button id="inputname">이름 설정</button>
+
+			<h1>이미지 To 하스스톤</h1>
+			<h2>이미지를 입력하면 그에 맞는 하수인 카드가 생성됩니다.</h2>
+			<input id="inputimg" type="file">
 			<br/>
-			<div id="frame_card">
-				<div id="card_image"></div>
-				<div id="card_body" class="frame_neutral"></div>
-				<div id="card_rarity"></div>
-				<div id="card_cost"></div>
-				<div id="card_name">
-					<div id="card_name_text"></div>
+			<div id="card_board">
+
+				<div id="frame_card" class="off">
+					<!--<div id="card_body_pre"></div>-->
+					<div id="card_image"></div>
+					<div id="card_body" class="frame_neutral"></div>
+					<div id="card_cost"></div>
+					<div id="card_attack"></div>
+					<div id="card_health"></div>
+					<div id="card_rarity"></div>
+					<div id="card_legend"></div>
+					<div id="card_name">
+						<div id="card_name_text"></div>
+					</div>
+					<div id="card_race"></div>
+					<div id="card_desc">
+						<p id="card_desc_text"></p>
+					</div>
 				</div>
-				<div id="card_desc">
-					<p id="card_desc_text"></p>
-				</div>
-				<div id="card_race"></div>
-				<div id="card_attack"></div>
-				<div id="card_health"></div>
+
 			</div>
+			<button id="inputname">카드 이름 설정</button>
+
 		</div>
+		<div id="image_preloader"></div>
 
 		<script type="text/javascript" src="./js/md5.js"></script>
 		<script type="text/javascript" src="./js/seedrandom.js"></script>
@@ -74,9 +85,14 @@
 				if (temp.rarity !== undefined) {
 					card_rarity = temp.rarity.toLowerCase();
 				} else {
-					card = "free";
+					card_rarity = "free";
 				}
 				$("#card_rarity").className = "frame_" + card_rarity;
+					//전설 등급이면 전설 프레임 표시
+					if (card_rarity === "legendary")
+						$("#card_legend").style.display = "block";
+					else
+						$("#card_legend").style.display = "none";
 				//비용 선택 및 출력
 				temp = pick(), card_cost = "";
 				if (temp.cost !== undefined) {
@@ -105,6 +121,15 @@
 				temp = pick(), card_race = "";
 				if (temp.race !== undefined) {
 					card_race = temp.race;
+						//한글 종족명
+						card_race = card_race.replace("MURLOC","멀 록");
+						card_race = card_race.replace("DEMON","악 마");
+						card_race = card_race.replace("BEAST","야 수");
+						card_race = card_race.replace("DRAGON","용 족");
+						card_race = card_race.replace("TOTEM","토 템");
+						card_race = card_race.replace("PIRATE","해 적");
+						card_race = card_race.replace("MECHANICAL","기 계");
+						card_race = card_race.replace("ELEMENTAL","정 령");
 					$("#card_race").innerHTML = card_race;
 					$("#card_race").style.display = "block";
 				} else {
@@ -137,17 +162,17 @@
 			        $("#inputname").disabled = true;
 
 			        //이미지 불러오기
-			        var file = $("#inputimg").files[0];
-			        var imageType = /image.*/;
+			        let file = $("#inputimg").files[0];
+			        let imageType = /image.*/;
 
 			        if (file) {
 			            if (file.type.match(imageType)) {
-			                var reader = new FileReader();
+			                let reader = new FileReader();
 			                if (file.name !== undefined) reader.fileName = file.name;
 
 			                reader.onload = function(readerEvt) {
 								//이미지 출력
-								var image = new Image();
+								let image = new Image();
 								image.src = reader.result;
 
 								image.onload = function() {
@@ -163,17 +188,20 @@
 								//BASE64 지정
 								let seed = md5(reader.result.split(",")[1]);
 
-								//랜덤 시드값 설정
-
 								//카드 출력
 								generateCard(seed);
 
-								//이름 교체(있으면)
-			                    if (readerEvt.target.fileName !== undefined) {
-			                        var title = readerEvt.target.fileName.split(".");
+								//이름 교체(입력된 게 없으면)
+			                    if (readerEvt.target.fileName !== undefined && name === "") {
+			                        let title = readerEvt.target.fileName.split(".");
 			                        title.pop();
 			                        $("#card_name_text").innerHTML = title.join("");
 			                    }
+
+								//카드 생성 애니메이션
+								$("#frame_card").className = "off";
+								void $("#frame_card").offsetWidth;
+								$("#frame_card").className = "on";
 
 								//버튼 활성화
 								$("#inputimg").disabled = false;
@@ -197,9 +225,10 @@
 				//이름 설정
 				$("#inputname").onclick = function() {
 					let input = prompt("카드의 이름을 설정해주세요.");
-					if (input.length <= 0) {
+					if (input === null || input.length <= 0) {
 						alert("한 글자 이상 입력해야 이름이 반영됩니다.");
 					} else {
+						name = input;
 						$("#card_name_text").innerHTML = input;
 					}
 				}

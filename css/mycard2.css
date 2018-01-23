@@ -7,8 +7,15 @@
 }
 
 /*스타일*/
-    /*폰트 - 나눔고딕*/
-    @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@keyframes show_frame {
+    0% {transform:translateZ(600px);}
+    82%, 98% {transform: translate3d(-1px, 0, 0);}
+    84%, 96% {transform: translate3d(2px, 0, 0);}
+    86%, 90%, 94% {transform: translate3d(-4px, 0, 0);}
+    88%, 92% {transform: translate3d(4px, 0, 0);}
+    100% {transform: translate3d(0,0,0);}
+}
+
 
 html {
     height:100%;
@@ -30,7 +37,7 @@ body {
     margin:0px auto;
     width:700px;
     height:100%;
-    min-height:800px;
+    min-height:900px;
 
     background-color:white;
 
@@ -57,30 +64,43 @@ h2 {
     cursor:pointer;
 }
 #inputname {
-    display:inline-block;
-
-    margin:0;
-    width:100px;
-    height:30px;
-
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-#frame_card {
-    position:relative;
     display:block;
 
     margin:5px auto;
     width:437px;
-    height:632px;
+    height:60px;
 
-    border:1px gray solid;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#card_board {
+    position:relative;
+
+    height:650px;
+
+    border-top:1px gray solid;
+    border-bottom:1px gray solid;
+    box-sizing: border-box;
+
+    perspective: 600px;
+}
+
+#frame_card {
+    position:absolute;
+        left:0;right:0;top:0;bottom:0;
+    display:block;
+
+    margin:auto auto;
+    width:437px;
+    height:632px;
 
     color:white;
     text-shadow:0 -2px black,2px -2px black,2px 0 black,2px 2px black,0 2px black,-2px 2px black,-2px 0 black,-2px -2px black;
     text-align:center;
+
+    transform-style: preserve-3d;
 }
     #card_image {
         position:absolute;
@@ -97,12 +117,16 @@ h2 {
     #card_body {
         position:absolute;
             left:24px;top:36px;
-        z-index:2;
+        z-index:3;
         width:396px;
         height:590px;
 
         background-size:100% 100%;
     }
+            #frame_card.on #card_body {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 0s 1 forwards;
+            }
         #card_body.frame_neutral {background-image:url(../images/assets/frame-minion-neutral.png);}
         #card_body.frame_warrior {background-image:url(../images/assets/frame-minion-warrior.png);}
         #card_body.frame_shaman {background-image:url(../images/assets/frame-minion-shaman.png);}
@@ -113,92 +137,30 @@ h2 {
         #card_body.frame_warlock {background-image:url(../images/assets/frame-minion-warlock.png);}
         #card_body.frame_mage {background-image:url(../images/assets/frame-minion-mage.png);}
         #card_body.frame_priest {background-image:url(../images/assets/frame-minion-priest.png);}
-    #card_rarity {
-        position:absolute;
-            left:163px;top:366px;
-        z-index:3;
-        width:118px;
-        height:64px;
 
-        background-size:100% 100%;
-    }
-        #card_rarity.frame_free {background:transparent;}
-        #card_rarity.frame_common {background-image:url(../images/assets/rarity-minion-common.png);}
-        #card_rarity.frame_rare {background-image:url(../images/assets/rarity-minion-rare.png);}
-        #card_rarity.frame_epic {background-image:url(../images/assets/rarity-minion-epic.png);}
-        #card_rarity.frame_legendary {background-image:url(../images/assets/rarity-minion-legendary.png);}
-    #card_race {
-        display:none;
-        position:absolute;
-            left:77px;top:562px;
-        z-index:3;
-        width:294px;
-        height:48px;
-
-        background-image:url(../images/assets/race-banner.png);
-            background-size:100% 100%;
-
-        font-size:20px;
-            line-height:55px;
-        font-weight:bold;
-    }
     #card_cost {
         position:absolute;
-            left:7px;top:46px;
-        z-index:4;
+        left:7px;top:46px;
+        z-index:5;
         width:104px;
         height:104px;
 
         background-image:url(../images/assets/cost-mana.png);
-            background-size:100% 100%;
+        background-size:100% 100%;
 
         font-size:80px;
-            line-height:90px;
+        line-height:90px;
         font-weight:bold;
     }
-    #card_name {
-        position:absolute;
-            left:48px;top:319px;
-        z-index:4;
-        width:357px;
-        height:83px;
-
-        background-image:url(../images/assets/name-banner-minion.png);
-            background-size:100% 100%;
-    }
-        #card_name_text {
-            position:relative;
-
-            width:100%;
-            height:100%;
-
-            transform:rotate(-3deg);
-
-            font-size:30px;
-                line-height:70px;
-            font-weight:bold;
+        #frame_card.on #card_cost {
+            transform:translateZ(600px);
+            animation: show_frame 0.4s linear 0.36s 1 forwards;
         }
-    #card_desc {
-        display:table;
-        position:absolute;
-            left:67px;top:423px;
-        z-index:4;
-        width:306px;
-        height:114px;
 
-        font-size:20px;
-        color:black;
-        font-weight:bold;
-        text-shadow:none;
-    }
-        #card_desc_text {
-            display:table-cell;
-            vertical-align: middle;
-        }
     #card_attack {
         position:absolute;
             left:0px;top:506px;
-        z-index:4;
+        z-index:5;
         width:112px;
         height:126px;
 
@@ -209,10 +171,15 @@ h2 {
             line-height:130px;
         font-weight:bold;
     }
+            #frame_card.on #card_attack {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 0.72s 1 forwards;
+            }
+
     #card_health {
         position:absolute;
             left:350px;top:512px;
-        z-index:4;
+        z-index:5;
         width:81px;
         height:120px;
 
@@ -223,3 +190,140 @@ h2 {
             line-height:130px;
         font-weight:bold;
     }
+            #frame_card.on #card_health {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 1.08s 1 forwards;
+            }
+
+    #card_rarity {
+        position:absolute;
+            left:163px;top:366px;
+        z-index:4;
+        width:118px;
+        height:64px;
+
+        background-size:100% 100%;
+    }
+            #frame_card.on #card_rarity {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 1.44s 1 forwards;
+            }
+        #card_rarity.frame_free {background:transparent;}
+        #card_rarity.frame_common {background-image:url(../images/assets/rarity-minion-common.png);}
+        #card_rarity.frame_rare {background-image:url(../images/assets/rarity-minion-rare.png);}
+        #card_rarity.frame_epic {background-image:url(../images/assets/rarity-minion-epic.png);}
+        #card_rarity.frame_legendary {background-image:url(../images/assets/rarity-minion-legendary.png);}
+
+    #card_legend {
+        display:none;
+        position:absolute;
+            left:110px;top:0px;
+        z-index:5;
+        width:327px;
+        height:244px;
+
+        background-image:url(../images/assets/elite-minion.png);
+            background-size:100% 100%;
+    }
+            #frame_card.on #card_legend {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 1.44s 1 forwards;
+            }
+
+    #card_name {
+        position:absolute;
+            left:48px;top:319px;
+        z-index:5;
+
+        width:357px;
+        height:83px;
+
+        background-image:url(../images/assets/name-banner-minion.png);
+            background-size:100% 100%;
+    }
+            #frame_card.on #card_name {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 1.8s 1 forwards;
+            }
+        #card_name_text {
+            position:relative;
+            overflow:hidden;
+
+            width:100%;
+            height:100%;
+
+            transform:rotate(-3deg);
+
+            font-size:30px;
+                line-height:70px;
+            font-weight:bold;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    #card_race {
+        display:none;
+        position:absolute;
+            left:77px;top:562px;
+        z-index:4;
+        width:294px;
+        height:48px;
+
+        background-image:url(../images/assets/race-banner.png);
+            background-size:100% 100%;
+
+        font-size:20px;
+            line-height:55px;
+        font-weight:bold;
+    }
+            #frame_card.on #card_race {
+                transform:translateZ(600px);
+                animation: show_frame 0.4s linear 1.8s 1 forwards;
+            }
+
+    #card_desc {
+        display:table;
+        position:absolute;
+            left:67px;top:423px;
+        z-index:5;
+        width:306px;
+        height:114px;
+
+        font-size:20px;
+        color:black;
+        font-weight:bold;
+        text-shadow:none;
+    }
+            #frame_card.on #card_desc {
+                opacity:0.01;
+                animation: show_desc 0.4s linear 2.16s 1 forwards;
+            }
+            @keyframes show_desc {
+                from {opacity:0.01;}
+                to {opacity:1;}
+            }
+
+        #card_desc_text {
+            display:table-cell;
+            vertical-align: middle;
+        }
+
+
+
+#image_preloader {
+    display:none;
+    width:1px;
+    height:1px;
+    background:
+        url(../images/assets/frame-minion-neutral.png),
+        url(../images/assets/frame-minion-warrior.png),
+        url(../images/assets/frame-minion-shaman.png),
+        url(../images/assets/frame-minion-rogue.png),
+        url(../images/assets/frame-minion-paladin.png),
+        url(../images/assets/frame-minion-hunter.png),
+        url(../images/assets/frame-minion-druid.png),
+        url(../images/assets/frame-minion-warlock.png),
+        url(../images/assets/frame-minion-mage.png),
+        url(../images/assets/frame-minion-priest.png)
+}
