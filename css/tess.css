@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    overflow-y:auto;
+
+    height:100%;
+
+    background-image:url(http://i1-news.softpedia-static.com/images/news2/blizzard-goes-back-to-the-origins-with-hearthstone-kobolds-catacombs-expansion-518376-2.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+}
+
+#wrapper {
+    overflow-y:scroll;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 5px 50px;
+    width:1100px;
+    height:100%;
+
+    background: white;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    box-sizing: border-box;
+}
+
+h1 {
+    position:relative;
+    font-size:50px;
+    text-align:center;
+}
+
+.card {
+    float:left;
+    margin:7px;
+    width:120px;
+    height:160px;
+
+    background-position:50% 50%;
+}
+    .stole {
+        transition:box-shadow 0.2s;
+    }
+    .stole:hover {
+        cursor:pointer;
+        box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+    }
+
+.tag {
+    width:320px;
+    height:30px;
+
+    background:#C0C0C0;
+    border:1px black solid;
+        border-bottom:0;
+
+    font-weight:bold;
+    font-size:20px;
+    line-height:30px;
+    text-align:center;
+}
+
+.class {
+    overflow:hidden;
+    margin-bottom:10px;
+    width:100%;
+    height: auto;
+
+    border:1px black solid;
+
+    line-height:30px;
+}
+    .thief1 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42011.jpg);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief2 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42011.jpg);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief3 {background-image:url(https://assets.webn.mobi/hearthstone/ba2200f2e7eb0fbdfc17fac1243f27b06498effd474d103ecc31858d01f01541.png);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief4 {background-image:url(https://assets.webn.mobi/hearthstone/ba2200f2e7eb0fbdfc17fac1243f27b06498effd474d103ecc31858d01f01541.png);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief5 {background-image:url(https://assets.webn.mobi/hearthstone/f9322c6ed988c72b2b919b3a1055159cdc32aacd61d422b5ca44931cf872c7ed.png);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief6 {background-image:url(https://assets.webn.mobi/hearthstone/f9322c6ed988c72b2b919b3a1055159cdc32aacd61d422b5ca44931cf872c7ed.png);background-repeat:no-repeat;background-size:auto 160px;}
+    .thief7 {background-image:url(https://assets.webn.mobi/hearthstone/5c29143f82aa9924583dc12a9066c76652b316dbdead04613e2eb7b6cdb225e4.png);background-repeat:no-repeat;background-size:auto 160px;}
+
+.thief {
+    overflow:hidden;
+    margin-bottom:10px;
+    width:100%;
+    height: auto;
+    border:1px black solid;
+}
+
+.created {
+    overflow-y:scroll;
+    margin-bottom:10px;
+    width:100%;
+    height: auto;
+    border:1px black solid;
+}
+
+.tess {
+    overflow-y:scroll;
+    margin-bottom:10px;
+    width:100%;
+    height: auto;
+    border:1px black solid;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html, body {
+            overflow-y:auto;
+
+            height:100%;
+
+            background:#909090;
+        }
+        #wrapper {
+			overflow-y:auto;
+            position: relative;
+
+            margin: 0 auto;
+            width:800px;
+            height:100%;
+
+            background: white;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+        }
+        h1 {
+            position:relative;
+			font-size:50px;
+            text-align:center;
+        }
+			#type {
+				font-size:50px;
+
+				border:1px black solid;
+				box-sizing: border-box;
+			}
+        h2 {
+            position:relative;
+            margin:0 0 30px 0;
+            text-align:center;
+        }
+        #keysmith {
+            position:relative;
+            float:left;
+
+            margin-left:25px;
+            width:180px;
+            height:250px;
+
+            background-image:url(http://upload2.inven.co.kr/upload/2018/04/08/bbs/i13181435572.png);
+            background-repeat:no-repeat;
+            background-size:contain;
+			transition:filter 0.2s, box-shadow 0.2s;
+
+            cursor:pointer;
+        }
+            #keysmith:hover {
+                filter:brightness(1.2);
+				box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+            }
+            #keysmith:active {
+                filter:brightness(2);
+            }
+        .discover {
+            position:relative;
+            float:left;
+
+            margin-left:5px;
+            width:180px;
+            height:250px;
+
+            border:1px black solid;
+            box-sizing: border-box;
+
+            background-repeat:no-repeat;
+			background-position:50% 50%;
+            background-size:0 0;
+			transition:background-size 0.1s linear;
+        }
+			.discover.clickable {
+            	background-size:180px 260px;
+
+				cursor: pointer;
+			}
+            .discover.clickable:hover {
+                filter:brightness(1.2);
+            }
+            .discover.clickable:active {
+                filter:brightness(2);
+            }
+
+        .result {
+            position:relative;
+            float:left;
+
+            margin-top:10px;
+            margin-left:30px;
+            width:120px;
+            height:160px;
+
+			background-repeat:no-repeat;
+			background-position:50% 50%;
+            background-size:cover;
+            border:1px black solid;
+            box-sizing: border-box;
+			transition:background-size 0.1s linear;
+        }
+            #result {
+                margin-left:25px;
+                clear:both;
+
+				padding:30px 0;
+
+				border:1px white solid;
+
+				font-size:30px;
+                text-align:center;
+            }
+			.slot {
+				position:absolute;
+				right:0;bottom:0;
+				width:30px;
+				height:30px;
+
+				background:blue;
+				text-align:center;
+
+				color:white;
+				font-weight:bold;
+				font-size:20px;
+				line-height:30px;
+			}
+        </style>
+
+		<title>비전 열쇠공</title>
+
+	</head>
+	<body>
+        <div id="wrapper">
+            <h1>비밀을 발견해볼까요?
+			<select id="type">
+				<option value="standard" selected>정규전</option>
+				<option value="wild">야생전</option>
+			</select>
+			</h1>
+			<h2 id="desc">비전 열쇠공을 클릭해보세요. (8회 발견해보기)</h2>
+            <div id="keysmith"></div>
+            <div id="discover1" class="discover">
+            </div>
+            <div id="discover2" class="discover"></div>
+            <div id="discover3" class="discover"></div>
+
+            <div id="result" class="result">결과물<br>→</div>
+            <div id="result1" class="result">
+				<div class="slot">1</div>
+			</div>
+            <div id="result2" class="result">
+				<div class="slot">2</div>
+			</div>
+            <div id="result3" class="result">
+				<div class="slot">3</div>
+			</div>
+            <div id="result4" class="result">
+				<div class="slot">4</div>
+			</div>
+			<br>
+			<div id="result" class="result"></div>
+            <div id="result5" class="result">
+				<div class="slot">5</div>
+			</div>
+            <div id="result6" class="result">
+				<div class="slot">6</div>
+			</div>
+            <div id="result7" class="result">
+				<div class="slot">7</div>
+			</div>
+            <div id="result8" class="result">
+				<div class="slot">8</div>
+			</div>
+        </div>
+
+		<script type="text/javascript">
+			var act = 0;
+			var secret = {
+				"standard":[195,41158,113,42754,621,366,286,43407],
+				"wild":[195,41158,113,42754,621,366,286,43407,192,40409,1801,2541]
+			}
+			var arr = [];
+
+			function show() {
+                arr = shuffle(deepCopy(secret[$("#type").value]));
+				for (var j=0;j<3;j++) {
+					var num = arr[j].toString();
+					$("#discover" + (j+1).toString()).style.backgroundImage = "url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/" + num + ".jpg)";
+				}
+			}
+
+			function text() {
+				var str = "";
+				switch (act) {
+					case 1:
+						str = "첫번째 발견 카드를 고르세요.";
+						break;
+					case 2:
+						str = "두번째 발견 카드를 고르세요.";
+						break;
+					case 3:
+						str = "세번째 발견 카드를 고르세요.";
+						break;
+					case 4:
+						str = "네번째 발견 카드를 고르세요";
+						break;
+					case 5:
+						str = "다섯번째 발견 카드를 고르세요.";
+						break;
+					case 6:
+						str = "여섯번째 발견 카드를 고르세요.";
+						break;
+					case 7:
+						str = "일곱번째 발견 카드를 고르세요.";
+						break;
+					case 8:
+						str = "여덟번째 발견 카드를 고르세요";
+						break;
+					case 9:
+						str = "비전 열쇠공을 클릭하면 비밀을 다시 발견합니다.";
+						break;
+				}
+				$("#desc").innerHTML = str;
+			}
+
+			function discover() {
+				act += 1;
+				if (act < 9) {
+					for (let i=1;i<=3;i++) {
+						$("#discover" + i.toString()).classList.remove("clickable");
+					}
+					setTimeout(function() {
+						show();
+						text();
+						for (let i=1;i<=3;i++) {
+							$("#discover" + i.toString()).classList.add("clickable");
+							$("#discover" + i.toString()).onclick = function() {
+								$("#result" + act.toString()).classList.add("visible");
+								$("#result" + act.toString()).style.backgroundImage = "url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/" + arr[i-1].toString() + ".jpg)";
+								discover();
+							}
+						}
+					},100);
+				} else {
+					text();
+					for (let i=1;i<=3;i++) {
+						$("#discover" + i.toString()).classList.remove("clickable");
+						$("#discover" + i.toString()).onclick = "";
+						$("#discover" + i.toString()).style.backgroundImage = "";
+						$("#keysmith").style.visibility = "visible";
+					}
+					//모드 변환 가능
+					$("#type").disabled = false;
+				}
+			}
+
+            $("#keysmith").onclick = function() {
+				//모드 변환 일시중지
+				$("#type").disabled = true;
+				act = 0;
+				$("#keysmith").style.visibility = "hidden";
+				for (let i=1;i<=8;i++) {
+					$("#result" + i.toString()).classList.remove("visible");
+					setTimeout(function() {
+						$("#result" + i.toString()).style.backgroundImage = "";
+					},100);
+				}
+				discover();
+            }
+		</script>
+
+
+	</body>
+</html>
