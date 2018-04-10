@@ -21,74 +21,38 @@
 	</head>
 	<body>
         <div id="wrapper">
-            <h1>훔치기 도적을 해보자!</h1>
-            <div class="class">
-                상대편 직업 :
-                <select class="">
-                    <option value="전사">전사</option>
-                    <option value="주술사">주술사</option>
-                    <option value="성기사">성기사</option>
-                    <option value="사냥꾼">사냥꾼</option>
-                    <option value="드루이드">드루이드</option>
-                    <option value="흑마법사">흑마법사</option>
-                    <option value="마법사">마법사</option>
-                    <option value="사제">사제</option>
-                </select>
-            </div>
-            <div class="tag">
-                훔치기 카드 & 테스 그레이메인
-            </div>
-            <div class="thief">
-                <div class="card stole thief1"></div>
-                <div class="card stole thief2"></div>
-                <div class="card stole thief3"></div>
-                <div class="card stole thief4"></div>
-                <div class="card stole thief5"></div>
-                <div class="card stole thief6"></div>
-                <div class="card stole thief7"></div>
-            </div>
-            <div class="tag">
-                훔쳐서 생성된 카드들
-            </div>
-            <div class="created">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </div>
-            <div class="tag">
-                테스 그레이메인으로 생성됨
-            </div>
-            <div class="tess">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </div>
+            <h1>상대편 직업 카드를 훔쳐보자</h1>
+			<div class="column column1">
+	            <div class="class">
+	                상대편 직업 :
+	                <select id="chooseother">
+	                    <option value="전사">전사</option>
+	                    <option value="주술사">주술사</option>
+	                    <option value="도적">도적</option>
+	                    <option value="성기사">성기사</option>
+	                    <option value="사냥꾼">사냥꾼</option>
+	                    <option value="드루이드">드루이드</option>
+	                    <option value="흑마법사">흑마법사</option>
+	                    <option value="그마법사">마법사</option>
+	                    <option value="사제">사제</option>
+	                </select>
+					<br>
+					<span id="otherclass" class="class_전사"></span>
+	            </div>
+	            <div class="thief">
+					<button id="stole">카드 훔치가</button>
+					<button id="reset">초기화</button>
+	            </div>
+			</div>
+			<div class="column column2">
+				<div class="tag">아무튼 생성된 상대편 직업 카드</div>
+	            <div id="created" class="created">
+	            </div>
+			</div>
         </div>
 
-		<script type="text/javascript" src="./js/tess.js">
-		</script>
+		<script type="text/javascript" src="./js/classcard.js"></script>
+		<script type="text/javascript" src="./js/tess.js"></script>
 
 
 	</body>

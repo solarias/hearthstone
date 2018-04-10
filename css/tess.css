@@ -15,11 +15,11 @@ html, body {
 }
 
 #wrapper {
-    overflow-y:scroll;
+    overflow:hidden;
     position: relative;
 
     margin: 0 auto;
-    padding: 5px 50px;
+    padding: 5px 40px;
     width:1100px;
     height:100%;
 
@@ -35,29 +35,108 @@ h1 {
     text-align:center;
 }
 
-.card {
-    float:left;
-    margin:7px;
-    width:120px;
-    height:160px;
+.column {overflow:hidden;height:calc(100% - 70px);float:left;}
+    .column1 {width:250px;}
+    .column2 {margin-left:5px;width:750px;}
 
-    background-position:50% 50%;
+.class {
+    overflow:hidden;
+    margin-bottom:10px;
+    width: 100%;
+    height: 300px;
+
+    border:1px black solid;
+    box-sizing: border-box;
+
+    font-size:20px;
+    text-align:center;
 }
-    .stole {
+    #chooseother {
+        height:30px;
+        border:1px black solid;
+        box-sizing: border-box;
+
+        font-size:20px;
+    }
+    #otherclass {
+        display:inline-block;
+        width:100%;
+        height:calc(100% - 30px);
+
+        background-repeat:no-repeat;
+        background-position:50% -30px;
+        background-size:250px auto;
+    }
+        .class_전사 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/7.jpg)}
+        .class_주술사 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/1066.jpg)}
+        .class_도적 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/930.jpg)}
+        .class_성기사 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/671.jpg)}
+        .class_사냥꾼 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/31.jpg)}
+        .class_드루이드 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/274.jpg)}
+        .class_흑마법사 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/893.jpg)}
+        .class_그마법사 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/637.jpg)}
+        .class_사제 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/813.jpg)}
+
+.thief {
+    overflow:hidden;
+    margin-bottom:10px;
+    padding:5px;
+    width: 100%;
+    height: calc(100% - 310px);
+        min-height:250px;
+
+    border:1px black solid;
+    box-sizing: border-box;
+}
+    #stole {
+        width:100%;
+        height:50px;
+
+        background:#2196f3;
+        border:1px black solid;
+        box-sizing: border-box;
         transition:box-shadow 0.2s;
+
+        font-size:30px;
     }
-    .stole:hover {
-        cursor:pointer;
-        box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+        #stole:hover {
+            cursor:pointer;
+            background:#4daaf6;
+            box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+        }
+        #stole:active {
+            background:#d2eafd;
+        }
+    #reset {
+        margin-top:50px;
+        width:100%;
+        height:50px;
+
+        background:yellow;
+        border:1px black solid;
+        box-sizing: border-box;
+        transition:box-shadow 0.2s;
+
+        font-size:30px;
     }
+        #reset:hover {
+            cursor:pointer;
+            background:orange;
+            box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+        }
+        #reset:active {
+            background:red;
+        }
+
 
 .tag {
-    width:320px;
+    width:100%;
     height:30px;
 
     background:#C0C0C0;
     border:1px black solid;
         border-bottom:0;
+    box-sizing: border-box;
 
     font-weight:bold;
     font-size:20px;
@@ -65,39 +144,42 @@ h1 {
     text-align:center;
 }
 
-.class {
-    overflow:hidden;
-    margin-bottom:10px;
-    width:100%;
-    height: auto;
-
-    border:1px black solid;
-
-    line-height:30px;
-}
-    .thief1 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42011.jpg);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief2 {background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/42011.jpg);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief3 {background-image:url(https://assets.webn.mobi/hearthstone/ba2200f2e7eb0fbdfc17fac1243f27b06498effd474d103ecc31858d01f01541.png);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief4 {background-image:url(https://assets.webn.mobi/hearthstone/ba2200f2e7eb0fbdfc17fac1243f27b06498effd474d103ecc31858d01f01541.png);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief5 {background-image:url(https://assets.webn.mobi/hearthstone/f9322c6ed988c72b2b919b3a1055159cdc32aacd61d422b5ca44931cf872c7ed.png);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief6 {background-image:url(https://assets.webn.mobi/hearthstone/f9322c6ed988c72b2b919b3a1055159cdc32aacd61d422b5ca44931cf872c7ed.png);background-repeat:no-repeat;background-size:auto 160px;}
-    .thief7 {background-image:url(https://assets.webn.mobi/hearthstone/5c29143f82aa9924583dc12a9066c76652b316dbdead04613e2eb7b6cdb225e4.png);background-repeat:no-repeat;background-size:auto 160px;}
-
-.thief {
-    overflow:hidden;
-    margin-bottom:10px;
-    width:100%;
-    height: auto;
-    border:1px black solid;
-}
-
 .created {
     overflow-y:scroll;
     margin-bottom:10px;
     width:100%;
-    height: auto;
+    height: calc(100% - 30px);
+
     border:1px black solid;
+    box-sizing: border-box;
 }
+
+.card {
+    position:relative;
+
+    float:left;
+    width:140px;
+    height:200px;
+
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    background-size:contain;
+}
+    .card .count {
+        position:absolute;
+        right:0;bottom:0;
+        width:60px;
+        height:30px;
+
+        background:blue;
+            border-radius:15px;
+
+        color:white;
+        font-weight:bold;
+        font-size:20px;
+        line-height:30px;
+        text-align:center;
+    }
 
 .tess {
     overflow-y:scroll;
