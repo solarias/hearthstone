@@ -9,9 +9,10 @@ html, body {
 
     height:100%;
 
-    background-image:url(http://i1-news.softpedia-static.com/images/news2/blizzard-goes-back-to-the-origins-with-hearthstone-kobolds-catacombs-expansion-518376-2.jpg);
+    background-image:url(https://d2q63o9r0h0ohi.cloudfront.net/images/the-witchwood/bg/intro-flat-bg-78c6a564d8405438aee572679ffb54b9dbcc3938f760e4da48c13a328d6f4cef15db8b5299d26434120feabf0cfd8182cea20cceac01adda96c7e146102d21c2.jpg);
         background-repeat:no-repeat;
-        background-size:cover;
+        background-position:50% 50%;
+        background-size:110% auto;
 }
 
 #wrapper {
