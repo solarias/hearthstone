@@ -30,13 +30,11 @@ function generate() {
 function create() {
     //무작위 선택
     let target = shuffle(deepCopy(cardObj[otherclass]))[0];
-    console.log(target);
     //선택한 대상 생성
     let div = document.createElement("div");
         div.className = "card";
         div.style.backgroundImage = "url(" + target + ")";
         div.innerHTML = "<div class='count'>" + count.toString() + "</div>";
-    console.log(div);
     $("#created").appendChild(div);
     count += 1;
     //스크롤
