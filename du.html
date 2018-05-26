@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<title>두억시니 증식</title>
+
+        <style>
+        html, body {
+            overflow:hidden;
+
+            width:100%;
+            height:100%;
+
+            background-color:black;
+            background-image:url(https://d2q63o9r0h0ohi.cloudfront.net/images/the-witchwood/bg/intro-flat-bg-78c6a564d8405438aee572679ffb54b9dbcc3938f760e4da48c13a328d6f4cef15db8b5299d26434120feabf0cfd8182cea20cceac01adda96c7e146102d21c2.jpg);
+                background-repeat:no-repeat;
+                background-position:50% 0%;
+                background-size:contain;
+
+            cursor:pointer;
+        }
+
+        .du {
+            position:absolute;
+            width:210px;
+            height:280px;
+
+
+            background-repeat:no-repeat;
+            background-position:50% 50%;
+            background-size:contain;
+            animation:du 1s;
+
+            cursor:pointer;
+        }
+            .du.normal {
+                background-image:url(https://assets.webn.mobi/hearthstone/e4c67b78d55006cd92ad7abcd50f20f6eeef4c35481ef803a66179c34e8121dd.png);
+            }
+            .du.gold {
+                background-image:url(http://static.inven.co.kr/image_2011/hs/dataninfo/card/render/48111g.png);
+            }
+
+        @keyframes du {
+            0% {
+                opacity:0.01;
+                filter: brightness(1);
+            }
+            1% {
+                opacity:0.01;
+                filter: brightness(5);
+            }
+            50% {
+                opacity:1;
+                filter: brightness(5);
+            }
+            100% {
+                filter: brightness(1);
+            }
+        }
+
+        </style>
+
+	</head>
+	<body>
+
+		<!--외부 보조 라이브러리-->
+        <script src="../function/tool/howler.min.js"></script>
+		<!--외부 보조 라이브러리-->
+
+		<script type="text/javascript">
+            //사운드 로드
+            var play = new Howl({
+              src: ['./sound/du_play.ogg', './sound/du_play.mp3']
+            });
+            //클릭
+            $$("body")[0].onclick = function(e) {
+                //좌표 추적
+                var pose = [e.clientX - 105, e.clientY - 140]
+                //카드 생성
+                var card = document.createElement("div");
+                    card.classList.add("du")
+                    //10% 확률로 황금
+                    if (Math.random() >= 0.2) {
+                        card.classList.add("normal");
+                    } else {
+                        card.classList.add("gold");
+                    };
+                    card.style.left = pose[0].toString() + "px";
+                    card.style.top = pose[1].toString() + "px";
+                $$("body")[0].appendChild(card);
+                //사운드 출력
+                play.play();
+            }
+		</script>
+
+
+	</body>
+</html>
