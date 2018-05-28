@@ -76,7 +76,12 @@
 		<script type="text/javascript">
             //사운드 로드
             var play = new Howl({
-              src: ['./sound/du_play.ogg', './sound/du_play.mp3']
+              src: ['./sound/du_play.ogg', './sound/du_play.mp3'],
+			  volume:0.8
+            });
+            var back = new Howl({
+              src: ['./sound/du_back.ogg', './sound/du_back.mp3'],
+			  volume:0.3
             });
             //클릭
             $$("body")[0].onclick = function(e) {
@@ -96,6 +101,8 @@
                 $$("body")[0].appendChild(card);
                 //사운드 출력
                 play.play();
+                back.stop();
+                back.play();
             }
 		</script>
 
