@@ -1,0 +1,79 @@
+<script src="./js/deckstrings.js"></script>
+<script>
+    fetch('./js/cards.json').then(function(response) {
+    	// Convert to JSON
+    	return response.json();
+    }).then(function(j) {
+    	// Yay, `j` is a JavaScript object
+    	let data = j;
+        let obj = {};
+
+        data.forEach(function(x) {
+            obj["ID_" + x.dbfId] = x;
+        })
+
+        let deckcode = prompt("덱 코드를 입력해주세요.");
+
+        try{
+            let input = deckstrings.decode(deckcode);
+
+            document.write("### 아무튼 생성된 덱<br>");
+
+            let classes = {
+                "WARRIOR":"전사",
+                "SHAMAN":"주술사",
+                "ROGUE":"도적",
+                "PALADIN":"성기사",
+                "HUNTER":"사냥꾼",
+                "DRUID":"드루이드",
+                "WARLOCK":"흑마법사",
+                "MAGE":"마법사",
+                "PRIEST":"사제",
+            }
+            document.write("# 직업 : " + classes[obj["ID_" + input.heroes[0]].cardClass] + "<br>");
+            let mode = ["","정규","야생"];
+            document.write("# 대전모드 : " + mode[input.format] + "<br>");
+            document.write("#<br>");
+
+            input.cards2 = [];
+            input.cards.forEach(function(y) {
+                input.cards2.push([
+                    y[1],
+                    obj["ID_" + y[0]].cost,
+                    obj["ID_" + y[0]].name
+                ]);
+            })
+
+            input.cards2.sort(function(x,y) {
+                if (x[1] > y[1]) {
+                    return 1;
+                } else if (x[1] < y[1]) {
+                    return -1;
+                } else {
+                    let order = [x[2],y[2]];
+                    let order2 = [x[2],y[2]];
+                    order.sort();
+                    if (order[0] === order2[0]) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                };
+            })
+
+            input.cards2.forEach(function(z) {
+                let text = "# " + z[0] + "x (" + z[1] + ") " + z[2];
+                document.write(text + "<br>");
+            })
+
+            document.write("#<br>" + deckcode + "<br>#<br>");
+            document.write("# 이 덱을 사용하려면 클립보드에 복사한 후 하스스톤에서 새로운 덱을 만드세요.");
+
+        } catch(e) {
+            document.write("잘못된 덱코드가 입력되었습니다.(다시 시도하려면 페이지 새로고침을 하세요.)");
+        }
+
+    });
+
+
+</script>
