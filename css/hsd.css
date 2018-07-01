@@ -126,7 +126,9 @@ html {
 }
 body {
     height:100%;
+
     background:#909090;
+    overscroll-behavior:contain;
 }
     html body.swal2-height-auto {
         height:100%;
