@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="./package/subtool.js"></script>
+		<script type="text/javascript" src="./package/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+		<link rel="stylesheet" type="text/css" href="./css/hsd.css" />
+
+		<title>하스스톤 심플 덱빌더</title>
+
+	</head>
+	<body>
+        <div id="wrapper">
+            <header id="frame_header">
+                <div id="header_top">
+					<button id="header_home" class="header_button">&#127968;</button>
+					하스스톤 심플 덱빌더
+					<button id="header_info" class="header_button">INFO</button>
+				</div>
+                <div id="header_bottom">
+					<button id="search_class" class="search_button">직업 카드</button>
+					<div class="mobile_only">
+						<button id="search_mobilefilter" class="search_button">&#128295; 검색 필터</button>
+					</div>
+
+					<div class="desktop_only">
+						<button id="search_mana" class="search_button">마나 : 전체</button>
+						<button id="search_rarity" class="search_button">등급 : 전체</button>
+						<button id="search_set" class="search_button">세트 : 전체</button>
+
+						<button id="search_reset" class="search_button">필터<br>초기화</button>
+						<button id="search_keyword" class="search_button">&#128269;  <span id="keyword_text">검색</span></button>
+					</div>
+                </div>
+            </header>
+            <section id="frame_main">
+				<!--타이틀스크린-->
+                <div id="main_titlescreen" class="mainscreen main_both">
+                    <div class="main_title">하스스톤 심플 덱빌더</div>
+                    <div id="titlescreen_card">
+                        <button id="start_card" class="titlescreen_button">&#128269;</button>
+                        <p class="titlescren_desc">카드 정보</p>
+                    </div>
+                    <div id="titlescreen_deck">
+                        <button id="start_deck" class="titlescreen_button">&#128461;</button>
+                        <p class="titlescren_desc">덱 만들기</p>
+                    </div>
+                </div>
+
+				<!--덱 세팅-->
+                <div id="main_decksetting" class="mainscreen main_both">
+                    <div class="main_title">직업 및 포맷 설정</div>
+					<div id="decksetting_class">
+						<button id="decksetting_1" class="decksetting_button class" data-class="WARRIOR">전사</button>
+						<button id="decksetting_2" class="decksetting_button class" data-class="SHAMAN">주술사</button>
+						<button id="decksetting_3" class="decksetting_button class" data-class="ROGUE">도적</button>
+						<button id="decksetting_4" class="decksetting_button class" data-class="PALADIN">성기사</button>
+						<button id="decksetting_5" class="decksetting_button class" data-class="HUNTER">사냥꾼</button>
+						<button id="decksetting_6" class="decksetting_button class" data-class="DRUID">드루이드</button>
+						<button id="decksetting_7" class="decksetting_button class" data-class="WARLOCK">흑마법사</button>
+						<button id="decksetting_8" class="decksetting_button class" data-class="MAGE">마법사</button>
+						<button id="decksetting_9" class="decksetting_button class" data-class="PRIEST">사제</button>
+					</div>
+					<div id="decksetting_format">
+						<button id="decksetting_standard" class="decksetting_button format" data-format="정규">정규전</button>
+						<button id="decksetting_wild" class="decksetting_button format" data-format="야생">야생전</button>
+						<button id="decksetting_done">설정 완료</button>
+					</div>
+				</div>
+
+				<!--카드정보 불러오기-->
+				<div id="main_loading" class="mainscreen main_both">
+                    <div class="main_title">카드정보 불러오는 중</div>
+					<img class="loading_mark" src="./images/hsd/loading_transparent.gif" alt="로딩 이미지">
+				</div>
+
+				<!--카드 목록-->
+				<div id="main_cardlist" class="mainscreen main_left clusterize-scroll">
+					<div id="main_cardlist_loading">
+						<img class="loading_mark" src="./images/hsd/loading_transparent.gif" alt="로딩 이미지">
+					</div>
+					<div id="main_cardlist_content" class="clusterize-content"></div>
+				</div>
+				<div id="main_deck" class="mainscreen main_right">
+					<div id="deck_hero">
+						<div id="deck_hero_cover">
+							<div id="deck_dust">
+								<img id="dust_icon" src="./images/hsd/icon_dust.png" alt="가루">
+								<div id="dust_quantity"></div>
+							</div>
+							<p id="deck_name"></p>
+						</div>
+					</div>
+					<div id="deck_list"></div>
+					<div id="deck_bottom_cover">
+						<div id="deck_bottom"></div>
+					</div>
+				</div>
+
+				<!--덱 제작-->
+
+
+				<!--덱 출력-->
+
+            </section>
+            <footer id="frame_footer">
+				<div id="footer_top">
+					<div id="footer_notice" class="footer_desc">공지사항 (작성 예정)</div>
+					<div id="footer_name_left" class="footer_desc"></div>
+					<div id="footer_name_right" class="footer_desc"></div>
+				</div>
+                <div id="footer_bottom">
+					<button id="bottom_undo" class="footer_button">&#8630;<span class="desktop_only"> 취소</span></button>
+					<button id="bottom_redo" class="footer_button"><span class="desktop_only">복구 </span>&#8631;</button>
+
+					<button id="bottom_output" class="footer_button">&#128190;<span class="desktop_only"> 완료</span></button>
+					<button id="bottom_input" class="footer_button">&#128194;<span class="desktop_only"> 덱코드 입력</span></button>
+                </div>
+            </footer>
+
+			<!--별도 창 - 카드 필터(모바일)-->
+			<section id="frame_mobilefilter" class="">
+				<div class="mobilefilter_desc">&#128295; 검색 필터</div>
+				<button class="mobilefilter_close mobilefilter_button">필터 닫기</button>
+
+				<div class="mobilefilter_desc margin_top">카드 마나</div>
+				<button id="mobilefilter_mana" class="mobilefilter_button">마나 : 전체</button>
+				<div class="mobilefilter_desc margin_top">카드 등급</div>
+				<button id="mobilefilter_rarity" class="mobilefilter_button">등급 : 전체</button>
+				<div class="mobilefilter_desc margin_top">카드 세트</div>
+				<button id="mobilefilter_set" class="mobilefilter_button">세트 : 전체</button>
+				<div class="mobilefilter_desc margin_top">검색어</div>
+				<button id="mobilefilter_keyword" class="mobilefilter_button">&#128269;  <span id="keyword_text2">검색</span></button>
+
+				<button class="mobilefilter_close mobilefilter_button">필터 닫기</button>
+			</section>
+			<section id="frame_mobilefilter_reset" class="">
+				<button id="mobilefilter_reset" class="mobilefilter_button">필터 초기화</button>
+			</section>
+        </div>
+
+		<!--외부 보조 라이브러리-->
+		<script src="./package/sweetalert2/dist/sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="./package/sweetalert2/dist/sweetalert2.css">
+			<!-- for IE support -->
+			<script src="./package/sweetalert2/node_modules/es6-promise-polyfill/promise.min.js"></script>
+		<script src="./package/clusterize.js"></script>
+		<link href="./package/clusterize.css" rel="stylesheet">
+		<!--외부 보조 라이브러리-->
+
+        <script type="text/javascript" src="./js/deckstrings.js"></script>
+        <script type="text/javascript" src="./js/hsd_data.js"></script>
+		<script type="text/javascript" src="./js/hsd_process.js"></script>
+
+
+	</body>
+</html>
