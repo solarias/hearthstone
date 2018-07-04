@@ -46,6 +46,9 @@ function window_shift(keyword, keyword2) {
                 $("#footer_notice").style.display = "block";
 
                 //시작 버튼
+                $("#start_card").onclick = function() {
+                    alert("향후 지원 예정입니다.");
+                }
                 $("#start_deck").onclick = function() {
                     window_shift("decksetting");
                 }
@@ -248,19 +251,14 @@ function window_shift(keyword, keyword2) {
             //==================
             //※ 덱 & 필터 구성
             //==================
-            deck_refresh("init");
-
             //검색 초기치 설정, 필터 활성화
-            if (!process.search) process.search = {};
-            process.search.class = process.deck.class;//직업
-            process.search.mana = "all";//마나
-            process.search.rarity = "all";//등급
-            process.search.set = "all";//세트
-            process.search.keyword = "";//키워드
-            card_setFilter();//필터 활성화
+            card_setFilter("init");//필터 활성화
 
             //검색 초기치에 따라 검색결과 출력(최초 검색)
             card_search();
+
+            //덱 초기화
+            deck_refresh("init");
 
             //==================
             //※ 상호작용
@@ -270,7 +268,7 @@ function window_shift(keyword, keyword2) {
                 e = e || event;
                 let target = e.target || e.srcElement;
                 if (target.classList.contains("card")) {
-                    card_move("add " + target.dataset.dbfid);
+                    card_move("add " + target.dataset.ssi);
                 }
             }
 
@@ -476,11 +474,14 @@ function card_matchKeyword(target, keyword) {
 
 //카드 검색 및 출력
 function card_search() {
+    //클러스터 잠시 비우기
+    clusterize.card.clear();
+
     //로딩 이미지 출력
     $("#main_cardlist_loading").style.display = "block";
 
     setTimeout(function() {
-        //로딩 이미지 닫기
+        //0) 로딩 이미지 닫기
         $("#main_cardlist_loading").style.display = "none";
 
         //1) 출력할 카드 목록 정리
@@ -528,42 +529,45 @@ function card_move(cmd) {
     switch (movement) {
         //카드 추가
         case "add":
-            deckarr.forEach(function(x) {
-                let quantity = card_getQuantity(x);
+            deckarr.forEach(function(index) {
+                let quantity = card_getQuantity(index);
 
                 //덱이 30장 미만이고, 카드 없거나 카드가 1장일 때 전설이 아니면 카드 추가
                 if (process.deck.quantity < DATA.DECK_LIMIT &&
-                    (quantity <= 0 || (quantity === 1 && card_getInfo(x).rarity !== "LEGENDARY"))) {
-                    //수량이 0이면 카드정보 추가
+                    (quantity <= 0 || (quantity === 1 && session.db[index].rarity !== "LEGENDARY"))) {
+                    //수량이 0이면
                     if (quantity === 0) {
+                        //1) 카드정보 추가
                         let obj = {
-                            "dbfid":x,
-                            "code":card_getCode(x),
+                            "ssi":index,
                             "quantity":1
                         }
                         process.deck.cards.push(obj)
                         //수량 증가
                         quantity += 1;
-                        //카드 엘리먼트 생성
-                        let cardelmt = card_generate(card_getInfo(x),quantity,false);
-                        //덱 리스트에 카드 출력
-                        $("#deck_list").appendChild(cardelmt);
                     //수량이 1이면 카드정보 찾아서 수량 추가
                     } else {
+                        //1) 카드정보 변경
                         for (let i = 0;i < process.deck.cards.length;i++) {
                             let card = process.deck.cards[i];
-                            if (card.dbfid === x) {
+                            if (card.ssi === index) {
                                 card.quantity += 1;
                                 break;
                             }
                         }
-                        //수량 증가
-                        quantity += 1;
-                        //덱 내에서 기존 카드 찾기, 수량 증가
-                        let quantityelmt = $$("#deck_list .card_" + x + " .card_quantity")[0];
-                        quantityelmt.classList.remove("none");
-                        quantityelmt.innerHTML = quantity;
                     }
+                    //1.5) 수량 증가
+                    quantity += 1;
+
+                    //2) 카드 목록에 따라 노드 불러오기
+                    let nodearr = [];
+                    arr.forEach(function(x) {
+                        nodearr.push(card_addFragment(x,quantity,false));
+                    })
+
+                    //3) 클러스터 업데이트
+                    clusterize.card.update(nodearr);
+
                     //카드 반짝임
                     $$("#deck_list .card").forEach(function(x) {
                         x.classList.remove("flash");
@@ -650,7 +654,18 @@ function card_move(cmd) {
 }
 
 //카드 필터 구성
-function card_setFilter() {
+function card_setFilter(cmd) {
+    //초기 작업: 검색치 초기화
+    if (cmd === "init") {
+        //검색 초기치 설정, 필터 활성화
+        if (!process.search) process.search = {};
+        process.search.class = process.deck.class;//직업
+        process.search.mana = "all";//마나
+        process.search.rarity = "all";//등급
+        process.search.set = "all";//세트
+        process.search.keyword = "";//키워드
+    }
+
     //직업
     function filter_class(text) {
         //초기"글자" 설정
