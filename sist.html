@@ -9,9 +9,9 @@
 		<script type="text/javascript" src="./package/fastclick.js"></script>
 		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
 
-		<link rel="stylesheet" type="text/css" href="./css/hsd.css" />
+		<link rel="stylesheet" type="text/css" href="./css/sist.css" />
 
-		<title>하스스톤 심플 덱빌더</title>
+		<title>심플 스톤</title>
 
 	</head>
 	<body>
@@ -19,7 +19,7 @@
             <header id="frame_header">
                 <div id="header_top">
 					<button id="header_home" class="header_button">&#127968;</button>
-					하스스톤 심플 덱빌더
+					심플 스톤
 					<button id="header_info" class="header_button">INFO</button>
 				</div>
                 <div id="header_bottom">
@@ -41,7 +41,7 @@
             <section id="frame_main">
 				<!--타이틀스크린-->
                 <div id="main_titlescreen" class="mainscreen main_both">
-                    <div class="main_title">하스스톤 심플 덱빌더</div>
+                    <div class="main_title">심플 스톤</div>
                     <div id="titlescreen_card">
                         <button id="start_card" class="titlescreen_button">&#128269;</button>
                         <p class="titlescren_desc">카드 정보</p>
@@ -76,13 +76,13 @@
 				<!--카드정보 불러오기-->
 				<div id="main_loading" class="mainscreen main_both">
                     <div class="main_title">카드정보 불러오는 중</div>
-					<img class="loading_mark" src="./images/hsd/loading_transparent.gif" alt="로딩 이미지">
+					<img class="loading_mark" src="./images/sist/loading_transparent.gif" alt="로딩 이미지">
 				</div>
 
 				<!--카드 목록-->
 				<div id="main_cardlist" class="mainscreen main_left clusterize-scroll">
 					<div id="main_cardlist_loading">
-						<img class="loading_mark" src="./images/hsd/loading_transparent.gif" alt="로딩 이미지">
+						<img class="loading_mark" src="./images/sist/loading_transparent.gif" alt="로딩 이미지">
 					</div>
 					<div id="main_cardlist_content" class="clusterize-content"></div>
 				</div>
@@ -90,13 +90,15 @@
 					<div id="deck_hero">
 						<div id="deck_hero_cover">
 							<div id="deck_dust">
-								<img id="dust_icon" src="./images/hsd/icon_dust.png" alt="가루">
+								<img id="dust_icon" src="./images/sist/icon_dust.png" alt="가루">
 								<div id="dust_quantity"></div>
 							</div>
 							<p id="deck_name"></p>
 						</div>
 					</div>
-					<div id="deck_list"></div>
+					<div id="deck_list" class="clusterize-scroll">
+						<div id="deck_list_content" class="clusterize-content"></div>
+					</div>
 					<div id="deck_bottom_cover">
 						<div id="deck_bottom"></div>
 					</div>
@@ -149,13 +151,13 @@
 		<link rel="stylesheet" href="./package/sweetalert2/dist/sweetalert2.css">
 			<!-- for IE support -->
 			<script src="./package/sweetalert2/node_modules/es6-promise-polyfill/promise.min.js"></script>
-		<script src="./package/clusterize.js"></script>
+		<script src="./package/clusterize.min.js"></script>
 		<link href="./package/clusterize.css" rel="stylesheet">
 		<!--외부 보조 라이브러리-->
 
         <script type="text/javascript" src="./js/deckstrings.js"></script>
-        <script type="text/javascript" src="./js/hsd_data.js"></script>
-		<script type="text/javascript" src="./js/hsd_process.js"></script>
+        <script type="text/javascript" src="./js/sist_data.js"></script>
+		<script type="text/javascript" src="./js/sist_process.js"></script>
 
 
 	</body>

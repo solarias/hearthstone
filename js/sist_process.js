@@ -1,12 +1,15 @@
 
 //===========================================================
 //※ 변수 설정
-//============================================================
-let process = {};
+//===========================================================
+let process = {};//임시 정보
+let session = {
+    db:undefined,//카드 DB (sort 후 순서에 따라 ssi 부여, ssi로 카드 검색)
+    master:undefined,//마스터 노드
+    fragment:undefined//프래그먼트
+};
 const TILEURL = "https://art.hearthstonejson.com/v1/tiles/";
 const IMAGEURL = "https://art.hearthstonejson.com/v1/256x/";
-//카드 정보 요소
-let fragment = false;
 //클러스터
 let clusterize = {};
 //카드정보 열람 auto
@@ -14,7 +17,7 @@ let autoinfo;
 
 //===========================================================
 //※ 함수 - 창 설정
-//============================================================
+//===========================================================
 //모든 창 & 명칭 닫기
 function window_clear() {
     $$(".mainscreen").forEach(function(target) {
@@ -93,15 +96,17 @@ function window_shift(keyword, keyword2) {
                 target.onclick = function() {
                     if (target.dataset.class) {
                         //직업 세팅
-                        process.class = target.dataset.class;
+                        if (!process.deck) process.deck = {};
+                        process.deck.class = target.dataset.class;
                         //버튼 세팅
                         $$(".decksetting_button.class").forEach(function(x) {
                             x.classList.remove("selected");
                         })
                         target.classList.add("selected");
                     } else if (target.dataset.format) {
-                        //포맷 세팅
-                        process.format = target.dataset.format;
+                        //대전 방식 세팅
+                        if (!process.deck) process.deck = {};
+                        process.deck.format = target.dataset.format;
                         //버튼 세팅
                         $$(".decksetting_button.format").forEach(function(x) {
                             x.classList.remove("selected");
@@ -111,10 +116,10 @@ function window_shift(keyword, keyword2) {
                 }
             })
             $("#decksetting_done").onclick = function() {
-                if (!process.class) {
+                if (!process.deck.class) {
                     alert("직업을 설정해주세요.");
-                } else if (!process.format) {
-                    alert("포맷을 설정해주세요.");
+                } else if (!process.deck.format) {
+                    alert("대전 방식을 설정해주세요.");
                 } else {
                     window_shift("loading","deckbuilding");
                 }
@@ -122,78 +127,65 @@ function window_shift(keyword, keyword2) {
 
             break;
 
-        //*카드정보 불러오기
+        //카드정보 불러오기
         case "loading":
-            //의사 물어보기
-            swal({
-                type:"warning",
-                title:"데이터 경고",
-                text:"카드정보를 처음 불러오는 데 약 1MB의 데이터가 소모됩니다.",
-                showCancelButton:true,
-                confirmButtonText: '불러오기',
-                cancelButtonText: '취소',
-                cancelButtonColor: '#d33'
-            }).then(function(isConfirm){
-                if (isConfirm) {
-                    getLoading();
-                }
-            })
+            //카드 정보가 없으면 불러올지 확인
+            if (!session.db) {
+                //의사 물어보기
+                swal({
+                    type:"warning",
+                    title:"데이터 경고",
+                    text:"카드정보를 불러오는 데 약 1MB의 데이터가 소모됩니다.",
+                    showCancelButton:true,
+                    confirmButtonText: '불러오기',
+                    cancelButtonText: '취소',
+                    cancelButtonColor: '#d33'
+                }).then(function(isConfirm){
+                    if (!isConfirm) {
+                        //거부 시 불러오기 취소
+                        return false;
+                    } else {
+                        loading_pre();
+                    }
+                })
+            } else {
+                loading_pre();
+            }
 
-            //불러오기 과정
-            function getLoading() {
+            //불러오기 세팅
+            function loading_pre() {
                 //진행상태 기억
                 process.state = "loading";
                 //화면 전환
                 window_clear();
                 $("#main_loading").classList.add("show");
 
-                //카드정보 로딩 실시
+                setTimeout(function() {
+                    if (!session.db) loading_DB();
+                        else loading_fragment();
+                },1);
+            }
+            //DB 세팅
+            function loading_DB() {
+            //카드정보 로딩 개시
                 try {
                     fetch("./js/cards_collectible.json")
                     .then(function(response) {
                         return response.json();
                     })
                     .then(function(myJson) {
-                        setTimeout(function() {
-                            //카드정보 입력
-                            process.carddb = myJson;
-                            //카드정보 정렬
-                            sort_arr(process.carddb);
-                            //카드정보 정제(대문자 제거, 문자열 변환)
-                            process.carddb.forEach(function(x) {
-                                x.dbfid = x.dbfId.toString();
-                            })
-                            //카드 정보 생성, 카드 목록에 부착
-                            fragment = document.createDocumentFragment();
-                            process.carddb.forEach(function(x) {
-                                //카드 정보: 모든 카드 요소 생성
-                                if (keyword2 === "cardinfo") {
+                        //카드정보 입력
+                        session.db = myJson;
+                        //카드정보 정렬
+                        sort_arr(session.db);
+                        //카드정보 정제
+                        session.db.forEach(function(x, index) {
+                            x.dbfid = x.dbfId.toString();//dbfId대문자 제거 및 문자열로 변환
+                            x.ssi = index.toString();//index 정보 추가
+                        })
 
-                                //덱 만들기: 해당 직업 & 중립 카드 요소 생성
-                                } else if (keyword2 === "deckbuilding") {
-                                    if ((x.cardClass === "NEUTRAL" || x.cardClass === process.class) &&//직업 & 중립
-                                    (x.rarity !== "FREE" || x.type !== "HERO") &&//기본 영웅 제외
-                                    (x.rarity !== "HERO_SKIN" || x.type !== "HERO") &&//스킨 영웅 제외
-                                    (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.format)) {//포맷(정규는 무조건 포함)
-                                        //카드 정보 생성
-                                        let cardelmt = card_generate(x,0,true);
-                                        fragment.appendChild(cardelmt);
-                                    }
-                                }
-                            })
-                            //카드 클러스터 생성
-                            clusterize.card = new Clusterize({
-                                tag: 'div',
-                                scrollId: 'main_cardlist',
-                                contentId: 'main_cardlist_content',
-                                //rows_in_block:10,
-                                no_data_text: '결과 없음',
-                                no_data_class: 'clusterize-no-data'
-                            });
-
-                            //화면 전환
-                            window_shift("deckbuilding");
-                        },500);
+                        //Master Node 작성
+                        loading_master();
                     });
                 } catch(e) {
                     swal({
@@ -204,6 +196,33 @@ function window_shift(keyword, keyword2) {
                         window_shift("titlescreen");
                     })
                 }
+            }
+            //Master Node 작성
+            function loading_master() {
+                if (!session.master) session.master = card_generateMaster();
+
+                loading_fragment();
+            }
+            //Fragment 작성 : 직업, 포맷에 따라 Fragment (없는 거) 생성
+            function loading_fragment() {
+                //fragment가 없으면 생성
+                if (!session.fragment) session.fragment = [];
+                //필요한 카드 정보 생성, Fragment에 부착
+                session.db.forEach(function(info, index) {
+                    if (!session.fragment[index]) {
+                        if (keyword2 === "cardinfo" ||//카드 정보: 모든 카드 요소 생성
+                        (info.cardClass === "NEUTRAL" || info.cardClass === process.deck.class) &&//직업 & 중립
+                        (info.rarity !== "FREE" || info.type !== "HERO") &&//기본 영웅 제외
+                        (info.rarity !== "HERO_SKIN" || info.type !== "HERO") &&//스킨 영웅 제외
+                        (DATA.SET_FORMAT[info.set] === "정규" || DATA.SET_FORMAT[info.set] === process.deck.format)) {//포맷(정규는 무조건 포함)
+                            //카드 정보 생성
+                            session.fragment[index] = card_generateFragment(info);
+                        }
+                    }
+                })
+
+                //화면 전환
+                window_shift("deckbuilding");
             }
 
             break;
@@ -233,7 +252,7 @@ function window_shift(keyword, keyword2) {
 
             //검색 초기치 설정, 필터 활성화
             if (!process.search) process.search = {};
-            process.search.class = process.class;//직업
+            process.search.class = process.deck.class;//직업
             process.search.mana = "all";//마나
             process.search.rarity = "all";//등급
             process.search.set = "all";//세트
@@ -250,11 +269,15 @@ function window_shift(keyword, keyword2) {
             $("#main_cardlist_content").onclick = function(e) {
                 e = e || event;
                 let target = e.target || e.srcElement;
-                if (target.dataset.dbfid !== undefined) {
+                if (target.classList.contains("card")) {
                     card_move("add " + target.dataset.dbfid);
                 }
             }
 
+            break;
+
+        //*카드 검색
+        case "cardinfo":
             break;
     }
 }
@@ -262,23 +285,77 @@ function window_shift(keyword, keyword2) {
 
 //===========================================================
 //※ 함수
-//============================================================
-//카드 정보 찾기(by dbfid)
-function card_getInfo(dbfid) {
-    return indexArrKey(process.carddb,"dbfid",dbfid);
+//===========================================================
+//카드 마스터 노드 생성
+function card_generateMaster() {
+    //요소 생성
+    let elm_card = document.createElement("div.card.selectable");
+        elm_card.classList.add("card_$index");//$index: 카드 인덱스 스트링
+        elm_card.dataset.ssi = "$index";//$index
+        elm_card.style.backgroundImage = "url(" + TILEURL + "$id.jpg)";//$id: 카드 ID
+    let elm_card_cost = document.createElement("div.card_cost");
+        elm_card_cost.classList.add("rarity_$rarity");//$rarity: 카드 희귀도
+        elm_card_cost.innerHTML = "$cost";//$cost: 카드 비용
+    let elm_card_name = document.createElement("div.card_name");
+        let elm_card_name_text = document.createElement("p");
+            elm_card_name_text.innerHTML = "$name";//$name: 카드 이름
+        elm_card_name.appendChild(elm_card_name_text);
+    let elm_card_quantity = document.createElement("div.card_quantity");
+        elm_card_quantity.innerHTML = "$quantity";//$quantity: 카드 수량
+        elm_card_quantity.classList.add("quantity_hidden");//$hidden: 수량 표기여부
+    //요소 합치기
+    elm_card.appendChild(elm_card_cost);
+    elm_card.appendChild(elm_card_name);
+    elm_card.appendChild(elm_card_quantity);
+    //출력
+    return elm_card.outerHTML;
 }
-//카드 코드 찾기(by dbfid)
-function card_getCode(dbfid) {
-    return indexArrKey(process.carddb,"dbfid",dbfid).id;
+//카드 개별 정보 생성
+function card_generateFragment(info) {
+    //마스터 노드 복사
+    let fragment = session.master;
+    //필요한 정보 설정(수량 제외)
+    fragment = fragment.replaceAll("$index",info.ssi);//인덱스 설정
+    fragment = fragment.replace("$id",info.id);//ID 설정
+    fragment = fragment.replace("$cost",info.cost);//비용 설정
+    fragment = fragment.replace("$name",info.name);//이름 설정
+    fragment = fragment.replace("$rarity",info.rarity);//등급 설정
+    //반환
+    return fragment;
 }
-//카드 수량 찾기(by dbfid)
-function card_getQuantity(dbfid) {
+//카드 최종 정보 생성
+function card_addFragment(index, quantity, show1) {
+    //요소 불러오기
+    let fragment = session.fragment[index];
+
+    //수량 정보 입력
+    let numtext = "";
+        //수량이 1 이상
+        if (quantity >= 1) {
+            //전설이면 "별" 표기
+            if (session.db[index].rarity === "LEGENDARY") {
+                numtext = "★";
+                fragment = fragment.replace(" quantity_hidden","");
+            //전설이 아니면 수량 표기
+            } else if (show1 === true || (show1 === false && quantity >= 2)) {
+                numtext = quantity;
+                fragment = fragment.replace(" quantity_hidden","");
+            }
+        }//카드 수령이 0이면: 숨기기
+    fragment = fragment.replace("$quantity",numtext);
+
+    //요소 출력
+    return fragment;
+}
+
+//카드 수량 찾기(by index)
+function card_getQuantity(index) {
     //덱에 카드 정보가 없으면 0 출력
     if (!process.deck || !process.deck.cards) return 0;
     else {
         //카드 정보를 찾으면 quantity 출력
         for (let i = 0;i < process.deck.cards.length;i++) {
-            if (process.deck.cards[i].dbfid === dbfid)
+            if (process.deck.cards[i].ssi === index)
                 return process.deck.cards[i].quantity;
         }
         //못찾았으면 0 출력
@@ -307,6 +384,7 @@ function sort_arr(arr) {
 
     return arr;
 }
+
 //카드 정렬 - 덱(비용, 이름 순)
 function sort_deck() {
     let arr = [];
@@ -342,48 +420,6 @@ function searchable(keyword) {
     })
     //반환
     return text;
-}
-
-//단일 카드 생성
-function card_generate(info, quantity, show1) {
-    //요소 생성
-    let elm_card = document.createElement("div.card.selectable");
-        //기본은 숨김(필터에 따라 일부만 보여주기)
-        elm_card.classList.add("card_" + info.dbfid, "hidden");
-        elm_card.dataset.code = info.id;
-        elm_card.dataset.dbfid = info.dbfid;
-        //카드 배경 설정
-        elm_card.style.backgroundImage = "url(" + TILEURL + info.id + ".jpg)";
-    let elm_card_cost = document.createElement("div.card_cost");
-        elm_card_cost.innerHTML = info.cost;
-        elm_card_cost.classList.add("rarity_" + info.rarity);
-    let elm_card_name = document.createElement("div.card_name");
-        elm_card_name.classList.add("rarity_" + info.rarity);
-        let elm_card_name_text = document.createElement("p");
-            elm_card_name_text.innerHTML = info.name;
-        elm_card_name.appendChild(elm_card_name_text);
-    let elm_card_quantity = document.createElement("div.card_quantity");
-        //수량이 1 이상
-        if (quantity >= 1) {
-            //전설이면 "별" 표기
-            if (info.rarity === "LEGENDARY") {
-                elm_card_quantity.innerHTML = "★";
-            //전설이 아니면 수량 표기
-            } else if (show1 === true || (show1 === false && quantity >= 2)) {
-                elm_card_quantity.innerHTML = quantity;
-            } else {
-                elm_card_quantity.classList.add("none");
-            }
-        //카드 수령이 0이면: 숨기기
-        } else {
-            elm_card_quantity.classList.add("none");
-        }
-    //요소 합치기
-    elm_card.appendChild(elm_card_cost);
-    elm_card.appendChild(elm_card_name);
-    elm_card.appendChild(elm_card_quantity);
-    //출력
-    return elm_card;
 }
 
 //카드 마나 맞춰보기
@@ -444,39 +480,38 @@ function card_search() {
     $("#main_cardlist_loading").style.display = "block";
 
     setTimeout(function() {
-        //출력할 카드 검색
+        //로딩 이미지 닫기
+        $("#main_cardlist_loading").style.display = "none";
+
+        //1) 출력할 카드 목록 정리
         let arr = [];
-        process.carddb.forEach(function(x) {
+        session.db.forEach(function(x) {
             if (x.cardClass === process.search.class &&//직업
             (x.rarity !== "FREE" || x.type !== "HERO") &&//기본 영웅 제외
             (x.rarity !== "HERO_SKIN" || x.type !== "HERO") &&//스킨 영웅 제외
-            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.format) &&//포맷(정규는 무조건 포함)
+            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.deck.format) &&//포맷(정규는 무조건 포함)
             (process.search.mana === "all" || card_matchMana(x, process.search.mana) === true) &&//마나
             (process.search.rarity === "all" || x.rarity === process.search.rarity) &&//등급
             (process.search.set === "all" || x.set === process.search.set) &&//세트
             card_matchKeyword(x, process.search.keyword) === true) {
-                arr.push(x);
+                arr.push(x.ssi);
             }
         })
-        //카드 정렬
-        sort_arr(arr);
-        //출력될 카드 요소 수정 - "공개"
+            //카드 목록 저장
+            process.search.result = arr;
+
+        //2) 카드 목록에 따라 노드 불러오기
+        let nodearr = [];
         arr.forEach(function(x) {
-            fragment.querySelectorAll(".card_" + x.dbfid)[0].classList.remove("hidden");
+            nodearr.push(card_addFragment(x,card_getQuantity(),true));
         })
-        //로딩 이미지 닫기
-        $("#main_cardlist_loading").style.display = "none";
-        //클러스터 업데이트
-        let clusterArr = [];
-        let nodes = fragment.childNodes;
-        nodes.forEach(function(x) {
-            clusterArr.push(x.outerHTML);
-        })
-        clusterize.card.update(clusterArr);
+
+        //3) 클러스터 업데이트
+        clusterize.card.update(nodearr);
 
         //카드 수량 표시
         $("#footer_name_left").innerHTML = "카드 목록(" + arr.length + ")";
-    },1);
+    },10);
 }
 
 //카드 추가 & 제거(dbfid 활용)
@@ -626,11 +661,11 @@ function card_setFilter() {
         } else {
             //카드 정보
             if (process.state === "cardinfo") {
-                /*향후 추가*/
+                /*향후 추가 - 선택지*/
             //덱 만들기
             } else if (process.state === "deckbuilding") {
                 //검색 직업 변경
-                process.search.class = (process.search.class === "NEUTRAL" ? process.class : "NEUTRAL")
+                process.search.class = (process.search.class === "NEUTRAL" ? process.deck.class : "NEUTRAL")
                 //검색버튼 키워드 변경
                 $("#search_class").innerHTML = DATA.CLASS_KR[process.search.class];
                 //재검색
@@ -763,7 +798,7 @@ function card_setFilter() {
             $("#mobilefilter_set").innerHTML = text;
         } else {
             //정규전: button형, 야생전: select형
-            switch (process.format) {
+            switch (process.deck.format) {
                 case "정규":
                     //세트 버튼 구성
                     let text = "";
@@ -772,7 +807,7 @@ function card_setFilter() {
                     setarr.forEach(function(x,i) {
                         if (x === "all" ||
                         DATA.SET_FORMAT[x] === "정규" ||
-                        process.format === DATA.SET_FORMAT[x]) {
+                        process.deck.format === DATA.SET_FORMAT[x]) {
                             let btn = document.createElement("button");
                                 btn.id = "popup_set_" + x;
                                 btn.classList.add("popup_button","small");
@@ -824,7 +859,7 @@ function card_setFilter() {
                         //"모두" 추가
                         select.options[0] = new Option("전체","all");
                         Object.keys(DATA.SET_KR).forEach(function(x,i) {
-                            if (DATA.SET_FORMAT[x] === "정규" || process.format === DATA.SET_FORMAT[x])
+                            if (DATA.SET_FORMAT[x] === "정규" || process.deck.format === DATA.SET_FORMAT[x])
                                 select.options[select.options.length] = new Option(DATA.SET_KR[x],x);
                             //현재 검색필터 세트이면 강조
                             if (x === process.search.set) {
@@ -921,12 +956,12 @@ function card_setFilter() {
     function filter_reset() {
         //검색 초기치 설정, 필터 활성화
         if (!process.search) process.search = {};
-        //process.search.class = process.class; //직업은 초기화하지 않음
+        //process.search.class = process.deck.class; //직업은 초기화하지 않음
         process.search.mana = "all";//마나
         process.search.rarity = "all";//등급
         process.search.set = "all";//세트
         process.search.keyword = "";//키워드
-        card_setFilter();//필터 활성화
+        card_setFilter();//필터 다시 활성화
 
         //검색 초기치에 따라 검색결과 출력(최초 검색)
         card_search();
@@ -973,12 +1008,12 @@ function deck_refresh(cmd) {
             process.deck.quantity = 0;
         }
         //영웅 이미지 출력
-        $("#deck_hero").style.backgroundImage = "url(" + TILEURL + DATA.CLASS_CODE[process.class] + ".jpg)";
+        $("#deck_hero").style.backgroundImage = "url(" + TILEURL + DATA.CLASS_CODE[process.deck.class] + ".jpg)";
         //덱 이름 출력
         if (process.deck.name) {
             $("#deck_name").innerHTML = process.deck.name
         } else {
-            $("#deck_name").innerHTML = "나만의 " + DATA.CLASS_KR[process.class] + " 덱";
+            $("#deck_name").innerHTML = "나만의 " + DATA.CLASS_KR[process.deck.class] + " 덱";
         }
     }
     //덱 가루 출력 (없으면 덱 가루 생성)
@@ -988,7 +1023,7 @@ function deck_refresh(cmd) {
     $("#dust_quantity").innerHTML = thousand(process.deck.dust);
     //덱 카드 - 있으면 정럴, 없으면 비우기
     if (process.deck.cards.length <= 0)
-        $("#deck_list").innerHTML = "";
+        clusterize.deck.clear();
     else
         sort_deck();
     //덱이 완성되었으면 배경 변경
@@ -1003,7 +1038,7 @@ function deck_refresh(cmd) {
 
 //===========================================================
 //※ 실행
-//============================================================
+//===========================================================
 document.addEventListener("DOMContentLoaded", function(e) {
     //첫 화면 상호작용
         //첫 화면 공개
@@ -1020,6 +1055,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 type:"info"
             })
         }
+
+        //카드 클러스터 생성해두기
+        clusterize.card = new Clusterize({
+            tag: 'div',
+            scrollId: 'main_cardlist',
+            contentId: 'main_cardlist_content',
+            rows_in_block:10,
+            no_data_text: '결과 없음',
+            no_data_class: 'clusterize-no-data'
+        });
+        //덱 클러스터 생성해두기
+        clusterize.deck = new Clusterize({
+            tag: 'div',
+            scrollId: 'deck_list',
+            contentId: 'deck_list_content',
+            rows_in_block:10,
+            no_data_text: ''
+        });
 });
 //오류 취급 (출처 : http://stackoverflow.com/questions/951791/javascript-global-error-handling)
 window.onerror = function(msg, url, line, col, error) {
