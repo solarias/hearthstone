@@ -239,7 +239,7 @@ function window_shift(keyword, keyword2) {
             //==================
             //화면 출력
             window_clear();
-            $("#main_cardlist").classList.add("show");
+            $("#main_search").classList.add("show");
             $("#main_deck").classList.add("show");
             $("#footer_name_left").style.display = "block";
                 $("#footer_name_left").innerHTML = "카드 목록";
@@ -264,7 +264,7 @@ function window_shift(keyword, keyword2) {
             //※ 상호작용
             //==================
             //카드 클릭 - 카드 추가
-            $("#main_cardlist_content").onclick = function(e) {
+            $("#search_list_content").onclick = function(e) {
                 e = e || event;
                 let target = e.target || e.srcElement;
                 if (target.classList.contains("card")) {
@@ -474,15 +474,12 @@ function card_matchKeyword(target, keyword) {
 
 //카드 검색 및 출력
 function card_search() {
-    //클러스터 잠시 비우기
-    clusterize.card.clear();
-
     //로딩 이미지 출력
-    $("#main_cardlist_loading").style.display = "block";
+    $("#search_loading").style.display = "block";
 
     setTimeout(function() {
         //0) 로딩 이미지 닫기
-        $("#main_cardlist_loading").style.display = "none";
+        $("#search_loading").style.display = "none";
 
         //1) 출력할 카드 목록 정리
         let arr = [];
@@ -509,7 +506,6 @@ function card_search() {
         })
 
         //3) 클러스터 업데이트
-        alert();//향후 제거
         clusterize.card.update(nodearr);
 
         //카드 수량 표시
@@ -1081,8 +1077,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         //카드 클러스터 생성해두기
         clusterize.card = new Clusterize({
             tag: 'div',
-            scrollId: 'main_cardlist',
-            contentId: 'main_cardlist_content',
+            scrollId: 'search_list',
+            contentId: 'search_list_content',
             rows_in_block:10,
             no_data_text: '결과 없음',
             no_data_class: 'clusterize-no-data'

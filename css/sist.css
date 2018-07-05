@@ -590,13 +590,11 @@ body {
     }
 
     /*카드 목록*/
-    #main_cardlist {
+    #main_search {
         position:relative;
-
-        background-color:#E7D099;
     }
-        #main_cardlist_loading {
-            position:fixed;
+        #search_loading {
+            position:absolute;
                 left:0;top:0;
             z-index:2;
 
@@ -606,7 +604,13 @@ body {
             background-color:#E7D099;
             box-sizing: border-box;
         }
-        #main_cardlist_content {
+        #search_list {
+            position:relative;
+            overflow-y:scroll;
+
+            background-color:#E7D099;
+        }
+        #search_list_content {
             position:relative;
 
             padding:10px 5px;
