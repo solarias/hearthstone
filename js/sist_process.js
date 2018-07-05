@@ -502,12 +502,14 @@ function card_search() {
             process.search.result = arr;
 
         //2) 카드 목록에 따라 노드 불러오기
+        alert();//향후 제거
         let nodearr = [];
         arr.forEach(function(x) {
             nodearr.push(card_addFragment(x,card_getQuantity(),true));
         })
 
         //3) 클러스터 업데이트
+        alert();//향후 제거
         clusterize.card.update(nodearr);
 
         //카드 수량 표시
@@ -561,36 +563,41 @@ function card_move(cmd) {
 
                     //2) 카드 목록에 따라 노드 불러오기
                     let nodearr = [];
-                    arr.forEach(function(x) {
-                        nodearr.push(card_addFragment(x,quantity,false));
+                    process.deck.cards.forEach(function(x) {
+                        let ssi = x.ssi;
+                        nodearr.push(card_addFragment(ssi,card_getQuantity(ssi),false));
                     })
 
                     //3) 클러스터 업데이트
-                    clusterize.card.update(nodearr);
+                    clusterize.deck.update(nodearr);
 
                     //카드 반짝임
+                    /*
                     $$("#deck_list .card").forEach(function(x) {
                         x.classList.remove("flash");
                     })
                     let thatcard = $$("#deck_list .card_" + x)[0];
                     thatcard.classList.add("flash");
+                    */
                     //덱 수량, 가루 반영
                     process.deck.quantity += 1;
-                    process.deck.dust += DATA.RARITY_DUST[card_getInfo(x).rarity];
-                    //덱 상태 최신화
-                    deck_refresh();
+                    process.deck.dust += DATA.RARITY_DUST[session.db[index].rarity];
                     //카드 추가 스크롤 이동
-                    $("#deck_list").scrollTop = thatcard.offsetTop;
+                    //$("#deck_list").scrollTop = thatcard.offsetTop;
 
                     //카드목록 리프레시
                     //cardlist_refresh();
 
                     //카드 제거 상호작용
+                    /*
                     thatcard.onclick = function() {
-                        card_move("remove " + x);
+                        card_move("remove " + index);
                     }
+                    */
                 }
             })
+            //덱 상태 최신화
+            deck_refresh();
 
             break;
         //카드 제거
@@ -1023,7 +1030,7 @@ function deck_refresh(cmd) {
             process.deck.quantity = 0;
         }
         //영웅 이미지 출력
-        $("#deck_hero").style.backgroundImage = "url(" + TILEURL + DATA.CLASS_CODE[process.deck.class] + ".jpg)";
+        $("#deck_hero").style.backgroundImage = "url(" + TILEURL + DATA.CLASS_ID[process.deck.class] + ".jpg)";
         //덱 이름 출력
         if (process.deck.name) {
             $("#deck_name").innerHTML = process.deck.name
@@ -1040,7 +1047,7 @@ function deck_refresh(cmd) {
     if (process.deck.cards.length <= 0)
         clusterize.deck.clear();
     else
-        sort_deck();
+        //sort_deck();
     //덱이 완성되었으면 배경 변경
     if (process.deck.quantity === DATA.DECK_LIMIT) {
         $("#deck_list").classList.add("complete");

@@ -12,7 +12,7 @@ const DATA = {
         "MAGE":"마법사",
         "PRIEST":"사제"
     },
-    CLASS_CODE:{
+    CLASS_ID:{
         "WARRIOR":"HERO_01",
         "SHAMAN":"HERO_02",
         "ROGUE":"HERO_03",
@@ -23,7 +23,7 @@ const DATA = {
         "MAGE":"HERO_08",
         "PRIEST":"HERO_09"
     },
-    CLASS_ID:{
+    CLASS_DBFID:{
         "WARRIOR":"7",
         "SHAMAN":"1066",
         "ROGUE":"930",
