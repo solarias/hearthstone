@@ -899,6 +899,7 @@ body {
     }
     /*특정 구도*/
     #search_class {
+        margin:2px 0;
         width:45%;
     }
     #footer_bottom .footer_button {

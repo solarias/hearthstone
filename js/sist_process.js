@@ -477,9 +477,10 @@ function card_search() {
     //로딩 이미지 출력
     $("#collection_loading").style.display = "block";
 
-    setTimeout(function() {
+    //setTimeout(function() {
         //0) 로딩 이미지 닫기
         $("#collection_loading").style.display = "none";
+        alert();
 
         //1) 출력할 카드 목록 정리
         let arr = [];
@@ -495,8 +496,10 @@ function card_search() {
                 arr.push(x.ssi);
             }
         })
+        alert();
             //카드 목록 저장
             process.search.result = arr;
+        alert();
 
         //2) 카드 목록에 따라 노드 불러오기
         let nodearr = [];
@@ -505,11 +508,11 @@ function card_search() {
         })
 
         //3) 클러스터 업데이트
-        clusterize.card.update(nodearr);
+        clusterize.collection.update(nodearr);
 
         //카드 수량 표시
         $("#footer_name_left").innerHTML = "카드 목록(" + arr.length + ")";
-    },100);
+    //},100);
 }
 
 //카드 추가 & 제거(dbfid 활용)
@@ -1010,7 +1013,7 @@ function cardlist_refresh() {
     })
     //카드목록 업데이트
     alert();
-    clusterize.card.update(cardarr);
+    clusterize.collection.update(cardarr);
 }
 
 //덱 리프레시
@@ -1074,7 +1077,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
 
         //카드 클러스터 생성해두기
-        clusterize.card = new Clusterize({
+        clusterize.collection = new Clusterize({
             tag: 'div',
             scrollId: 'collection_list',
             contentId: 'collection_list_content',
