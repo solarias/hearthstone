@@ -330,72 +330,7 @@ function card_generateFragment(info) {
     //반환
     return fragment;
 }
-//카드 최종 정보 생성
-function card_addFragment(index, quantity, show1, flasharr) {
-    //요소 불러오기
-    let fragment = session.fragment[index];
 
-    //플래시 정보 입력
-    if (flasharr !== false && flasharr.indexOf(index) >= 0) {
-        fragment = fragment.replace(" flash_hidden","");
-    }
-    //수량 정보 입력
-    let numtext = "";
-        //수량이 1 이상
-        if (quantity >= 1) {
-            //전설이면 "별" 표기
-            if (session.db[index].rarity === "LEGENDARY") {
-                numtext = "★";
-                fragment = fragment.replace(" quantity_hidden","");
-            //전설이 아니면 수량 표기
-            } else if (show1 === true || (show1 === false && quantity >= 2)) {
-                numtext = quantity.toString();
-                fragment = fragment.replace(" quantity_hidden","");
-            }
-        }//카드 수령이 0이면: 숨기기
-    fragment = fragment.replace("$quantity",numtext);
-
-    //요소 출력
-    return fragment;
-}
-//클러스터 업데이트
-function cluster_update(position, latest) {
-    let arr = [];
-    let nodearr = [];
-    switch (position) {
-        case "collection":
-            arr = process.search.result;
-            //클러스터 입력정보 준비
-            arr.forEach(function(x) {
-                nodearr.push(card_addFragment(x,card_getQuantity(x),true,latest));
-            })
-            //클러스터 업데이트
-            clusterize.collection.update(nodearr);
-
-            break;
-        case "deck":
-            arr = process.deck.cards;
-            //클러스터 입력정보 준비
-            arr.forEach(function(x) {
-                nodearr.push(card_addFragment(x.ssi,x.quantity,false,latest));
-            })
-            //클러스터 업데이트
-            clusterize.deck.update(nodearr);
-
-            //카드 추가 스크롤 이동
-            let firstcard = $$("#deck_list_content .card_" + latest[0])[0];
-            if (firstcard !== undefined)
-                $("#deck_list").scrollTop = firstcard.offsetTop;
-
-            //덱 상태 최신화
-            deck_refresh();
-
-            //카드목록 (해당되면) 클러스터 업데이트
-            cluster_update("collection", latest);
-
-            break;
-    }
-}
 
 //카드 수량 찾기(by index)
 function card_getQuantity(index) {
@@ -505,149 +440,6 @@ function card_matchKeyword(target, keyword) {
     }
     //true가 나오지 않으면 false
     return false;
-}
-
-//카드 검색 및 출력
-function card_search() {
-    //로딩 이미지 출력
-    $("#collection_loading").style.display = "block";
-
-    setTimeout(function() {
-        //0) 로딩 이미지 닫기
-        $("#collection_loading").style.display = "none";
-
-        //1) 출력할 카드 목록 정리
-        let arr = [];
-        session.db.forEach(function(x) {
-            if (x.cardClass === process.search.class &&//직업
-            (x.rarity !== "FREE" || x.type !== "HERO") &&//기본 영웅 제외
-            (x.rarity !== "HERO_SKIN" || x.type !== "HERO") &&//스킨 영웅 제외
-            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.deck.format) &&//포맷(정규는 무조건 포함)
-            (process.search.mana === "all" || card_matchMana(x, process.search.mana) === true) &&//마나
-            (process.search.rarity === "all" || x.rarity === process.search.rarity) &&//등급
-            (process.search.set === "all" || x.set === process.search.set) &&//세트
-            card_matchKeyword(x, process.search.keyword) === true) {
-                arr.push(x.ssi);
-            }
-        })
-            //카드 목록 저장
-            process.search.result = arr;
-
-        //2) 카드 목록에 따라 노드 불러오기
-        cluster_update("collection",false);
-
-        //검색된 카드 수량 표시
-        $("#footer_name_left").innerHTML = "카드 목록(" + arr.length + ")";
-    },10);
-}
-
-//카드 추가 & 제거(dbfid 활용)
-function card_move(cmd) {
-    //커맨드 쪼개기
-    let cmdarr = cmd.split(" ");
-    let movement = cmdarr[0];
-    let deckarr = [];
-    //명령 구분
-    switch (movement) {
-        //카드 추가
-        case "add":
-            //카드 분류
-            for (let i = 1;i < cmdarr.length;i++) {
-                deckarr.push(cmdarr[i]);
-            }
-            //카드 추가
-            deckarr.forEach(function(index) {
-                let quantity = card_getQuantity(index);
-                //덱이 30장 미만이고, 카드 없거나 카드가 1장일 때 전설이 아니면 카드 추가
-                if (process.deck.quantity < DATA.DECK_LIMIT &&
-                    (quantity <= 0 || (quantity === 1 && session.db[index].rarity !== "LEGENDARY"))) {
-                    //수량이 0이면
-                    if (quantity === 0) {
-                        //카드정보 추가
-                        let obj = {
-                            "ssi":index,
-                            "quantity":1
-                        }
-                        process.deck.cards.push(obj);
-                        //카드정보 정렬
-                        process.deck.cards.sort(function(a,b) {
-                            return (parseInt(a.ssi) < parseInt(b.ssi)) ? -1 : 1;
-                        })
-                    //수량이 1이면 카드정보 찾아서 수량 추가
-                    } else {
-                        //1) 카드정보 변경
-                        for (let i = 0;i < process.deck.cards.length;i++) {
-                            let card = process.deck.cards[i];
-                            if (card.ssi === index) {
-                                card.quantity += 1;
-                                break;
-                            }
-                        }
-                    }
-                }
-            })
-            //카드 목록에 따라 노드 불러오기
-            cluster_update("deck",deckarr);
-
-            break;
-        //카드 제거
-        case "remove":
-            //카드 분류
-            for (let i = 1;i < cmdarr.length;i++) {
-                deckarr.push(cmdarr[i]);
-            }
-            //카드 제거
-            deckarr.forEach(function(index) {
-                let quantity = card_getQuantity(index);
-                for (let i = 0;i < process.deck.cards.length;i++) {
-                    let card = process.deck.cards[i];
-                    if (card.ssi === index) {
-                        //수량이 2 이상이면 수량 감소
-                        if (card.quantity >= 2) {
-                            //수량 감소
-                            card.quantity -= 1;
-                        //아니라면 카드 정보 제거
-                        } else {
-                            process.deck.cards.splice(i,1);
-                        }
-
-                        break;
-                    }
-                }
-            })
-            //카드 목록에 따라 노드 불러오기
-            cluster_update("deck",deckarr);
-
-            break;
-        //카드 적용
-        case "set":
-            //카드 분류
-            for (let i = 1;i < cmdarr.length;i++) {
-                if (i % 2 === 0) {
-                    let obj = {
-                        deckarr:parseInt(cmdarr[i])
-                    }
-                    deckobj.push(obj);
-                } else if (i % 2 === 1) {
-                    deckarr[Math.ceil((i + 1) % 2)].quantity = parseInt(cmdarr[i]);
-                }
-                deckarr.push(cmdarr[i]);
-            }
-            //기존 카드목록 기억, 비우기
-            let lastdeck = deepCopy(process.deck.cards.length);
-            process.deck.cards = [];
-            //카드 적용
-            deckarr.forEach(function(x) {
-                process.deck.cards.push(x);
-            })
-            //카드 목록에 따라 노드 불러오기
-            cluster_update("deck",deckarr);
-
-            break;
-        //공통
-        default:
-            break;
-    }
 }
 
 //카드 필터 구성
@@ -995,6 +787,220 @@ function card_setFilter(cmd) {
         })
 }
 
+//카드 검색 및 출력
+function card_search() {
+    //로딩 이미지 출력
+    $("#collection_loading").style.display = "block";
+
+    setTimeout(function() {
+        //0) 로딩 이미지 닫기
+        $("#collection_loading").style.display = "none";
+
+        //1) 출력할 카드 목록 정리
+        let arr = [];
+        session.db.forEach(function(x) {
+            if (x.cardClass === process.search.class &&//직업
+            (x.rarity !== "FREE" || x.type !== "HERO") &&//기본 영웅 제외
+            (x.rarity !== "HERO_SKIN" || x.type !== "HERO") &&//스킨 영웅 제외
+            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.deck.format) &&//포맷(정규는 무조건 포함)
+            (process.search.mana === "all" || card_matchMana(x, process.search.mana) === true) &&//마나
+            (process.search.rarity === "all" || x.rarity === process.search.rarity) &&//등급
+            (process.search.set === "all" || x.set === process.search.set) &&//세트
+            card_matchKeyword(x, process.search.keyword) === true) {
+                arr.push(x.ssi);
+            }
+        })
+            //카드 목록 저장
+            process.search.result = arr;
+
+        //2) 카드 목록에 따라 노드 불러오기
+        cluster_update("collection",false);
+
+        //검색된 카드 수량 표시
+        $("#footer_name_left").innerHTML = "카드 목록(" + arr.length + ")";
+    },10);
+}
+
+
+//카드 추가 & 제거 & 적용
+function card_move(cmd) {
+    //로그 기록
+    if (!process.log) process.log = [];
+    process.log.push(cmd);
+    //커맨드 쪼개기
+    let cmdarr = cmd.split(" ");
+    let movement = cmdarr[0];
+    let deckarr = [];
+    //명령 구분
+    switch (movement) {
+        //카드 추가
+        case "add":
+            //카드 분류
+            for (let i = 1;i < cmdarr.length;i++) {
+                deckarr.push(cmdarr[i]);
+            }
+            //카드 추가
+            deckarr.forEach(function(index) {
+                let quantity = card_getQuantity(index);
+                //덱이 30장 미만이고, 카드 없거나 카드가 1장일 때 전설이 아니면 카드 추가
+                if (process.deck.quantity < DATA.DECK_LIMIT &&
+                    (quantity <= 0 || (quantity === 1 && session.db[index].rarity !== "LEGENDARY"))) {
+                    //수량이 0이면
+                    if (quantity === 0) {
+                        //카드정보 추가
+                        let obj = {
+                            "ssi":index,
+                            "quantity":1
+                        }
+                        process.deck.cards.push(obj);
+                        //카드정보 정렬
+                        process.deck.cards.sort(function(a,b) {
+                            return (parseInt(a.ssi) < parseInt(b.ssi)) ? -1 : 1;
+                        })
+                    //수량이 1이면 카드정보 찾아서 수량 추가
+                    } else {
+                        //1) 카드정보 변경
+                        for (let i = 0;i < process.deck.cards.length;i++) {
+                            let card = process.deck.cards[i];
+                            if (card.ssi === index) {
+                                card.quantity += 1;
+                                break;
+                            }
+                        }
+                    }
+                }
+            })
+            //카드 목록에 따라 노드 불러오기
+            cluster_update("deck",deckarr);
+
+            break;
+        //카드 제거
+        case "remove":
+            //카드 분류
+            for (let i = 1;i < cmdarr.length;i++) {
+                deckarr.push(cmdarr[i]);
+            }
+            //카드 제거
+            deckarr.forEach(function(index) {
+                let quantity = card_getQuantity(index);
+                for (let i = 0;i < process.deck.cards.length;i++) {
+                    let card = process.deck.cards[i];
+                    if (card.ssi === index) {
+                        //수량이 2 이상이면 수량 감소
+                        if (card.quantity >= 2) {
+                            //수량 감소
+                            card.quantity -= 1;
+                        //아니라면 카드 정보 제거
+                        } else {
+                            process.deck.cards.splice(i,1);
+                        }
+
+                        break;
+                    }
+                }
+            })
+            //카드 목록에 따라 노드 불러오기
+            cluster_update("deck",deckarr);
+
+            break;
+        //카드 적용
+        case "set":
+            //카드 분류
+            for (let i = 1;i < cmdarr.length;i++) {
+                if (i % 2 === 0) {
+                    let obj = {
+                        deckarr:parseInt(cmdarr[i])
+                    }
+                    deckobj.push(obj);
+                } else if (i % 2 === 1) {
+                    deckarr[Math.ceil((i + 1) % 2)].quantity = parseInt(cmdarr[i]);
+                }
+                deckarr.push(cmdarr[i]);
+            }
+            //기존 카드목록 기억, 비우기
+            let lastdeck = deepCopy(process.deck.cards.length);
+            process.deck.cards = [];
+            //카드 적용
+            deckarr.forEach(function(x) {
+                process.deck.cards.push(x);
+            })
+            //카드 목록에 따라 노드 불러오기
+            cluster_update("deck",deckarr);
+
+            break;
+        //공통
+        default:
+            break;
+    }
+}
+
+//카드 최종 정보 생성
+function card_addFragment(index, quantity, show1, flasharr) {
+    //요소 불러오기
+    let fragment = session.fragment[index];
+
+    //플래시 정보 입력
+    if (flasharr !== false && flasharr.indexOf(index) >= 0) {
+        fragment = fragment.replace(" flash_hidden","");
+    }
+    //수량 정보 입력
+    let numtext = "";
+        //수량이 1 이상
+        if (quantity >= 1) {
+            //전설이면 "별" 표기
+            if (session.db[index].rarity === "LEGENDARY") {
+                numtext = "★";
+                fragment = fragment.replace(" quantity_hidden","");
+            //전설이 아니면 수량 표기
+            } else if (show1 === true || (show1 === false && quantity >= 2)) {
+                numtext = quantity.toString();
+                fragment = fragment.replace(" quantity_hidden","");
+            }
+        }//카드 수령이 0이면: 숨기기
+    fragment = fragment.replace("$quantity",numtext);
+
+    //요소 출력
+    return fragment;
+}
+//클러스터 업데이트
+function cluster_update(position, latest) {
+    let arr = [];
+    let nodearr = [];
+    switch (position) {
+        case "collection":
+            arr = process.search.result;
+            //클러스터 입력정보 준비
+            arr.forEach(function(x) {
+                nodearr.push(card_addFragment(x,card_getQuantity(x),true,latest));
+            })
+            //클러스터 업데이트
+            clusterize.collection.update(nodearr);
+
+            break;
+        case "deck":
+            arr = process.deck.cards;
+            //클러스터 입력정보 준비
+            arr.forEach(function(x) {
+                nodearr.push(card_addFragment(x.ssi,x.quantity,false,latest));
+            })
+            //클러스터 업데이트
+            clusterize.deck.update(nodearr);
+
+            //카드 추가 스크롤 이동
+            let firstcard = $$("#deck_list_content .card_" + latest[0])[0];
+            if (firstcard !== undefined)
+                $("#deck_list").scrollTop = firstcard.offsetTop;
+
+            //덱 상태 최신화
+            deck_refresh();
+
+            //카드목록 (해당되면) 클러스터 업데이트
+            cluster_update("collection", latest);
+
+            break;
+    }
+}
+
 //덱 리프레시
 function deck_refresh(cmd) {
     //최초 시동
@@ -1076,6 +1082,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
             rows_in_block:10,
             no_data_text: ''
         });
+
+        //종료 경고 메시지
+        window.onbeforeunload = function() {
+           return "사이트에서 나가시겠습니까?";
+        };
 });
 //오류 취급 (출처 : http://stackoverflow.com/questions/951791/javascript-global-error-handling)
 /*
