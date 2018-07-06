@@ -239,7 +239,7 @@ function window_shift(keyword, keyword2) {
             //==================
             //화면 출력
             window_clear();
-            $("#main_search").classList.add("show");
+            $("#main_collection").classList.add("show");
             $("#main_deck").classList.add("show");
             $("#footer_name_left").style.display = "block";
                 $("#footer_name_left").innerHTML = "카드 목록";
@@ -264,7 +264,7 @@ function window_shift(keyword, keyword2) {
             //※ 상호작용
             //==================
             //카드 클릭 - 카드 추가
-            $("#search_list_content").onclick = function(e) {
+            $("#collection_list_content").onclick = function(e) {
                 e = e || event;
                 let target = e.target || e.srcElement;
                 if (target.classList.contains("card")) {
@@ -475,11 +475,11 @@ function card_matchKeyword(target, keyword) {
 //카드 검색 및 출력
 function card_search() {
     //로딩 이미지 출력
-    $("#search_loading").style.display = "block";
+    $("#collection_loading").style.display = "block";
 
     setTimeout(function() {
         //0) 로딩 이미지 닫기
-        $("#search_loading").style.display = "none";
+        $("#collection_loading").style.display = "none";
 
         //1) 출력할 카드 목록 정리
         let arr = [];
@@ -499,7 +499,6 @@ function card_search() {
             process.search.result = arr;
 
         //2) 카드 목록에 따라 노드 불러오기
-        alert();//향후 제거
         let nodearr = [];
         arr.forEach(function(x) {
             nodearr.push(card_addFragment(x,card_getQuantity(),true));
@@ -510,7 +509,7 @@ function card_search() {
 
         //카드 수량 표시
         $("#footer_name_left").innerHTML = "카드 목록(" + arr.length + ")";
-    },10);
+    },100);
 }
 
 //카드 추가 & 제거(dbfid 활용)
@@ -1077,8 +1076,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         //카드 클러스터 생성해두기
         clusterize.card = new Clusterize({
             tag: 'div',
-            scrollId: 'search_list',
-            contentId: 'search_list_content',
+            scrollId: 'collection_list',
+            contentId: 'collection_list_content',
             rows_in_block:10,
             no_data_text: '결과 없음',
             no_data_class: 'clusterize-no-data'

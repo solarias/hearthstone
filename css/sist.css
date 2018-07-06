@@ -4,7 +4,7 @@
     border:0;
 
     font-size:16px;
-    font-family:ariel;
+    font-family:'맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothid Neo',sans-serif;
 }
 
 /*공용 - 카드등급*/
@@ -590,10 +590,10 @@ body {
     }
 
     /*카드 목록*/
-    #main_search {
+    #main_collection {
         position:relative;
     }
-        #search_loading {
+        #collection_loading {
             position:absolute;
                 left:0;top:0;
             z-index:2;
@@ -601,16 +601,19 @@ body {
             width:100%;
             height:100%;
 
-            background-color:#E7D099;
+            background-color:rgba(0,0,0,0.5);
             box-sizing: border-box;
         }
-        #search_list {
+        #collection_list {
             position:relative;
             overflow-y:scroll;
 
+            width:100%;
+            height:100%;
+
             background-color:#E7D099;
         }
-        #search_list_content {
+        #collection_list_content {
             position:relative;
 
             padding:10px 5px;
