@@ -480,7 +480,6 @@ function card_search() {
     //setTimeout(function() {
         //0) 로딩 이미지 닫기
         $("#collection_loading").style.display = "none";
-        alert();
 
         //1) 출력할 카드 목록 정리
         let arr = [];
@@ -496,10 +495,8 @@ function card_search() {
                 arr.push(x.ssi);
             }
         })
-        alert();
             //카드 목록 저장
             process.search.result = arr;
-        alert();
 
         //2) 카드 목록에 따라 노드 불러오기
         let nodearr = [];
