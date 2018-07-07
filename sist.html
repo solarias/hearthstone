@@ -122,11 +122,19 @@
 					<div id="footer_name_right" class="footer_desc"></div>
 				</div>
                 <div id="footer_bottom">
-					<button id="bottom_undo" class="footer_button">&#8630;<span class="desktop_only"> 취소</span></button>
-					<button id="bottom_redo" class="footer_button"><span class="desktop_only">복구 </span>&#8631;</button>
+					<button id="bottom_undo" class="footer_button disabled">
+						<div id="undo_icon" class="log_icon">&#8630;</div>
+						<div id="undo_text" class="log_text desktop_only"> 취소</div>
+						<div id="undo_num" class="log_num">0</div>
+					</button>
+					<button id="bottom_redo" class="footer_button disabled">
+						<div id="redo_icon" class="log_icon">&#8631;</div>
+						<div id="redo_text" class="log_text desktop_only">복구 </div>
+						<div id="redo_num" class="log_num">0</div>
+					</button>
 
 					<button id="bottom_output" class="footer_button">&#128190;<span class="desktop_only"> 완료</span></button>
-					<button id="bottom_input" class="footer_button">&#128194;<span class="desktop_only"> 덱코드 입력</span></button>
+					<button id="bottom_input" class="footer_button"><span class="desktop_only">&#128194; </span>덱코드<span class="desktop_only"> 입력</span></button>
                 </div>
             </footer>
 

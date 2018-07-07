@@ -268,7 +268,7 @@ function window_shift(keyword, keyword2) {
                 e = e || event;
                 let target = e.target || e.srcElement;
                 if (target.classList.contains("card")) {
-                    card_move("add " + target.dataset.ssi);
+                    card_move("add " + target.dataset.ssi, true);
                 }
             }
             //카드 제거 상호작용
@@ -276,8 +276,37 @@ function window_shift(keyword, keyword2) {
                 e = e || event;
                 let target = e.target || e.srcElement;
                 if (target.classList.contains("card")) {
-                    card_move("remove " + target.dataset.ssi);
+                    card_move("remove " + target.dataset.ssi, true);
                 }
+            }
+            //덱코드 입력
+            $("#bottom_input").onclick = function() {
+                //팝업창 열기
+                swal({
+                    title: '덱코드를 입력해주세요',
+                    input: 'text',
+                    text: '덱코드를 분석하여 카드를 불러옵니다.',
+                    inputPlaceholder: '입력란',
+                    showCancelButton:true,
+                    confirmButtonText: '적용',
+                    cancelButtonText: '취소',
+                    cancelButtonColor: '#d33',
+                    inputValidator: function(deckcode) {
+                        return new Promise(function(resolve, reject) {
+                            try {
+                                resolve(deckstrings.decode(deckcode));
+                            } catch(e) {
+                                reject("올바르지 않은 덱코드입니다.");
+                            }
+                        })
+                    }
+                }).then(function(result) {
+                    if (result) {
+                        //덱코드 해석
+                        let obj = deckstrings.decode(deckcode);
+                        console.log(obj);
+                    }
+                })
             }
 
             break;
@@ -823,10 +852,7 @@ function card_search() {
 
 
 //카드 추가 & 제거 & 적용
-function card_move(cmd) {
-    //로그 기록
-    if (!process.log) process.log = [];
-    process.log.push(cmd);
+function card_move(cmd, log) {
     //커맨드 쪼개기
     let cmdarr = cmd.split(" ");
     let movement = cmdarr[0];
@@ -845,6 +871,8 @@ function card_move(cmd) {
                 //덱이 30장 미만이고, 카드 없거나 카드가 1장일 때 전설이 아니면 카드 추가
                 if (process.deck.quantity < DATA.DECK_LIMIT &&
                     (quantity <= 0 || (quantity === 1 && session.db[index].rarity !== "LEGENDARY"))) {
+                    //로그 기록
+                    if (log === true) log_record(cmd);
                     //수량이 0이면
                     if (quantity === 0) {
                         //카드정보 추가
@@ -876,6 +904,8 @@ function card_move(cmd) {
             break;
         //카드 제거
         case "remove":
+            //로그 기록(제거는 예외사항 없으니 바로 실시)
+            if (log === true) log_record(cmd);
             //카드 분류
             for (let i = 1;i < cmdarr.length;i++) {
                 deckarr.push(cmdarr[i]);
@@ -905,6 +935,8 @@ function card_move(cmd) {
             break;
         //카드 적용
         case "set":
+            //로그 기록
+            if (log === true) log_record(cmd);
             //카드 분류
             for (let i = 1;i < cmdarr.length;i++) {
                 if (i % 2 === 0) {
@@ -1001,6 +1033,86 @@ function cluster_update(position, latest) {
     }
 }
 
+//로그 생성
+function log_record(cmd) {
+    //로그 공간 생성 및 입력, 표시
+    if (!process.log) process.log = [];//로그 공간 생성
+    process.log.push(cmd);//로그 입력
+    $("#undo_num").innerHTML = thousand(process.log.length);//로그 횟수 표기
+    //취소버튼 활성화
+    $("#bottom_undo").onclick = log_undo;
+    $("#bottom_undo").classList.remove("disabled");
+    //복구 로그 비우기
+    process.redo = [];
+    $("#redo_num").innerHTML = thousand(process.redo.length);
+    //복구버튼 비활성화
+    $("#bottom_redo").onclick = "";
+    $("#bottom_redo").classList.add("disabled");
+}
+//실행 취소
+function log_undo() {
+    //마지막 로그 분석
+    let log = process.log[process.log.length-1];
+        process.log.pop();//마지막 로그 지우기
+        $("#undo_num").innerHTML = thousand(process.log.length);//로그 횟수 표기
+    let movement = log.split(" ")[0];
+    switch (movement) {
+        case "add":
+            log = log.replace("add","remove");
+            break;
+        case "remove":
+            log = log.replace("remove","add")
+            break;
+        case "set":
+            break;
+    }
+    //취소 실행
+    card_move(log,false);
+    //복구 로그에 취소사항 기록
+    if (!process.redo) process.redo = [];
+    process.redo.push(log);
+    $("#redo_num").innerHTML = thousand(process.redo.length);
+    //이제 로그가 없으면 취소버튼 비활성화
+    if (process.log.length <= 0) {
+        $("#bottom_undo").onclick = "";
+        $("#bottom_undo").classList.add("disabled");
+    }
+    //복구 버튼 활성화
+    $("#bottom_redo").onclick = log_redo;
+    $("#bottom_redo").classList.remove("disabled");
+}
+//취소 복구
+function log_redo() {
+    //마지막 복구로그 분석
+    let redo = process.redo[process.redo.length-1];
+        process.redo.pop();//마지막 로그 지우기
+        $("#redo_num").innerHTML = thousand(process.redo.length);//로그 횟수 표기
+    let movement = redo.split(" ")[0];
+    switch (movement) {
+        case "add":
+            redo = redo.replace("add","remove");
+            break;
+        case "remove":
+            redo = redo.replace("remove","add")
+            break;
+        case "set":
+            break;
+    }
+    //복구 실행
+    card_move(redo,false);
+    //취소 로그에 복구사항 기록
+    process.log.push(redo);
+    $("#undo_num").innerHTML = thousand(process.log.length);
+    //이제 로그가 없으면 취소버튼 비활성화
+    if (process.redo.length <= 0) {
+        $("#bottom_redo").onclick = "";
+        $("#bottom_redo").classList.add("disabled");
+    }
+    //복구 버튼 활성화
+    $("#bottom_undo").onclick = log_undo;
+    $("#bottom_undo").classList.remove("disabled");
+}
+
 //덱 리프레시
 function deck_refresh(cmd) {
     //최초 시동
@@ -1029,7 +1141,7 @@ function deck_refresh(cmd) {
     let dust = 0;
     process.deck.cards.forEach(function(x) {
         quantity += x.quantity;
-        dust += DATA.RARITY_DUST[session.db[x.ssi].rarity]
+        dust += DATA.RARITY_DUST[session.db[x.ssi].rarity] * x.quantity;
     })
         //덱 수량 저장, 출력
         process.deck.quantity = quantity;
