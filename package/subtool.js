@@ -23,6 +23,16 @@ if (!Array.prototype.indexOf)
     return -1;
   };
 }
+//Nodelist foreach (대상: IE11)
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = function (callback, thisArg) {
+        thisArg = thisArg || window;
+        for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+        }
+    };
+}
+
 
 //trim 호환용 (대상 : IE8)
 if(typeof String.prototype.trim !== 'function') {
@@ -114,11 +124,17 @@ Array.prototype.min = function() {
 //※ 함수 - DOM 관련
 //=================================================================================================================
 //DOM 선택자
-function $(parameter) {
-    return document.querySelector(parameter);
+function $(parameter, startNode) {
+    if (!startNode)
+        return document.querySelector(parameter);
+    else
+        return startNode.querySelector(parameter);
 }
-function $$(parameter) {
-    return document.querySelectorAll(parameter);
+function $$(parameter, startNode) {
+    if (!startNode)
+        return document.querySelectorAll(parameter);
+    else
+        return startNode.querySelectorAll(parameter);
 }
 
 //DOM 생성

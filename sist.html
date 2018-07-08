@@ -48,28 +48,33 @@
                     </div>
                     <div id="titlescreen_deck">
                         <button id="start_deck" class="titlescreen_button">&#128461;</button>
-                        <p class="titlescren_desc">덱 만들기</p>
+                        <p class="titlescren_desc">덱 관리</p>
                     </div>
                 </div>
 
-				<!--덱 세팅-->
-                <div id="main_decksetting" class="mainscreen main_both">
-                    <div class="main_title">직업 및 포맷 설정</div>
-					<div id="decksetting_class">
-						<button id="decksetting_1" class="decksetting_button class" data-class="WARRIOR">전사</button>
-						<button id="decksetting_2" class="decksetting_button class" data-class="SHAMAN">주술사</button>
-						<button id="decksetting_3" class="decksetting_button class" data-class="ROGUE">도적</button>
-						<button id="decksetting_4" class="decksetting_button class" data-class="PALADIN">성기사</button>
-						<button id="decksetting_5" class="decksetting_button class" data-class="HUNTER">사냥꾼</button>
-						<button id="decksetting_6" class="decksetting_button class" data-class="DRUID">드루이드</button>
-						<button id="decksetting_7" class="decksetting_button class" data-class="WARLOCK">흑마법사</button>
-						<button id="decksetting_8" class="decksetting_button class" data-class="MAGE">마법사</button>
-						<button id="decksetting_9" class="decksetting_button class" data-class="PRIEST">사제</button>
+				<!--덱 관리-->
+				<div id="main_decklist" class="mainscreen main_both">
+					<div class="main_title">덱 관리</div>
+				</div>
+
+				<!--새로운 덱-->
+                <div id="main_newdeck" class="mainscreen main_both">
+                    <div class="main_title">직업 및 대전방식</div>
+					<div id="newdeck_class">
+						<button id="newdeck_1" class="newdeck_button class" data-class="WARRIOR">전사</button>
+						<button id="newdeck_2" class="newdeck_button class" data-class="SHAMAN">주술사</button>
+						<button id="newdeck_3" class="newdeck_button class" data-class="ROGUE">도적</button>
+						<button id="newdeck_4" class="newdeck_button class" data-class="PALADIN">성기사</button>
+						<button id="newdeck_5" class="newdeck_button class" data-class="HUNTER">사냥꾼</button>
+						<button id="newdeck_6" class="newdeck_button class" data-class="DRUID">드루이드</button>
+						<button id="newdeck_7" class="newdeck_button class" data-class="WARLOCK">흑마법사</button>
+						<button id="newdeck_8" class="newdeck_button class" data-class="MAGE">마법사</button>
+						<button id="newdeck_9" class="newdeck_button class" data-class="PRIEST">사제</button>
 					</div>
-					<div id="decksetting_format">
-						<button id="decksetting_standard" class="decksetting_button format" data-format="정규">정규전</button>
-						<button id="decksetting_wild" class="decksetting_button format" data-format="야생">야생전</button>
-						<button id="decksetting_done">설정 완료</button>
+					<div id="newdeck_format">
+						<button id="newdeck_standard" class="newdeck_button format" data-format="정규">정규전</button>
+						<button id="newdeck_wild" class="newdeck_button format" data-format="야생">야생전</button>
+						<button id="newdeck_done">설정 완료</button>
 					</div>
 				</div>
 
@@ -77,6 +82,11 @@
 				<div id="main_loading" class="mainscreen main_both">
                     <div class="main_title">카드정보 불러오는 중</div>
 					<img class="loading_mark" src="./images/sist/loading_transparent.gif" alt="로딩 이미지">
+				</div>
+
+				<!--덱 관리-->
+				<div id="main_deckconfig">
+
 				</div>
 
 				<!--카드 목록-->
@@ -88,6 +98,11 @@
 						<div id="collection_list_content" class="clusterize-content"></div>
 					</div>
 				</div>
+
+				<!--카드 정보-->
+				<div id="main_cardinfo" class="mainscreen main_right"></div>
+
+				<!--덱 목록-->
 				<div id="main_deck" class="mainscreen main_right">
 					<div id="deck_hero">
 						<div id="deck_hero_cover">
@@ -109,11 +124,6 @@
 					</div>
 				</div>
 
-				<!--덱 제작-->
-
-
-				<!--덱 출력-->
-
             </section>
             <footer id="frame_footer">
 				<div id="footer_top">
@@ -133,11 +143,9 @@
 						<div id="redo_num" class="log_num">0</div>
 					</button>
 
-					<button id="bottom_output" class="footer_button">&#128190;<span class="desktop_only"> 완료</span></button>
-					<button id="bottom_input" class="footer_button"><span class="desktop_only">&#128194; </span>덱코드<span class="desktop_only"> 입력</span></button>
+					<button id="bottom_save" class="footer_button">&#128190;<span class="desktop_only"> 완료</span></button>
                 </div>
             </footer>
-
 			<!--별도 창 - 카드 필터(모바일)-->
 			<section id="frame_mobilefilter" class="">
 				<div class="mobilefilter_desc">&#128295; 검색 필터</div>
@@ -158,19 +166,27 @@
 				<button id="mobilefilter_reset" class="mobilefilter_button">필터 초기화</button>
 			</section>
         </div>
+		<!--별도 창 - 카드 정보 (커버)-->
+		<!--별도 창 - 카드 정보 (좌측)-->
+		<section id="frame_cardmonitor">
+
+		</section>
 
 		<!--외부 보조 라이브러리-->
 		<script src="./package/sweetalert2/dist/sweetalert2.min.js"></script>
-		<link rel="stylesheet" href="./package/sweetalert2/dist/sweetalert2.css">
+			<link rel="stylesheet" href="./package/sweetalert2/dist/sweetalert2.css">
+		<script src="./package/clusterize.min.js"></script>
+			<link href="./package/clusterize.css" rel="stylesheet">
+		<script src="./package/localforage.min.js"></script>
 			<!-- for IE support -->
 			<script src="./package/sweetalert2/node_modules/es6-promise-polyfill/promise.min.js"></script>
-		<script src="./package/clusterize.min.js"></script>
-		<link href="./package/clusterize.css" rel="stylesheet">
+			<script src="./package/fetch.js"></script>
 		<!--외부 보조 라이브러리-->
 
         <script type="text/javascript" src="./js/deckstrings.js"></script>
         <script type="text/javascript" src="./js/sist_data.js"></script>
 		<script type="text/javascript" src="./js/sist_process.js"></script>
+		<script type="text/javascript" src="./js/sist_cardinfo.js"></script>
 
 
 	</body>

@@ -25,9 +25,9 @@ function encode(num, out, offset) {
     num >>>= 7;
   }
   out[offset] = num | 0;
-  
+
   encode.bytes = offset - oldOffset + 1;
-  
+
   return out
 }
 

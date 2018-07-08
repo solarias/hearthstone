@@ -58,7 +58,8 @@ const DATA = {
     TYPE_KR:{
         "SPELL":"주문",
         "MINION":"하수인",
-        "WEAPON":"무기"
+        "WEAPON":"무기",
+        "HERO":"영웅"
     },
     RACE_KR:{
         "ELEMENTAL":"정령",
@@ -70,6 +71,11 @@ const DATA = {
         "PIRATE":"해적",
         "TOTEM":"토템",
         "ALL":"모두"
+    },
+    DECKCODE_VERSION:1,
+    FORMAT_CODE:{
+        "야생":"1",
+        "정규":"2"
     },
     DECK_LIMIT:30,
     YEAR:"까마귀의 해",

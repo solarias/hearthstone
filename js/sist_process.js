@@ -10,6 +10,7 @@ let session = {
 };
 const TILEURL = "https://art.hearthstonejson.com/v1/tiles/";
 const IMAGEURL = "https://art.hearthstonejson.com/v1/256x/";
+const PNGURL = "https://art.hearthstonejson.com/v1/render/latest/koKR/256x/";
 //클러스터
 let clusterize = {};
 //카드정보 열람 auto
@@ -20,12 +21,17 @@ let autoinfo;
 //===========================================================
 //모든 창 & 명칭 닫기
 function window_clear() {
+    //커서 블러
+    document.activeElement.blur();
+    //화면 닫기
     $$(".mainscreen").forEach(function(target) {
         target.classList.remove("show");
     })
     $$(".footer_desc").forEach(function(target) {
         target.style.display = "none";
     })
+    //부가: 카드모니터 닫기
+    $("#frame_cardmonitor").style.display = "none";
 }
 
 //개별 창 설정
@@ -35,6 +41,8 @@ function window_shift(keyword, keyword2) {
         case "titlescreen":
             //공용 함수
             function open() {
+                //진행정보 초기화
+                process = {};
                 //진행상태 기억
                 process.state = "titlescreen";
                 //창 전환
@@ -47,34 +55,37 @@ function window_shift(keyword, keyword2) {
 
                 //시작 버튼
                 $("#start_card").onclick = function() {
-                    alert("향후 지원 예정입니다.");
+                    window_shift("loading","cardinfo");
                 }
                 $("#start_deck").onclick = function() {
-                    window_shift("decksetting");
+                    window_shift("newdeck");
                 }
             }
 
             //진행정보 초기화 의사 물어보기
             if (process.state && process.state !== "titlescreen") {
-                swal({
-                    type:"warning",
-                    title:"첫 화면으로 돌아가시겠습니까?",
-                    text:"진행된 정보는 모두 초기화됩니다.",
-                    showCancelButton:true,
-                    confirmButtonText: '확인',
-                    cancelButtonText: '취소',
-                    cancelButtonColor: '#d33'
-                }).then(function(isConfirm){
-                    if (isConfirm) {
-                        //진행정보 초기화
-                        process = {};
-                        //화면 전환
-                        open();
-                    } else {
-                        //취소
-                        return;
-                    }
-                })
+                if (keyword2 === "always") {
+                    //강제 화면 전환
+                    open();
+                } else {
+                    swal({
+                        type:"warning",
+                        title:"첫 화면으로 돌아가시겠습니까?",
+                        text:"진행된 정보는 모두 초기화됩니다.",
+                        showCancelButton:true,
+                        confirmButtonText: '확인',
+                        cancelButtonText: '취소',
+                        cancelButtonColor: '#d33'
+                    }).then(function(isConfirm){
+                        if (isConfirm) {
+                            //화면 전환
+                            open();
+                        } else {
+                            //취소
+                            return;
+                        }
+                    })
+                }
             } else {
                 //화면 전환
                 open();
@@ -83,26 +94,26 @@ function window_shift(keyword, keyword2) {
             break;
 
         //*덱 설정
-        case "decksetting":
+        case "newdeck":
             //진행상태 기억
-            process.state = "decksetting";
+            process.state = "newdeck";
             //창 전환
             window_clear();
-            $("#main_decksetting").classList.add("show");
+            $("#main_newdeck").classList.add("show");
             //기존 선택 초기화
-            $$(".decksetting_button").forEach(function(x) {
+            $$(".newdeck_button").forEach(function(x) {
                 x.classList.remove("selected");
             })
 
             //창 기능
-            $$(".decksetting_button").forEach(function(target) {
+            $$(".newdeck_button").forEach(function(target) {
                 target.onclick = function() {
                     if (target.dataset.class) {
                         //직업 세팅
                         if (!process.deck) process.deck = {};
                         process.deck.class = target.dataset.class;
                         //버튼 세팅
-                        $$(".decksetting_button.class").forEach(function(x) {
+                        $$(".newdeck_button.class").forEach(function(x) {
                             x.classList.remove("selected");
                         })
                         target.classList.add("selected");
@@ -111,14 +122,14 @@ function window_shift(keyword, keyword2) {
                         if (!process.deck) process.deck = {};
                         process.deck.format = target.dataset.format;
                         //버튼 세팅
-                        $$(".decksetting_button.format").forEach(function(x) {
+                        $$(".newdeck_button.format").forEach(function(x) {
                             x.classList.remove("selected");
                         })
                         target.classList.add("selected");
                     }
                 }
             })
-            $("#decksetting_done").onclick = function() {
+            $("#newdeck_done").onclick = function() {
                 if (!process.deck.class) {
                     alert("직업을 설정해주세요.");
                 } else if (!process.deck.format) {
@@ -191,18 +202,22 @@ function window_shift(keyword, keyword2) {
                         loading_master();
                     });
                 } catch(e) {
+                    console.log(e);
                     swal({
                         type:"error",
                         title:"카드정보 불러오기 실패",
                         text:"첫 화면으로 돌아갑니다."
                     }).then(function() {
-                        window_shift("titlescreen");
+                        window_shift("titlescreen","always");
                     })
                 }
             }
-            //Master Node 작성
+            //Master Node, Master Info 작성
             function loading_master() {
-                if (!session.master) session.master = card_generateMaster();
+                //Master Node 생성
+                if (!session.masterNodeInfo) session.masterNode = card_generateMaster();
+                //Master Info 생성
+                if (!session.masterInfo) session.masterInfo = cardinfo_generateMaster();
 
                 loading_fragment();
             }
@@ -225,7 +240,54 @@ function window_shift(keyword, keyword2) {
                 })
 
                 //화면 전환
-                window_shift("deckbuilding");
+                window_shift(keyword2);
+            }
+
+            break;
+
+        //*카드 검색
+        case "cardinfo":
+            //상태 기억
+            process.state = "cardinfo";
+            //==================
+            //※ 화면 구성
+            //==================
+            //화면 출력
+            window_clear();
+            $("#main_collection").classList.add("show");
+            $("#main_cardinfo").classList.add("show");
+            $("#footer_name_left").style.display = "block";
+                $("#footer_name_left").innerHTML = "카드 목록";
+            $("#footer_name_right").style.display = "block";
+                $("#footer_name_right").innerHTML = "카드 정보";
+            $("#header_bottom").classList.add("show");
+
+            //==================
+            //※ 필터 구성
+            //==================
+            //검색 초기치 강제 설정, 필터 활성화
+            process.deck = [];
+                process.deck.class = "WARRIOR";
+                process.deck.format = "야생";
+            card_setFilter("init");//필터 활성화
+
+            //검색 초기치에 따라 검색결과 출력(최초 검색)
+            card_search();
+
+            //==================
+            //※ 카드정보 구성
+            //==================
+            //카드정보 노드 설치
+            cardinfo_setup("main_cardinfo");
+
+            //카드 보기 상호작용
+            $("#collection_list_content").onclick = function(e) {
+                e = e || event;
+                let target = e.target || e.srcElement;
+                if (target.classList.contains("card")) {
+                    let info = session.db[target.dataset.ssi];
+                    cardinfo_show("main_cardinfo",info);
+                }
             }
 
             break;
@@ -247,6 +309,11 @@ function window_shift(keyword, keyword2) {
                 $("#footer_name_right").innerHTML = "덱 구성";
             $("#header_bottom").classList.add("show");
             $("#footer_bottom").classList.add("show");
+            //로그 초기화
+            $("#undo_num").innerHTML = "0";
+            $("#undo_num").classList.remove("show");
+            $("#redo_num").innerHTML = "0";
+            $("#redo_num").classList.remove("show");
 
             //==================
             //※ 덱 & 필터 구성
@@ -279,7 +346,34 @@ function window_shift(keyword, keyword2) {
                     card_move("remove " + target.dataset.ssi, true);
                 }
             }
+
+            //==================
+            //※ 카드정보 구성
+            //==================
+            //카드모니터 설치
+            $("#frame_cardmonitor").style.display = "block";
+            //카드정보 노드 설치
+            cardinfo_setup("frame_cardmonitor");
+
+            //카드 보기 상호작용
+            $("#collection_list_content").onmouseover = function(e) {
+                e = e || event;
+                let target = e.target || e.srcElement;
+                if (target.classList.contains("card")) {
+                    let info = session.db[target.dataset.ssi];
+                    cardinfo_show("frame_cardmonitor",info);
+                }
+            }
+            $("#deck_list_content").onmouseover = function(e) {
+                e = e || event;
+                let target = e.target || e.srcElement;
+                if (target.classList.contains("card")) {
+                    let info = session.db[target.dataset.ssi];
+                    cardinfo_show("frame_cardmonitor",info);
+                }
+            }
             //덱코드 입력
+            /*
             $("#bottom_input").onclick = function() {
                 //팝업창 열기
                 swal({
@@ -308,11 +402,13 @@ function window_shift(keyword, keyword2) {
                     }
                 })
             }
+            */
 
-            break;
+            //덱코드 출력
+            $("#bottom_save").onclick = function() {
+                
+            }
 
-        //*카드 검색
-        case "cardinfo":
             break;
     }
 }
@@ -349,7 +445,7 @@ function card_generateMaster() {
 //카드 개별 정보 생성
 function card_generateFragment(info) {
     //마스터 노드 복사
-    let fragment = session.master;
+    let fragment = session.masterNode;
     //필요한 정보 설정(수량 제외)
     fragment = fragment.replaceAll("$index",info.ssi);//인덱스 설정
     fragment = fragment.replace("$id",info.id);//ID 설정
@@ -418,6 +514,19 @@ function searchable(keyword) {
     //반환
     return text;
 }
+//키워드 읽을 수 있도록 정리
+function readable(text) {
+    let unseable = ["[x]", "$", "#", "@"];
+    let replacable = ["\n"];
+    unseable.forEach(function(x) {
+        text = text.replaceAll(x,"");
+    })
+    replacable.forEach(function(x) {
+        text = text.replaceAll(x,"<br>");
+    })
+    //반환
+    return text;
+}
 
 //카드 마나 맞춰보기
 function card_matchMana(target, mana) {
@@ -481,6 +590,7 @@ function card_setFilter(cmd) {
         process.search.mana = "all";//마나
         process.search.rarity = "all";//등급
         process.search.set = "all";//세트
+        process.search.format = process.deck.format;//포맷
         process.search.keyword = "";//키워드
     }
 
@@ -494,7 +604,45 @@ function card_setFilter(cmd) {
         } else {
             //카드 정보
             if (process.state === "cardinfo") {
-                /*향후 추가 - 선택지*/
+                //팝업창 열기
+                swal({
+                    title: '카드 직업 검색',
+                    html:
+                      '<button id="popup_class_WARRIOR" class="popup_button trisection" data-class="WARRIOR">전사</button>' +
+                      '<button id="popup_class_SHAMAN" class="popup_button trisection" data-class="SHAMAN">주술사</button>' +
+                      '<button id="popup_class_ROGUE" class="popup_button trisection" data-class="ROGUE">도적</button>' +
+                      '<button id="popup_class_PALADIN" class="popup_button trisection" data-class="PALADIN">성기사</button>' +
+                      '<button id="popup_class_HUNTER" class="popup_button trisection" data-class="HUNTER">사냥꾼</button>' +
+                      '<button id="popup_class_DRUID" class="popup_button trisection" data-class="DRUID">드루이드</button>' +
+                      '<button id="popup_class_WARLOCK" class="popup_button trisection" data-class="WARLOCK">흑마법사</button>' +
+                      '<button id="popup_class_MAGE" class="popup_button trisection" data-class="MAGE">마법사</button>' +
+                      '<button id="popup_class_PRIEST" class="popup_button trisection" data-class="PRIEST">사제</button>' +
+                      '<button id="popup_class_NEUTRAL" class="popup_button full" data-class="NEUTRAL">중립</button>',
+                    onOpen:function() {
+                        //현재 등급 검색필터 보여주기
+                        $("#popup_class_" + process.search.class).classList.add("selected");
+                        //버튼 상호작용
+                        $$(".popup_button").forEach(function(x) {
+                            x.onclick = function() {
+                                //직업 필터 변경
+                                let classtext = x.dataset.class;
+                                process.search.class = classtext;
+                                //키워드 변경
+                                let krtext = DATA.CLASS_KR[classtext];
+                                $("#search_class").innerHTML = krtext;
+                                $("#mobilefilter_rarity").innerHTML = krtext;
+                                //창 닫기
+                                swal.close();
+                                //검색 개시
+                                card_search();
+                            }
+                        })
+                    },
+                    showConfirmButton:false,
+                    showCancelButton:true,
+                    cancelButtonText: '취소',
+                    cancelButtonColor: '#d33'
+                })
             //덱 만들기
             } else if (process.state === "deckbuilding") {
                 //검색 직업 변경
@@ -626,9 +774,17 @@ function card_setFilter(cmd) {
         //초기"글자" 설정
         if (text === "init") {
             //"전체" 키워드
-            let text = "세트 : 전체";
-            $("#search_set").innerHTML = text;
-            $("#mobilefilter_set").innerHTML = text;
+            let formattext = "";
+            switch (process.deck.format) {
+                case "정규":
+                    formattext = "세트 : 전체";
+                    break;
+                case "야생":
+                    formattext = "세트／포맷";
+                    break;
+            }
+            $("#search_set").innerHTML = formattext;
+            $("#mobilefilter_set").innerHTML = formattext;
         } else {
             //정규전: button형, 야생전: select형
             switch (process.deck.format) {
@@ -683,28 +839,96 @@ function card_setFilter(cmd) {
                 case "야생":
                 //팝업창 열기
                 swal({
-                    title: '카드 세트 검색',
-                    input: 'select',
-                    inputOptions: {},
+                    title: '세트／포맷 검색',
+                    html:
+                      '<button id="popup_standrad" class="popup_button" data-rarity="정규">정규 전체</button>' +
+                      '<button id="popup_wild" class="popup_button" data-rarity="야생">야생 전체</button>'+
+                      '<select id="popup_select_standard" class="popup_select swal2-select" style="display: block;"></select>'+
+                      '<select id="popup_select_wild" class="popup_select swal2-select" style="display: block;"></select>',
                     onOpen:function() {
                         //선택창 구성
-                        let select = $$(".swal2-select")[0];
-                        //"모두" 추가
-                        select.options[0] = new Option("전체","all");
-                        Object.keys(DATA.SET_KR).forEach(function(x,i) {
-                            if (DATA.SET_FORMAT[x] === "정규" || process.deck.format === DATA.SET_FORMAT[x])
-                                select.options[select.options.length] = new Option(DATA.SET_KR[x],x);
-                            //현재 검색필터 세트이면 강조
-                            if (x === process.search.set) {
-                                select.options[select.options.length-1].selected = true;
-                            }
-                        });
+                        let select_standard = $("#popup_select_standard");
+                        let select_wild = $("#popup_select_wild")
+                        //정규 세트
+                            //"타이틀" 추가
+                            select_standard.options[0] = new Option("개별 세트(정규)");
+                            select_standard.options[0].disabled = true;
+                            //개별 세트
+                            Object.keys(DATA.SET_KR).forEach(function(x,i) {
+                                if (DATA.SET_FORMAT[x] === "정규") {
+                                    select_standard.options[select_standard.options.length] = new Option(DATA.SET_KR[x],x);
+                                    //현재 검색필터 세트이면 강조
+                                    if (x === process.search.set) {
+                                        select_standard.options[select_standard.options.length-1].selected = true;
+                                    }
+                                }
+                            });
+                        //야생 세트
+                            //"타이틀" 추가
+                            select_wild.options[0] = new Option("개별 세트(야생)");
+                            select_wild.options[0].disabled = true;
+                            //개별 세트
+                            Object.keys(DATA.SET_KR).forEach(function(x,i) {
+                                if (DATA.SET_FORMAT[x] === "야생") {
+                                    select_wild.options[select_wild.options.length] = new Option(DATA.SET_KR[x],x);
+                                    //현재 검색필터 세트이면 강조
+                                    if (x === process.search.set) {
+                                        select_wild.options[select_wild.options.length-1].selected = true;
+                                    }
+                                }
+                            });
                         //버튼 상호작용
-                        select.onchange = function() {
-                            //마나 필터 변경
-                            process.search.set = select.value;
+                        if (process.search.format === "정규" && process.search.set === "all") {
+                            $("#popup_standrad").classList.add("selected");
+                        } else if (process.search.format === "야생" && process.search.set === "all") {
+                            $("#popup_wild").classList.add("selected");
+                        }
+                        $("#popup_standrad").onclick = function() {
+                            //세트, 포맷 필터 변경
+                            process.search.format = "정규";
+                            process.search.set = "all";
                             //키워드 변경
-                            let text = select.options[select.selectedIndex].text;
+                            let text = "정규 전체";
+                            $("#search_set").innerHTML = text;
+                            $("#mobilefilter_set").innerHTML = text;
+                            //창 닫기
+                            swal.close();
+                            //검색 개시
+                            card_search();
+                        }
+                        $("#popup_wild").onclick = function() {
+                            //세트, 포맷 필터 변경
+                            process.search.format = "야생";
+                            process.search.set = "all";
+                            //키워드 변경
+                            let text = "야생 전체";
+                            $("#search_set").innerHTML = text;
+                            $("#mobilefilter_set").innerHTML = text;
+                            //창 닫기
+                            swal.close();
+                            //검색 개시
+                            card_search();
+                        }
+                        //선택창 상호작용
+                        select_standard.onchange = function() {
+                            //세트, 포맷 필터 변경
+                            process.search.format = "정규";
+                            process.search.set = select_standard.value;
+                            //키워드 변경
+                            let text = select_standard.options[select_standard.selectedIndex].text;
+                            $("#search_set").innerHTML = text;
+                            $("#mobilefilter_set").innerHTML = text;
+                            //창 닫기
+                            swal.close();
+                            //검색 개시
+                            card_search();
+                        }
+                        select_wild.onchange = function() {
+                            //세트, 포맷 필터 변경
+                            process.search.format = "야생";
+                            process.search.set = select_wild.value;
+                            //키워드 변경
+                            let text = select_wild.options[select_wild.selectedIndex].text;
                             $("#search_set").innerHTML = text;
                             $("#mobilefilter_set").innerHTML = text;
                             //창 닫기
@@ -793,6 +1017,7 @@ function card_setFilter(cmd) {
         process.search.mana = "all";//마나
         process.search.rarity = "all";//등급
         process.search.set = "all";//세트
+        process.search.format = process.deck.format;//포맷
         process.search.keyword = "";//키워드
         card_setFilter();//필터 다시 활성화
 
@@ -831,7 +1056,7 @@ function card_search() {
             if (x.cardClass === process.search.class &&//직업
             (x.rarity !== "FREE" || x.type !== "HERO") &&//기본 영웅 제외
             (x.rarity !== "HERO_SKIN" || x.type !== "HERO") &&//스킨 영웅 제외
-            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.deck.format) &&//포맷(정규는 무조건 포함)
+            (DATA.SET_FORMAT[x.set] === "정규" || DATA.SET_FORMAT[x.set] === process.search.format) &&//포맷(정규는 무조건 포함)
             (process.search.mana === "all" || card_matchMana(x, process.search.mana) === true) &&//마나
             (process.search.rarity === "all" || x.rarity === process.search.rarity) &&//등급
             (process.search.set === "all" || x.set === process.search.set) &&//세트
@@ -1173,6 +1398,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         $("#header_info").onclick = function() {
             swal({
                 title:"INFORMATION",
+                html:"제작자: 솔라이어스<br>"+
+                    "피드백: ansewo@naver.com",
                 type:"info"
             })
         }

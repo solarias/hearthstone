@@ -120,6 +120,267 @@
 }
     .card_quantity.quantity_hidden {display:none;}
 
+/*공용 - 카드 정보*/
+.cardinfo.wrapper {
+    position:relative;
+    overflow:hidden;
+
+    margin:0 auto;
+    padding:5px;
+    width:auto;
+        min-width:250px;
+        max-width:300px;
+    height:520px;
+
+    background:rgba(0,0,0,0.3);
+    border-radius:10px;
+    box-sizing: border-box;
+    transform-origin:0% 0%;
+}
+        .cardinfo.wrapper.simple {
+            height:400px;
+        }
+    .cardinfo.cardcase {
+        position:relative;
+        overflow: hidden;
+
+        width:100%;
+        height:330px;
+
+        background:white;
+        border-radius:5px;
+    }
+        .cardinfo.top {
+            position:relative;
+
+            width:100%;
+            height:140px;
+
+            background-color:black;
+        }
+                .cardinfo.top.show {
+                    background-image:url('../images/sist/loading_white.svg');
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:50% 50%;
+                }
+            .cardinfo.image {
+                position:relative;
+
+                width:100%;
+                height:100%;
+
+                background-repeat:no-repeat;
+                background-size:140% auto;
+                background-position:50% 30%;
+            }
+            .cardinfo.mana {
+                position:absolute;
+                    left:0;top:0;
+                z-index:2;
+
+                width:50px;
+                height:50px;
+
+                background:#007bff;
+                border-right:2px black solid;
+                border-bottom:2px black solid;
+                box-sizing: border-box;
+
+                color:white;
+                text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
+                font-size:30px;
+                    line-height:50px;
+                text-align:center;
+            }
+            .cardinfo.type {
+                position:absolute;
+                    right:0;top:0;
+                z-index:2;
+
+                width:80px;
+                height:40px;
+
+                background:rgba(80,80,80,0.9);
+                border-bottom-left-radius: 10px;
+                border-left:1px black solid;
+                border-bottom:1px black solid;
+                box-sizing: border-box;
+
+                color:white;
+                text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
+                font-size:20px;
+                    line-height:40px;
+                text-align:center;
+            }
+        .cardinfo.name {
+            position:relative;
+            overflow: hidden;
+            width:100%;
+            height:35px;
+
+            background-color:#41B1E1;
+
+            color:white;
+            text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
+            font-size:20px;
+                line-height:35px;
+            font-weight:bold;
+            text-align:center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .cardinfo.rarity {
+            position:relative;
+            margin:0 auto;
+            width:100%;
+            height:20px;
+
+            color:white;
+            text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
+            font-size:16px;
+                line-height:20px;
+            text-align:center;
+        }
+            .cardinfo.rarity.rarity_FREE {
+                background-color:white;
+            }
+        .cardinfo.text {
+            position:relative;
+            overflow:hidden;
+            display:table;
+
+            padding:0 5px;
+            width:100%;
+            height:100px;
+
+            background-color:white;
+            box-sizing: border-box;
+
+            color:black;
+            font-size:16px;
+                line-height:25px;
+            text-align:center;
+        }
+            .cardinfo.text p {
+                display:table-cell;
+                vertical-align: middle;
+
+                font-size:inherit;
+                letter-spacing: -1px;
+                line-height:inherit;
+            }
+            .cardinfo.text p b,.cardinfo.text p i {
+                font-size:inherit;
+            }
+        .cardinfo.bottom {
+            position:relative;
+            display:none;
+
+            width:100%;
+            height:35px;
+
+            background-color:#41B1E1;
+            box-sizing: border-box;
+        }
+            .cardinfo.attack {
+                position:absolute;
+                    left:0;top:0;
+
+                width:40px;
+                height:100%;
+
+                background-color:yellow;
+                border-top:1px gray solid;
+                box-sizing: border-box;
+
+                color:black;
+                font-size:30px;
+                    line-height:35px;
+                font-weight:bold;
+                text-align:center;
+            }
+            .cardinfo.race {
+                position:relative;
+
+                margin:0 auto;
+                width:calc(100% - 40px - 40px);
+                height:100%;
+
+                background-color:#41B1E1;
+                box-sizing: border-box;
+
+                color:white;
+                font-size:20px;
+                    line-height:35px;
+                font-weight:bold;
+                text-align:center;
+            }
+            .cardinfo.health {
+                position:absolute;
+                    right:0;top:0;
+
+                width:40px;
+                height:100%;
+
+                background-color:red;
+
+                color:white;
+                font-size:30px;
+                    line-height:35px;
+                font-weight:bold;
+                text-align:center;
+            }
+                .cardinfo.health.armor {
+                    background-color:#c0c0c0;
+                    border-top:1px gray solid;
+                    box-sizing: border-box;
+
+                    color:black;
+                }
+    .cardinfo.set {
+        position:relative;
+
+        margin-top:10px;
+        width:100%;
+        height:50px;
+
+        background:#808080;
+        border:2px #606060 inset;
+        box-sizing: border-box;
+
+        color:white;
+        font-size:20px;
+            line-height:50px;
+        font-weight:bold;
+        text-align:center;
+    }
+    .cardinfo.flavor {
+        position:relative;
+        display:table;
+
+        margin-top:20px;
+        padding:0 10px;
+        width:100%;
+        height:100px;
+
+        background:#B1986F;
+        border-radius:10px;
+        box-sizing: border-box;
+    }
+        .simple .cardinfo.flavor {
+            display:none;
+        }
+        .cardinfo.flavor p {
+            display:table-cell;
+            vertical-align: middle;
+
+            color:black;
+            font-size:16px;
+                line-height:20px;
+            font-weight:bold;
+            text-align:center;
+        }
 /*=====================================================*/
 /* 골격 */
 /*=====================================================*/
@@ -172,8 +433,8 @@ body {
         background-color:#3e40e5;
 
         color:white;
-        font-weight: bold;
-        line-height:40px;
+        font-size:23px;
+        line-height:50px;
         text-align:center;
     }
         .header_button {
@@ -187,7 +448,7 @@ body {
             border-radius: 5px;
 
             color:white;
-            font-size:18px;
+            font-size:23px;
             cursor:pointer;
         }
                 #header_home{
@@ -301,13 +562,18 @@ body {
 
             background:#DDDDDD;
 
-            font-size:25px;
-            font-weight:bold;
+            font-size:21px;
+            letter-spacing: -1px;
+            white-space: nowrap;
             cursor:pointer;
         }
                 .popup_button.full {
                     margin:0 0 10px 0;
                     width:100%;
+                }
+                .popup_button.trisection {
+                    margin:0 2px 10px 2px;
+                    width:calc(33% - 4px);
                 }
                 .popup_button.small {
                     margin:0 0 10px 0;
@@ -325,6 +591,15 @@ body {
                 background:#87ece9;
 
                 color:black;
+            }
+        .popup_select {
+            width:100%;
+
+            border:1px gray solid;
+        }
+            .popup_select option[disabled] {
+                color:red;
+                font-style:italic;
             }
     /*모바일 필터*/
     #frame_mobilefilter {
@@ -525,8 +800,8 @@ body {
             font-weight:bold;
         }
 
-    /*덱 설정*/
-        #decksetting_class, #decksetting_format {
+    /*덱 생성*/
+        #newdeck_class, #newdeck_format {
             position:relative;
             float:left;
 
@@ -536,16 +811,16 @@ body {
 
             box-sizing: border-box;
         }
-                #decksetting_class {
+                #newdeck_class {
                     margin-left:2%;
                     border-right:1px #ccc solid;
                 }
-        .decksetting_desc {
+        .newdeck_desc {
             font-size:20px;
             font-weight:bold;
             text-align:center;
         }
-        .decksetting_button {
+        .newdeck_button {
             position:relative;
 
             margin-bottom:5px;
@@ -558,14 +833,14 @@ body {
             font-weight:bold;
             cursor:pointer;
         }
-            .decksetting_button:hover, .decksetting_button.selected {
+            .newdeck_button:hover, .newdeck_button.selected {
                 background:#87ece9;
             }
-            .decksetting_button.format {
+            .newdeck_button.format {
                 height:69px;
             }
 
-        #decksetting_done {
+        #newdeck_done {
             position:absolute;
                 left:0;bottom:5px;
             display:block;
@@ -579,7 +854,7 @@ body {
             font-weight:bold;
             cursor:pointer;
         }
-            #decksetting_done:hover {
+            #newdeck_done:hover {
                 background:#87ece9;
             }
     /*로딩 화면*/
@@ -628,6 +903,37 @@ body {
 
             box-sizing: border-box;
         }
+    /*카드 모니터*/
+    #frame_cardmonitor {
+        position:absolute;
+            left:calc((100vw - 800px) / 2 - 250px);top:90px;
+        overflow:hidden;
+
+        width:250px;
+        height:450px;
+
+        background-color:#3e40e5;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+    }
+        @media (max-width: 1300px) {
+            #frame_cardmonitor {
+                left:0;
+                width:calc((100vw - 800px) / 2);
+            }
+        }
+        @media (max-width: 1100px) {
+            #frame_cardmonitor {display:none;}
+        }
+    /*카드 정보*/
+    #main_cardinfo {
+        background-color:#392C4A;
+            background-repeat:no-repeat;
+            background-size:contain;
+        box-sizing: border-box;
+    }
+
+    /*덱 리스트*/
     #main_deck {}
         #deck_hero {
             position: relative;
@@ -753,7 +1059,6 @@ body {
 
                 width:100%;
                 height:100%;
-
             }
         #deck_bottom_cover {
             position: relative;
@@ -844,7 +1149,7 @@ body {
         .footer_button {
             position:relative;
 
-            margin:5px 0px 5px 10px;
+            margin:5px 0px 5px 5px;
             width:110px;
             height:40px;
 
@@ -867,12 +1172,13 @@ body {
             #bottom_undo, #bottom_redo {
                 float:left;
 
-                margin:5px 0px 5px 10px;
+                margin:5px 0px 5px 5px;
                 width:110px;
                 height:40px;
 
                 font-size:22px;
                 user-select:none;
+                pointer-events: auto;
             }
                 #bottom_redo {margin-right:0;}
                 #bottom_undo.disabled, #bottom_redo.disabled {
@@ -884,7 +1190,7 @@ body {
                     position:relative;
                     width:56px;
                     height:24px;
-                    font-size:50px;
+                    font-size:24px;
                     line-height:24px;
                     text-align:center;
                 }
@@ -909,14 +1215,13 @@ body {
                 }
                     #undo_text {float:right;text-align:left;}
                     #redo_text {float:left;text-align:right;}
-            #bottom_input, #bottom_output {
+            #bottom_save {
                 float:right;
 
                 margin:5px;
+                width:120px;
                 height:40px;
             }
-                #bottom_input {width:200px;margin-left:0;font-size:22px;}
-                #bottom_output {width:120px}
 
 /*=====================================================*/
 /* 모바일 화면조정 */
@@ -961,9 +1266,6 @@ body {
     }
     #footer_bottom .footer_button {
         width:60px;
-    }
-    #footer_bottom #bottom_input {
-        width:90px;
     }
 }
 
