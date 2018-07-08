@@ -406,7 +406,11 @@ function window_shift(keyword, keyword2) {
 
             //덱코드 출력
             $("#bottom_save").onclick = function() {
-                
+                if (process.deck.quantity < DATA.DECK_LIMIT) {
+                    alert("덱이 완성되지 않았습니다.");
+                } else {
+                    //덱코드 출력
+                }
             }
 
             break;
