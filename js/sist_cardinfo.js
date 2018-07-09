@@ -1,4 +1,8 @@
 
+//===============================================================
+//※ 카드정보 출력 관련 함수
+//===============================================================
+
 //마스터 노드 생성
 function cardinfo_generateMaster() {
     let elm_wrapper = document.createElement("div.cardinfo.wrapper");
@@ -36,21 +40,26 @@ function cardinfo_generateMaster() {
 }
 //노드 설치
 function cardinfo_setup(id) {
-    //설치유무 확인
     let site = $("#" + id);
-    //설치되어 있으면 지우기
+    //설치되어있는지 확인
     if ($(".cardinfo.wrapper",site)) {
+        //기존 설치본 지우기
         let elm = $(".cardinfo.wrapper",site);
         elm.parentNode.removeChild(elm);
-    }
-    //재설치
-    site.appendChild(session.masterInfo.cloneNode(true));
-    //사이즈 조절
-    cardinfo_setScale($(".cardinfo.wrapper",site));
-    //화면 크기 변경 시 사이즈 재조절
-    window.addEventListener("resize",function(e) {
+        //재설치
+        site.appendChild(session.masterInfo.cloneNode(true));
+        //사이즈 조절
         cardinfo_setScale($(".cardinfo.wrapper",site));
-    });
+    } else {
+        //설치
+        site.appendChild(session.masterInfo.cloneNode(true));
+        //사이즈 조절
+        cardinfo_setScale($(".cardinfo.wrapper",site));
+        //화면 크기 변경 시 사이즈 재조절
+        window.addEventListener("resize",function(e) {
+            cardinfo_setScale($(".cardinfo.wrapper",site));
+        });
+    }
 }
 //정보창 크기값 계산
 function cardinfo_setScale(node) {
@@ -148,5 +157,5 @@ function cardinfo_show(id, info) {
     //세트
     $(".set",site).innerHTML = DATA.SET_KR[info.set];
     //플레이버 텍스트
-    $(".flavor",site).innerHTML = "<p>" + info.flavor + "</p>";
+    $(".flavor",site).innerHTML = "<p>" + readable(info.flavor) + "</p>";
 }

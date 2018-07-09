@@ -7,380 +7,6 @@
     font-family:'맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothid Neo',sans-serif;
 }
 
-/*공용 - 카드등급*/
-.rarity_FREE, .rarity_COMMON {
-    background-color:#858585;
-}
-.rarity_RARE {
-    background-color:#315376;
-}
-.rarity_EPIC {
-    background-color:#644c82;
-}
-.rarity_LEGENDARY {
-    background-color:#ffb00d;
-}
-
-/*공용 - 카드*/
-.card {
-    position:relative;
-    overflow:hidden;
-
-    margin-bottom:10px;
-    width:100%;
-    height:40px;
-
-    background-color:#C0C0C0;
-        background-repeat:no-repeat;
-        background-position:right 50%;
-        background-size:auto 40px;
-    outline:2px #303030 outset;
-    box-sizing: border-box;
-    animation:add_flash 0.8s;
-
-    cursor:pointer;
-    user-select:none;
-}
-    @keyframes add_flash {
-        0% {
-            filter:brightness(3);
-        }
-        100% {
-            filter:brightness(1);
-        }
-    }
-    .card.flash_hidden {
-        animation:none;
-    }
-        .card:hover, .card:active {
-            box-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
-        }
-.card_cost {
-    float:left;
-
-    width:30px;
-    height:40px;
-
-    pointer-events: none;
-
-    color:white;
-    text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-    font-size:20px;
-        line-height:35px;
-    text-align:center;
-}
-.card_name {
-    display:table;
-    overflow:hidden;
-
-    pointer-events: none;
-
-    padding-left:5px;
-    width:calc(100% - 50px);
-    height:40px;
-
-    background: linear-gradient(
-        to right,
-        rgba(100,100,100,1) 0%,
-        rgba(100,100,100,1) calc(100% - 100px),
-        rgba(100,100,100,0) 100%);
-    box-sizing: border-box;
-
-    color:white;
-    text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-    font-size:15px;
-        line-height:20px;
-    letter-spacing:-1px;
-}
-    .card_name p {
-        display:table-cell;
-
-        height:100%;
-
-        pointer-events: none;
-
-        font-size:15px;
-        vertical-align: middle;
-        box-sizing: border-box;
-    }
-.card_quantity {
-    position:absolute;
-    right:0;top:0;
-
-    width:20px;
-    height:100%;
-
-    background-color:black;
-    pointer-events: none;
-
-    color:gold;
-    font-size:16px;
-        line-height:40px;
-    text-align:center;
-}
-    .card_quantity.quantity_hidden {display:none;}
-
-/*공용 - 카드 정보*/
-.cardinfo.wrapper {
-    position:relative;
-    overflow:hidden;
-
-    margin:0 auto;
-    padding:5px;
-    width:auto;
-        min-width:250px;
-        max-width:300px;
-    height:520px;
-
-    background:rgba(0,0,0,0.3);
-    border-radius:10px;
-    box-sizing: border-box;
-    transform-origin:0% 0%;
-}
-        .cardinfo.wrapper.simple {
-            height:400px;
-        }
-    .cardinfo.cardcase {
-        position:relative;
-        overflow: hidden;
-
-        width:100%;
-        height:330px;
-
-        background:white;
-        border-radius:5px;
-    }
-        .cardinfo.top {
-            position:relative;
-
-            width:100%;
-            height:140px;
-
-            background-color:black;
-        }
-                .cardinfo.top.show {
-                    background-image:url('../images/sist/loading_white.svg');
-                        background-repeat:no-repeat;
-                        background-size:contain;
-                        background-position:50% 50%;
-                }
-            .cardinfo.image {
-                position:relative;
-
-                width:100%;
-                height:100%;
-
-                background-repeat:no-repeat;
-                background-size:140% auto;
-                background-position:50% 30%;
-            }
-            .cardinfo.mana {
-                position:absolute;
-                    left:0;top:0;
-                z-index:2;
-
-                width:50px;
-                height:50px;
-
-                background:#007bff;
-                border-right:2px black solid;
-                border-bottom:2px black solid;
-                box-sizing: border-box;
-
-                color:white;
-                text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-                font-size:30px;
-                    line-height:50px;
-                text-align:center;
-            }
-            .cardinfo.type {
-                position:absolute;
-                    right:0;top:0;
-                z-index:2;
-
-                width:80px;
-                height:40px;
-
-                background:rgba(80,80,80,0.9);
-                border-bottom-left-radius: 10px;
-                border-left:1px black solid;
-                border-bottom:1px black solid;
-                box-sizing: border-box;
-
-                color:white;
-                text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-                font-size:20px;
-                    line-height:40px;
-                text-align:center;
-            }
-        .cardinfo.name {
-            position:relative;
-            overflow: hidden;
-            width:100%;
-            height:35px;
-
-            background-color:#41B1E1;
-
-            color:white;
-            text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-            font-size:20px;
-                line-height:35px;
-            font-weight:bold;
-            text-align:center;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        .cardinfo.rarity {
-            position:relative;
-            margin:0 auto;
-            width:100%;
-            height:20px;
-
-            color:white;
-            text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
-            font-size:16px;
-                line-height:20px;
-            text-align:center;
-        }
-            .cardinfo.rarity.rarity_FREE {
-                background-color:white;
-            }
-        .cardinfo.text {
-            position:relative;
-            overflow:hidden;
-            display:table;
-
-            padding:0 5px;
-            width:100%;
-            height:100px;
-
-            background-color:white;
-            box-sizing: border-box;
-
-            color:black;
-            font-size:16px;
-                line-height:25px;
-            text-align:center;
-        }
-            .cardinfo.text p {
-                display:table-cell;
-                vertical-align: middle;
-
-                font-size:inherit;
-                letter-spacing: -1px;
-                line-height:inherit;
-            }
-            .cardinfo.text p b,.cardinfo.text p i {
-                font-size:inherit;
-            }
-        .cardinfo.bottom {
-            position:relative;
-            display:none;
-
-            width:100%;
-            height:35px;
-
-            background-color:#41B1E1;
-            box-sizing: border-box;
-        }
-            .cardinfo.attack {
-                position:absolute;
-                    left:0;top:0;
-
-                width:40px;
-                height:100%;
-
-                background-color:yellow;
-                border-top:1px gray solid;
-                box-sizing: border-box;
-
-                color:black;
-                font-size:30px;
-                    line-height:35px;
-                font-weight:bold;
-                text-align:center;
-            }
-            .cardinfo.race {
-                position:relative;
-
-                margin:0 auto;
-                width:calc(100% - 40px - 40px);
-                height:100%;
-
-                background-color:#41B1E1;
-                box-sizing: border-box;
-
-                color:white;
-                font-size:20px;
-                    line-height:35px;
-                font-weight:bold;
-                text-align:center;
-            }
-            .cardinfo.health {
-                position:absolute;
-                    right:0;top:0;
-
-                width:40px;
-                height:100%;
-
-                background-color:red;
-
-                color:white;
-                font-size:30px;
-                    line-height:35px;
-                font-weight:bold;
-                text-align:center;
-            }
-                .cardinfo.health.armor {
-                    background-color:#c0c0c0;
-                    border-top:1px gray solid;
-                    box-sizing: border-box;
-
-                    color:black;
-                }
-    .cardinfo.set {
-        position:relative;
-
-        margin-top:10px;
-        width:100%;
-        height:50px;
-
-        background:#808080;
-        border:2px #606060 inset;
-        box-sizing: border-box;
-
-        color:white;
-        font-size:20px;
-            line-height:50px;
-        font-weight:bold;
-        text-align:center;
-    }
-    .cardinfo.flavor {
-        position:relative;
-        display:table;
-
-        margin-top:20px;
-        padding:0 10px;
-        width:100%;
-        height:100px;
-
-        background:#B1986F;
-        border-radius:10px;
-        box-sizing: border-box;
-    }
-        .simple .cardinfo.flavor {
-            display:none;
-        }
-        .cardinfo.flavor p {
-            display:table-cell;
-            vertical-align: middle;
-
-            color:black;
-            font-size:16px;
-                line-height:20px;
-            font-weight:bold;
-            text-align:center;
-        }
 /*=====================================================*/
 /* 골격 */
 /*=====================================================*/
@@ -441,23 +67,29 @@ body {
             position:absolute;
             display:block;
 
+            padding:2px;
             height:40px;
 
             background-color:rgba(255,255,255,0.2);
             border:2px white solid;
             border-radius: 5px;
+            box-sizing: border-box;
 
             color:white;
             font-size:23px;
             cursor:pointer;
         }
-                #header_home{
-                    left:5px;top:5px;
-                    width:60px;}
-                #header_info{
-                    right:5px;top:5px;
-                    width:60px;
-                    letter-spacing:-1px;}
+            .header_button img {
+                width:32px;
+                height:32px;
+            }
+            #header_home{
+                left:5px;top:5px;
+                width:60px;}
+            #header_info{
+                right:5px;top:5px;
+                width:60px;
+                letter-spacing:-1px;}
             .header_button:hover {
                 background-color:rgba(255,255,255,0.4);
             }
@@ -520,6 +152,10 @@ body {
 
             text-align:left;
         }
+            #search_keyword > img {
+                width:18px;
+                height:18px;
+            }
             #keyword_text {
                 font-size:18px;
                 letter-spacing: -2px;
@@ -592,6 +228,38 @@ body {
 
                 color:black;
             }
+        .popup_title {
+            position: relative;
+            display:inline-block;
+
+            margin: 0 0 .4em;
+            padding: 0;
+            width:100%;
+            height:50px;
+
+            background:#494949;
+
+            color: white;
+            font-size: 30px;
+                line-height:50px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: none;
+        }
+        .popup_subtitle {
+            position: relative;
+            display:inline-block;
+
+            margin: 0 0 .4em;
+            padding: 0;
+            width:100%;
+
+            color: #595959;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: none;
+        }
         .popup_select {
             width:100%;
 
@@ -646,6 +314,11 @@ body {
             font-weight:bold;
             text-align:center;
         }
+            .mobilefilter_desc.top {
+                height:40px;
+                font-size:25px;
+                line-height:40px;
+            }
             .margin_top {
                 margin-top:15px;
             }
@@ -787,6 +460,10 @@ body {
             .titlescreen_button:hover {
                 background:#87ece9;
             }
+            .titlescreen_button img {
+                width:auto;
+                height:100px;
+            }
         .titlescren_desc {
             margin:10px auto 0 auto;
             width:80%;
@@ -801,6 +478,28 @@ body {
         }
 
     /*덱 생성*/
+    #main_decklist {
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+        .decklist_button {
+            position:relative;
+
+            margin-bottom:5px;
+            width:100%;
+            height:60px;
+            display:block;
+
+            background:#DDDDDD;
+
+            font-weight:bold;
+            cursor:pointer;
+        }
+            .decklist_button:hover, .decklist_button.selected {
+                background:#87ece9;
+            }
+    #main_newdeck {}
+        /*
         #newdeck_class, #newdeck_format {
             position:relative;
             float:left;
@@ -857,6 +556,7 @@ body {
             #newdeck_done:hover {
                 background:#87ece9;
             }
+        */
     /*로딩 화면*/
     #main_loading {/*로딩화면은 화면 전환 효과 없음*/
         transition-property: none;
@@ -903,19 +603,69 @@ body {
 
             box-sizing: border-box;
         }
+    /*카드 커버*/
+    #frame_cardcover {
+        position:fixed;
+            left:0;top:0;
+        z-index:10;
+        display:none;
+
+        width:100%;
+        height:100%;
+
+        background:rgba(0,0,0,0.7);
+    }
+            #frame_cardcover.show {
+                display:block;
+                animation:cardcover_show 0.3s;
+            }
+            @keyframes cardcover_show {
+                0% {opacity:0;}
+                1% {opacity:0.01;}
+                100% {opacity:1;}
+            }
+        #cardcover_top {
+            position:relative;
+
+            padding:10px;
+            width:100%;
+            height:calc(100% - 30px);
+
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+        #cardcover_desc {
+            position:absolute;
+                left:0;bottom:0;
+
+            width:100%;
+            height:40px;
+
+            background:rgba(255,255,255,0.1);
+
+            color:white;
+            font-size:20px;
+            line-height:40px;
+            text-align: center;
+            pointer-events: none;
+        }
     /*카드 모니터*/
     #frame_cardmonitor {
         position:absolute;
             left:calc((100vw - 800px) / 2 - 250px);top:90px;
         overflow:hidden;
+        display:none;
 
         width:250px;
-        height:400px;
+        height:520px;
 
         background-color:#3e40e5;
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
     }
+            #frame_cardmonitor.show {
+                display:block
+            }
         @media (max-width: 1300px) {
             #frame_cardmonitor {
                 left:0;
@@ -1222,6 +972,68 @@ body {
                 width:120px;
                 height:40px;
             }
+                #bottom_save > img {
+                    vertical-align: middle;
+                    width:40px;
+                    height:40px;
+                }
+    #footer_decklist {
+        position:absolute;
+            left:0;top:0;
+            z-index:2;
+
+        padding:5px;
+        width:100%;
+        height:100%;
+
+        background:#3e40e5;
+        box-sizing: border-box;
+        transform:translate(0,100%);
+        transition:transform 0.5s;
+        pointer-events: none;
+    }
+            #footer_decklist.show {
+                transform:translate(0,0);
+                pointer-events: auto;
+            }
+        .footer_decklist_button {
+            position:relative;
+            width:calc(50% - 10px);
+            height:100%;
+
+            background:rgba(255,255,255,0.1);
+            border:2px white solid;
+            border-radius: 10px;
+            box-sizing: border-box;
+
+            color:white;
+            font-size:22px;
+            letter-spacing: -1px;
+            font-weight:bold;
+            cursor:pointer;
+            white-space: nowrap;
+        }
+            .footer_decklist_button > img {
+                vertical-align:middle;
+                width:33px;
+                height:33px;
+            }
+            .footer_decklist_button > span {
+                vertical-align:middle;
+                font-size:inherit;
+            }
+            .footer_decklist_button:hover {
+                background-color:rgba(255,255,255,0.2);
+            }
+            .footer_decklist_button:active {
+                background-color:rgba(255,255,255,0.4);
+            }
+        #button_readcode {
+            float:left;
+        }
+        #botton_newdeck {
+            float:right;
+        }
 
 /*=====================================================*/
 /* 모바일 화면조정 */
@@ -1266,6 +1078,9 @@ body {
     }
     #footer_bottom .footer_button {
         width:60px;
+    }
+    .footer_decklist_button {
+        font-size:16px;
     }
 }
 

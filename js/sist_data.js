@@ -23,6 +23,17 @@ const DATA = {
         "MAGE":"HERO_08",
         "PRIEST":"HERO_09"
     },
+    CLASS_DECODE:{
+        "7":"WARRIOR",
+        "1066":"SHAMAN",
+        "930":"ROGUE",
+        "671":"PALADIN",
+        "31":"HUNTER",
+        "274":"DRUID",
+        "893":"WARLOCK",
+        "637":"MAGE",
+        "813":"PRIEST"
+    },
     CLASS_DBFID:{
         "WARRIOR":"7",
         "SHAMAN":"1066",
@@ -73,6 +84,10 @@ const DATA = {
         "ALL":"모두"
     },
     DECKCODE_VERSION:1,
+    FORMAT_DECODE:{
+        "1":"야생",
+        "2":"정규"
+    },
     FORMAT_CODE:{
         "야생":"1",
         "정규":"2"
