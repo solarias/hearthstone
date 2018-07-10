@@ -257,7 +257,7 @@ function window_shift(keyword, keyword2) {
                         loading_DB();
                     } else  {
                         //덱코드가 있다면 덱코드 해석
-                        if (process.deck.deckcode !== undefined && process.deck.deckcode !== "") {
+                        if (process.deck !== undefined && process.deck.deckcode !== undefined && process.deck.deckcode !== "") {
                             loading_deckcode();
                         //없으면 덱 포맷 검증
                         } else {
@@ -285,7 +285,7 @@ function window_shift(keyword, keyword2) {
                             x.ssi = index.toString();//index 정보 추가
                         })
                         //덱코드가 있다면 덱코드 해석
-                        if (process.deck.deckcode !== undefined && process.deck.deckcode !== "") {
+                        if (process.deck !== undefined && process.deck.deckcode !== undefined && process.deck.deckcode !== "") {
                             loading_deckcode();
                         //없으면 화면 전환
                         } else {
@@ -330,7 +330,7 @@ function window_shift(keyword, keyword2) {
             }
             //불러올 덱 포맷 검증
             function loading_formatvalidate() {
-                if (process.deck.cards !== undefined && process.deck.cards.length > 0) {
+                if (process.deck !== undefined && process.deck.cards !== undefined && process.deck.cards.length > 0) {
                     for (let i = 0;i < process.deck.cards.length;i++) {
                         if (DATA.SET_FORMAT[session.db[parseInt(process.deck.cards[i].ssi)].set] === "야생") {
                             process.deck.format = "야생";
