@@ -39,7 +39,7 @@ function cardinfo_generateMaster() {
     return elm_wrapper;
 }
 //노드 설치
-function cardinfo_setup(id) {
+function cardinfo_setup(id, showflavor) {
     let site = $("#" + id);
     //설치되어있는지 확인
     if ($(".cardinfo.wrapper",site)) {
@@ -57,12 +57,14 @@ function cardinfo_setup(id) {
         cardinfo_setScale($(".cardinfo.wrapper",site));
         //화면 크기 변경 시 사이즈 재조절
         window.addEventListener("resize",function(e) {
-            cardinfo_setScale($(".cardinfo.wrapper",site));
+            cardinfo_setScale($(".cardinfo.wrapper",site), showflavor);
         });
     }
+    if (showflavor === false)
+        $(".cardinfo.wrapper",site).classList.add("simple");
 }
 //정보창 크기값 계산
-function cardinfo_setScale(node) {
+function cardinfo_setScale(node, showflavor) {
     let parent = node.parentNode;
     let w = parent.offsetWidth, h = parent.offsetHeight;
     let scaleH = (h / 400).toString();
@@ -90,6 +92,7 @@ function cardinfo_setScale(node) {
             node.style.transform = "scale(" + scaleH + ")";
         }
     }
+    if (showflavor === false) node.classList.add("simple");
 }
 //정보 출력
 function cardinfo_show(id, info) {

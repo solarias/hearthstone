@@ -461,8 +461,8 @@ function window_shift(keyword, keyword2) {
             //카드모니터 설치
             $("#frame_cardmonitor").classList.add("show");
             //카드정보 노드 설치
-                cardinfo_setup("cardcover_top");
-                cardinfo_setup("frame_cardmonitor");
+                cardinfo_setup("cardcover_top", false);
+                cardinfo_setup("frame_cardmonitor", false);
 
             //==================
             //※ 상호작용
@@ -832,6 +832,7 @@ let interact_infoMonitor = function(e) {
     let target = e.target || e.srcElement;
     if (target.classList.contains("card")) {
         let info = session.db[target.dataset.ssi];
+        cardinfo_setScale($(".cardinfo.wrapper",$("#frame_cardmonitor")), false);
         cardinfo_show("frame_cardmonitor",info);
     }
 }
@@ -843,7 +844,7 @@ let interact_infoCoverNow = function(e) {//우클릭 전용
         interact_target = "";
         let info = session.db[target.dataset.ssi];
         $("#frame_cardcover").classList.add("show");
-        cardinfo_setScale($(".cardinfo.wrapper",$("#frame_cardcover")));
+        cardinfo_setScale($(".cardinfo.wrapper",$("#frame_cardcover")), false);
         cardinfo_show("cardcover_top",info);
         return false;
     }
@@ -860,7 +861,7 @@ let interact_infoCoverWait = function(e, ismouse) {
         autoInfo = setTimeout(function() {
             let info = session.db[target.dataset.ssi];
             $("#frame_cardcover").classList.add("show");
-            cardinfo_setScale($(".cardinfo.wrapper",$("#frame_cardcover")));
+            cardinfo_setScale($(".cardinfo.wrapper",$("#frame_cardcover")), false);
             cardinfo_show("cardcover_top",info);
             //창이 뜨면 상호작용 대상 비우기
             interact_target = "";
