@@ -35,15 +35,15 @@ const DATA = {
         "813":"PRIEST"
     },
     CLASS_DBFID:{
-        "WARRIOR":"7",
-        "SHAMAN":"1066",
-        "ROGUE":"930",
-        "PALADIN":"671",
-        "HUNTER":"31",
-        "DRUID":"274",
-        "WARLOCK":"893",
-        "MAGE":"637",
-        "PRIEST":"813"
+        "WARRIOR":7,
+        "SHAMAN":1066,
+        "ROGUE":930,
+        "PALADIN":671,
+        "HUNTER":31,
+        "DRUID":274,
+        "WARLOCK":893,
+        "MAGE":637,
+        "PRIEST":813
     },
     RARITY_KR:{
         "FREE":"기본",
@@ -88,9 +88,13 @@ const DATA = {
         "1":"야생",
         "2":"정규"
     },
+    FORMAT_EN:{
+        "야생":"wild",
+        "정규":"standard"
+    },
     FORMAT_CODE:{
-        "야생":"1",
-        "정규":"2"
+        "야생":1,
+        "정규":2
     },
     DECK_LIMIT:30,
     YEAR:"까마귀의 해",

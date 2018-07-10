@@ -35,7 +35,10 @@ body {
         min-height:550px;
         max-height:2000px;
 
-    background:white;
+    background:linear-gradient(
+        to bottom,
+        #484442 0%,
+        #3C3431 100%);
 }
 
 /*=====================================================*/
@@ -498,65 +501,7 @@ body {
             .decklist_button:hover, .decklist_button.selected {
                 background:#87ece9;
             }
-    #main_newdeck {}
-        /*
-        #newdeck_class, #newdeck_format {
-            position:relative;
-            float:left;
 
-            padding:5px 2%;
-            width:48%;
-            height:340px;
-
-            box-sizing: border-box;
-        }
-                #newdeck_class {
-                    margin-left:2%;
-                    border-right:1px #ccc solid;
-                }
-        .newdeck_desc {
-            font-size:20px;
-            font-weight:bold;
-            text-align:center;
-        }
-        .newdeck_button {
-            position:relative;
-
-            margin-bottom:5px;
-            width:100%;
-            height:32px;
-            display:block;
-
-            background:#DDDDDD;
-
-            font-weight:bold;
-            cursor:pointer;
-        }
-            .newdeck_button:hover, .newdeck_button.selected {
-                background:#87ece9;
-            }
-            .newdeck_button.format {
-                height:69px;
-            }
-
-        #newdeck_done {
-            position:absolute;
-                left:0;bottom:5px;
-            display:block;
-
-            width:100%;
-            height:69px;
-
-            background:#DDDDDD;
-
-            font-size:20px;
-            font-weight:bold;
-            cursor:pointer;
-        }
-            #newdeck_done:hover {
-                background:#87ece9;
-            }
-        */
     /*로딩 화면*/
     #main_loading {/*로딩화면은 화면 전환 효과 없음*/
         transition-property: none;
@@ -741,6 +686,22 @@ body {
                         font-weight: bold;
                         white-space: nowrap;
                     }
+                #deck_format {
+                    position:absolute;
+                        right:5px;top:0;
+
+                    text-shadow:0 -1px black,1px -1px black,1px 0 black,1px 1px black,0 1px black,-1px 1px black,-1px 0 black,-1px -1px black;
+                    font-size:16px;
+                        line-height:100%;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+                    #deck_format.standard {
+                        color:lime;
+                    }
+                    #deck_format.wild {
+                        color:orange;
+                    }
                 #deck_name {
                     position:absolute;
                         left:5px;bottom:0;
@@ -838,6 +799,53 @@ body {
                 font-size:15px;
                     line-height:20px;
                 text-align:center;
+            }
+
+    /*덱 설정*/
+    #main_deckconfig {
+        position:absolute;
+
+        padding:10px;
+
+        background:linear-gradient(
+            to bottom,
+            #6E4D28 0%,
+            #AF7A41 100%);
+        box-sizing: border-box;
+    }
+        .deckconfig_button {
+            margin-bottom:20px;
+            width:100%;
+            height:50px;
+
+            background:#F7E595;
+            border:4px #D5B666 inset;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+            color:#685231;
+            font-size:20px;
+                letter-spacing: -1px;
+            font-weight:bold;
+            white-space: nowrap;
+            cursor:pointer;
+        }
+            #deckconfig_format {
+                position:absolute;
+                    left:0;right:0;bottom:10px;
+
+                margin:auto;
+                width:calc(100% - 20px);
+
+                font-size:16px;
+                line-height:20px;
+            }
+            .deckconfig_button:hover {
+                background:#F7E5CB;
+                color:black;
+            }
+            .deckconfig_button:active {
+                border:4px #228DFF inset;
             }
 
 
@@ -965,14 +973,14 @@ body {
                 }
                     #undo_text {float:right;text-align:left;}
                     #redo_text {float:left;text-align:right;}
-            #bottom_save {
+            #bottom_done {
                 float:right;
 
                 margin:5px;
                 width:120px;
                 height:40px;
             }
-                #bottom_save > img {
+                #bottom_done > img {
                     vertical-align: middle;
                     width:40px;
                     height:40px;
@@ -1033,6 +1041,59 @@ body {
         }
         #botton_newdeck {
             float:right;
+            }
+    #footer_deckconfig {
+        position:absolute;
+            left:0;top:0;
+            z-index:2;
+
+        padding:5px;
+        width:100%;
+        height:100%;
+
+        background:#3e40e5;
+        box-sizing: border-box;
+        transform:translate(0,100%);
+        transition:transform 0.5s;
+        pointer-events: none;
+    }
+            #footer_deckconfig.show {
+                transform:translate(0,0);
+                pointer-events: auto;
+            }
+    #button_edit {
+        position:relative;
+        float:right;
+
+        width:100px;
+        height:100%;
+
+        background:rgba(255,255,255,0.1);
+        border:2px white solid;
+        border-radius: 10px;
+        box-sizing: border-box;
+
+        color:white;
+        font-size:22px;
+        letter-spacing: -1px;
+        font-weight:bold;
+        cursor:pointer;
+        white-space: nowrap;
+    }
+        #button_edit > img {
+            vertical-align:middle;
+            width:33px;
+            height:33px;
+        }
+        #button_edit > span {
+            vertical-align:middle;
+            font-size:inherit;
+        }
+        #button_edit:hover {
+            background-color:rgba(255,255,255,0.2);
+        }
+        #button_edit:active {
+            background-color:rgba(255,255,255,0.4);
         }
 
 /*=====================================================*/

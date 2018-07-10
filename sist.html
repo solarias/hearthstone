@@ -24,7 +24,7 @@
 					심플 스톤
 					<button id="header_info" class="header_button"><img src="./images/sist/icon_info.png"></button>
 				</div>
-                <div id="header_bottom">
+                <div id="header_bottom" class="subscreen">
 					<button id="search_class" class="search_button">직업 카드</button>
 					<div class="mobile_only">
 						<button id="search_mobilefilter" class="search_button">&#128295; 검색 필터</button>
@@ -56,31 +56,10 @@
                     </div>
                 </div>
 
-				<!--덱 관리-->
+				<!--덱 목록-->
 				<div id="main_decklist" class="mainscreen main_both">
 					<div class="main_title">최근 작업 덱</div>
-					<button id="decklist_temp" class="decklist_button" data-name="temp">덱 없음</button>
-				</div>
-
-				<!--새로운 덱-->
-                <div id="main_newdeck" class="mainscreen main_both">
-                    <div class="main_title">직업 및 대전방식</div>
-					<div id="newdeck_class">
-						<button id="newdeck_1" class="newdeck_button class" data-class="WARRIOR">전사</button>
-						<button id="newdeck_2" class="newdeck_button class" data-class="SHAMAN">주술사</button>
-						<button id="newdeck_3" class="newdeck_button class" data-class="ROGUE">도적</button>
-						<button id="newdeck_4" class="newdeck_button class" data-class="PALADIN">성기사</button>
-						<button id="newdeck_5" class="newdeck_button class" data-class="HUNTER">사냥꾼</button>
-						<button id="newdeck_6" class="newdeck_button class" data-class="DRUID">드루이드</button>
-						<button id="newdeck_7" class="newdeck_button class" data-class="WARLOCK">흑마법사</button>
-						<button id="newdeck_8" class="newdeck_button class" data-class="MAGE">마법사</button>
-						<button id="newdeck_9" class="newdeck_button class" data-class="PRIEST">사제</button>
-					</div>
-					<div id="newdeck_format">
-						<button id="newdeck_standard" class="newdeck_button format" data-format="정규">정규전</button>
-						<button id="newdeck_wild" class="newdeck_button format" data-format="야생">야생전</button>
-						<button id="newdeck_done">설정 완료</button>
-					</div>
+					<button id="decklist_temp" class="decklist_button" data-name="temp">향후 구현 예정</button>
 				</div>
 
 				<!--카드정보 불러오기-->
@@ -89,9 +68,12 @@
 					<img class="loading_mark" src="./images/sist/loading_transparent.gif" alt="로딩 이미지">
 				</div>
 
-				<!--덱 관리-->
-				<div id="main_deckconfig">
-
+				<!--덱 설정-->
+				<div id="main_deckconfig" class="mainscreen main_left">
+					<button id="deckconfig_name" class="deckconfig_button">덱 이름 편집</button>
+					<button id="deckconfig_deckstring" class="deckconfig_button">덱코드 출력</button>
+					<button id="deckconfig_text" class="deckconfig_button">덱설명 출력</button>
+					<button id="deckconfig_format" class="deckconfig_button"></button>
 				</div>
 
 				<!--카드 목록-->
@@ -115,6 +97,7 @@
 								<img id="dust_icon" src="./images/sist/icon_dust.png" alt="가루">
 								<div id="dust_quantity"></div>
 							</div>
+							<div id="deck_format" class=""></div>
 							<p id="deck_name"></p>
 						</div>
 					</div>
@@ -137,7 +120,7 @@
 					<div id="footer_name_left" class="footer_desc"></div>
 					<div id="footer_name_right" class="footer_desc"></div>
 				</div>
-                <div id="footer_bottom">
+                <div id="footer_bottom" class="subscreen">
 					<button id="bottom_undo" class="footer_button disabled">
 						<div id="undo_icon" class="log_icon">&#8630;</div>
 						<div id="undo_text" class="log_text desktop_only"> 취소</div>
@@ -148,11 +131,14 @@
 						<div id="redo_text" class="log_text desktop_only">복구 </div>
 						<div id="redo_num" class="log_num">0</div>
 					</button>
-					<button id="bottom_save" class="footer_button"><img src="./images/sist/icon_save.png"><span class="desktop_only"> 완료</span></button>
+					<button id="bottom_done" class="footer_button"><img src="./images/sist/icon_done.png"><span class="desktop_only"> 완료</span></button>
                 </div>
                 <div id="footer_decklist" class="subscreen">
 					<button id="button_readcode" class="footer_decklist_button"><img src="./images/sist/icon_deckcode.png"><span> 덱코드 입력</span></button>
 					<button id="botton_newdeck" class="footer_decklist_button"><img src="./images/sist/icon_newdeck.png"><span> 새로운 덱</span></button>
+				</div>
+                <div id="footer_deckconfig" class="subscreen">
+					<button id="button_edit"><img src="./images/sist/icon_edit.png"><span> 편집</span></button>
 				</div>
             </footer>
 
