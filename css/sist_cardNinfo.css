@@ -142,7 +142,7 @@
         overflow: hidden;
 
         width:100%;
-        height:330px;
+        height:340px;
 
         background:white;
         border-radius:5px;
@@ -275,7 +275,7 @@
             display:none;
 
             width:100%;
-            height:35px;
+            height:45px;
 
             background-color:#41B1E1;
             box-sizing: border-box;
@@ -284,7 +284,7 @@
                 position:absolute;
                     left:0;top:0;
 
-                width:40px;
+                width:50px;
                 height:100%;
 
                 background-color:yellow;
@@ -293,7 +293,7 @@
 
                 color:black;
                 font-size:30px;
-                    line-height:35px;
+                    line-height:45px;
                 font-weight:bold;
                 text-align:center;
             }
@@ -301,7 +301,7 @@
                 position:relative;
 
                 margin:0 auto;
-                width:calc(100% - 40px - 40px);
+                width:calc(100% - 50px - 50px);
                 height:100%;
 
                 background-color:#41B1E1;
@@ -309,7 +309,7 @@
 
                 color:white;
                 font-size:20px;
-                    line-height:35px;
+                    line-height:45px;
                 font-weight:bold;
                 text-align:center;
             }
@@ -317,14 +317,14 @@
                 position:absolute;
                     right:0;top:0;
 
-                width:40px;
+                width:50px;
                 height:100%;
 
                 background-color:red;
 
                 color:white;
                 font-size:30px;
-                    line-height:35px;
+                    line-height:45px;
                 font-weight:bold;
                 text-align:center;
             }
@@ -340,7 +340,7 @@
 
         margin-top:10px;
         width:100%;
-        height:50px;
+        height:40px;
 
         background:#808080;
         border:2px #606060 inset;
@@ -348,7 +348,7 @@
 
         color:white;
         font-size:20px;
-            line-height:50px;
+            line-height:36px;
         font-weight:bold;
         text-align:center;
     }
