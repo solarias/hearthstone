@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<!--모바일 화면 맞추기 : 필요하면 사용
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
+		* 세로로 화면 고정
+        <link rel="manifest" href="../function/tool/manifest_portrait.json">
+
+		* 가로로 화면 고정
+        <link rel="manifest" href="../function/tool/manifest_landscape.json">
+		-->
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (시작)-->
+		<script type="text/javascript" src="../function/tool/subtool.js"></script>
+		<script type="text/javascript" src="../function/tool/fastclick.js"></script>
+		<!--모바일 최적화 : 화면 자동확대, 터치 딜레이 제거 (끝)-->
+
+
+		<link rel="stylesheet" type="text/css" href="./css/kazakus2.css" />
+
+		<title>카자쿠스 시뮬레이터 2</title>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>카자쿠스 시뮬레이터 2 BETA</h1>
+			<h3>(제작자 : 솔라리어스 / 카드 이미지 출처 : 하스스톤 공식 DB)</h3>
+			<div id="frame">
+				<canvas id="myCanvas"></canvas>
+				<div id="card1" class="card">
+					<div class="table_container">
+						<p id="text1" class="text"></p>
+					</div>
+				</div>
+				<div id="card2" class="card kazakus">
+					<div class="table_container">
+						<p id="text2" class="text"></p>
+					</div>
+				</div>
+				<div id="card3" class="card">
+					<div class="table_container">
+						<p id="text3" class="text"></p>
+					</div>
+				</div>
+			</div>
+			<button id="start" disabled>로딩 중</button>
+			<h3 id="notice">
+				※ 2021.03.21. : 아직 효과 공개가 되지 않아 임의로 작성
+			</h3>
+		</div>
+
+		<div id="imagePreloader">
+			<img src="./images/kazakus2/cost1.png" />
+			<img src="./images/kazakus2/cost2.png" />
+			<img src="./images/kazakus2/cost3.png" />
+			<img src="./images/kazakus2/herb1.png" />
+			<img src="./images/kazakus2/herb2.png" />
+			<img src="./images/kazakus2/herb3.png" />
+			<img src="./images/kazakus2/result1.png" />
+			<img src="./images/kazakus2/result2.png" />
+			<img src="./images/kazakus2/result3.png" />
+		</div>
+
+
+
+		<!--외부 보조 라이브러리-->
+		<script src="../function/tool/howler.min.js"></script>
+		<!--외부 보조 라이브러리-->
+
+		<script type="text/javascript" src="./js/kazakus_smoke.js"></script>
+		<script type="text/javascript" src="./js/kazakus2.js"></script>
+
+
+	</body>
+
+</html>
