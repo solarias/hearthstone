@@ -6,59 +6,42 @@ var costText = [
     ""
 ];
 var material = {
-    cost1:[
-        "<b>도발</b>",
+    lesser:[
         "<b>속공</b>",
-        "<b>독성</b>",
-        "<b>질풍</b>",
-        "<b>천상의보호막</b>",
-        "<b>생명력흡수</b>",
-        "<b>전투의함성:</b> 카드를 1장 뽑습니다.",
-        "<b>전투의함성:</b> 다른 모든 하수인에게 피해를 2 줍니다.",
-        "<b>전투의함성:</b> 이번 게임에서 죽은 내 하수인 하나를 무작위로 소환합니다.",
-        "<b>전투의함성:</b> 방어도를 4 얻습니다.",
-        "<b>전투의함성:</b> 무작위 악마 하나를 내 손으로 가져옵니다.",
-        "<b>전투의함성:</b> 다른 모든 아군 하수인에게 체력 +2를 부여합니다.",
-        "<b>전투의함성:</b> 피해를 3 줍니다.",
-        "<b>전투의함성:</b> 무작위 적 하수인 하나를 빙결시킵니다."
+        "<b>도발</b>",
+        "<b>천상의 보호막</b>",
+        "<b>생명력 흡수</b>",
+        "<b>은신</b>",
+        "<b>독성</b>"
+    ],
+    cost1:[
+        "<b>전투의 함성:</b> 다른 모든 아군 하수인에게 +1/+1을 부여합니다.",
+        "<b>전투의 함성:</b> 이 하수인을 복사하여 소환합니다.",
+        "<b>전투의 함성:</b> 무작위 적 하수인을 빙결시킵니다.",
+        "<b>전투의 함성:</b> 무작위 적 하수인에게 피해를 3 줍니다.",
+        "<b>주문 공격력 +1</b>",
+        "<b>전투의 함성:</b> 카드를 1장 뽑습니다."
     ],
     cost2:[
-        "<b>도발</b>",
-        "<b>속공</b>",
-        "<b>독성</b>",
-        "<b>질풍</b>",
-        "<b>천상의보호막</b>",
-        "<b>생명력흡수</b>",
-        "<b>전투의함성:</b> 카드를 2장 뽑습니다.",
-        "<b>전투의함성:</b> 다른 모든 하수인에게 피해를 4 줍니다.",
-        "<b>전투의함성:</b> 이번 게임에서 죽은 내 하수인 둘을 무작위로 소환합니다.",
-        "<b>전투의함성:</b> 방어도를 7 얻습니다.",
-        "<b>전투의함성:</b> 무작위 적 하수인 하나를 1/1 양으로 변신시킵니다.",
-        "<b>전투의함성:</b> 무작위 악마 둘을 내 손으로 가져옵니다.",
-        "<b>전투의함성:</b> 모든 아군 하수인에게 체력 +4를 부여합니다.",
-        "<b>전투의함성:</b> 피해를 5 줍니다.",
-        "<b>전투의함성:</b> 무작위 적 하수인 둘을 빙결시킵니다."
+        "<b>전투의 함성:</b> 다른 모든 아군 하수인에게 +2/+2를 부여합니다.",
+        "<b>전투의 함성:</b> 이 하수인을 복사하여 소환합니다.",
+        "<b>전투의 함성:</b> 무작위 적 하수인 둘을 빙결시킵니다.",
+        "<b>전투의 함성:</b> 무작위 적 하수인 둘에게 피해를 3 줍니다.",
+        "<b>주문 공격력 +2</b>",
+        "<b>전투의 함성:</b> 카드를 2장 뽑습니다."
     ],
     cost3:[
-        "<b>도발</b>",
-        "<b>속공</b>",
-        "<b>독성</b>",
-        "<b>질풍</b>",
-        "<b>천상의보호막</b>",
-        "<b>생명력흡수</b>",
-        "<b>전투의함성:</b> 카드를 3장 뽑습니다.",
-        "<b>전투의함성:</b> 다른 모든 하수인에게 피해를 6 줍니다.",
-        "<b>전투의함성:</b> 이번 게임에서 죽은 내 하수인 셋을 무작위로 소환합니다.",
-        "<b>전투의함성:</b> 방어도를 10 얻습니다.",
-        "<b>전투의함성:</b> 다른 모든 하수인을 1/1 양으로 변신시킵니다.",
-        "<b>전투의함성:</b> 무작위 악마 셋을 내 손으로 가져옵니다.",
-        "<b>전투의함성:</b> 다른 모든 아군 하수인에게 체력 +6을 부여합니다.",
-        "<b>전투의함성:</b> 피해를 8 줍니다.",
-        "<b>전투의함성:</b> 무작위 적 하수인 셋을 빙결시킵니다."
+        "<b>전투의 함성:</b> 다른 모든 아군 하수인에게 +4/+4를 부여합니다.",
+        "<b>전투의 함성:</b> 이 하수인을 복사하여 소환합니다.",
+        "<b>전투의 함성:</b> 모든 적 하수인을 빙결시킵니다.",
+        "<b>전투의 함성:</b> 모든 적 하수인에게 피해를 3 줍니다.",
+        "<b>주문 공격력 +4</b>",
+        "<b>전투의 함성:</b> 카드를 4장 뽑습니다."
     ]
 }
 var selected = [];
-var remained = [];
+var remained1 = [];
+var remained2 = [];
 var showing = [];
 
 
@@ -81,21 +64,22 @@ function setCard(cmd, num) {
                     $("#text" + i.toString()).innerHTML = costText[i-1];
                         card.onclick = function() {
                             //효과 준비
-                            remained = deepCopy(material["cost" + i.toString()]);
+                            remained1 = deepCopy(material.lesser);
+                            remained2 = deepCopy(material["cost" + i.toString()]);
                             //효과 클릭 개시
-                            setCard("effect", i);
+                            setCard("herb1", i);
                         };
                 })(i);
             }
 
             break;
-        case "effect":
+        case "herb1":
             //효과 부여
-            showing = [];
-            remained = shuffle(remained);
+            showing = []
+            remained1 = shuffle(remained1);
             while (showing.length < 3) {
-                showing.push(remained[remained.length - 1]);
-                remained.pop();
+                showing.push(remained1[remained1.length - 1]);
+                remained1.pop();
             }
             for (i = 1; i <= 3; i++) {
                 (function(i) {
@@ -114,19 +98,40 @@ function setCard(cmd, num) {
                     card.onclick = function() {
                         //효과 저장
                         selected.push(showing[i-1]);
-                        //선택되지 않은 기존 효과 다시 집어넣기
-                        for (var j = 0; j < showing.length;j++) {
-                            if (showing[j] !== showing[i-1]) {
-                                remained.push(showing[j]);
-                            }
-                        }
-                        if (selected.length < 2) {
-                            //효과 지정 남음 : 이펙트 재지정
-                            setCard("effect", num);
-                        } else {
-                            //효과 지정 완료 : 출력
-                            setCard("result", num);
-                        }
+                        //다음 효과
+                        setCard("herb2", num);
+                    };
+                })(i);
+            }
+
+            break;
+        case "herb2":
+            //효과 부여
+            showing = [];
+            remained2 = shuffle(remained2);
+            while (showing.length < 3) {
+                showing.push(remained2[remained2.length - 1]);
+                remained2.pop();
+            }
+            for (i = 1; i <= 3; i++) {
+                (function(i) {
+                    //텍스트
+                    $("#text" + i.toString()).innerHTML = showing[i - 1];
+                    //이미지
+                    var card = $("#card" + i.toString());
+                    card.classList.remove("visible");
+                    void card.offsetWidth;
+                    setTimeout(function() {
+                        card.classList.add("visible");
+                    }, 200);
+                    card.style.backgroundImage = "url('./images/kazakus2/herb" + num.toString() + ".png')"
+                    card.classList.add('herb')
+                    card.classList.remove('cost','result')
+                    card.onclick = function() {
+                        //효과 저장
+                        selected.push(showing[i-1]);
+                        //효과 지정 완료 : 출력
+                        setCard("result", num);
                     };
                 })(i);
             }
